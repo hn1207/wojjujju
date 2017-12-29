@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WoJjuJju</string>
+    <string name="app_name">우쭈쭈</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -7,4 +7,39 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+
+
+    <!--로그인 화면-->
+    <string name="sign_in">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="auto_sign_in">자동로그인</string>
+    <string name="find_pw">비밀번호 찾기</string>
+
+    <!--네비게이션 드로어-->
+    <string name="category">카테고리</string>
+    <string name="beauty">미용</string>
+    <string name="shop">쇼핑</string>
+    <string name="date">데이트</string>
+    <string name="edu">교육</string>
+    <string name="adopt">입양</string>
+    <string name="sell">분양</string>
+    <string name="hospital">병원</string>
+
+    <string name="view_more">더보기</string>
+    <string name="web_toon">우쭈쭈 웹툰</string>
+    <string name="community">커뮤니티</string>
+    <string name="album">추억 앨범</string>
+    <string name="logout">로그아웃</string>
+
+    <!--툴바-->
+    <string name="search">검색</string>
+    <string name="alarm">알람</string>
+
+
+
+
+
+
+
 </resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/sign_in_padding"
+    tools:openDrawer="start">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/color_primary"
+        android:textSize="40sp" />
+
+    <EditText
+        android:layout_marginTop="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        >
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/auto_sign_in"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/find_pw"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:onClick="clickSignInBtn"
+        />
+
+    <Button
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/sign_up"
+        android:textColor="@color/color_primary"
+        android:textSize="14sp"
+        android:onClick="clickSignUpBtn"
+
+        />
+
+    <LinearLayout
+        android:layout_marginTop="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@color/soft_grey" />
+
+        <TextView
+
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="@color/soft_black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@color/soft_grey" />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_marginTop="21dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00549e" />
+
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffe500" />
+
+
+
+</LinearLayout>

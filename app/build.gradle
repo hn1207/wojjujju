@@ -31,4 +31,26 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+
+
+    /*
+    * ViewPager
+    */
+    compile ('com.alibaba.android:ultraviewpager:1.0.6.1@aar') {
+        transitive = true
+    }
+
+    /*
+     * Glide
+     */
+    compile 'com.github.bumptech.glide:glide:4.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+
+    /*
+    * Bottom Navigation Bar
+    */
+    compile 'devlight.io:navigationtabbar:1.2.5'
+
+
 }
