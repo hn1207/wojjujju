@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
         toolbar.setNavigationIcon(R.drawable.toolbar_nav_icon);
         toolbar.setTitleTextColor(getResources().getColor(R.color.color_primary));
 
