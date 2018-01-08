@@ -5,15 +5,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.entity.BeautyItem;
-import com.ylabs.wojjujju.wojjujju.entity.HomeHotItem;
 import com.ylabs.wojjujju.wojjujju.viewholder.BeautyDefaultItemViewHolder;
-import com.ylabs.wojjujju.wojjujju.viewholder.HomeHotItemViewHolder;
 
 import java.util.ArrayList;
 
@@ -44,7 +40,18 @@ public class BeautyDefaultItemAdapter extends RecyclerView.Adapter<BeautyDefault
         holder.commentCnt.setText(String.valueOf(dataList.get(position).getCommentCnt()));
         holder.description.setText(dataList.get(position).getDescription());
         holder.label.setText(dataList.get(position).getLabel());
-        holder.like.setText(String.valueOf(dataList.get(position).getLike()));
+        String heartcolor = "#eb5036";
+        if(dataList.get(position).getLike() == 1)
+        {
+            holder.like.setImageResource(R.drawable.heart_on);
+        }
+        else
+        {
+            holder.like.setImageResource(R.drawable.heart_off);
+        }
+
+
+
 
         Glide.with(con)
                 .load(dataList.get(position).getImg())

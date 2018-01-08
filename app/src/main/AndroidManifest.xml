@@ -3,6 +3,7 @@
     package="com.ylabs.wojjujju.wojjujju">
 
 
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"

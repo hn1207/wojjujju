@@ -10,9 +10,7 @@
     <ImageView
         android:id="@+id/img"
         android:layout_width="120dp"
-        android:layout_height="match_parent"
-        android:background="@color/soft_grey"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,16 +33,14 @@
                 android:textColor="#000000"
                 android:textSize="12sp" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/like"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="0.2"
                 android:gravity="end|center_vertical"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
-                android:text="1"
-                android:textColor="@color/color_primary"
-                android:textSize="12sp" />
+
+                />
 
         </LinearLayout>
         <LinearLayout
@@ -58,6 +54,7 @@
                 android:isIndicator="true"
                 android:numStars="5"
                 android:rating="3"
+                android:progressTint="#ffd021"
                 android:stepSize="0.5"
                 android:max="5"
                 android:layout_width="wrap_content"
@@ -121,8 +118,9 @@
                 android:id="@+id/label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:background="@color/mint"
+                android:padding="3dp"
+                android:textSize="11sp"
+                android:background="@drawable/round"
                 android:textColor="@color/white"
                 android:lineSpacingExtra="5sp"
                 tools:text="예약특가"

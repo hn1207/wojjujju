@@ -3,6 +3,7 @@
     <color name="color_primary">#f62b4c</color>
     <color name="color_primary_dark">#303F9F</color>
     <color name="color_accent">#4a4a4a</color>
+    <color name="mint">#0ceacf</color>
     <color name="soft_grey">#e1e1e1</color>
     <color name="soft_black">#4a4a4a</color>
     <color name="white">#FFFFFF</color>
@@ -10,5 +11,5 @@
     <color name="strong_white">#f9f9f9</color>
     <color name="warm_grey">#9b9b9b</color>
     <color name="black">#000000</color>
-    <color name="mint">#0ceacf</color>
+    <color name="heart">#eb5036</color>
 </resources>

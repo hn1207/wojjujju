@@ -20,7 +20,7 @@ public class BeautyDefaultItemViewHolder extends RecyclerView.ViewHolder {
     public TextView commentCnt;
     public TextView description;
     public TextView label;
-    public TextView like;
+    public ImageView like;
 
     public BeautyDefaultItemViewHolder(View v) {
         super(v);
@@ -34,7 +34,7 @@ public class BeautyDefaultItemViewHolder extends RecyclerView.ViewHolder {
         commentCnt = (TextView) v.findViewById(R.id.comment_cnt);
         description = (TextView) v.findViewById(R.id.description);
         label = (TextView) v.findViewById(R.id.label);
-        like = (TextView) v.findViewById(R.id.like);
+        like = (ImageView) v.findViewById(R.id.like);
 
     }
 }

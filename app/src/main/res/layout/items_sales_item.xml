@@ -8,14 +8,12 @@
 
 
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/sales_img"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        app:srcCompat="@color/soft_grey" />
+        android:layout_height="match_parent"/>
 
     <LinearLayout
-        android:background="@color/black"
+        android:background="#40000000"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingTop="6dp"
@@ -44,30 +42,30 @@
                 android:id="@+id/originPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="10sp"
                 android:text="8,700원"
                 android:textColor="@color/white"
-                android:textSize="8sp"
+                android:textSize="10sp"
                 />
             <TextView
                 android:id="@+id/saledPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 android:textColor="@color/white"
-                android:lineSpacingExtra="11sp"
-                android:text="7,900"
+                android:lineSpacingExtra="15sp"
+                android:text=" 7,900원"
                 />
 
             <TextView
                 android:id="@+id/percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:textColor="@color/color_accent"
+                android:layout_marginLeft="25sp"
                 android:lineSpacingExtra="11sp"
-                android:text="10%"
-                />
+                android:text="↓10%"
+                android:textColor="@color/mint"
+                android:textSize="12sp" />
 
 
         </LinearLayout>
