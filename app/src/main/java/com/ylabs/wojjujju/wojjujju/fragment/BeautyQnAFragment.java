@@ -1,6 +1,5 @@
 package com.ylabs.wojjujju.wojjujju.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,12 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.activity.BeautyActivity;
-import com.ylabs.wojjujju.wojjujju.activity.BeautyDetailActivity;
-import com.ylabs.wojjujju.wojjujju.adapter.BeautyDefaultItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.QnaItemAdapter;
-import com.ylabs.wojjujju.wojjujju.custom.RecyclerItemClickListener;
-import com.ylabs.wojjujju.wojjujju.entity.BeautyItem;
 import com.ylabs.wojjujju.wojjujju.entity.QnaItem;
 
 import java.util.ArrayList;

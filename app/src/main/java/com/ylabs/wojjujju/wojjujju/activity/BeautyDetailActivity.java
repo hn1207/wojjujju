@@ -54,7 +54,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.beauty_detail_tab_viewpager);
         BeautyTabViewAdapter adapter = new BeautyTabViewAdapter(getSupportFragmentManager());
         adapter.addFragment(beautyDetailInfoFragment, "상세정보");
-        adapter.addFragment(beautyQnAFragment, "QnA");
+        adapter.addFragment(beautyQnAFragment, "Q&A");
         adapter.addFragment(beautyReviewFragment, "후기");
 
 

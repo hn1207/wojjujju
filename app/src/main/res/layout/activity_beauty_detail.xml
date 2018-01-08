@@ -55,22 +55,18 @@
                         android:layout_weight="1"
                         android:gravity="right|center_vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="18dp"
                             android:gravity="center_vertical"
-                            android:text="공"
-                            android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:background="@drawable/share" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_marginLeft="24dp"
                             android:gravity="center_vertical"
-                            android:text="좋"
-                            android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:background="@drawable/favorite" />
 
                     </LinearLayout>
 
@@ -98,13 +94,13 @@
                 android:paddingRight="15dp">
 
                 <RatingBar
-
                     android:id="@+id/grade"
                     style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:isIndicator="true"
                     android:max="5"
+                    android:progressTint="#ffd021"
                     android:maxHeight="10dp"
                     android:maxWidth="60dp"
                     android:numStars="5"
@@ -127,7 +123,7 @@
                     android:lineSpacingExtra="20sp"
                     android:text="785"
                     android:textColor="@color/soft_black"
-                    android:textSize="8sp" />
+                    android:textSize="10sp" />
 
                 <TextView
                     android:layout_width="wrap_content"

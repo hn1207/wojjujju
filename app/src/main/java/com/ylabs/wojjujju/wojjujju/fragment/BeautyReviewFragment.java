@@ -9,9 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.QnaItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.ReviewItemAdapter;
-import com.ylabs.wojjujju.wojjujju.entity.QnaItem;
 import com.ylabs.wojjujju.wojjujju.entity.ReviewItem;
 
 import java.util.ArrayList;
