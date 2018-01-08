@@ -158,7 +158,7 @@
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
 
-        <com.google.android.gms.maps.MapView
+        <com.ylabs.wojjujju.wojjujju.custom.MyMapView
             android:id="@+id/map"
             android:layout_width="match_parent"
             android:layout_height="172dp"

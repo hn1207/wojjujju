@@ -1,13 +1,18 @@
 package com.ylabs.wojjujju.wojjujju.fragment;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ScrollView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -20,15 +25,18 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.custom.MyMapView;
 import com.ylabs.wojjujju.wojjujju.entity.HomeHotItem;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class BeautyDetailInfoFragment extends Fragment {
+public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchListener {
 
-    MapView mapView;
+    MyMapView mapView;
     private GoogleMap googleMap;
+    private ScrollView scrollView;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -38,11 +46,14 @@ public class BeautyDetailInfoFragment extends Fragment {
         initServiceGuideItemList(view);
         initHairDresserItemList(view);
         initMapView(view, savedInstanceState);
+
+
         return view;
     }
 
-    void initMapView(View v, Bundle savedInstanceState){
-        mapView = (MapView) v.findViewById(R.id.map);
+
+    void initMapView(final View v, Bundle savedInstanceState){
+        mapView = v.findViewById(R.id.map);
         mapView.onCreate(savedInstanceState);
 
         mapView.onResume(); // needed to get the map to display immediately
@@ -66,6 +77,10 @@ public class BeautyDetailInfoFragment extends Fragment {
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
             }
         });
+
+
+
+
 
 
     }
@@ -98,6 +113,7 @@ public class BeautyDetailInfoFragment extends Fragment {
     }
 
 
+
     void initHairDresserItemList(View v){
 
         ArrayList<Item> hairDresserItemArrayList = new ArrayList<>();
@@ -126,6 +142,9 @@ public class BeautyDetailInfoFragment extends Fragment {
     }
 
 
-
+    @Override
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+        return false;
+    }
 }
 
