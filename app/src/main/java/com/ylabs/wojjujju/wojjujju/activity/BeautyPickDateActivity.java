@@ -20,6 +20,8 @@ import com.tmall.ultraviewpager.UltraViewPager;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyTabViewAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.DateTimePickerAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.QnaItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.SelectedItemAdapter;
 import com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.ylabs.wojjujju.wojjujju.entity.SelectedItem;
@@ -40,6 +42,23 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beauty_pick_date);
 
+        initDatePicker();
+
+        findViewById(R.id.complete).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+    }
+
+    @Override
+    public void onDateSelected(@NonNull final DateTime dateSelected) {
+        // log it for demo
+        Log.i("HorizontalPicker", "Selected date is " + dateSelected.toString());
+    }
+
+    void initDatePicker(){
 
         // find the picker
         HorizontalPicker picker = (HorizontalPicker) findViewById(R.id.datePicker);
@@ -63,12 +82,38 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
         // or on the View directly after init was completed
         picker.setBackgroundColor(Color.WHITE);
         picker.setDate(new DateTime().plusDays(4));
-    }
 
-    @Override
-    public void onDateSelected(@NonNull final DateTime dateSelected) {
-        // log it for demo
-        Log.i("HorizontalPicker", "Selected date is " + dateSelected.toString());
+
+
+
+
+        ArrayList<String> dateTimeList = new ArrayList<>();
+        dateTimeList.add(new String("10:00"));
+        dateTimeList.add(new String("12:00"));
+        dateTimeList.add(new String("14:00"));
+        dateTimeList.add(new String("16:00"));
+        dateTimeList.add(new String("18:00"));
+        dateTimeList.add(new String("20:00"));
+        dateTimeList.add(new String("22:00"));
+        dateTimeList.add(new String("24:00"));
+
+
+
+
+
+
+        RecyclerView dateTimeListView = (RecyclerView) findViewById(R.id.date_time_list);
+        dateTimeListView.setHasFixedSize(true);
+
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPickDateActivity.this);
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+
+        if (dateTimeList.size() > 0) {
+            dateTimeListView.setAdapter(new DateTimePickerAdapter(dateTimeList, BeautyPickDateActivity.this, R.layout.items_date_time_picker_item));
+        }
+        dateTimeListView.setLayoutManager(layoutManager);
+
     }
 
 }

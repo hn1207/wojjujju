@@ -147,7 +147,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
             }
         });
 
-        findViewById(R.id.payment).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.contact_us).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
