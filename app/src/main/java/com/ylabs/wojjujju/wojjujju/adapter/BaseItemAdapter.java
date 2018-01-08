@@ -8,32 +8,34 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.entity.HomeHotItem;
-import com.ylabs.wojjujju.wojjujju.viewholder.HomeHotItemViewHolder;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
+import com.ylabs.wojjujju.wojjujju.viewholder.BaseItemViewHolder;
 
 import java.util.ArrayList;
 
-public class HomeHotItemAdapter extends RecyclerView.Adapter<HomeHotItemViewHolder> {
-    private ArrayList<HomeHotItem> dataList;
+public class BaseItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
+    private ArrayList<Item> dataList;
     private Context con;
+    private int layout;
 
-    public HomeHotItemAdapter(ArrayList<HomeHotItem> dataList, Context con) {
+    public BaseItemAdapter(ArrayList<Item> dataList, Context con, int layout) {
         this.dataList = dataList;
         this.con=con;
+        this.layout= layout;
     }
     @Override
-    public HomeHotItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public BaseItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.items_hot_item, parent, false);
-        HomeHotItemViewHolder holder = new HomeHotItemViewHolder(view);
+                .inflate(layout, parent, false);
+        BaseItemViewHolder holder = new BaseItemViewHolder(view);
         return holder;
     }
     @Override
-    public void onBindViewHolder(final HomeHotItemViewHolder holder, int position) {
+    public void onBindViewHolder(final BaseItemViewHolder holder, int position) {
 
         holder.title.setText(dataList.get(position).getTitle());
-        holder.price.setText(dataList.get(position).getPrice());
+//        holder.price.setText(dataList.get(position).getPrice());
 
         Glide.with(con)
                 .load(dataList.get(position).getImg())

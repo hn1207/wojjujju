@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.HomeHotItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.HomeHotPlaceItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.HomeRecommendItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
@@ -17,6 +17,7 @@ import com.ylabs.wojjujju.wojjujju.entity.HomeHotItem;
 import com.ylabs.wojjujju.wojjujju.entity.HomeHotPlaceItem;
 import com.ylabs.wojjujju.wojjujju.entity.HomeRecommendItem;
 import com.ylabs.wojjujju.wojjujju.entity.HomeSaleItem;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
@@ -41,17 +42,17 @@ public class HomeFragment extends Fragment {
 
     void initHotItemList(View view){
 
-        ArrayList<HomeHotItem> homeHotItemArrayList = new ArrayList<>();
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
-        homeHotItemArrayList.add(new HomeHotItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        ArrayList<Item> homeHotItemArrayList = new ArrayList<>();
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotItemArrayList.add(new Item(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
 
 
 
@@ -62,7 +63,7 @@ public class HomeFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (homeHotItemArrayList.size() > 0) {
-            hotItemListView.setAdapter(new HomeHotItemAdapter(homeHotItemArrayList, getContext()));
+            hotItemListView.setAdapter(new BaseItemAdapter(homeHotItemArrayList, getContext(), R.layout.items_hot_item));
         }
         hotItemListView.setLayoutManager(layoutManager);
     }

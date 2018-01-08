@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -22,6 +23,7 @@ import android.widget.Toast;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyDefaultItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.HomeHotPlaceItemAdapter;
+import com.ylabs.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.ylabs.wojjujju.wojjujju.entity.BeautyItem;
 
 import java.util.ArrayList;
@@ -89,6 +91,19 @@ public class BeautyActivity extends BaseDrawerActivity{
 
         RecyclerView beautyDefaultListView = (RecyclerView) findViewById(R.id.beauty_default_item);
         beautyDefaultListView.setHasFixedSize(true);
+
+
+        beautyDefaultListView.addOnItemTouchListener(
+                new RecyclerItemClickListener(BeautyActivity.this, beautyDefaultListView ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        // do whatever
+                        startActivity(new Intent(BeautyActivity.this, BeautyDetailActivity.class));
+                    }
+
+                    @Override public void onLongItemClick(View view, int position) {
+                        // do whatever
+                    }
+                }));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
