@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dp"
                 android:textSize="11sp"
-                android:background="@drawable/round"
+                android:background="@drawable/round_reservation"
                 android:textColor="@color/white"
                 android:lineSpacingExtra="5sp"
                 tools:text="예약특가"

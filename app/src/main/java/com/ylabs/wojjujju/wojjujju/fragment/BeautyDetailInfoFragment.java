@@ -1,7 +1,6 @@
 package com.ylabs.wojjujju.wojjujju.fragment;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,13 +13,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
-import com.ylabs.wojjujju.wojjujju.entity.HomeHotItem;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -73,14 +69,14 @@ public class BeautyDetailInfoFragment extends Fragment {
     void initServiceGuideItemList(View v){
 
         ArrayList<Item> beautyServiceGuideItemArrayList = new ArrayList<>();
-        beautyServiceGuideItemArrayList.add(new Item(null, "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item(null, "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item(null, "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item(null, "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item(null, "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item(null, "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item(null, "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item(null, "행동교정치료" , "6,7000원"));
+        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop.jpg", "행동교정치료" , "6,7000원"));
+        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop2.jpg", "행동교정치료" , "6,7000원"));
+        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop3.jpg", "행동교정치료" , "6,7000원"));
+        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop4.jpg", "행동교정치료" , "6,7000원"));
+        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop5.jpg", "행동교정치료" , "6,7000원"));
+        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop.jpg", "행동교정치료" , "6,7000원"));
+        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop2.jpg", "행동교정치료" , "6,7000원"));
+        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop3.jpg", "행동교정치료" , "6,7000원"));
 
 
 
@@ -101,15 +97,15 @@ public class BeautyDetailInfoFragment extends Fragment {
     void initHairDresserItemList(View v){
 
         ArrayList<Item> hairDresserItemArrayList = new ArrayList<>();
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item(null, "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
+        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.jpg", "김지영\n원장" , "6,7000원"));
 
 
 

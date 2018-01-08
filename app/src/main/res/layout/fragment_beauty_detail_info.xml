@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:lineSpacingExtra="9sp"
-            android:text="매일 13:00~14:00 점심시간(CLOSED)\n
+            android:text=" 매일 13:00~14:00 점심시간(CLOSED)\n
 일요일 11:00~18:00\n
 평일 09:00~19:00\n
 토요일 09:00~18:00 (공휴일도 동일 적용)"
@@ -98,7 +98,7 @@
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
                     android:lineSpacingExtra="13sp"
-                    android:text="더보기 >"
+                    android:text="전체보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
 
