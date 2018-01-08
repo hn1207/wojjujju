@@ -11,6 +11,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingTop="10dp"
         android:layout_height="59dp">
 
 
@@ -24,13 +26,13 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                app:srcCompat="@color/color_primary" />
+                android:background="@drawable/beauty"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="쇼핑"
+                android:text="커트"
                 android:textColor="@color/warm_grey"
                 android:textSize="10sp" />
 
@@ -46,13 +48,13 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                app:srcCompat="@color/color_primary" />
+                android:background="@drawable/care" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="쇼핑"
+                android:text="위생관리"
                 android:textColor="@color/warm_grey"
                 android:textSize="10sp" />
 
@@ -68,13 +70,13 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                app:srcCompat="@color/color_primary" />
+                android:background="@drawable/bath" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="쇼핑"
+                android:text="전신관리"
                 android:textColor="@color/warm_grey"
                 android:textSize="10sp" />
 
@@ -91,6 +93,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
             android:text="전체 890건"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
@@ -104,7 +107,9 @@
             <Spinner
                 android:id="@+id/default_filter"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                />
 
             <Spinner
                 android:id="@+id/place_filter"
