@@ -17,7 +17,6 @@
         android:layout_above="@+id/wrap" />
 
     <devlight.io.library.ntb.NavigationTabBar
-
         android:id="@+id/ntb"
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -28,7 +27,6 @@
         app:ntb_icon_size_fraction="0.5"
         app:ntb_inactive_color="@color/soft_grey"
         app:ntb_swiped="false"
-
         app:ntb_tinted="true"
         app:ntb_title_mode="all"
         app:ntb_title_size="10sp"

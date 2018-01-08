@@ -11,12 +11,11 @@
     tools:openDrawer="start">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textColor="@color/color_primary"
-        android:textSize="40sp" />
+    <View
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:background="@drawable/logo"
+        />
 
     <EditText
         android:layout_marginTop="43dp"
@@ -44,8 +43,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:button="@drawable/checkbox"
             android:gravity="start"
-            android:text="@string/auto_sign_in"
+            android:text="   자동로그인"
+            android:textColor="@color/warm_grey"
             android:textSize="12sp" />
 
         <TextView
@@ -62,10 +63,7 @@
         android:layout_marginTop="9dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_primary"
-        android:text="@string/sign_in"
-        android:textColor="@color/white"
-        android:textSize="14sp"
+        android:background="@drawable/login"
         android:onClick="clickSignInBtn"
         />
 
@@ -73,12 +71,8 @@
         android:layout_marginTop="17dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:text="@string/sign_up"
-        android:textColor="@color/color_primary"
-        android:textSize="14sp"
+        android:background="@drawable/sign_in"
         android:onClick="clickSignUpBtn"
-
         />
 
     <LinearLayout
@@ -102,7 +96,7 @@
             android:gravity="center"
             android:text="or"
             android:textColor="@color/soft_black"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <View
             android:layout_weight="1"
@@ -115,17 +109,16 @@
 
 
     <View
-        android:layout_marginTop="21dp"
-
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="#00549e" />
+        android:background="@drawable/facebook" />
 
     <View
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="#ffe500" />
+        android:background="@drawable/kakaotalk" />
 
 
 
