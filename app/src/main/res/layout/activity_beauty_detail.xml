@@ -1,180 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
 
-    <LinearLayout
-        android:id="@+id/drawer_layout"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
 
-
-        <FrameLayout
+        <LinearLayout
+            android:id="@+id/drawer_layout"
             android:layout_width="match_parent"
-            android:layout_height="238dp">
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
 
-            <com.tmall.ultraviewpager.UltraViewPager
-                android:id="@+id/beauty_viewpager"
+
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:background="@android:color/darker_gray" />
+                android:layout_height="238dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-
-
-                    android:layout_weight="1"
-                    android:gravity="center_vertical|start"
-                    android:text="←"
-                    android:textColor="@color/white"
-                    android:textSize="30sp" />
+                <com.tmall.ultraviewpager.UltraViewPager
+                    android:id="@+id/beauty_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="right|center_vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:text="공"
-                        android:textColor="@color/white"
-                        android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="24dp"
-                        android:gravity="center_vertical"
-                        android:text="좋"
+
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|start"
+                        android:text="←"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="공"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="24dp"
+                            android:gravity="center_vertical"
+                            android:text="좋"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="7sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="댕댕이 미용"
+                android:textColor="@color/soft_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RatingBar
+
+                    android:id="@+id/grade"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:max="5"
+                    android:maxHeight="10dp"
+                    android:maxWidth="60dp"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:stepSize="0.5" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="20sp"
+                    android:text="("
+                    android:textColor="@color/soft_black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/comment_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="20sp"
+                    android:text="785"
+                    android:textColor="@color/soft_black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="20sp"
+                    android:text=")"
+                    android:textColor="@color/soft_black"
+                    android:textSize="8sp" />
             </LinearLayout>
 
-        </FrameLayout>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:lineSpacingExtra="7sp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:text="댕댕이 미용"
-            android:textColor="@color/soft_black"
-            android:textSize="16sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
-
-            <RatingBar
-
-                android:id="@+id/grade"
-                style="?android:attr/ratingBarStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:isIndicator="true"
-                android:max="5"
-                android:maxHeight="10dp"
-                android:maxWidth="60dp"
-                android:numStars="5"
-                android:rating="3"
-                android:stepSize="0.5" />
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="16sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="서울 강남구 역삼동 720-16"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lineSpacingExtra="20sp"
-                android:text="("
-                android:textColor="@color/soft_black"
-                android:textSize="8sp" />
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="16sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="예약취소 연기 가능"
+                android:textColor="@color/warm_grey"
+                android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/comment_cnt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lineSpacingExtra="20sp"
-                android:text="785"
-                android:textColor="@color/soft_black"
-                android:textSize="8sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="20sp"
-                android:text=")"
-                android:textColor="@color/soft_black"
-                android:textSize="8sp" />
+                android:background="@color/white">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/beauty_detail_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp" />
+            </android.support.design.widget.AppBarLayout>
+
+            <com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager
+                android:id="@+id/beauty_detail_tab_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="1200dp" />
+
+
         </LinearLayout>
 
-        <TextView
-            android:gravity="center_vertical"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:textSize="12sp"
-            android:textColor="@color/soft_black"
-            android:lineSpacingExtra="16sp"
-            android:text="서울 강남구 역삼동 720-16"
-            />
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
 
         <TextView
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:textSize="12sp"
-            android:textColor="@color/warm_grey"
-            android:lineSpacingExtra="16sp"
-            android:text="예약취소 연기 가능"
-            />
 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="문의하기"
+            android:textColor="@color/color_primary"
+            android:textSize="16sp" />
 
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white">
-
-            <android.support.design.widget.TabLayout
-                android:id="@+id/beauty_detail_tab_layout"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                />
-        </android.support.design.widget.AppBarLayout>
-
-        <com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager
-            android:id="@+id/beauty_detail_tab_viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="1200dp"/>
-
-
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_primary"
+            android:gravity="center"
+            android:text="결제하기"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
     </LinearLayout>
-
-
-</ScrollView>
+</LinearLayout>
