@@ -4,17 +4,27 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.tmall.ultraviewpager.UltraViewPager;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyTabViewAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.QnaItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.SelectedItemAdapter;
 import com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager;
+import com.ylabs.wojjujju.wojjujju.entity.QnaItem;
+import com.ylabs.wojjujju.wojjujju.entity.SelectedItem;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyQnAFragment;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyReviewFragment;
+
+import java.util.ArrayList;
 
 public class BeautyDetailActivity extends AppCompatActivity{
 
@@ -30,7 +40,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
 
         initViewPager();
         initTabView();
-
+        initBeautySelectedItemList();
 
     }
 
@@ -90,6 +100,68 @@ public class BeautyDetailActivity extends AppCompatActivity{
 
 //        ultraViewPager.setAutoScroll(2000);
 
+    }
+
+
+    void initBeautySelectedItemList(){
+
+        ArrayList<SelectedItem> beautySelectedItemArrayList = new ArrayList<SelectedItem>();
+
+        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//
+//
+
+
+        RecyclerView beautySelectedItemListView = (RecyclerView) findViewById(R.id.select_goods_list);
+        beautySelectedItemListView.setHasFixedSize(true);
+
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyDetailActivity.this);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+
+        if (beautySelectedItemArrayList.size() > 0) {
+            beautySelectedItemListView.setAdapter(new SelectedItemAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_select_goods_item));
+        }
+        beautySelectedItemListView.setLayoutManager(layoutManager);
+
+
+        final LinearLayout linearLayout = findViewById(R.id.selected_list);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (linearLayout.getVisibility()){
+                    case View.GONE:
+                        linearLayout.setVisibility(View.VISIBLE);
+                        break;
+                    case View.VISIBLE:
+                        linearLayout.setVisibility(View.GONE);
+                        break;
+
+                }
+
+            }
+        });
+
+        findViewById(R.id.payment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                switch (linearLayout.getVisibility()){
+                    case View.GONE:
+                        linearLayout.setVisibility(View.VISIBLE);
+                        break;
+                    case View.VISIBLE:
+                        linearLayout.setVisibility(View.GONE);
+                        break;
+
+                }
+
+            }
+        });
     }
 
 
