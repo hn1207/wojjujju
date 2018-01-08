@@ -163,6 +163,14 @@ public class BeautyDetailActivity extends AppCompatActivity{
             }
         });
 
+        findViewById(R.id.payment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(BeautyDetailActivity.this, BeautyPaymentActivity.class));
+            }
+        });
+
         findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
