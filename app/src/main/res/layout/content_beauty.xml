@@ -108,13 +108,16 @@
                 android:id="@+id/default_filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="8dp"
                 />
 
-            <Spinner
+            <TextView
                 android:id="@+id/place_filter"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="지역 필터"
+                android:layout_marginRight="10dp"
+                />
 
         </LinearLayout>
 
