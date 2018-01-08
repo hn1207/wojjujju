@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ylabs.wojjujju.wojjujju.R;
@@ -52,11 +53,13 @@ public class BeautyActivity extends BaseDrawerActivity{
         yearAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         defaultSpinner.setAdapter(yearAdapter);
 
-        Spinner placeSpinner = (Spinner)findViewById(R.id.place_filter);
-        ArrayAdapter monthAdapter = ArrayAdapter.createFromResource(this,
-                R.array.place_filter, android.R.layout.simple_spinner_item);
-        monthAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        placeSpinner.setAdapter(monthAdapter);
+        TextView placeSpinner = (TextView)findViewById(R.id.place_filter);
+        placeSpinner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BeautyActivity.this, BeautyPlaceFilterActivity.class));
+            }
+        });
 
 
     }
