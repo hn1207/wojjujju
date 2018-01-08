@@ -7,4 +7,6 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <dimen name="sign_in_padding">35dp</dimen>
+
+    <dimen name="toolbar_height">56dp</dimen>
 </resources>
