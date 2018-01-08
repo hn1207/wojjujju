@@ -25,26 +25,15 @@ import com.ylabs.wojjujju.wojjujju.entity.BeautyItem;
 
 import java.util.ArrayList;
 
-public class BeautyActivity extends AppCompatActivity{
+public class BeautyActivity extends BaseDrawerActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beauty);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-
-
-
-        toolbar.setTitle("미용");
-        toolbar.setNavigationIcon(R.drawable.toolbar_nav_icon);
-        toolbar.setTitleTextColor(getResources().getColor(R.color.color_primary));
-
-
-        setSupportActionBar(toolbar);
-
-
+        initToolbar("미용");
 
 
 
@@ -108,39 +97,5 @@ public class BeautyActivity extends AppCompatActivity{
 
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.toolbar_main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-
-        switch (id) {
-            case R.id.action_search:
-                Toast.makeText(BeautyActivity.this, R.string.search , Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.action_alarm:
-                Toast.makeText(BeautyActivity.this, R.string.alarm , Toast.LENGTH_SHORT).show();
-                return true;
-        }
-
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
 }
