@@ -8,9 +8,7 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.entity.HomeHotItem;
 import com.ylabs.wojjujju.wojjujju.entity.HomeHotPlaceItem;
-import com.ylabs.wojjujju.wojjujju.viewholder.HomeHotItemViewHolder;
 import com.ylabs.wojjujju.wojjujju.viewholder.HomeHotPlaceItemViewHolder;
 
 import java.util.ArrayList;

@@ -21,7 +21,7 @@ public class HomeSaleItemViewHolder extends RecyclerView.ViewHolder {
         originPrice = (TextView) v.findViewById(R.id.originPrice);
         saledPrice = (TextView) v.findViewById(R.id.saledPrice);
         percent = (TextView) v.findViewById(R.id.percent);
-        img = (ImageView) v.findViewById(R.id.img);
+        img = (ImageView) v.findViewById(R.id.sales_img);
 
 
     }

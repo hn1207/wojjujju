@@ -17,7 +17,7 @@ public class HomeHotPlaceItemViewHolder extends RecyclerView.ViewHolder {
         super(v);
         title = (TextView) v.findViewById(R.id.title);
 //        price = (TextView) v.findViewById(R.id.price);
-        img = (ImageView) v.findViewById(R.id.img);
+        img = (ImageView) v.findViewById(R.id.hot_place_img);
 
 
     }

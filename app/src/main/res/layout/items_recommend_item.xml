@@ -8,11 +8,9 @@
 
 
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/recommend_img"
         android:layout_width="110dp"
-        android:layout_height="112dp"
-        android:background="@color/soft_grey"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_height="112dp" />
 
     <LinearLayout
         android:layout_width="110dp"
