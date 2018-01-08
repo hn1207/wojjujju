@@ -186,29 +186,72 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:id="@+id/selected_list"
+        android:background="@color/white"
         >
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="서비스 선택"
-            android:layout_marginTop="27dp">
+            android:orientation="horizontal"
+            android:background="@drawable/review"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="서비스 선택"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp">
         </TextView>
 
-        <TextView
-            android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="▼"
+                android:layout_gravity="end|center_horizontal"
+                android:paddingTop="10dp">
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/review"
+            android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
             android:text="날짜 선택"
-            android:layout_marginTop="27dp">
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
         </TextView>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="▼"
+            android:layout_gravity="end|center_horizontal"
+            android:paddingTop="10dp">
+        </TextView>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
         <android.support.v7.widget.RecyclerView
             android:id="@+id/select_goods_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp">
-
+            android:layout_marginTop="10dp">
         </android.support.v7.widget.RecyclerView>
 
         <TextView
@@ -218,8 +261,10 @@
             android:lineSpacingExtra="3sp"
             android:text="총 9,900원"
             android:textColor="@color/soft_black"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"/>
 
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout

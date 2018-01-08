@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="16dp"
+    android:background="@drawable/round"
+    android:layout_marginTop="5dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -20,20 +22,19 @@
             android:textSize="14sp"
             android:textColor="@color/soft_black"
             android:lineSpacingExtra="3sp"
-            tools:text="무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. "
+            android:text="무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다."
+
             />
 
-
         <TextView
-
             android:gravity="end|center_vertical"
-            android:layout_weight="1"
+            android:layout_weight="0.1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="@color/soft_black"
             android:lineSpacingExtra="3sp"
-            tools:text="X"
+            android:text="X"
             />
     </LinearLayout>
 
@@ -58,7 +59,7 @@
         <TextView
             android:id="@+id/price"
             android:gravity="end|center_vertical"
-            android:layout_weight="1"
+            android:layout_weight="0.3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="14sp"

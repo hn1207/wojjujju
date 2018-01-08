@@ -15,10 +15,8 @@ import com.tmall.ultraviewpager.UltraViewPager;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyTabViewAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.QnaItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.SelectedItemAdapter;
 import com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager;
-import com.ylabs.wojjujju.wojjujju.entity.QnaItem;
 import com.ylabs.wojjujju.wojjujju.entity.SelectedItem;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyQnAFragment;
@@ -108,8 +106,8 @@ public class BeautyDetailActivity extends AppCompatActivity{
         ArrayList<SelectedItem> beautySelectedItemArrayList = new ArrayList<SelectedItem>();
 
         beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
 //        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
 //        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
 //
@@ -130,6 +128,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
 
 
         final LinearLayout linearLayout = findViewById(R.id.selected_list);
+        linearLayout.setVisibility(View.GONE);
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
