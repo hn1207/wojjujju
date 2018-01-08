@@ -1,5 +1,6 @@
 package com.ylabs.wojjujju.wojjujju.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
@@ -145,7 +146,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
             }
         });
 
-        findViewById(R.id.payment).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.contact_us).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -161,6 +162,17 @@ public class BeautyDetailActivity extends AppCompatActivity{
 
             }
         });
+
+        findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BeautyDetailActivity.this, BeautyPickDateActivity.class));
+
+            }
+        });
+
+
+
     }
 
 
