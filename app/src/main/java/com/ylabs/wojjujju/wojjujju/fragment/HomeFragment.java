@@ -10,8 +10,12 @@ import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.HomeHotItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.HomeHotPlaceItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.HomeRecommendItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.HomeHotItem;
+import com.ylabs.wojjujju.wojjujju.entity.HomeHotPlaceItem;
+import com.ylabs.wojjujju.wojjujju.entity.HomeRecommendItem;
 import com.ylabs.wojjujju.wojjujju.entity.HomeSaleItem;
 
 import java.util.ArrayList;
@@ -27,6 +31,8 @@ public class HomeFragment extends Fragment {
 
         initHotItemList(view);
         initSaleItemList(view);
+        initRecommendItemList(view);
+        initHotPlaceItemList(view);
 
 
         return view;
@@ -91,6 +97,62 @@ public class HomeFragment extends Fragment {
             saleItemListView.setAdapter(new HomeSaleItemAdapter(homeSaleItemList, getContext()));
         }
         saleItemListView.setLayoutManager(layoutManager);
+    }
+
+    void initRecommendItemList(View view){
+
+        ArrayList<HomeRecommendItem> homeRecommendItemArrayList = new ArrayList<>();
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeRecommendItemArrayList.add(new HomeRecommendItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+
+
+
+        RecyclerView recommendItemListView = (RecyclerView) view.findViewById(R.id.recommend_item_list);
+        recommendItemListView.setHasFixedSize(true);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+
+        if (homeRecommendItemArrayList.size() > 0) {
+            recommendItemListView.setAdapter(new HomeRecommendItemAdapter(homeRecommendItemArrayList, getContext()));
+        }
+        recommendItemListView.setLayoutManager(layoutManager);
+    }
+
+    void initHotPlaceItemList(View view){
+
+        ArrayList<HomeHotPlaceItem> homeHotPlaceItemArrayList = new ArrayList<>();
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem(null, "푹신푹신 허그미 쿠션" , "6,7000원"));
+
+
+
+        RecyclerView hotPlaceItemListView = (RecyclerView) view.findViewById(R.id.hot_place_item_list);
+        hotPlaceItemListView.setHasFixedSize(true);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+
+        if (homeHotPlaceItemArrayList.size() > 0) {
+            hotPlaceItemListView.setAdapter(new HomeHotPlaceItemAdapter(homeHotPlaceItemArrayList, getContext()));
+        }
+        hotPlaceItemListView.setLayoutManager(layoutManager);
     }
 
 }
