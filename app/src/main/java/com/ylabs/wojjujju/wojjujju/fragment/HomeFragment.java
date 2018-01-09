@@ -9,15 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
+
 import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.HomeHotItemAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.HomeHotPlaceItemAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.HomeRecommendItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
-import com.ylabs.wojjujju.wojjujju.entity.HomeHotItem;
-import com.ylabs.wojjujju.wojjujju.entity.HomeHotPlaceItem;
-import com.ylabs.wojjujju.wojjujju.entity.HomeRecommendItem;
-import com.ylabs.wojjujju.wojjujju.entity.HomeSaleItem;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -44,17 +38,26 @@ public class HomeFragment extends Fragment {
     void initHotItemList(View view){
 
 
-        ArrayList<HomeHotItem> homeHotItemArrayList = new ArrayList<>();
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+        ArrayList<Item> homeHotItemArrayList = new ArrayList<>();
+
+        for(int i=0; i<10; i++) {
+            Item item = new Item();
+            item.setImg("http://13.125.46.183/woojjujju/cushion.jpg");
+            item.setTitle("푹신푹신 허그미 쿠션");
+            item.setPrice("25,000원");
+            homeHotItemArrayList.add(item);
+        }
+
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeHotItemArrayList.add(new HomeHotItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
 
 
 
@@ -66,7 +69,7 @@ public class HomeFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (homeHotItemArrayList.size() > 0) {
-            hotItemListView.setAdapter(new HomeHotItemAdapter(homeHotItemArrayList, getContext(), R.layout.items_hot_item));
+            hotItemListView.setAdapter(new BaseItemAdapter(homeHotItemArrayList, getContext(), R.layout.items_hot_item));
         }
         hotItemListView.setLayoutManager(layoutManager);
     }
@@ -74,18 +77,25 @@ public class HomeFragment extends Fragment {
 
     void initSaleItemList(View view){
 
-        ArrayList<HomeSaleItem> homeSaleItemList = new ArrayList<>();
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
-
+        ArrayList<Item> homeSaleItemList = new ArrayList<>();
+        for(int i=0; i<10; i++) {
+            Item item = new Item();
+            item.setImg("http://13.125.46.183/woojjujju/fassion.jpg");
+            item.setTitle("미니피니 강아지 모자");
+            item.setPrice("7,600원");
+            homeSaleItemList.add(item);
+        }
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));
+//
 
 
         RecyclerView saleItemListView = (RecyclerView) view.findViewById(R.id.sale_item_list);
@@ -102,17 +112,24 @@ public class HomeFragment extends Fragment {
 
     void initRecommendItemList(View view){
 
-        ArrayList<HomeRecommendItem> homeRecommendItemArrayList = new ArrayList<>();
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
-        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+        ArrayList<Item> homeRecommendItemArrayList = new ArrayList<>();
+        for(int i=0; i<10; i++) {
+            Item item = new Item();
+            item.setImg("http://13.125.46.183/woojjujju/cushion.jpg");
+            item.setTitle("푹신푹신 허그미 쿠션");
+            item.setPrice("25,000원");
+            homeRecommendItemArrayList.add(item);
+        }
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
+//        homeRecommendItemArrayList.add(new HomeRecommendItem("http://13.125.46.183/woojjujju/cushion.jpg", "푹신푹신 허그미 쿠션" , "25,000원"));
 
 
 
@@ -126,24 +143,31 @@ public class HomeFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (homeRecommendItemArrayList.size() > 0) {
-            recommendItemListView.setAdapter(new HomeRecommendItemAdapter(homeRecommendItemArrayList, getContext()));
+            recommendItemListView.setAdapter(new BaseItemAdapter(homeRecommendItemArrayList, getContext(), R.layout.items_recommend_item));
         }
         recommendItemListView.setLayoutManager(layoutManager);
     }
 
     void initHotPlaceItemList(View view){
 
-        ArrayList<HomeHotPlaceItem> homeHotPlaceItemArrayList = new ArrayList<>();
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+        ArrayList<Item> homeHotPlaceItemArrayList = new ArrayList<>();
+        for(int i=0; i<10; i++) {
+            Item item = new Item();
+            item.setImg("http://13.125.46.183/woojjujju/park.jpg");
+            item.setTitle("반려견들과 산책가능한 공원");
+            item.setPrice("6,700원");
+            homeHotPlaceItemArrayList.add(item);
+        }
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
+//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
 
 
         RecyclerView hotPlaceItemListView = (RecyclerView) view.findViewById(R.id.hot_place_item_list);
@@ -153,7 +177,7 @@ public class HomeFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (homeHotPlaceItemArrayList.size() > 0) {
-            hotPlaceItemListView.setAdapter(new HomeHotPlaceItemAdapter(homeHotPlaceItemArrayList, getContext()));
+            hotPlaceItemListView.setAdapter(new BaseItemAdapter(homeHotPlaceItemArrayList, getContext(), R.layout.items_default_item));
         }
         hotPlaceItemListView.setLayoutManager(layoutManager);
     }

@@ -9,12 +9,13 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 
-import com.github.jhonnyx2012.horizontalpicker.DatePickerListener;
-import com.github.jhonnyx2012.horizontalpicker.HorizontalPicker;
+
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.DateTimePickerAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.PaymentItemAdapter;
-import com.ylabs.wojjujju.wojjujju.entity.PaymentItem;
+
+
+import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
+
 
 import org.joda.time.DateTime;
 
@@ -45,9 +46,21 @@ public class BeautyPaymentActivity extends AppCompatActivity {
 
 
 
-        ArrayList<PaymentItem> paymentItemArrayList = new ArrayList<>();
-        paymentItemArrayList.add(new PaymentItem(null,"[댕댕이 미용] ","12,000원","예약일시 12.29 (화) 16:00 ","무슨무슨 컷 서비스 내용이 들어갑니다."));
-        paymentItemArrayList.add(new PaymentItem(null,"[댕댕이 미용] ","12,000원","예약일시 12.29 (화) 16:00 ","무슨무슨 컷 서비스 내용이 들어갑니다."));
+        ArrayList<Item> paymentItemArrayList = new ArrayList<>();
+
+        for(int i=0; i<3; i++) {
+            Item item = new Item();
+            item.setImg(null);
+            item.setTitle("[댕댕이 미용] ");
+            item.setPrice("12,000원");
+            item.setDate("예약일시 12.29 (화) 16:00 ");
+            item.setContents("무슨무슨 컷 서비스 내용이 들어갑니다.");
+            paymentItemArrayList.add(item);
+        }
+
+
+//        paymentItemArrayList.add(new PaymentItem(null,"[댕댕이 미용] ","12,000원","예약일시 12.29 (화) 16:00 ","무슨무슨 컷 서비스 내용이 들어갑니다."));
+//        paymentItemArrayList.add(new PaymentItem(null,"[댕댕이 미용] ","12,000원","예약일시 12.29 (화) 16:00 ","무슨무슨 컷 서비스 내용이 들어갑니다."));
 
 
 
@@ -58,11 +71,17 @@ public class BeautyPaymentActivity extends AppCompatActivity {
         paymentListView.setHasFixedSize(true);
 
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        };
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new PaymentItemAdapter(paymentItemArrayList, BeautyPaymentActivity.this, R.layout.items_beauty_payment_item));
+            paymentListView.setAdapter(new BaseItemAdapter(paymentItemArrayList, BeautyPaymentActivity.this, R.layout.items_beauty_payment_item));
         }
         paymentListView.setLayoutManager(layoutManager);
 

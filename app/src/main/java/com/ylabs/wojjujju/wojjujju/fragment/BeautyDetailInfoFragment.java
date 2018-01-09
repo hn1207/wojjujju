@@ -80,14 +80,36 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
     void initServiceGuideItemList(View v){
 
         ArrayList<Item> beautyServiceGuideItemArrayList = new ArrayList<>();
-        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop.jpg", "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop2.jpg", "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop3.jpg", "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop4.jpg", "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop5.jpg", "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop.jpg", "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop2.jpg", "행동교정치료" , "6,7000원"));
-        beautyServiceGuideItemArrayList.add(new Item("http://13.125.46.183/woojjujju/beautyshop3.jpg", "행동교정치료" , "6,7000원"));
+
+        Item item = new Item();
+        item.setImg("http://13.125.46.183/woojjujju/beautyshop.jpg");
+        item.setTitle("행동교정치료");
+        item.setPrice("6,7000원");
+        beautyServiceGuideItemArrayList.add(item);
+
+        item = new Item();
+        item.setImg("http://13.125.46.183/woojjujju/beautyshop2.jpg");
+        item.setTitle("행동교정치료");
+        item.setPrice("6,7000원");
+        beautyServiceGuideItemArrayList.add(item);
+
+        item = new Item();
+        item.setImg("http://13.125.46.183/woojjujju/beautyshop3.jpg");
+        item.setTitle("행동교정치료");
+        item.setPrice("6,7000원");
+        beautyServiceGuideItemArrayList.add(item);
+
+        item = new Item();
+        item.setImg("http://13.125.46.183/woojjujju/beautyshop4.jpg");
+        item.setTitle("행동교정치료");
+        item.setPrice("6,7000원");
+        beautyServiceGuideItemArrayList.add(item);
+
+        item = new Item();
+        item.setImg("http://13.125.46.183/woojjujju/beautyshop5.jpg");
+        item.setTitle("행동교정치료");
+        item.setPrice("6,7000원");
+        beautyServiceGuideItemArrayList.add(item);
 
 
 
@@ -109,15 +131,15 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
     void initHairDresserItemList(View v){
 
         ArrayList<Item> hairDresserItemArrayList = new ArrayList<>();
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
-        hairDresserItemArrayList.add(new Item("http://13.125.46.183/woojjujju/hairdressor.png", "김지영\n원장" , "6,7000원"));
+        for(int i=0; i<10; i++){
+            Item item = new Item();
+            item.setImg("http://13.125.46.183/woojjujju/hairdressor.png");
+            item.setTitle("김지영\n원장");
+            item.setPrice("6,7000원");
+            hairDresserItemArrayList.add(item);
+        }
+
+
 
 
 

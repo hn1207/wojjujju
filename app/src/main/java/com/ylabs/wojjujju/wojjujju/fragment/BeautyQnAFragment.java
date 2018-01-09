@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.QnaItemAdapter;
-import com.ylabs.wojjujju.wojjujju.entity.QnaItem;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
@@ -29,18 +29,36 @@ public class BeautyQnAFragment extends Fragment {
 
     void initBeautyQnaItemList(View v){
 
-        ArrayList<QnaItem> beautyQnaItemArrayList = new ArrayList<QnaItem>();
+        ArrayList<Item> beautyQnaItemArrayList = new ArrayList<Item>();
+        for(int i=0; i<10; i++){
+            Item item = new Item();
+            switch (i%2){
+                case 0:
 
-        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
-        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
-        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
-        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
-        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
-        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
-        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
-        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
-        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
-        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
+                    item.setTitle("Q 질문이 들어갑니다");
+                    item.setContents("질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.");
+                    break;
+                case 1:
+                    item.setTitle("A 답변이 들어갑니다");
+                    item.setContents("답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.");
+                    break;
+            }
+
+            item.setDate("2017.09.23");
+            item.setType(i%2);
+
+            beautyQnaItemArrayList.add(item);
+        }
+//        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
+//        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
+//        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
+//        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
+//        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
+//        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
+//        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
+//        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
+//        beautyQnaItemArrayList.add(new QnaItem("Q 질문이 들어갑니다", "질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.", "  2017.09.23", 0));
+//        beautyQnaItemArrayList.add(new QnaItem("A 답변이 들어갑니다", "답변내용이 들어갑니다. 답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.답변내용이 들어갑니다.", "  2017.09.23", 1));
 
 
 
@@ -49,8 +67,18 @@ public class BeautyQnAFragment extends Fragment {
         beautyDefaultListView.setHasFixedSize(true);
 
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+
+
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity()){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        };
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+
+
 
         if (beautyQnaItemArrayList.size() > 0) {
             beautyDefaultListView.setAdapter(new QnaItemAdapter(beautyQnaItemArrayList, getActivity(), R.layout.items_beauty_detail_qna_item));

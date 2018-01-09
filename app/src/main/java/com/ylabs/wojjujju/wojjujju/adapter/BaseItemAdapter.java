@@ -34,12 +34,13 @@ public class BaseItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
     @Override
     public void onBindViewHolder(final BaseItemViewHolder holder, int position) {
 
-        holder.title.setText(dataList.get(position).getTitle());
-//        holder.price.setText(dataList.get(position).getPrice());
-
-        Glide.with(con)
-                .load(dataList.get(position).getImg())
-                .into(holder.img);
+        try{holder.title.setText(dataList.get(position).getTitle());}catch (Exception e){}
+        try{Glide.with(con).load(dataList.get(position).getImg()).into(holder.img); }catch(Exception e){}
+        try{holder.date.setText(dataList.get(position).getDate());}catch (Exception e){}
+        try{holder.price.setText(dataList.get(position).getPrice());}catch (Exception e){}
+        try{holder.contents.setText(dataList.get(position).getContents());}catch (Exception e){}
+        try{holder.userName.setText(dataList.get(position).getUserName());}catch (Exception e){}
+        try{holder.grade.setRating(dataList.get(position).getGrade());}catch (Exception e){}
 
 
     }

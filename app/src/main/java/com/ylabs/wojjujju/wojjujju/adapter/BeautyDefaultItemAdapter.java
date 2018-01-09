@@ -8,29 +8,29 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.entity.BeautyItem;
-import com.ylabs.wojjujju.wojjujju.viewholder.BeautyDefaultItemViewHolder;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
+import com.ylabs.wojjujju.wojjujju.viewholder.BaseItemViewHolder;
 
 import java.util.ArrayList;
 
-public class BeautyDefaultItemAdapter extends RecyclerView.Adapter<BeautyDefaultItemViewHolder> {
-    private ArrayList<BeautyItem> dataList;
+public class BeautyDefaultItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
+    private ArrayList<Item> dataList;
     private Context con;
 
-    public BeautyDefaultItemAdapter(ArrayList<BeautyItem> dataList, Context con) {
+    public BeautyDefaultItemAdapter(ArrayList<Item> dataList, Context con) {
         this.dataList = dataList;
         this.con=con;
     }
     @Override
-    public BeautyDefaultItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public BaseItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.items_beauty_default_item, parent, false);
-        BeautyDefaultItemViewHolder holder = new BeautyDefaultItemViewHolder(view);
+        BaseItemViewHolder holder = new BaseItemViewHolder(view);
         return holder;
     }
     @Override
-    public void onBindViewHolder(final BeautyDefaultItemViewHolder holder, int position) {
+    public void onBindViewHolder(final BaseItemViewHolder holder, int position) {
 
         holder.title.setText(dataList.get(position).getTitle());
 //        holder.price.setText(dataList.get(position).getPrice());
@@ -49,9 +49,6 @@ public class BeautyDefaultItemAdapter extends RecyclerView.Adapter<BeautyDefault
         {
             holder.like.setImageResource(R.drawable.heart_off);
         }
-
-
-
 
         Glide.with(con)
                 .load(dataList.get(position).getImg())

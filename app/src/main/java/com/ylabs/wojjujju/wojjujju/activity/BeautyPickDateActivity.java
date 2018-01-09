@@ -16,18 +16,11 @@ import android.widget.LinearLayout;
 
 import com.github.jhonnyx2012.horizontalpicker.DatePickerListener;
 import com.github.jhonnyx2012.horizontalpicker.HorizontalPicker;
-import com.tmall.ultraviewpager.UltraViewPager;
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.BeautyTabViewAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.DateTimePickerAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.QnaItemAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.SelectedItemAdapter;
-import com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager;
-import com.ylabs.wojjujju.wojjujju.entity.SelectedItem;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyQnAFragment;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyReviewFragment;
+
+
+import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import org.joda.time.DateTime;
 
@@ -87,15 +80,20 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
 
 
 
-        ArrayList<String> dateTimeList = new ArrayList<>();
-        dateTimeList.add(new String("10:00"));
-        dateTimeList.add(new String("12:00"));
-        dateTimeList.add(new String("14:00"));
-        dateTimeList.add(new String("16:00"));
-        dateTimeList.add(new String("18:00"));
-        dateTimeList.add(new String("20:00"));
-        dateTimeList.add(new String("22:00"));
-        dateTimeList.add(new String("24:00"));
+        ArrayList<Item> dateTimeList = new ArrayList<>();
+        for(int i=12; i<24; i+=2){
+            Item item = new Item();
+            item.setDate(i+":00");
+            dateTimeList.add(item);
+        }
+//        dateTimeList.add(new String("10:00"));
+//        dateTimeList.add(new String("12:00"));
+//        dateTimeList.add(new String("14:00"));
+//        dateTimeList.add(new String("16:00"));
+//        dateTimeList.add(new String("18:00"));
+//        dateTimeList.add(new String("20:00"));
+//        dateTimeList.add(new String("22:00"));
+//        dateTimeList.add(new String("24:00"));
 
 
 
@@ -110,7 +108,7 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (dateTimeList.size() > 0) {
-            dateTimeListView.setAdapter(new DateTimePickerAdapter(dateTimeList, BeautyPickDateActivity.this, R.layout.items_date_time_picker_item));
+            dateTimeListView.setAdapter(new BaseItemAdapter(dateTimeList, BeautyPickDateActivity.this, R.layout.items_date_time_picker_item));
         }
         dateTimeListView.setLayoutManager(layoutManager);
 

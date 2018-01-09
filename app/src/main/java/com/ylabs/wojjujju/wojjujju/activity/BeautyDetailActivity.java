@@ -14,11 +14,11 @@ import android.widget.LinearLayout;
 
 import com.tmall.ultraviewpager.UltraViewPager;
 import com.ylabs.wojjujju.wojjujju.R;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyTabViewAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.SelectedItemAdapter;
 import com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager;
-import com.ylabs.wojjujju.wojjujju.entity.SelectedItem;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyQnAFragment;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyReviewFragment;
@@ -104,11 +104,19 @@ public class BeautyDetailActivity extends AppCompatActivity{
 
     void initBeautySelectedItemList(){
 
-        ArrayList<SelectedItem> beautySelectedItemArrayList = new ArrayList<SelectedItem>();
+        ArrayList<Item> beautySelectedItemArrayList = new ArrayList<Item>();
 
-        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+        for(int i=0; i<3; i++) {
+            Item item = new Item();
+            item.setImg("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ");
+            item.setTitle("예약일시 12.29 (화) 16:00");
+            item.setPrice("9,900원");
+            beautySelectedItemArrayList.add(item);
+        }
+
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
 //        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
 //        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
 //
@@ -123,7 +131,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautySelectedItemArrayList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new SelectedItemAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseItemAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 

@@ -7,34 +7,34 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.entity.QnaItem;
-import com.ylabs.wojjujju.wojjujju.viewholder.QnaItemViewHolder;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
+import com.ylabs.wojjujju.wojjujju.viewholder.BaseItemViewHolder;
 
 import java.util.ArrayList;
 
-public class QnaItemAdapter extends RecyclerView.Adapter<QnaItemViewHolder> {
-    private ArrayList<QnaItem> dataList;
+public class QnaItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
+    private ArrayList<Item> dataList;
     private Context con;
     private int layout;
 
     final int QUESTION = 0;
     final int ANSWER = 1;
 
-    public QnaItemAdapter(ArrayList<QnaItem> dataList, Context con, int layout) {
+    public QnaItemAdapter(ArrayList<Item> dataList, Context con, int layout) {
         this.dataList = dataList;
         this.con=con;
         this.layout= layout;
     }
     @Override
-    public QnaItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public BaseItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(layout, parent, false);
-        QnaItemViewHolder holder = new QnaItemViewHolder(view);
+        BaseItemViewHolder holder = new BaseItemViewHolder(view);
         return holder;
     }
     @Override
-    public void onBindViewHolder(final QnaItemViewHolder holder, int position) {
+    public void onBindViewHolder(final BaseItemViewHolder holder, int position) {
 
         switch (dataList.get(position).getType()){
             case QUESTION:

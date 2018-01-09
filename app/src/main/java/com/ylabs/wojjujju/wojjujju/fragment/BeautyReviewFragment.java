@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.ReviewItemAdapter;
-import com.ylabs.wojjujju.wojjujju.entity.ReviewItem;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
@@ -29,29 +29,49 @@ public class BeautyReviewFragment extends Fragment {
 
     void initBeautyReviewItemList(View v){
 
-        ArrayList<ReviewItem> beautyReviewItemArrayList = new ArrayList<ReviewItem>();
+        ArrayList<Item> beautyReviewItemArrayList = new ArrayList<Item>();
 
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
-        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+        for(int i=0; i<10; i++){
+            Item item = new Item();
+            item.setUserName("몽실이 엄마");
+            item.setContents("후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.");
+            item.setDate("2017.09.23");
+            item.setGrade(4);
+            item.setImg(null);
+
+            beautyReviewItemArrayList.add(item);
+
+
+        }
+
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
+//        beautyReviewItemArrayList.add(new ReviewItem("몽실이 엄마","후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.", "2017.09.23", 4, null));
 
 
 
-        RecyclerView beautyDefaultListView = (RecyclerView) v.findViewById(R.id.beauty_review_list_view);
+        RecyclerView beautyDefaultListView = v.findViewById(R.id.beauty_review_list_view);
         beautyDefaultListView.setHasFixedSize(true);
 
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity()){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        };
+
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautyReviewItemArrayList.size() > 0) {
-            beautyDefaultListView.setAdapter(new ReviewItemAdapter(beautyReviewItemArrayList, getActivity(), R.layout.items_beauty_detail_review_item));
+            beautyDefaultListView.setAdapter(new BaseItemAdapter(beautyReviewItemArrayList, getActivity(), R.layout.items_beauty_detail_review_item));
         }
         beautyDefaultListView.setLayoutManager(layoutManager);
 
