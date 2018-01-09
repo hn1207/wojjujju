@@ -45,7 +45,7 @@
             android:textSize="12sp"
             android:textColor="@color/mint"
             android:lineSpacingExtra="5sp"
-            tools:text="94%"
+            android:text="94%"
             />
 
         <TextView
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="@color/white"
-            tools:text="간신히 구조된 후 갈 곳을 잃은 두마리의 강아지"
+            android:text="간신히 구조된 후 갈 곳을 잃은 두마리의 강아지"
             />
 
 

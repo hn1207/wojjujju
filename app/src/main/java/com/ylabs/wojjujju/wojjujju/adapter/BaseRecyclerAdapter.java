@@ -40,6 +40,7 @@ public class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseItemViewHolder
         try{holder.price.setText(dataList.get(position).getPrice());}catch (Exception e){}
         try{holder.contents.setText(dataList.get(position).getContents());}catch (Exception e){}
         try{holder.userName.setText(dataList.get(position).getUserName());}catch (Exception e){}
+        try{holder.percent.setText(dataList.get(position).getPercent());}catch (Exception e){}
         try{holder.grade.setRating(dataList.get(position).getGrade());}catch (Exception e){}
 
 

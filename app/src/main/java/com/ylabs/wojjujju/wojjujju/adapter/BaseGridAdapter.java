@@ -53,30 +53,24 @@ public class BaseGridAdapter extends BaseAdapter {
 
         Item item = dataList.get(position);
 
-        // 캐시된 뷰가 없을 경우 새로 생성하고 뷰홀더를 생성한다
-        if(convertView == null)
-        {
+        if(convertView == null) {
             convertView = inflater.inflate(layout, viewGroup, false);
-
             holder = new BaseItemViewHolder(convertView);
-
-
             convertView.setTag(holder);
         }
-        // 캐시된 뷰가 있을 경우 저장된 뷰홀더를 사용한다
-        else
-        {
+        else{
             holder = (BaseItemViewHolder) convertView.getTag();
         }
 
 
-        try{holder.title.setText(dataList.get(position).getTitle());}catch (Exception e){}
-        try{Glide.with(con).load(dataList.get(position).getImg()).into(holder.img); }catch(Exception e){}
-        try{holder.date.setText(dataList.get(position).getDate());}catch (Exception e){}
-        try{holder.price.setText(dataList.get(position).getPrice());}catch (Exception e){}
-        try{holder.contents.setText(dataList.get(position).getContents());}catch (Exception e){}
-        try{holder.userName.setText(dataList.get(position).getUserName());}catch (Exception e){}
-        try{holder.grade.setRating(dataList.get(position).getGrade());}catch (Exception e){}
+        try{holder.title.setText(item.getTitle());}catch (Exception e){}
+        try{Glide.with(con).load(item.getImg()).into(holder.img); }catch(Exception e){}
+        try{holder.date.setText(item.getDate());}catch (Exception e){}
+        try{holder.price.setText(item.getPrice());}catch (Exception e){}
+        try{holder.contents.setText(item.getContents());}catch (Exception e){}
+        try{holder.userName.setText(item.getUserName());}catch (Exception e){}
+        try{holder.grade.setRating(item.getGrade());}catch (Exception e){}
+        try{holder.percent.setText(dataList.get(position).getPercent());}catch (Exception e){}
 
 
         return convertView;
