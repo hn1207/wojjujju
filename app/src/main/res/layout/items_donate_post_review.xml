@@ -12,7 +12,6 @@
         android:id="@+id/img"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="@color/warm_grey"
         />
 
 
@@ -24,12 +23,12 @@
 
         <TextView
             android:id="@+id/contents"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:lineSpacingExtra="6sp"
             android:textColor="#303030"
             android:textSize="14sp"
-            tools:text="댓글내용이 들어갑니다. 댓글내용이 들어갑니다.댓글내용이 들어갑니다." />
+            tools:text="댓글 내용이 들어갑니다. 댓글 내용이 들어갑니다.댓글 내용이 들어갑니다." />
 
         <LinearLayout
             android:layout_marginTop="9dp"

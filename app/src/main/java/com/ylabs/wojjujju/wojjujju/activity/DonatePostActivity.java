@@ -1,9 +1,7 @@
 package com.ylabs.wojjujju.wojjujju.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,20 +11,12 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
 import com.tmall.ultraviewpager.UltraViewPager;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.BeautyDefaultItemAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.TabViewAdapter;
 import com.ylabs.wojjujju.wojjujju.custom.HorizontalProgressView;
-import com.ylabs.wojjujju.wojjujju.custom.RecyclerItemClickListener;
-import com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyQnAFragment;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyReviewFragment;
 
 import java.util.ArrayList;
 
@@ -59,8 +49,8 @@ public class DonatePostActivity extends AppCompatActivity {
 
         for (int i = 0; i < 10; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/beauty.jpeg");
-            item.setContents("댓글내용이 들어갑니다. 댓글내용이 들어갑니다.댓글내용이 들어갑니다.");
+            item.setImg("http://13.125.46.183/woojjujju/user.png");
+            item.setContents("댓글 내용이 들어갑니다. 댓글 내용이 들어갑니다.댓글 내용이 들어갑니다.");
             item.setUserName("장지후");
             item.setDate("2017.10.03");
             dataList.add(item);

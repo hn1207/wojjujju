@@ -23,7 +23,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="225dp"
-                android:background="@android:color/darker_gray" />
+                android:background="@drawable/donate_detail2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,8 +50,11 @@
                     android:lineSpacingExtra="11sp"
                     android:text="우쭈쭈는 투명하게 기부내역을 공개합니다."
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:layout_marginBottom="15dp"/>
             </LinearLayout>
+
+
 
         </FrameLayout>
 

@@ -10,20 +10,24 @@
 
 
 
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
     <LinearLayout
         android:layout_marginTop="21dp"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="105dp"
+
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@color/soft_grey"
+        android:background="@drawable/round_full_grey"
         android:gravity="center"
         android:orientation="vertical">
 
         <TextView
-
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:gravity="center"
@@ -44,49 +48,53 @@
     </LinearLayout>
 
 
-
     <LinearLayout
-        android:layout_marginTop="33dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="221dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-        <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
 
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <TextView
-                android:gravity="center"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="0p"
-                android:textColor="@color/warm_grey"
-                android:textSize="30sp" />
 
             <TextView
-                android:layout_marginLeft="9dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:background="@drawable/round_grey"
+                android:gravity="center"
+                android:text="0p"
                 android:textColor="@color/warm_grey"
-                android:textSize="16sp"
-                tools:text="사용가능 23,900p" />
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="사용가능 23,900p"
+                android:textColor="@color/color_primary"
+                android:textSize="12sp" />
         </LinearLayout>
 
 
         <CheckBox
-
             android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/color_primary"
             android:text="모두 쓸래요" />
     </LinearLayout>
+</LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp">
+        android:layout_height="@dimen/toolbar_height"
 
 
+        >
         <TextView
             android:id="@+id/next"
             android:layout_width="0dp"

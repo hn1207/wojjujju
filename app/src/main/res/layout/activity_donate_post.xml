@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scrollView"
-
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -29,7 +29,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@android:color/darker_gray" />
+                    android:background="@drawable/donate_detail" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -40,8 +40,6 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-
-
                         android:layout_weight="1"
                         android:gravity="center_vertical|start"
                         android:text="←"
@@ -80,14 +78,14 @@
                         android:lineSpacingExtra="4sp"
                         android:text="제목이 들어갑니다. 제목이 들어갑니다. 제목이 들어갑니다."
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:layout_marginBottom="10dp"/>
 
                     <com.ylabs.wojjujju.wojjujju.custom.HorizontalProgressView
                         android:id="@+id/progress"
                         android:layout_width="match_parent"
                         android:layout_height="8dp"
                         android:layout_marginTop="5dp"
-
                         app:rcBackgroundColor="#f0f0f0"
                         app:rcBackgroundPadding="0dp"
                         app:rcProgressColor="@color/colorPrimary"
@@ -95,7 +93,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
 
                         <TextView
                             android:layout_width="0dp"
@@ -112,7 +111,7 @@
                             android:layout_weight="1"
                             android:gravity="end"
                             android:lineSpacingExtra="11sp"
-                            android:text="10,200,000원"
+                            android:text="달성률 56%"
                             android:textColor="@color/white"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -132,21 +131,48 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <TextView
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="12dp"
+                           android:layout_height="12dp"
+                           android:background="@drawable/people"
+                           android:layout_marginRight="5dp"/>
+
+                       <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:lineSpacingExtra="11sp"
                         android:text="참여인원"
                         android:textColor="@color/soft_black"
                         android:textSize="12sp" />
+                   </LinearLayout>
 
-                    <TextView
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="7sp"
-                        android:text="569명"
-                        android:textColor="@color/soft_black"
-                        android:textSize="16sp" />
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="7sp"
+                            android:text="569"
+                            android:textColor="@color/soft_black"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="7sp"
+                            android:text=" 명"
+                            android:textColor="@color/soft_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -156,21 +182,56 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="11sp"
-                        android:text="참여인원"
-                        android:textColor="@color/soft_black"
-                        android:textSize="12sp" />
+                        android:orientation="horizontal">
 
-                    <TextView
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:background="@drawable/flag"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="11sp"
+                            android:text="목표금액"
+                            android:textColor="@color/soft_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:lineSpacingExtra="7sp"
-                        android:text="569명"
+                        android:text="1,000"
                         android:textColor="@color/soft_black"
                         android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="7sp"
+                            android:text=" 만원"
+                            android:textColor="@color/soft_black"
+                            android:textSize="12sp" />
+
+
+
+
+                    </LinearLayout>
+
+
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -180,21 +241,47 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="11sp"
-                        android:text="참여인원"
-                        android:textColor="@color/soft_black"
-                        android:textSize="12sp" />
+                        android:orientation="horizontal">
 
-                    <TextView
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:background="@drawable/money"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="11sp"
+                            android:text="현재금액"
+                            android:textColor="@color/soft_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="7sp"
-                        android:text="569명"
-                        android:textColor="@color/soft_black"
-                        android:textSize="16sp" />
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="7sp"
+                            android:text="920"
+                            android:textColor="@color/soft_black"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="7sp"
+                            android:text=" 만원"
+                            android:textColor="@color/soft_black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
                 </LinearLayout>
 
 
@@ -205,11 +292,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="9sp"
-                android:paddingTop="15dp"
                 android:paddingLeft="19dp"
                 android:paddingRight="19dp"
                 android:text="자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. "
                 android:textColor="@color/soft_black"
+                android:layout_marginBottom="10dp"
                 android:textSize="14sp" />
 
             <com.tmall.ultraviewpager.UltraViewPager
@@ -234,7 +321,6 @@
                 android:orientation="vertical">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
@@ -250,11 +336,13 @@
                         android:layout_gravity="center"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@android:color/darker_gray" />
+                        android:background="@drawable/user" />
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="응원해 주세요"
+                        android:layout_marginLeft="10dp"
+                        android:hint="응원해 주세요!"
+                        android:textSize="14sp"
                         />
 
                 </LinearLayout>
