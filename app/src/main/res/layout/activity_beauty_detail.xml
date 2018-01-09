@@ -244,7 +244,7 @@
                 android:layout_gravity="end|center_horizontal"
                 android:layout_weight="0.1"
                 android:paddingTop="10dp"
-                android:text="▼"></TextView>
+                android:text="▼" />
         </LinearLayout>
 
         <LinearLayout
@@ -257,7 +257,7 @@
                 android:id="@+id/select_goods_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:layout_width="match_parent"

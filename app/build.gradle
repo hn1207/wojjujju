@@ -64,6 +64,11 @@ dependencies {
 
     //Date Picker
     compile 'com.github.jhonnyx2012:horizontal-picker:1.0.6'
+    /*
+     * RoundCornerProgressBar
+     */
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
 
 
 }

@@ -1,13 +1,16 @@
 package com.ylabs.wojjujju.wojjujju.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.ylabs.wojjujju.wojjujju.R;
+import com.ylabs.wojjujju.wojjujju.activity.DonatePostActivity;
 import com.ylabs.wojjujju.wojjujju.adapter.BaseGridAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
@@ -40,6 +43,13 @@ public class DonateHistoryFragment extends Fragment {
         }
 
         GridView gridView = v.findViewById(R.id.donate_info_list);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                startActivity(new Intent(getContext(), DonatePostActivity.class));
+            }
+        });
 
         gridView.setAdapter(new BaseGridAdapter(dataList, getActivity(), R.layout.items_donate_info));
 
