@@ -11,10 +11,8 @@
         android:id="@+id/img"
         android:padding="15dp"
         android:layout_width="120dp"
-        app:srcCompat="@color/warm_grey"
+        android:background="@drawable/beauty2"
         android:layout_height="match_parent" />
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:textColor="@color/soft_black"
+            android:textColor="@color/warm_grey"
             android:lineSpacingExtra="16sp"
             android:text="예약일시 12.29 (화) 16:00"
             />
