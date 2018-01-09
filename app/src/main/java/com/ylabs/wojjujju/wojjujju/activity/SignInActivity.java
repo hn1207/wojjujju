@@ -22,7 +22,9 @@ public class SignInActivity extends AppCompatActivity{
     }
 
     public void clickSignUpBtn(View v){
-
+        startActivity(new Intent(SignInActivity.this, SignUpActivity.class));
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        finish();
     }
 
 }
