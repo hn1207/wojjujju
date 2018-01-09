@@ -3,31 +3,16 @@ package com.ylabs.wojjujju.wojjujju.activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.LinearLayout;
 
 import com.github.jhonnyx2012.horizontalpicker.DatePickerListener;
 import com.github.jhonnyx2012.horizontalpicker.HorizontalPicker;
-import com.tmall.ultraviewpager.UltraViewPager;
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.BeautyTabViewAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.DateTimePickerAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.QnaItemAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.SelectedItemAdapter;
-import com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager;
-import com.ylabs.wojjujju.wojjujju.entity.SelectedItem;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyQnAFragment;
-import com.ylabs.wojjujju.wojjujju.fragment.BeautyReviewFragment;
 
 import org.joda.time.DateTime;
 
@@ -44,12 +29,14 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
 
         initDatePicker();
 
+
         findViewById(R.id.complete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
+
     }
 
     @Override
@@ -67,15 +54,15 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
         picker.setListener(this)
                 .setDays(20)
                 .setOffset(10)
-                .setDateSelectedColor(getResources().getColor(R.color.mint))
-                .setDateSelectedTextColor(Color.WHITE)
-                .setMonthAndYearTextColor(Color.WHITE)
-                .setTodayButtonTextColor(getResources().getColor(R.color.white))
-                .setTodayDateTextColor(getResources().getColor(R.color.white))
-                .setTodayDateBackgroundColor(getResources().getColor(R.color.mint))
-                .setUnselectedDayTextColor(Color.WHITE)
-                .setDayOfWeekTextColor(Color.WHITE)
-                .setUnselectedDayTextColor(getResources().getColor(R.color.warm_grey))
+                .setDateSelectedColor(getResources().getColor(R.color.soft_grey))
+                .setDateSelectedTextColor(getResources().getColor(R.color.soft_grey))
+                .setMonthAndYearTextColor(getResources().getColor(R.color.soft_grey))
+                .setTodayButtonTextColor(getResources().getColor(R.color.soft_grey))
+                .setTodayDateTextColor(getResources().getColor(R.color.soft_grey))
+                .setTodayDateBackgroundColor(getResources().getColor(R.color.soft_grey))
+                .setUnselectedDayTextColor(getResources().getColor(R.color.soft_grey))
+                .setDayOfWeekTextColor(getResources().getColor(R.color.soft_grey))
+                .setUnselectedDayTextColor(getResources().getColor(R.color.soft_grey))
                 .showTodayButton(false)
                 .init();
 

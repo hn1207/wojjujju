@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/date_time"
-        android:background="@color/mint"
+        android:background="@drawable/round_mint"
         android:layout_width="72dp"
         android:layout_height="30dp"
         android:gravity="center"
