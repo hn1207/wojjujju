@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -71,7 +71,7 @@ public class BeautyReviewFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautyReviewItemArrayList.size() > 0) {
-            beautyDefaultListView.setAdapter(new BaseItemAdapter(beautyReviewItemArrayList, getActivity(), R.layout.items_beauty_detail_review_item));
+            beautyDefaultListView.setAdapter(new BaseRecyclerAdapter(beautyReviewItemArrayList, getActivity(), R.layout.items_beauty_detail_review_item));
         }
         beautyDefaultListView.setLayoutManager(layoutManager);
 

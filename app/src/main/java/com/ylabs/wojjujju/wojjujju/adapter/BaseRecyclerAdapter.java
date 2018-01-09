@@ -13,12 +13,12 @@ import com.ylabs.wojjujju.wojjujju.viewholder.BaseItemViewHolder;
 
 import java.util.ArrayList;
 
-public class BaseItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
+public class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
     private ArrayList<Item> dataList;
     private Context con;
     private int layout;
 
-    public BaseItemAdapter(ArrayList<Item> dataList, Context con, int layout) {
+    public BaseRecyclerAdapter(ArrayList<Item> dataList, Context con, int layout) {
         this.dataList = dataList;
         this.con=con;
         this.layout= layout;
@@ -40,6 +40,7 @@ public class BaseItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
         try{holder.price.setText(dataList.get(position).getPrice());}catch (Exception e){}
         try{holder.contents.setText(dataList.get(position).getContents());}catch (Exception e){}
         try{holder.userName.setText(dataList.get(position).getUserName());}catch (Exception e){}
+        try{holder.percent.setText(dataList.get(position).getPercent());}catch (Exception e){}
         try{holder.grade.setRating(dataList.get(position).getGrade());}catch (Exception e){}
 
 

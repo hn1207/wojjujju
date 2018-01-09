@@ -18,10 +18,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.activity.BeautyActivity;
-import com.ylabs.wojjujju.wojjujju.activity.BeautyDetailActivity;
 import com.ylabs.wojjujju.wojjujju.activity.BeautyDetailServiceGuideActivity;
-import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.ylabs.wojjujju.wojjujju.custom.MyMapView;
 import com.ylabs.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
@@ -137,7 +135,7 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (beautyServiceGuideItemArrayList.size() > 0) {
-            itemListView.setAdapter(new BaseItemAdapter(beautyServiceGuideItemArrayList, getContext(), R.layout.items_default_item));
+            itemListView.setAdapter(new BaseRecyclerAdapter(beautyServiceGuideItemArrayList, getContext(), R.layout.items_default_item));
         }
         itemListView.setLayoutManager(layoutManager);
     }
@@ -166,7 +164,7 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (hairDresserItemArrayList.size() > 0) {
-            itemListView.setAdapter(new BaseItemAdapter(hairDresserItemArrayList, getContext(), R.layout.items_hairdresser_item));
+            itemListView.setAdapter(new BaseRecyclerAdapter(hairDresserItemArrayList, getContext(), R.layout.items_hairdresser_item));
         }
         itemListView.setLayoutManager(layoutManager);
     }

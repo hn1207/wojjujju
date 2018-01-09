@@ -14,9 +14,9 @@ import android.widget.LinearLayout;
 
 import com.tmall.ultraviewpager.UltraViewPager;
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
-import com.ylabs.wojjujju.wojjujju.adapter.BeautyTabViewAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.TabViewAdapter;
 import com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 import com.ylabs.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
@@ -50,7 +50,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
 
 
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.beauty_detail_tab_viewpager);
-        BeautyTabViewAdapter adapter = new BeautyTabViewAdapter(getSupportFragmentManager());
+        TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
         adapter.addFragment(beautyDetailInfoFragment, "상세정보");
         adapter.addFragment(beautyQnAFragment, "Q&A");
         adapter.addFragment(beautyReviewFragment, "후기");
@@ -131,7 +131,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautySelectedItemArrayList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseItemAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 

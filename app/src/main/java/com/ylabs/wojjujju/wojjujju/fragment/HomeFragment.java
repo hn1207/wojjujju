@@ -2,15 +2,20 @@ package com.ylabs.wojjujju.wojjujju.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.ylabs.wojjujju.wojjujju.R;
 
-import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.ylabs.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
@@ -24,7 +29,6 @@ public class HomeFragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
         initHotItemList(view);
         initSaleItemList(view);
         initRecommendItemList(view);
@@ -32,6 +36,38 @@ public class HomeFragment extends Fragment {
 
 
         return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        setHasOptionsMenu(true);
+//        initToolbar();
+    }
+
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.toolbar_main, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.action_search:
+                Toast.makeText(getContext(), R.string.search , Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.action_alarm:
+                Toast.makeText(getContext(), R.string.alarm , Toast.LENGTH_SHORT).show();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    void initToolbar(){
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("우쭈쭈");
+
     }
 
 
@@ -69,7 +105,7 @@ public class HomeFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (homeHotItemArrayList.size() > 0) {
-            hotItemListView.setAdapter(new BaseItemAdapter(homeHotItemArrayList, getContext(), R.layout.items_hot_item));
+            hotItemListView.setAdapter(new BaseRecyclerAdapter(homeHotItemArrayList, getContext(), R.layout.items_hot_item));
         }
         hotItemListView.setLayoutManager(layoutManager);
     }
@@ -143,7 +179,7 @@ public class HomeFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (homeRecommendItemArrayList.size() > 0) {
-            recommendItemListView.setAdapter(new BaseItemAdapter(homeRecommendItemArrayList, getContext(), R.layout.items_recommend_item));
+            recommendItemListView.setAdapter(new BaseRecyclerAdapter(homeRecommendItemArrayList, getContext(), R.layout.items_recommend_item));
         }
         recommendItemListView.setLayoutManager(layoutManager);
     }
@@ -177,7 +213,7 @@ public class HomeFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (homeHotPlaceItemArrayList.size() > 0) {
-            hotPlaceItemListView.setAdapter(new BaseItemAdapter(homeHotPlaceItemArrayList, getContext(), R.layout.items_default_item));
+            hotPlaceItemListView.setAdapter(new BaseRecyclerAdapter(homeHotPlaceItemArrayList, getContext(), R.layout.items_default_item));
         }
         hotPlaceItemListView.setLayoutManager(layoutManager);
     }

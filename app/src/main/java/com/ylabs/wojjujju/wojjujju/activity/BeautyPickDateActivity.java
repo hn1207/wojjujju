@@ -14,7 +14,7 @@ import com.github.jhonnyx2012.horizontalpicker.HorizontalPicker;
 import com.ylabs.wojjujju.wojjujju.R;
 
 
-import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 
@@ -106,7 +106,7 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (dateTimeList.size() > 0) {
-            dateTimeListView.setAdapter(new BaseItemAdapter(dateTimeList, BeautyPickDateActivity.this, R.layout.items_date_time_picker_item));
+            dateTimeListView.setAdapter(new BaseRecyclerAdapter(dateTimeList, BeautyPickDateActivity.this, R.layout.items_date_time_picker_item));
         }
         dateTimeListView.setLayoutManager(layoutManager);
 
