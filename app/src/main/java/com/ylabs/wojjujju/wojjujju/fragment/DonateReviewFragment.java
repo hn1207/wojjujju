@@ -32,7 +32,7 @@ public class DonateReviewFragment extends Fragment {
         for(int i=0; i<10; i++){
             Item item = new Item();
             item.setDate(null);
-            item.setPercent("기부후기");
+            item.setLabel("기부후기");
             item.setContents("여러분의 사랑으로 몽실이가 건강해졌어요!");
             item.setImg(null);
             dataList.add(item);
@@ -40,7 +40,7 @@ public class DonateReviewFragment extends Fragment {
 
         GridView gridView = v.findViewById(R.id.donate_info_list);
 
-        gridView.setAdapter(new BaseGridAdapter(dataList, getActivity(), R.layout.items_donate_info));
+        gridView.setAdapter(new BaseGridAdapter(dataList, getActivity(), R.layout.items_donate_review));
 
     }
 
