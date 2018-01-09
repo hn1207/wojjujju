@@ -1,50 +1,38 @@
 package com.ylabs.wojjujju.wojjujju.activity;
 
-import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.View;
-
 
 import com.ylabs.wojjujju.wojjujju.R;
-
-
 import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
-
-import org.joda.time.DateTime;
-
 import java.util.ArrayList;
 
-public class BeautyPaymentActivity extends AppCompatActivity {
+public class BeautyPaymentCompleteActivity extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beauty_payment);
+        setContentView(R.layout.activity_beauty_payment_complete);
 
-        initPaymentList();
+        initPaymentCompleteList();
 
-        findViewById(R.id.complete).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(BeautyPaymentActivity.this, BeautyPaymentCompleteActivity.class));
-                finish();
-            }
-        });
+//        findViewById(R.id.complete).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                finish();
+//            }
+//        });
     }
 
 
 
-    void initPaymentList(){
+    void initPaymentCompleteList(){
 
 
 
@@ -69,12 +57,12 @@ public class BeautyPaymentActivity extends AppCompatActivity {
 
 
 
-        RecyclerView paymentListView = (RecyclerView) findViewById(R.id.payment_item_list);
+        RecyclerView paymentListView = (RecyclerView) findViewById(R.id.payment_complete_item_list);
         paymentListView.setHasFixedSize(true);
 
 
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this){
+        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentCompleteActivity.this){
             @Override
             public boolean canScrollVertically() {
                 return false;
@@ -83,7 +71,7 @@ public class BeautyPaymentActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseItemAdapter(paymentItemArrayList, BeautyPaymentActivity.this, R.layout.items_beauty_payment_item));
+            paymentListView.setAdapter(new BaseItemAdapter(paymentItemArrayList, BeautyPaymentCompleteActivity.this, R.layout.items_beauty_payment_item));
         }
         paymentListView.setLayoutManager(layoutManager);
 

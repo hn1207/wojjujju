@@ -1,5 +1,6 @@
 package com.ylabs.wojjujju.wojjujju.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,8 +18,12 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.ylabs.wojjujju.wojjujju.R;
+import com.ylabs.wojjujju.wojjujju.activity.BeautyActivity;
+import com.ylabs.wojjujju.wojjujju.activity.BeautyDetailActivity;
+import com.ylabs.wojjujju.wojjujju.activity.BeautyDetailServiceGuideActivity;
 import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
 import com.ylabs.wojjujju.wojjujju.custom.MyMapView;
+import com.ylabs.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -113,8 +118,19 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
 
 
 
-
         RecyclerView itemListView = (RecyclerView) v.findViewById(R.id.service_guide_item_list);
+
+        itemListView.addOnItemTouchListener(
+                new RecyclerItemClickListener(getActivity(), itemListView ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        // do whatever
+                        startActivity(new Intent(getActivity(), BeautyDetailServiceGuideActivity.class));
+                    }
+
+                    @Override public void onLongItemClick(View view, int position) {
+                        // do whatever
+                    }
+                }));
 //        itemListView.setHasFixedSize(true);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());

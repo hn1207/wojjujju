@@ -81,7 +81,7 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
         ArrayList<Item> dateTimeList = new ArrayList<>();
         for(int i=12; i<24; i+=2){
             Item item = new Item();
-            item.setDate(i+":00");
+            item.setDate(i + ":00");
             dateTimeList.add(item);
         }
 //        dateTimeList.add(new String("10:00"));
