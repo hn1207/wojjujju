@@ -11,6 +11,7 @@ import android.widget.GridView;
 
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.activity.DonatePostActivity;
+import com.ylabs.wojjujju.wojjujju.activity.DonatePostPaymentDetailByCashActivity;
 import com.ylabs.wojjujju.wojjujju.adapter.BaseGridAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
@@ -24,6 +25,12 @@ public class DonatePostPaymentByCashFragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.items_donate_payment_by_cash, container, false);
 
+        view.findViewById(R.id.next).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), DonatePostPaymentDetailByCashActivity.class));
+            }
+        });
 
 
         return view;
