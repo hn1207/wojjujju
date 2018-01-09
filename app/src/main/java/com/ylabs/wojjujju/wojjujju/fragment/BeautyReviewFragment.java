@@ -34,7 +34,7 @@ public class BeautyReviewFragment extends Fragment {
         for(int i=0; i<10; i++){
             Item item = new Item();
             item.setUserName("몽실이 엄마");
-            item.setContents("후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.");
+            item.setContents("후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다.");
             item.setDate("2017.09.23");
             item.setGrade(4);
             item.setImg(null);
