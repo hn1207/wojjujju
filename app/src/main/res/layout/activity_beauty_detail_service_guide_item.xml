@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <LinearLayout
@@ -39,7 +39,20 @@
         android:textSize="14sp"
         android:textColor="@color/soft_black"
         android:lineSpacingExtra="9sp"
-        android:text="서비스에 대한 설명이들어갑니다. 서비스에 대한 설명이들어갑니다.서비스에 대한 설명이들어갑니다.서비스에 대한 설명이들어갑니다.서비스에 대한 설명이들어갑니다.서비스에 대한 설명이들어갑니다."
+        android:text="서비스에 대한 설명이 들어갑니다. 서비스에 대한 설명이 들어갑니다.서비스에 대한 설명이 들어갑니다.서비스에 대한 설명이 들어갑니다.서비스에 대한 설명이 들어갑니다.서비스에 대한 설명이 들어갑니다."
         />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/haircut"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/haircut2"
+        android:layout_margin="10dp"
+        />
 </LinearLayout>
