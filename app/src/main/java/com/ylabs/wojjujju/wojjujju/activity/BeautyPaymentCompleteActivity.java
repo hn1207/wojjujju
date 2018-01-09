@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.ylabs.wojjujju.wojjujju.R;
-import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -71,7 +71,7 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseItemAdapter(paymentItemArrayList, BeautyPaymentCompleteActivity.this, R.layout.items_beauty_payment_item));
+            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, BeautyPaymentCompleteActivity.this, R.layout.items_beauty_payment_item));
         }
         paymentListView.setLayoutManager(layoutManager);
 

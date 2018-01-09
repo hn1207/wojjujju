@@ -1,24 +1,19 @@
 package com.ylabs.wojjujju.wojjujju.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 
 
 import com.ylabs.wojjujju.wojjujju.R;
 
 
-import com.ylabs.wojjujju.wojjujju.adapter.BaseItemAdapter;
+import com.ylabs.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 
-
-import org.joda.time.DateTime;
 
 import java.util.ArrayList;
 
@@ -83,7 +78,7 @@ public class BeautyPaymentActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseItemAdapter(paymentItemArrayList, BeautyPaymentActivity.this, R.layout.items_beauty_payment_item));
+            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, BeautyPaymentActivity.this, R.layout.items_beauty_payment_item));
         }
         paymentListView.setLayoutManager(layoutManager);
 

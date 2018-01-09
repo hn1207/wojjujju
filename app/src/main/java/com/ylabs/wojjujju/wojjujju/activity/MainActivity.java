@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.design.widget.NavigationView;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -34,6 +35,12 @@ import devlight.io.library.ntb.NavigationTabBar;
 public class MainActivity extends BaseDrawerActivity {
 
 
+    final int HOME_FRAGMENT = 0;
+    final int CATEGORY_FRAGMENT = 1;
+    final int DONATE_FRAGMENT = 2;
+    final int MYPAGE_FRAGMENT = 3;
+    final int VIEWMORE_FRAGMENT = 4;
+
     HomeFragment homeFragment;
     CategoryFragment categoryFragment;
     MyPageFragment myPageFragment;
@@ -41,6 +48,8 @@ public class MainActivity extends BaseDrawerActivity {
     DonateFragment donateFragment;
 
     HomeViewPager viewPager;
+
+    int currentPosition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +61,7 @@ public class MainActivity extends BaseDrawerActivity {
         initBottomBar();
     }
 
-    void initBottomBar(){
+    void initBottomBar() {
 
         homeFragment = new HomeFragment();
         categoryFragment = new CategoryFragment();
@@ -62,6 +71,7 @@ public class MainActivity extends BaseDrawerActivity {
 
 
         viewPager = findViewById(R.id.view_pager);
+
 
         MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(homeFragment, "1");
@@ -84,6 +94,7 @@ public class MainActivity extends BaseDrawerActivity {
                 ).title("홈")
                         .build()
         );
+        //Active color 투명으로 한뒤 selectedIcon 을 Primary 로해서 바꿔주는 방법이 있다. 나중에 하자
         models.add(
                 new NavigationTabBar.Model.Builder(
                         getResources().getDrawable(R.drawable.activity_main_category_icon),
@@ -113,46 +124,90 @@ public class MainActivity extends BaseDrawerActivity {
                         .build()
         );
 
+
         navigationTabBar.setModels(models);
 
 
-        navigationTabBar.setViewPager(viewPager , 0);
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+                switch (position) {
+                    case HOME_FRAGMENT:
+                        initToolbar("우쭈쭈");
+                        break;
+                    case CATEGORY_FRAGMENT:
+                        viewPager.setCurrentItem(currentPosition, true);
+
+                        drawer.openDrawer(GravityCompat.START);
+                        return;
+//                        setTitle("카테고리");
+//                        break;
+                    case DONATE_FRAGMENT:
+                        initToolbar("기부");
+//                        getSupportActionBar().setTitle("기부");
+                        break;
+                    case MYPAGE_FRAGMENT:
+                        initToolbar("마이페이지");
+//                        getSupportActionBar().setTitle("마이페이지");
+                        break;
+                    case VIEWMORE_FRAGMENT:
+                        initToolbar("더보기");
+//                        getSupportActionBar().setTitle("더보기");
+                        break;
+
+
+                }
+                currentPosition=position;
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+        navigationTabBar.setViewPager(viewPager, 0);
         navigationTabBar.setBadgeTitleColor(Color.WHITE);
         navigationTabBar.setIsSwiped(false);
+
+
+
+
+
     }
 
 
-    public class MyFragmentPagerAdapter extends FragmentPagerAdapter
-    {
+    public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragments = new ArrayList<>();
         private final List<String> mFragmentTitles = new ArrayList<>();
 
-        public MyFragmentPagerAdapter(FragmentManager fm)
-        {
+        public MyFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
-        public void addFragment(Fragment fragment, String title)
-        {
+        public void addFragment(Fragment fragment, String title) {
             mFragments.add(fragment);
             mFragmentTitles.add(title);
         }
 
         @Override
-        public Fragment getItem(int position)
-        {
+        public Fragment getItem(int position) {
             return mFragments.get(position);
         }
 
         @Override
-        public int getCount()
-        {
+        public int getCount() {
             return mFragments.size();
         }
 
         @Override
-        public CharSequence getPageTitle(int position)
-        {
+        public CharSequence getPageTitle(int position) {
             return mFragmentTitles.get(position);
         }
     }

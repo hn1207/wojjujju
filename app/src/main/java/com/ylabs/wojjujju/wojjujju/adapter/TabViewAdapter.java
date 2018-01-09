@@ -6,12 +6,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BeautyTabViewAdapter extends FragmentPagerAdapter
+public class TabViewAdapter extends FragmentPagerAdapter
 {
     private final List<Fragment> mFragments = new ArrayList<>();
     private final List<String> mFragmentTitles = new ArrayList<>();
 
-    public BeautyTabViewAdapter(FragmentManager fm)
+    public TabViewAdapter(FragmentManager fm)
     {
         super(fm);
     }

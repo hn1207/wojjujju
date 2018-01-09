@@ -18,22 +18,26 @@ import com.ylabs.wojjujju.wojjujju.R;
 
 
 public class BaseDrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+    public static DrawerLayout drawer;
 
     void initToolbar(String title){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         toolbar.setTitle(title);
         toolbar.setTitleTextColor(getResources().getColor(R.color.color_primary));
 
 
+        setSupportActionBar(toolbar);
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
+
+
+
         toggle.syncState();
         toolbar.setNavigationIcon(R.drawable.toolbar_nav_icon);
 
@@ -61,39 +65,6 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.toolbar_main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-
-        switch (id) {
-            case R.id.action_search:
-                Toast.makeText(BaseDrawerActivity.this, R.string.search , Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.action_alarm:
-                Toast.makeText(BaseDrawerActivity.this, R.string.alarm , Toast.LENGTH_SHORT).show();
-                return true;
-        }
-
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {

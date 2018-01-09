@@ -13,12 +13,12 @@ import com.ylabs.wojjujju.wojjujju.viewholder.BaseItemViewHolder;
 
 import java.util.ArrayList;
 
-public class BaseItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
+public class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
     private ArrayList<Item> dataList;
     private Context con;
     private int layout;
 
-    public BaseItemAdapter(ArrayList<Item> dataList, Context con, int layout) {
+    public BaseRecyclerAdapter(ArrayList<Item> dataList, Context con, int layout) {
         this.dataList = dataList;
         this.con=con;
         this.layout= layout;
