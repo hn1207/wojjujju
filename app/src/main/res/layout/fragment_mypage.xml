@@ -8,14 +8,14 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/strong_white"
+        android:background="@color/soft_grey"
         android:orientation="vertical">
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="188dp"
-            android:background="@color/color_primary"
+            android:background="#f62b4c"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingLeft="15dp"
@@ -28,13 +28,15 @@
                 android:src="@drawable/profile"
                 android:scaleType="centerCrop"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:text="몽실이엄마"
-                android:textColor="@color/white"
-                android:textSize="10sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="몽실이엄마 >"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -56,12 +58,15 @@
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
+
                     <TextView
+                        android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="할인쿠폰"
+                        android:text="할인쿠폰 >"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -80,11 +85,13 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="적립금"
+                        android:text="적립금 >"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -97,16 +104,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2장"
+                        android:text="310점"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="할인쿠폰"
+                        android:text="기부점수 >"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="10sp" />
+
                 </LinearLayout>
 
 
@@ -127,7 +136,8 @@
             android:layout_height="144dp"
             android:background="@color/white"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -135,6 +145,7 @@
                 android:gravity="center_horizontal"
                 android:text="구매/배송 조회"
                 android:textColor="@color/soft_black"
+                android:layout_marginBottom="10dp"
                 android:textSize="12sp" />
 
             <LinearLayout
@@ -165,13 +176,14 @@
                         android:textSize="10sp" />
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text=">"
-                    android:textColor="@color/warm_grey"
-                    android:textSize="18sp" />
+
+                <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/chevron_right"
+                />
+
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -183,7 +195,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
+                        android:text="4"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -191,18 +203,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="입금대기"
+                        android:text="결제완료"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
                 </LinearLayout>
 
-                <TextView
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text=">"
-                    android:textColor="@color/warm_grey"
-                    android:textSize="18sp" />
+                    android:src="@drawable/chevron_right"
+                    />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -214,7 +225,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
+                        android:text="2"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -222,18 +233,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="입금대기"
+                        android:text="배송준비중"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
                 </LinearLayout>
 
-                <TextView
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text=">"
-                    android:textColor="@color/warm_grey"
-                    android:textSize="18sp" />
+                    android:src="@drawable/chevron_right"
+                    />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -245,7 +255,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
+                        android:text="3"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -253,18 +263,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="입금대기"
+                        android:text="배송중"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
                 </LinearLayout>
 
-                <TextView
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text=">"
-                    android:textColor="@color/warm_grey"
-                    android:textSize="18sp" />
+                    android:src="@drawable/chevron_right"
+                    />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -276,7 +285,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
+                        android:text="6"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -284,7 +293,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="입금대기"
+                        android:text="배송완료"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
                 </LinearLayout>
@@ -300,194 +309,12 @@
                 android:gravity="center_horizontal"
                 android:text="최근 3개월동안 구매하신 내역이 조회됩니다."
                 android:textColor="@color/warm_grey"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
         </LinearLayout>
 
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="144dp"
-                android:layout_marginTop="8dp"
-                android:background="@color/white"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="구매/배송 조회"
-                    android:textColor="@color/soft_black"
-                    android:textSize="12sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:textColor="@color/black"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="입금대기"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="10sp" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text=">"
-                        android:textColor="@color/warm_grey"
-                        android:textSize="18sp" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:textColor="@color/black"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="입금대기"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="10sp" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text=">"
-                        android:textColor="@color/warm_grey"
-                        android:textSize="18sp" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:textColor="@color/black"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="입금대기"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="10sp" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text=">"
-                        android:textColor="@color/warm_grey"
-                        android:textSize="18sp" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:textColor="@color/black"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="입금대기"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="10sp" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text=">"
-                        android:textColor="@color/warm_grey"
-                        android:textSize="18sp" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:textColor="@color/black"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="입금대기"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="10sp" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:gravity="center_horizontal"
-                    android:text="최근 3개월동안 구매하신 내역이 조회됩니다."
-                    android:textColor="@color/warm_grey"
-                    android:textSize="10sp" />
-
-            </LinearLayout>
 
 
             <LinearLayout
@@ -503,6 +330,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:text="예약 조회"
+                    android:layout_marginBottom="10dp"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
 
@@ -524,7 +352,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0"
+                            android:text="1"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
 
@@ -537,13 +365,12 @@
                             android:textSize="10sp" />
                     </LinearLayout>
 
-                    <TextView
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text=">"
-                        android:textColor="@color/warm_grey"
-                        android:textSize="18sp" />
+                        android:src="@drawable/chevron_right"
+                        />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -555,7 +382,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0"
+                            android:text="4"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
 
@@ -568,13 +395,12 @@
                             android:textSize="10sp" />
                     </LinearLayout>
 
-                    <TextView
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text=">"
-                        android:textColor="@color/warm_grey"
-                        android:textSize="18sp" />
+                        android:src="@drawable/chevron_right"
+                        />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -586,7 +412,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0"
+                            android:text="6"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
 
@@ -610,7 +436,7 @@
                     android:gravity="center_horizontal"
                     android:text="최근 3개월동안 구매하신 내역이 조회됩니다."
                     android:textColor="@color/warm_grey"
-                    android:textSize="10sp" />
+                    android:textSize="11sp" />
 
             </LinearLayout>
 
@@ -629,6 +455,7 @@
                     android:gravity="center_horizontal"
                     android:text="구매/예약/신청 정보"
                     android:textColor="@color/soft_black"
+                    android:layout_marginBottom="15dp"
                     android:textSize="12sp" />
 
                 <LinearLayout
@@ -645,10 +472,10 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:background="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:layout_width="26dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/purchase"
+                            android:scaleType="centerCrop"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -674,10 +501,10 @@
 
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:background="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:layout_width="26dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/reservation"
+                            android:scaleType="centerCrop"/>
 
 
                         <TextView
@@ -704,10 +531,10 @@
 
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:background="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:layout_width="26dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/adopt_mypage"
+                            android:scaleType="centerCrop"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -733,10 +560,10 @@
 
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:background="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:layout_width="26dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/cancel_mypage"
+                            android:scaleType="centerCrop"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -751,14 +578,7 @@
                 </LinearLayout>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="11dp"
-                    android:gravity="center_horizontal"
-                    android:text="최근 3개월동안 구매하신 내역이 조회됩니다."
-                    android:textColor="@color/warm_grey"
-                    android:textSize="10sp" />
+
 
             </LinearLayout>
 
@@ -788,17 +608,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="찜하기"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:textColor="@color/soft_black"
+                            android:textSize="14sp" />
 
-                        <TextView
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text=">"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:src="@drawable/chevron_right"
+                            android:scaleType="centerCrop"
+                            />
+
                     </LinearLayout>
 
                     <View
@@ -818,17 +638,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="최근 본 것"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:textColor="@color/soft_black"
+                            android:textSize="14sp" />
 
-                        <TextView
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text=">"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:src="@drawable/chevron_right"
+                            android:scaleType="centerCrop"
+                            />
                     </LinearLayout>
 
 
@@ -862,8 +681,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="문의 내역"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:textColor="@color/soft_black"
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -883,8 +702,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="FAQ 자주묻는 질문"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:textColor="@color/soft_black"
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -919,17 +738,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="고객센터 전화걸기"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:textColor="@color/color_primary"
+                            android:textSize="14sp" />
 
-                        <TextView
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text=">"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:src="@drawable/chevron_right"
+                            android:scaleType="centerCrop"
+                            />
                     </LinearLayout>
 
 
@@ -964,17 +782,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="나의 게시글"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:textColor="@color/soft_black"
+                            android:textSize="14sp" />
 
-                        <TextView
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text=">"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:src="@drawable/chevron_right"
+                            android:scaleType="centerCrop"
+                            />
                     </LinearLayout>
 
                     <View
@@ -993,17 +810,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="나의 후기"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp" />
+                            android:textColor="@color/soft_black"
+                            android:textSize="14sp" />
 
-                        <TextView
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:text=">"
-                            android:textColor="@color/warm_grey"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:src="@drawable/chevron_right"
+                            android:scaleType="centerCrop"
+                            />
                     </LinearLayout>
 
 
