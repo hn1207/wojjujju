@@ -81,7 +81,7 @@
                         android:textSize="16sp"
                         android:layout_marginBottom="10dp"/>
 
-                    <com.ylabs.wojjujju.wojjujju.custom.HorizontalProgressView
+                    <com.rootup.wojjujju.wojjujju.custom.HorizontalProgressView
                         android:id="@+id/progress"
                         android:layout_width="match_parent"
                         android:layout_height="8dp"
