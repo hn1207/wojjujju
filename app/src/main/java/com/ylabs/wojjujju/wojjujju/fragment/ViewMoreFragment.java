@@ -36,7 +36,7 @@ public class ViewMoreFragment extends Fragment {
         ArrayList<Item> homeSaleItemList = new ArrayList<>();
         for(int i=0; i<10; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/fassion.jpg");
+            item.setImg("http://13.125.46.183/woojjujju/festival.png");
             item.setTitle("반려동물과 함께하는 서울대학교 반려동물 한마당");
             homeSaleItemList.add(item);
         }
@@ -72,8 +72,9 @@ public class ViewMoreFragment extends Fragment {
 
         for(int i=0; i<10; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/cushion.jpg");
-            item.setTitle("잘자는 아기 고양이 너무 기여워!!");
+            item.setImg("http://13.125.46.183/woojjujju/movie.png");
+
+            item.setTitle("잘자는 아기 고양이");
             homeHotItemArrayList.add(item);
         }
 
@@ -98,7 +99,7 @@ public class ViewMoreFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (homeHotItemArrayList.size() > 0) {
-            hotItemListView.setAdapter(new BaseRecyclerAdapter(homeHotItemArrayList, getContext(), R.layout.items_hot_item));
+            hotItemListView.setAdapter(new BaseRecyclerAdapter(homeHotItemArrayList, getContext(), R.layout.items_hot_movie));
         }
         hotItemListView.setLayoutManager(layoutManager);
     }

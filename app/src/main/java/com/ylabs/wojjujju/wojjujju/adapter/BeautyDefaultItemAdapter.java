@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.entity.Item;
 import com.ylabs.wojjujju.wojjujju.viewholder.BaseItemViewHolder;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 public class BeautyDefaultItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
     private ArrayList<Item> dataList;
     private Context con;
+
 
     public BeautyDefaultItemAdapter(ArrayList<Item> dataList, Context con) {
         this.dataList = dataList;
@@ -51,8 +53,10 @@ public class BeautyDefaultItemAdapter extends RecyclerView.Adapter<BaseItemViewH
         }
 
         Glide.with(con)
+                .applyDefaultRequestOptions(RequestOptions.centerCropTransform())
                 .load(dataList.get(position).getImg())
                 .into(holder.img);
+
 
 
     }
