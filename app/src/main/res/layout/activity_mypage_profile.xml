@@ -65,14 +65,30 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
-                    android:lineSpacingExtra="10sp"
-                    android:text="몽실이엄마"
-                    android:textColor="#dd000000"
-                    android:textSize="14sp" />
+                    android:id="@+id/update_nickname"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="10sp"
+                        android:text="몽실이엄마"
+                        android:textColor="#dd000000"
+                        android:textSize="14sp" />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:lineSpacingExtra="10sp"
+                        android:text="edit"
+                        android:textColor="#dd000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -82,7 +98,9 @@
                     android:textColor="@color/warm_grey"
                     android:textSize="12sp" />
 
-                <EditText
+                <TextView
+                    android:id="@+id/update_summary"
+                    android:background="@drawable/round_grey"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -170,8 +188,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
                 android:layout_marginTop="7dp">
 
 
@@ -265,6 +281,7 @@
 
 
         <LinearLayout
+            android:id="@+id/update_phone_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
@@ -305,6 +322,7 @@
 
 
         <LinearLayout
+            android:id="@+id/update_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"

@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.ylabs.wojjujju.wojjujju.R;
 import com.ylabs.wojjujju.wojjujju.activity.MyPageProfileActivity;
+import com.ylabs.wojjujju.wojjujju.activity.PurchaseHistoryActivity;
 
 public class MyPageFragment extends Fragment {
 
@@ -32,6 +33,43 @@ public class MyPageFragment extends Fragment {
 
             }
         });
+
+        view.findViewById(R.id.adopt_history).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), PurchaseHistoryActivity.class));
+
+            }
+        });
+
+        view.findViewById(R.id.book_history).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), PurchaseHistoryActivity.class));
+
+            }
+        });
+
+
+        view.findViewById(R.id.cancel_history).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), PurchaseHistoryActivity.class));
+
+            }
+        });
+
+
+        view.findViewById(R.id.purchase_history).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), PurchaseHistoryActivity.class));
+
+            }
+        });
+
+
+
 
         return view;
     }

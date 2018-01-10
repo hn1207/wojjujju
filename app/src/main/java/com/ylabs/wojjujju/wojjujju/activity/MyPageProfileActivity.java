@@ -22,6 +22,35 @@ public class MyPageProfileActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mypage_profile);
 
+        findViewById(R.id.update_phone_no).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MyPageProfileActivity.this, UpdatePhoneNoActivity.class));
+            }
+        });
+
+        findViewById(R.id.update_nickname).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MyPageProfileActivity.this, UpdateNickNameActivity.class));
+
+            }
+        });
+        findViewById(R.id.update_summary).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MyPageProfileActivity.this, UpdateSummaryActivity.class));
+
+            }
+        });
+
+        findViewById(R.id.update_password).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MyPageProfileActivity.this, UpdatePasswordActivity.class));
+
+            }
+        });
         initMemoriesAlbumItemList();
     }
 
