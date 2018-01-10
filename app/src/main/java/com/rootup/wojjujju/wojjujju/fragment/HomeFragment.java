@@ -1,5 +1,6 @@
 package com.rootup.wojjujju.wojjujju.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,8 @@ import android.widget.Toast;
 
 import com.rootup.wojjujju.wojjujju.R;
 
+import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
+import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -33,6 +36,14 @@ public class HomeFragment extends Fragment {
         initSaleItemList(view);
         initRecommendItemList(view);
         initHotPlaceItemList(view);
+
+
+        view.findViewById(R.id.beauty).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), BeautyActivity.class));
+            }
+        });
 
 
         return view;

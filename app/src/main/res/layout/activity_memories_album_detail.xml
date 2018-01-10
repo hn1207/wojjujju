@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_height"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="←"
+                        android:textColor="@color/color_primary"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:paddingRight="16dp"
+                        android:gravity="end|center_vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/setting"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="28dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="60dp">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/strong_white"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="5sp"
+                            android:text="함께한지\n98일 째"
+                            android:textAlignment="center"
+
+                            android:textColor="@color/soft_black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/profile"
+                            android:layout_marginTop="12dp"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            app:srcCompat="@color/warm_grey" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:paddingBottom="18dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingTop="13dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="10sp"
+                                android:text="뽀롱이뽀롱 "
+                                android:textColor="@color/soft_black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="10sp"
+                                android:text="남"
+                                android:textColor="@color/soft_black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_marginTop="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="10sp"
+                            android:text="주인님과 함께해서 좋아요! :) "
+                            android:textColor="@color/soft_black"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingExtra="10sp"
+                                    android:text="태어난 날"
+                                    android:textColor="@color/soft_black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingExtra="10sp"
+                                    android:text="2017.04.17"
+                                    android:textColor="@color/soft_black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingExtra="10sp"
+                                    android:text="함께한 날"
+                                    android:textColor="@color/soft_black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingExtra="10sp"
+                                    android:text="2017.07.28"
+                                    android:textColor="@color/soft_black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_marginTop="9dp"
+                            android:layout_height="wrap_content">
+
+
+                            <com.rootup.wojjujju.wojjujju.custom.HorizontalProgressView
+                                android:id="@+id/progress"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="5dp"
+                                app:rcBackgroundColor="#f0f0f0"
+                                app:rcBackgroundPadding="0dp"
+                                app:rcProgressColor="@color/colorPrimary"
+                                app:rcSecondaryProgressColor="@color/warm_grey" />
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/soft_black"
+                                android:gravity="center"
+                                android:text="물"
+                                />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_marginTop="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="10sp"
+                                android:textColor="@color/soft_black"
+                                android:text="추억 lv.1"
+                                />
+                            <TextView
+                                android:gravity="end|center_vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="10sp"
+                                android:textColor="@color/soft_black"
+                                android:text="0%"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="start|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="우리의 추억 0개"
+                    android:textColor="@color/soft_black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center_vertical"
+                    android:layout_marginRight="17dp"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/soft_black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <GridView
+                android:id="@+id/data_list"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:numColumns="3"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_menu_camera"
+            android:layout_gravity="bottom|right|end"/>
+    </FrameLayout>
+
+
+
+
+
+</ScrollView>

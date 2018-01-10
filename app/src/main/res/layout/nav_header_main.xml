@@ -339,6 +339,7 @@
 
 
         <LinearLayout
+            android:id="@+id/btn_memories_album"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

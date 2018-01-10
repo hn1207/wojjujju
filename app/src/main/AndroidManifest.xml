@@ -223,6 +223,12 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".activity.FAQActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.MemoriesAlbumActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.MemoriesAlbumDetailActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.MemoriesAlbumProfileActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
 
     </application>
