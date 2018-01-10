@@ -32,10 +32,10 @@
         <activity
             android:name=".activity.SplashActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name=".activity.SignInActivity"
@@ -51,7 +51,7 @@
         </activity>
 
         <activity
-            android:name=".activity.ProfileActivity"
+            android:name=".activity.SignInProfileActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <!--<intent-filter>-->
             <!--<action android:name="android.intent.action.MAIN" />-->
@@ -141,6 +141,16 @@
 
         <activity android:name=".activity.DonatePostPaymentCompleteActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+
+        <activity android:name=".activity.MyPageProfileActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

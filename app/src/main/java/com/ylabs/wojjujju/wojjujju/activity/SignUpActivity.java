@@ -24,7 +24,7 @@ public class SignUpActivity extends AppCompatActivity{
 
 
     public void clickSignUpBtn(View v){
-        startActivity(new Intent(SignUpActivity.this, ProfileActivity.class));
+        startActivity(new Intent(SignUpActivity.this, SignInProfileActivity.class));
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         finish();
     }
