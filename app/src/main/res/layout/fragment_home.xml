@@ -25,18 +25,6 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
-                android:text="함께 수영하기 좋은 펜션"
-                android:textColor="@color/white"
-                android:textAlignment="center"
-                android:layout_gravity="top"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:gravity="center"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:text="바로 보기"
                 android:textColor="@color/white"
@@ -45,19 +33,33 @@
                 android:layout_gravity="bottom|right"
                 android:padding="3dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="15dp"
                 android:textSize="11sp"
                 android:gravity="center"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_height="44dp"
                 android:layout_gravity="bottom"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="5dp"
                 android:gravity="left|bottom"
-                android:text="이번 주말\n 반려견과 함께 나들이 어때요?"
+                android:text=" 이번 주말\n 반려견과 함께 나들이 어때요?"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="함께 수영하기 좋은 펜션"
+                android:textSize="14sp"
+                android:textAlignment="center"
                 android:textColor="@color/white" />
 
         </FrameLayout>
@@ -273,6 +275,13 @@
 
         </LinearLayout>
         <!-- 이게 인기있어요 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/soft_grey"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -317,6 +326,11 @@
         </LinearLayout>
 
         <!-- 놓칠 수 없는 1 DAY 특가 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/soft_grey"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -361,6 +375,11 @@
         </LinearLayout>
 
         <!-- 이걸 추천해요 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/soft_grey"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -405,6 +424,11 @@
         </LinearLayout>
 
         <!-- 요즘 핫한 장소 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/soft_grey"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -448,7 +472,11 @@
 
         </LinearLayout>
 
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/soft_grey"
+            />
 
     </LinearLayout>
 
