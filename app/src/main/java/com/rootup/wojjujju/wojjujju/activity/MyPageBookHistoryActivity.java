@@ -2,16 +2,10 @@ package com.rootup.wojjujju.wojjujju.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.HeaderViewListAdapter;
 import android.widget.ListView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseHeaderListViewAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
-import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -71,7 +65,7 @@ public class MyPageBookHistoryActivity extends AppCompatActivity{
 
         ListView dataListView = (ListView) findViewById(R.id.data_list);
 
-        dataListView.setAdapter(new BaseHeaderListViewAdapter(dataList, MyPageBookHistoryActivity.this, R.layout.items_book_history));
+        dataListView.setAdapter(new BaseHeaderListViewAdapter(dataList, MyPageBookHistoryActivity.this, R.layout.items_mypage_book_history));
 
 
 
