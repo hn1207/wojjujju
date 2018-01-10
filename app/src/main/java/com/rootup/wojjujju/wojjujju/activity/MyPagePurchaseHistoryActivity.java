@@ -2,6 +2,7 @@ package com.rootup.wojjujju.wojjujju.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -31,16 +32,24 @@ public class MyPagePurchaseHistoryActivity extends AppCompatActivity{
             Item item = new Item();
             item.setTitle("푹신푹신 허그미 쿠션");
             item.setDescription("특대사이즈 100cm red");
-            item.setPrice("12,200원 (2개)");
+            item.setPrice("12,200원");
             item.setDate("06/23\n도착예정");
             item.setLabel("배송 조회");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/cushion2.png");
 
             dataList.add(item);
         }
 
 
         RecyclerView dataListView = (RecyclerView) findViewById(R.id.data_list);
+
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getApplicationContext(),
+                LinearLayoutManager.VERTICAL);
+        dividerItemDecoration.setDrawable(getApplicationContext().getResources().getDrawable(R.drawable.divider));
+
+        dataListView.addItemDecoration(dividerItemDecoration);
+
+
         dataListView.setHasFixedSize(true);
 
         dataListView.addOnItemTouchListener(new RecyclerItemClickListener(MyPagePurchaseHistoryActivity.this, dataListView, new RecyclerItemClickListener.OnItemClickListener() {

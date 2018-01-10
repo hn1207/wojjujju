@@ -20,8 +20,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="←"
+            android:textStyle="bold"
             android:textColor="@color/color_primary"
-            android:textSize="20sp" />
+            android:layout_marginLeft="16dp"
+            android:textSize="23sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,20 +31,20 @@
             android:layout_marginLeft="18dp"
             android:text="핸드폰 번호 변경"
             android:textColor="@color/color_primary"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:gravity="end|center_vertical"
-
             android:layout_height="match_parent">
-            <TextView
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
-                android:text="체"
-                android:textColor="@color/color_primary"
-                android:textSize="20sp" />
+                android:src="@drawable/check"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="16dp"/>
+
         </LinearLayout>
 
 
@@ -72,9 +74,12 @@
 
             <EditText
                 android:layout_marginTop="10dp"
-                android:layout_width="200dp"
+                android:layout_width="224dp"
                 android:layout_height="40dp"
                 android:background="@drawable/round_grey"
+                android:text="01039157777"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
                 android:ems="10"
                 />
 
@@ -84,7 +89,7 @@
                 android:background="@drawable/round_red_solid_red"
                 android:textColor="@color/strong_white"
                 android:text="번호 인증하기"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="10dp"
@@ -101,6 +106,10 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@drawable/round_grey"
+            android:textColor="@color/warm_grey"
+            android:hint="인증번호를 입력하세요"
+            android:paddingLeft="15dp"
+            android:textSize="14sp"
             android:ems="10"
             />
 

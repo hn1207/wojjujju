@@ -36,10 +36,10 @@ public class MyPageLikeHistoryActivity extends AppCompatActivity{
             item = new Item();
             item.setTitle("푹신푹신 허그미 쿠션 ");
             item.setDescription("특대사이즈 100cm red");
-            item.setPrice("12,000원");
-            item.setDate("2017.12.03 취소");
-            item.setLabel("취소 완료");
-            item.setImg(null);
+//            item.setPrice("12,000원");
+            item.setDate("12,200원");
+//            item.setLabel("취소 완료");
+            item.setImg("http://13.125.46.183/woojjujju/cushion2.png");
             item.setType(CONTENTS);
 
             dataList.add(item);
@@ -53,11 +53,11 @@ public class MyPageLikeHistoryActivity extends AppCompatActivity{
         for(int i=0; i<5; i++){
             item = new Item();
             item.setTitle("[댕댕이 미용]");
-            item.setDescription("");
+            item.setDescription("무슨무슨 컷 (+10,000원 발톱정리)\n예약일시 12.29 (화) 16:00");
 //            item.setPrice("12,000원");
-            item.setDate("2017.12.29. 16:00 취소 ");
-            item.setLabel("취소 완료");
-            item.setImg(null);
+            item.setDate("12,000원");
+//          item.setLabel("취소 완료");
+            item.setImg("http://13.125.46.183/woojjujju/beauty.jpeg");
             item.setType(CONTENTS);
             dataList.add(item);
         }

@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -18,8 +19,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="←"
+            android:textStyle="bold"
             android:textColor="@color/color_primary"
-            android:textSize="20sp" />
+
+            android:textSize="23sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,7 +30,7 @@
             android:layout_marginLeft="18dp"
             android:text="구매 내역"
             android:textColor="@color/color_primary"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -42,7 +45,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/soft_black"
-            android:text="총 20건"
+            android:text="총 2건"
             />
     </LinearLayout>
 
@@ -52,5 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" />
+
+
 
 </LinearLayout>

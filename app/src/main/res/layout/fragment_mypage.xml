@@ -8,7 +8,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/soft_grey"
+        android:background="@color/warm_grey"
         android:orientation="vertical">
 
         <LinearLayout
@@ -24,8 +24,8 @@
                 android:id="@+id/profile"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/profile"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -34,7 +34,6 @@
                 android:text="몽실이엄마 >"
                 android:textColor="@color/white"
                 android:textSize="10sp" />
-
 
 
             <LinearLayout
@@ -59,9 +58,9 @@
 
 
                     <TextView
-                        android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="할인쿠폰 >"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -69,11 +68,11 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/point"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:id="@+id/point"
                     android:orientation="vertical">
 
                     <TextView
@@ -84,9 +83,9 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="적립금 >"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -108,9 +107,9 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="기부점수 >"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -124,9 +123,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_marginTop="172dp"
             android:orientation="vertical">
 
@@ -141,10 +140,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:gravity="center_horizontal"
                     android:text="구매/배송 조회"
                     android:textColor="@color/soft_black"
-                    android:layout_marginBottom="10dp"
                     android:textSize="12sp" />
 
                 <LinearLayout
@@ -180,8 +179,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:src="@drawable/chevron_right"
-                        />
+                        android:src="@drawable/chevron_right" />
 
 
                     <LinearLayout
@@ -211,8 +209,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:src="@drawable/chevron_right"
-                        />
+                        android:src="@drawable/chevron_right" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -241,8 +238,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:src="@drawable/chevron_right"
-                        />
+                        android:src="@drawable/chevron_right" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -271,8 +267,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:src="@drawable/chevron_right"
-                        />
+                        android:src="@drawable/chevron_right" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -313,9 +308,6 @@
             </LinearLayout>
 
 
-
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="144dp"
@@ -327,9 +319,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
                     android:gravity="center_horizontal"
                     android:text="예약 조회"
-                    android:layout_marginBottom="10dp"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
 
@@ -368,8 +360,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:src="@drawable/chevron_right"
-                        />
+                        android:src="@drawable/chevron_right" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -398,8 +389,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:src="@drawable/chevron_right"
-                        />
+                        android:src="@drawable/chevron_right" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -451,10 +441,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
                     android:gravity="center_horizontal"
                     android:text="구매/예약/신청 정보"
                     android:textColor="@color/soft_black"
-                    android:layout_marginBottom="15dp"
                     android:textSize="12sp" />
 
                 <LinearLayout
@@ -473,8 +463,8 @@
                         <ImageView
                             android:layout_width="26dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/purchase"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/purchase" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -502,8 +492,8 @@
                         <ImageView
                             android:layout_width="26dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/reservation"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/reservation" />
 
 
                         <TextView
@@ -532,8 +522,8 @@
                         <ImageView
                             android:layout_width="26dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/adopt_mypage"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/adopt_mypage" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -561,8 +551,8 @@
                         <ImageView
                             android:layout_width="26dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/cancel_mypage"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cancel_mypage" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -575,8 +565,6 @@
 
 
                 </LinearLayout>
-
-
 
 
             </LinearLayout>
@@ -614,9 +602,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:src="@drawable/chevron_right"
                             android:scaleType="centerCrop"
-                            />
+                            android:src="@drawable/chevron_right" />
 
                     </LinearLayout>
 
@@ -644,9 +631,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:src="@drawable/chevron_right"
                             android:scaleType="centerCrop"
-                            />
+                            android:src="@drawable/chevron_right" />
                     </LinearLayout>
 
 
@@ -665,7 +651,6 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/opinion_history"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="7dp">
@@ -692,7 +677,6 @@
                         android:background="@color/warm_grey" />
 
                     <LinearLayout
-                        android:id="@+id/faq"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -735,9 +719,15 @@
                         android:gravity="center"
                         android:orientation="horizontal">
 
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/phone"
+                            android:scaleType="centerCrop"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
                             android:text="고객센터 전화걸기"
                             android:textColor="@color/color_primary"
                             android:textSize="14sp" />
@@ -746,9 +736,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:src="@drawable/chevron_right"
                             android:scaleType="centerCrop"
-                            />
+                            android:src="@drawable/chevron_right" />
                     </LinearLayout>
 
 
@@ -773,7 +762,6 @@
                     android:layout_marginTop="7dp">
 
                     <LinearLayout
-                        android:id="@+id/post_history"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -791,9 +779,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:src="@drawable/chevron_right"
                             android:scaleType="centerCrop"
-                            />
+                            android:src="@drawable/chevron_right" />
                     </LinearLayout>
 
                     <View
@@ -802,7 +789,6 @@
                         android:background="@color/warm_grey" />
 
                     <LinearLayout
-                        android:id="@+id/review_history"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -820,9 +806,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:src="@drawable/chevron_right"
                             android:scaleType="centerCrop"
-                            />
+                            android:src="@drawable/chevron_right" />
                     </LinearLayout>
 
 

@@ -39,7 +39,7 @@ public class MyPageCancelHistoryActivity extends AppCompatActivity{
             item.setPrice("12,000원");
             item.setDate("2017.12.03 취소");
             item.setLabel("취소 완료");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/cushion2.png");
             item.setType(CONTENTS);
 
             dataList.add(item);
@@ -57,7 +57,7 @@ public class MyPageCancelHistoryActivity extends AppCompatActivity{
 //            item.setPrice("12,000원");
             item.setDate("2017.12.29. 16:00 취소 ");
             item.setLabel("취소 완료");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/beauty.jpeg");
             item.setType(CONTENTS);
             dataList.add(item);
         }

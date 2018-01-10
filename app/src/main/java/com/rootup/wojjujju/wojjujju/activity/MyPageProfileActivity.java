@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
@@ -60,7 +58,7 @@ public class MyPageProfileActivity extends AppCompatActivity{
 
         for(int i=0; i<10; i++) {
             Item item = new Item();
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
             item.setTitle("다롱이");
             item.setLabel("F");
             dateList.add(item);

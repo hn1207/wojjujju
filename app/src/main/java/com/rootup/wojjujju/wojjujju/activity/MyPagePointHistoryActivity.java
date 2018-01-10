@@ -2,12 +2,11 @@ package com.rootup.wojjujju.wojjujju.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ListView;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BaseHeaderListViewAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
@@ -43,6 +42,16 @@ public class MyPagePointHistoryActivity extends AppCompatActivity{
 
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.data_list);
+
+
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getApplicationContext(),
+                LinearLayoutManager.VERTICAL);
+        dividerItemDecoration.setDrawable(getApplicationContext().getResources().getDrawable(R.drawable.divider));
+
+        recyclerView.addItemDecoration(dividerItemDecoration);
+
+
+
         recyclerView.setHasFixedSize(true);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(MyPagePointHistoryActivity.this);
