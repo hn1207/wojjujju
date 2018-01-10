@@ -137,7 +137,8 @@
             <!--</intent-filter>-->
         </activity>
 
-        <activity android:name=".activity.DonatePaymentActivity"
+        <activity
+            android:name=".activity.DonatePaymentActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <!--<intent-filter>-->
             <!--<action android:name="android.intent.action.MAIN" />-->
@@ -145,7 +146,8 @@
             <!--</intent-filter>-->
         </activity>
 
-        <activity android:name=".activity.DonatePostPaymentDetailByCashActivity"
+        <activity
+            android:name=".activity.DonatePostPaymentDetailByCashActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <!--<intent-filter>-->
             <!--<action android:name="android.intent.action.MAIN" />-->
@@ -153,13 +155,12 @@
             <!--</intent-filter>-->
         </activity>
 
-        <activity android:name=".activity.DonatePostPaymentCompleteActivity"
+        <activity
+            android:name=".activity.DonatePostPaymentCompleteActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
 
         </activity>
-
-
 
 
         <activity
@@ -198,8 +199,9 @@
         <activity
             android:name=".activity.MyPageBookHistoryActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".activity.MyPageAdoptHistoryActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".activity.MyPageAdoptHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
 
 
         <activity android:name=".activity.MyPageCancelHistoryActivity"
@@ -221,8 +223,28 @@
             <!--</intent-filter>-->
         </activity>
         <activity android:name=".activity.MyPageCurrentHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".activity.MyPageCouponHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.MyPagePostHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.MyPageOpinionHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.MyPageReviewHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".activity.FAQActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".activity.MyPageCouponHistoryActivity"
+        <activity android:name=".activity.MemoriesAlbumActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.MemoriesAlbumDetailActivity"
+
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.MemoriesAlbumProfileActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
 

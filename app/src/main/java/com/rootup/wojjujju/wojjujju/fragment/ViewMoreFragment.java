@@ -1,5 +1,6 @@
 package com.rootup.wojjujju.wojjujju.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rootup.wojjujju.wojjujju.R;
+import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -28,6 +30,15 @@ public class ViewMoreFragment extends Fragment {
         setHasOptionsMenu(true);
         initNewVideoItemList(view);
         initAnimalVideoItemList(view);
+
+        view.findViewById(R.id.memories_album).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MemoriesAlbumActivity.class));
+
+            }
+        });
+
         return view;
     }
 

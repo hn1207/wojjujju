@@ -51,6 +51,15 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
                 startActivity(new Intent(BaseDrawerActivity.this, BeautyActivity.class));
             }
         });
+
+        headerView.findViewById(R.id.btn_memories_album).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BaseDrawerActivity.this, MemoriesAlbumActivity.class));
+            }
+        });
+
+
     }
 
     @Override

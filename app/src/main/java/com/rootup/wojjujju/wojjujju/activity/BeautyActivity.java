@@ -38,10 +38,10 @@ public class BeautyActivity extends BaseDrawerActivity{
     void initSpinner(){
         // Spinner
         Spinner defaultSpinner = (Spinner)findViewById(R.id.default_filter);
-        ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(this,
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this,
                 R.array.default_filter, R.layout.spinner);
-        yearAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        defaultSpinner.setAdapter(yearAdapter);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        defaultSpinner.setAdapter(adapter);
 
         TextView placeSpinner = (TextView)findViewById(R.id.place_filter);
         placeSpinner.setOnClickListener(new View.OnClickListener() {

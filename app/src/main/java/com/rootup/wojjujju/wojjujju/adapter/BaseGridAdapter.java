@@ -71,6 +71,7 @@ public class BaseGridAdapter extends BaseAdapter {
         try{holder.userName.setText(item.getUserName());}catch (Exception e){}
         try{holder.grade.setRating(item.getGrade());}catch (Exception e){}
         try{holder.percent.setText(dataList.get(position).getPercent());}catch (Exception e){}
+        try{holder.label.setText(dataList.get(position).getLabel());}catch (Exception e){}
 
 
         return convertView;
