@@ -8,15 +8,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rootup.wojjujju.wojjujju.R;
+import com.rootup.wojjujju.wojjujju.activity.FAQActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageAdoptHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageBookHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageCancelHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageCouponHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageCurrentHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageLikeHistoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.MyPageOpinionHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPagePointHistoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.MyPagePostHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageProfileActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPagePurchaseHistoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.MyPageReviewHistoryActivity;
 
 public class MyPageFragment extends Fragment {
 
@@ -26,6 +30,38 @@ public class MyPageFragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.fragment_mypage, container, false);
 
+
+
+        view.findViewById(R.id.faq).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), FAQActivity.class));
+
+            }
+        });
+        view.findViewById(R.id.review_history).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MyPageReviewHistoryActivity.class));
+
+            }
+        });
+
+        view.findViewById(R.id.opinion_history).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MyPageOpinionHistoryActivity.class));
+
+            }
+        });
+
+        view.findViewById(R.id.post_history).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MyPagePostHistoryActivity.class));
+
+            }
+        });
 
         view.findViewById(R.id.coupon).setOnClickListener(new View.OnClickListener() {
             @Override
