@@ -34,7 +34,7 @@ public class DonateReviewFragment extends Fragment {
             item.setDate(null);
             item.setLabel("기부후기");
             item.setContents("여러분의 사랑으로 몽실이가 건강해졌어요!");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/donate.jpg");
             dataList.add(item);
         }
 

@@ -38,7 +38,7 @@ public class DonateHistoryFragment extends Fragment {
             item.setDate("5일 남음");
             item.setPercent("94%");
             item.setContents("간신히 구조된 후 갈 곳을 잃은 두마리의 강아지");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/donate2.png");
             dataList.add(item);
         }
 

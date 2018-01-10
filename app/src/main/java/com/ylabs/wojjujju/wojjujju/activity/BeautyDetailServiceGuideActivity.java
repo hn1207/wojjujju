@@ -34,7 +34,7 @@ public class BeautyDetailServiceGuideActivity extends AppCompatActivity{
             Item item = new Item();
             item.setTitle("무슨무슨 컷");
             item.setPrice("50,000원");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
             dataList.add(item);
         }
 

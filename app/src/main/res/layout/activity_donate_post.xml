@@ -29,7 +29,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/donate_detail" />
+                    android:src="@drawable/donate_detail"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                         <ImageView
                             android:layout_width="17dp"
                             android:layout_height="18dp"
-                            android:background="@drawable/share"
+                            android:src="@drawable/share"
                             android:gravity="center_vertical" />
 
                     </LinearLayout>
@@ -140,7 +140,7 @@
                        <ImageView
                            android:layout_width="12dp"
                            android:layout_height="12dp"
-                           android:background="@drawable/people"
+                           android:src="@drawable/people"
                            android:layout_marginRight="5dp"/>
 
                        <TextView
@@ -190,7 +190,7 @@
                         <ImageView
                             android:layout_width="12dp"
                             android:layout_height="12dp"
-                            android:background="@drawable/flag"
+                            android:src="@drawable/flag"
                             android:layout_marginRight="5dp"/>
 
                         <TextView
@@ -249,7 +249,7 @@
                         <ImageView
                             android:layout_width="12dp"
                             android:layout_height="12dp"
-                            android:background="@drawable/money"
+                            android:src="@drawable/money"
                             android:layout_marginRight="5dp"/>
 
                         <TextView
@@ -336,7 +336,7 @@
                         android:layout_gravity="center"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/user" />
+                        android:src="@drawable/user" />
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

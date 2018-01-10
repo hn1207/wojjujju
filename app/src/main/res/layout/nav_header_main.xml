@@ -80,7 +80,7 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/beauty"/>
+                        android:src="@drawable/beauty"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -102,7 +102,7 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/shopping"/>
+                        android:src="@drawable/shopping"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/date"/>
+                        android:src="@drawable/date"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -155,7 +155,7 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/edu"/>
+                        android:src="@drawable/edu"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -177,7 +177,7 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/adopt"/>
+                        android:src="@drawable/adopt"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -199,7 +199,7 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/sell"/>
+                        android:src="@drawable/sell"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -230,7 +230,7 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/hospital"/>
+                        android:src="@drawable/hospital"/>
 
                     <TextView
                         android:layout_width="wrap_content"
