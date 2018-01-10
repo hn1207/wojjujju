@@ -651,6 +651,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/opinion_history"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="7dp">
@@ -677,6 +678,7 @@
                         android:background="@color/warm_grey" />
 
                     <LinearLayout
+                        android:id="@+id/faq"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -762,6 +764,7 @@
                     android:layout_marginTop="7dp">
 
                     <LinearLayout
+                        android:id="@+id/post_history"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -789,6 +792,7 @@
                         android:background="@color/warm_grey" />
 
                     <LinearLayout
+                        android:id="@+id/review_history"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
