@@ -4,20 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/warm_grey"
+    android:background="@drawable/donate_complete"
     >
 
-    <TextView
+    <ImageView
         android:layout_marginTop="21dp"
         android:layout_marginRight="21dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textColor="@color/white"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/close"
         android:letterSpacing="-0.04"
         android:lineSpacingExtra="8sp"
         android:layout_gravity="end"
-        android:text="X"
+        android:id="@+id/close"
         />
 
     <TextView

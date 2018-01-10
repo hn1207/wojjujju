@@ -11,7 +11,7 @@
         android:id="@+id/img"
         android:padding="15dp"
         android:layout_width="120dp"
-        android:background="@drawable/beauty2"
+        android:src="@drawable/beauty2"
         android:layout_height="match_parent" />
 
     <LinearLayout

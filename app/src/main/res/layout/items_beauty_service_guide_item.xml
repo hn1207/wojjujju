@@ -13,7 +13,7 @@
         android:id="@+id/img"
         android:layout_width="85dp"
         android:layout_height="match_parent"
-        android:background="@drawable/beauty2"
+        android:src="@drawable/beauty2"
         android:padding="15dp" />
 
     <LinearLayout

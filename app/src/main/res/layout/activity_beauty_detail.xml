@@ -59,14 +59,15 @@
                         <ImageView
                             android:layout_width="17dp"
                             android:layout_height="18dp"
-                            android:background="@drawable/share"
+
+                            android:src="@drawable/share"
                             android:gravity="center_vertical" />
 
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginLeft="24dp"
-                            android:background="@drawable/favorite"
+                            android:src="@drawable/favorite"
                             android:gravity="center_vertical" />
 
                     </LinearLayout>

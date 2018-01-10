@@ -56,11 +56,14 @@
                 android:textSize="14sp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="164dp"
+                android:layout_height="30dp"
                 android:background="@drawable/round"
                 android:layout_marginLeft="13dp"
                 android:layout_marginRight="19dp"
+                android:hint="0원"
+                android:textAlignment="center"
+                android:textSize="12sp"
                 />
 
         </LinearLayout>
@@ -88,29 +91,35 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
                     <EditText
                         android:layout_weight="1"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:background="@drawable/round"
                         android:layout_marginRight="19dp"
                         />
+
                     <TextView
                         android:layout_width="80dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@drawable/round_red_solid_white"
                         android:lineSpacingExtra="10sp"
                         android:text="우편번호 검색"
-                        android:textColor="@color/soft_black"
-                        android:textSize="12sp" />
+                        android:textAlignment="center"
+                        android:textColor="@color/color_primary"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"/>
 
                 </LinearLayout>
 
 
                 <EditText
                     android:layout_marginTop="8dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
                     android:background="@drawable/round"
                     />
 
@@ -125,7 +134,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@color/soft_grey" />
+            android:background="@color/soft_grey"
+            android:layout_marginTop="15dp"/>
 
 
         <TextView
@@ -137,7 +147,7 @@
             android:lineSpacingExtra="10sp"
             android:text="납입수단"
             android:textColor="@color/soft_black"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
 
@@ -146,7 +156,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="18dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="15dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -156,7 +166,7 @@
                 android:gravity="center"
                 android:text="신용카드"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -167,7 +177,7 @@
                 android:gravity="center"
                 android:text="휴대폰결제"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -187,7 +197,7 @@
                 android:gravity="center"
                 android:text="카카오페이"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
             <TextView
@@ -199,7 +209,7 @@
                 android:gravity="center"
                 android:text="무통장 입금"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -224,13 +234,13 @@
                     android:text="PAYCO"
                     android:textStyle="bold"
                     android:textColor="@color/color_primary"
-                    android:textSize="16sp"/>
+                    android:textSize="14sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="  신용카드 결제"
                     android:textColor="@color/soft_black"
-                    android:textSize="16sp"/>
+                    android:textSize="12sp"/>
 
 
             </LinearLayout>
@@ -246,7 +256,7 @@
                 android:gravity="center"
                 android:text="네이버페이"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -260,17 +270,30 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="1dp"
             android:background="@color/soft_grey" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
 
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:buttonTint="@color/color_primary"
-            android:text="후원 약관 동의  (필수)" />
+            android:id="@+id/donate_text"
+            android:text="후원 약관 동의" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" (필수)"
+            android:textColor="@color/color_primary"/>
 
+        </LinearLayout>
 
     </LinearLayout>
 

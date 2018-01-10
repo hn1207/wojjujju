@@ -136,16 +136,30 @@
             <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <activity
-            android:name=".activity.DonatePaymentActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity
-            android:name=".activity.DonatePostPaymentDetailByCashActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
 
-        <activity
-            android:name=".activity.DonatePostPaymentCompleteActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".activity.DonatePaymentActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".activity.DonatePostPaymentDetailByCashActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".activity.DonatePostPaymentCompleteActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+
+        </activity>
+
+
 
 
         <activity
@@ -180,8 +194,10 @@
         <activity android:name=".activity.MyPageAdoptHistoryActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
+
         <activity android:name=".activity.MyPageCancelHistoryActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
     </application>
 
 </manifest>

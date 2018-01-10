@@ -40,7 +40,7 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
 
         for(int i=0; i<3; i++) {
             Item item = new Item();
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
             item.setTitle("[댕댕이 미용] ");
             item.setPrice("12,000원");
             item.setDate("예약일시 12.29 (화) 16:00 ");

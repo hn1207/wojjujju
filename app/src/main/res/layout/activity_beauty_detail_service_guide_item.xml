@@ -46,13 +46,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@drawable/haircut"
+        android:src="@drawable/haircut"
         />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="@drawable/haircut2"
+        android:src="@drawable/haircut2"
         android:layout_margin="10dp"
         />
 </LinearLayout>
