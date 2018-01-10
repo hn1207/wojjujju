@@ -5,11 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:textStyle="bold"
+                android:textColor="@color/color_primary"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="프로필 관리"
+                android:textColor="@color/color_primary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -19,11 +48,13 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="128dp"
+                android:background="@color/white"
                 >
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@color/warm_grey" />
+                    android:src="@drawable/mypage_profile_background"
+                    android:scaleType="centerCrop"/>
 
 
                 <ImageView
@@ -32,30 +63,12 @@
                     android:layout_gravity="end|bottom"
                     android:layout_marginBottom="20dp"
                     android:layout_marginRight="20dp"
-                    app:srcCompat="@color/white" />
+                    android:background="@drawable/small_camera" />
 
 
             </FrameLayout>
 
-            <FrameLayout
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_gravity="center">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:srcCompat="@color/black" />
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="end|bottom"
-                    android:layout_marginBottom="10dp"
-                    app:srcCompat="@color/white" />
-
-
-            </FrameLayout>
 
 
             <LinearLayout
@@ -63,13 +76,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="128dp"
                 android:gravity="center"
+                android:background="@color/white"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_marginTop="40dp"
                     android:id="@+id/update_nickname"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -96,17 +111,39 @@
                     android:lineSpacingExtra="12sp"
                     android:text="mongsil@naver.com"
                     android:textColor="@color/warm_grey"
+                    android:layout_marginBottom="10dp"
                     android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/update_summary"
                     android:background="@drawable/round_grey"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:textSize="14sp"
                     android:hint="한줄소개를 적어주세요." />
             </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/small_camera" />
+
+
+            </FrameLayout>
 
         </FrameLayout>
 
@@ -115,6 +152,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:background="@color/white"
             android:orientation="vertical">
 
             <LinearLayout
@@ -158,7 +196,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="144dp"
+            android:layout_height="128dp"
             android:layout_marginTop="8dp"
             android:background="@color/white"
             android:gravity="center"
@@ -175,6 +213,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
                     android:lineSpacingExtra="11sp"
@@ -182,7 +221,6 @@
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
 
-                ]
             </LinearLayout>
 
             <LinearLayout
@@ -203,14 +241,14 @@
                         android:layout_height="wrap_content"
                         android:text="6회"
                         android:textColor="@color/color_primary"
-                        android:textSize="20sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="총 기부횟수"
-                        android:textColor="@color/warm_grey"
+                        android:textColor="@color/soft_black"
                         android:textSize="10sp" />
                 </LinearLayout>
 
@@ -232,14 +270,14 @@
                         android:layout_height="wrap_content"
                         android:text="32,300원"
                         android:textColor="@color/color_primary"
-                        android:textSize="20sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="총 기부금액"
-                        android:textColor="@color/warm_grey"
+                        android:textColor="@color/soft_black"
                         android:textSize="10sp" />
                 </LinearLayout>
 
@@ -262,14 +300,14 @@
                         android:layout_height="wrap_content"
                         android:text="323점"
                         android:textColor="@color/color_primary"
-                        android:textSize="20sp" />
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="기부점수"
-                        android:textColor="@color/warm_grey"
+                        android:textColor="@color/soft_black"
                         android:textSize="10sp" />
                 </LinearLayout>
 
@@ -283,7 +321,8 @@
         <LinearLayout
             android:id="@+id/update_phone_no"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
+            android:background="@color/white"
             android:layout_marginTop="7dp"
             android:paddingBottom="15dp"
             android:paddingLeft="16dp"
@@ -302,8 +341,8 @@
                     android:layout_weight="1"
                     android:gravity="start|center_vertical"
                     android:text="핸드폰 번호 변경"
-                    android:textColor="@color/warm_grey"
-                    android:textSize="20sp" />
+                    android:textColor="@color/soft_black"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -311,10 +350,17 @@
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:gravity="end|center_vertical"
-                    android:text="010 - 3915 - 1777 >"
+                    android:text="010 - 3915 - 1777"
                     android:textColor="@color/warm_grey"
-                    android:textSize="20sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerCrop"/>
             </LinearLayout>
 
 
@@ -324,8 +370,9 @@
         <LinearLayout
             android:id="@+id/update_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:layout_marginTop="7dp"
+            android:background="@color/white"
             android:paddingBottom="15dp"
             android:paddingLeft="16dp"
             android:paddingRight="17dp"
@@ -343,19 +390,15 @@
                     android:layout_weight="1"
                     android:gravity="start|center_vertical"
                     android:text="계정 비밀번호 변경"
-                    android:textColor="@color/warm_grey"
-                    android:textSize="20sp" />
+                    android:textColor="@color/soft_black"
+                    android:textSize="14sp" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
                     android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:gravity="end|center_vertical"
-                    android:text=">"
-                    android:textColor="@color/warm_grey"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:scaleType="centerCrop"/>
             </LinearLayout>
 
 
@@ -367,6 +410,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
             android:orientation="vertical"
+            android:background="@color/white"
             android:paddingBottom="15dp"
             android:paddingLeft="16dp"
             android:paddingRight="17dp"
@@ -384,8 +428,8 @@
                     android:layout_weight="1"
                     android:gravity="start|center_vertical"
                     android:text="내 프로필 공개"
-                    android:textColor="@color/warm_grey"
-                    android:textSize="20sp" />
+                    android:textColor="@color/soft_black"
+                    android:textSize="14sp" />
 
 
                 <Switch
@@ -393,7 +437,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="end|center_vertical" />
+                    android:gravity="end|center_vertical"
+                    android:checked="true"
+                    android:trackTint="@color/color_primary"
+                    android:thumbTint="@color/color_primary"/>
 
 
             </LinearLayout>

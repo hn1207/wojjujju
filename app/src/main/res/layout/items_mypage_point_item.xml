@@ -10,8 +10,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="19dp"
-        android:orientation="vertical">
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,8 +22,8 @@
 
             <TextView
                 android:id="@+id/title"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="230dp"
+
                 android:gravity="start|center_vertical"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="11sp"
@@ -43,8 +46,8 @@
                     android:layout_height="wrap_content"
                     android:padding="3dp"
                     android:textSize="11sp"
-                    android:background="@drawable/round_mint"
-                    android:textColor="@color/white"
+
+                    android:textColor="@color/mint"
                     android:lineSpacingExtra="5sp"
                     tools:text="200원 적립"
                     />
@@ -60,6 +63,8 @@
             android:textColor="@color/soft_black"
             android:lineSpacingExtra="16sp"
             android:text="적립일 : 2017.09.24"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             />
 
 
@@ -68,5 +73,6 @@
 
 
     </LinearLayout>
+
 
 </LinearLayout>
