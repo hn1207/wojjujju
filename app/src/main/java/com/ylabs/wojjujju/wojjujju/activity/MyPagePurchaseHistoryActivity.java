@@ -1,6 +1,5 @@
 package com.ylabs.wojjujju.wojjujju.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,7 +13,7 @@ import com.ylabs.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class PurchaseHistoryActivity extends AppCompatActivity{
+public class MyPagePurchaseHistoryActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +43,10 @@ public class PurchaseHistoryActivity extends AppCompatActivity{
         RecyclerView dataListView = (RecyclerView) findViewById(R.id.data_list);
         dataListView.setHasFixedSize(true);
 
-        dataListView.addOnItemTouchListener(new RecyclerItemClickListener(PurchaseHistoryActivity.this, dataListView, new RecyclerItemClickListener.OnItemClickListener() {
+        dataListView.addOnItemTouchListener(new RecyclerItemClickListener(MyPagePurchaseHistoryActivity.this, dataListView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-//                startActivity(new Intent(PurchaseHistoryActivity.this, BeautyDetailServiceGuideItemActivity.class));
+//                startActivity(new Intent(MyPagePurchaseHistoryActivity.this, BeautyDetailServiceGuideItemActivity.class));
             }
 
             @Override
@@ -56,11 +55,11 @@ public class PurchaseHistoryActivity extends AppCompatActivity{
             }
         }));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(PurchaseHistoryActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(MyPagePurchaseHistoryActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
-            dataListView.setAdapter(new BaseRecyclerAdapter(dataList, PurchaseHistoryActivity.this, R.layout.items_purchase_history));
+            dataListView.setAdapter(new BaseRecyclerAdapter(dataList, MyPagePurchaseHistoryActivity.this, R.layout.items_purchase_history));
         }
         dataListView.setLayoutManager(layoutManager);
 

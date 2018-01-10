@@ -3,20 +3,16 @@ package com.ylabs.wojjujju.wojjujju.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.ylabs.wojjujju.wojjujju.R;
+import com.ylabs.wojjujju.wojjujju.activity.MyPageAdoptHistoryActivity;
+import com.ylabs.wojjujju.wojjujju.activity.MyPageBookHistoryActivity;
+import com.ylabs.wojjujju.wojjujju.activity.MyPageCancelHistoryActivity;
 import com.ylabs.wojjujju.wojjujju.activity.MyPageProfileActivity;
-import com.ylabs.wojjujju.wojjujju.activity.PurchaseHistoryActivity;
+import com.ylabs.wojjujju.wojjujju.activity.MyPagePurchaseHistoryActivity;
 
 public class MyPageFragment extends Fragment {
 
@@ -37,7 +33,7 @@ public class MyPageFragment extends Fragment {
         view.findViewById(R.id.adopt_history).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), PurchaseHistoryActivity.class));
+                startActivity(new Intent(getContext(), MyPageAdoptHistoryActivity.class));
 
             }
         });
@@ -45,7 +41,7 @@ public class MyPageFragment extends Fragment {
         view.findViewById(R.id.book_history).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), PurchaseHistoryActivity.class));
+                startActivity(new Intent(getContext(), MyPageBookHistoryActivity.class));
 
             }
         });
@@ -54,7 +50,7 @@ public class MyPageFragment extends Fragment {
         view.findViewById(R.id.cancel_history).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), PurchaseHistoryActivity.class));
+                startActivity(new Intent(getContext(), MyPageCancelHistoryActivity.class));
 
             }
         });
@@ -63,7 +59,7 @@ public class MyPageFragment extends Fragment {
         view.findViewById(R.id.purchase_history).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), PurchaseHistoryActivity.class));
+                startActivity(new Intent(getContext(), MyPagePurchaseHistoryActivity.class));
 
             }
         });
