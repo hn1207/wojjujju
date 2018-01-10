@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="120dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="19dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:gravity="start|center_vertical"
+                android:text="푹신푹신 허그미 쿠션"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:lineSpacingExtra="11sp"
+                android:text="X"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RatingBar
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/grade"
+                android:maxWidth="60dp"
+                android:maxHeight="10dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3"
+                android:progressTint="#ffd021"
+                android:stepSize="0.5"
+                android:max="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:textColor="@color/soft_black"
+                android:lineSpacingExtra="20sp"
+                android:text="("
+                />
+            <TextView
+                android:id="@+id/comment_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:textColor="@color/soft_black"
+                android:lineSpacingExtra="20sp"
+                android:text="785"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:textColor="@color/soft_black"
+                android:lineSpacingExtra="20sp"
+                android:text=")"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/color_primary"
+            android:lineSpacingExtra="3sp"
+            android:text="12,200원"
+            />
+
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="3sp"
+            android:text="서울시 서초구 서초동"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

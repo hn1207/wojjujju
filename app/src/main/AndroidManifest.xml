@@ -197,6 +197,15 @@
 
         <activity android:name=".activity.MyPageCancelHistoryActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".activity.MyPageLikeHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.MyPagePointHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.MyPageCurrentHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.MyPageCouponHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
 
     </application>
 

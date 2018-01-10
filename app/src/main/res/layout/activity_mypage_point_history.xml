@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
-            android:text="취소/교환 내역"
+            android:text="찜하기"
             android:textColor="@color/color_primary"
             android:textSize="14sp" />
 
@@ -40,30 +40,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:text="총 20건"
+            android:text="총 적립금"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:gravity="end|center_vertical"
-            android:layout_marginRight="17dp"
-            android:layout_weight="1">
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/color_primary"
+            android:lineSpacingExtra="10sp"
+            android:text="2,300원"
+            />
 
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="전체 삭제"
-                android:textColor="@color/soft_black"
-                android:textSize="12sp" />
-        </LinearLayout>
 
     </LinearLayout>
 
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/data_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

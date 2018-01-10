@@ -10,20 +10,20 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class MyPageCancelHistoryActivity extends AppCompatActivity{
+public class MyPageLikeHistoryActivity extends AppCompatActivity{
     final int HEADER = 0;
     final int CONTENTS = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mypage_cancel_history);
+        setContentView(R.layout.activity_mypage_like_history);
 
-        initCancelHistoryItem();
+        initLikeHistoryItem();
     }
 
 
-    void initCancelHistoryItem(){
+    void initLikeHistoryItem(){
 
         ArrayList<Item> dataList = new ArrayList<>();
 
@@ -67,7 +67,7 @@ public class MyPageCancelHistoryActivity extends AppCompatActivity{
 
         ListView dataListView = (ListView) findViewById(R.id.data_list);
 
-        dataListView.setAdapter(new BaseHeaderListViewAdapter(dataList, MyPageCancelHistoryActivity.this, R.layout.items_mypage_cancel_history));
+        dataListView.setAdapter(new BaseHeaderListViewAdapter(dataList, MyPageLikeHistoryActivity.this, R.layout.items_mypage_like_history));
 
 
 

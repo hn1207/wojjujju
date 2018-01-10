@@ -11,6 +11,10 @@ import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.MyPageAdoptHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageBookHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageCancelHistoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.MyPageCouponHistoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.MyPageCurrentHistoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.MyPageLikeHistoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.MyPagePointHistoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPageProfileActivity;
 import com.rootup.wojjujju.wojjujju.activity.MyPagePurchaseHistoryActivity;
 
@@ -22,10 +26,41 @@ public class MyPageFragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.fragment_mypage, container, false);
 
+
+        view.findViewById(R.id.coupon).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MyPageCouponHistoryActivity.class));
+
+            }
+        });
+
+        view.findViewById(R.id.current).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MyPageCurrentHistoryActivity.class));
+
+            }
+        });
         view.findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageProfileActivity.class));
+
+            }
+        });
+
+        view.findViewById(R.id.point).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MyPagePointHistoryActivity.class));
+
+            }
+        });
+        view.findViewById(R.id.like).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), MyPageLikeHistoryActivity.class));
 
             }
         });
