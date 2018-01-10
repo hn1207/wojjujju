@@ -23,10 +23,10 @@
 
             <ImageView
                 android:id="@+id/profile"
-
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@color/warm_grey" />
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"/>
 
             <TextView
                 android:layout_width="wrap_content"

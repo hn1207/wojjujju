@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:showIn="@layout/app_bar_main">
 
-    <com.ylabs.wojjujju.wojjujju.view.HomeViewPager
+    <com.rootup.wojjujju.wojjujju.view.HomeViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"

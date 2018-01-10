@@ -170,7 +170,7 @@
                     android:layout_height="56dp" />
             </android.support.design.widget.AppBarLayout>
 
-            <com.ylabs.wojjujju.wojjujju.custom.SwipeViewPager
+            <com.rootup.wojjujju.wojjujju.custom.SwipeViewPager
                 android:id="@+id/beauty_detail_tab_viewpager"
                 android:layout_width="match_parent"
                 android:layout_height="1200dp" />
