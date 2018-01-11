@@ -82,10 +82,7 @@ public class HomeFragment extends Fragment {
         return super.onOptionsItemSelected(item);
     }
 
-    void initToolbar(){
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("우쭈쭈");
 
-    }
 
 
     void initHotItemList(View view){

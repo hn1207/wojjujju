@@ -18,7 +18,7 @@ public class SignInProfileActivity extends AppCompatActivity{
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SignInProfileActivity.this, MainActivity.class));
+                startActivity(new Intent(SignInProfileActivity.this, SignInAddInfoActivity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 finish();
             }

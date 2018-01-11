@@ -45,7 +45,7 @@ public class  MainActivity extends BaseDrawerActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initToolbar("우쭈쭈");
+        initToolbar("쭈쭈쭈");
 
         initBottomBar();
     }
