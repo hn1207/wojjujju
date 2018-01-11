@@ -1,5 +1,6 @@
 package com.rootup.wojjujju.wojjujju.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rootup.wojjujju.wojjujju.R;
+import com.rootup.wojjujju.wojjujju.activity.BaseReviewEditActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
@@ -22,6 +24,13 @@ public class BaseReviewFragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.fragment_beauty_review, container, false);
         initBeautyReviewItemList(view);
+
+        view.findViewById(R.id.review_edit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), BaseReviewEditActivity.class));
+            }
+        });
 
         return view;
     }

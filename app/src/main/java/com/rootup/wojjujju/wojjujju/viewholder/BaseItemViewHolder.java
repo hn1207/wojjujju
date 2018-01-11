@@ -39,6 +39,7 @@ public class BaseItemViewHolder extends RecyclerView.ViewHolder {
     public TextView userName;
 
 
+    public TextView cnt;
 
 
 
@@ -62,6 +63,7 @@ public class BaseItemViewHolder extends RecyclerView.ViewHolder {
         try{contents = (TextView) v.findViewById(R.id.contents);}catch (Exception ignored){}
         try{qnaBackground = (LinearLayout) v.findViewById(R.id.qna_bg);}catch (Exception ignored){}
         try{userName = (TextView) v.findViewById(R.id.user_name);}catch (Exception ignored){}
+        try{cnt = (TextView) v.findViewById(R.id.cnt);}catch (Exception ignored){}
 
 
 

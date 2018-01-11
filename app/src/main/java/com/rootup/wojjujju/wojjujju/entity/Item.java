@@ -19,6 +19,15 @@ public class Item {
     int type;
     String userName;
 
+    int cnt;
+
+    public int getCnt() {
+        return cnt;
+    }
+
+    public void setCnt(int cnt) {
+        this.cnt = cnt;
+    }
 
     public String getImg() {
         return img;
