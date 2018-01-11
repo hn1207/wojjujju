@@ -14,7 +14,7 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class BeautyDetailServiceGuideActivity extends AppCompatActivity{
+public class HospitalDetailServiceGuideActivity extends AppCompatActivity{
 
 
 
@@ -32,7 +32,7 @@ public class BeautyDetailServiceGuideActivity extends AppCompatActivity{
         ArrayList<Item> dataList = new ArrayList<>();
         for(int i=0; i<20; i++){
             Item item = new Item();
-            item.setTitle("무슨무슨 컷");
+            item.setTitle("중성화 수술");
             item.setPrice("50,000원");
             item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
             dataList.add(item);
@@ -42,10 +42,10 @@ public class BeautyDetailServiceGuideActivity extends AppCompatActivity{
         RecyclerView dataListView = (RecyclerView) findViewById(R.id.data_list);
         dataListView.setHasFixedSize(true);
 
-        dataListView.addOnItemTouchListener(new RecyclerItemClickListener(BeautyDetailServiceGuideActivity.this, dataListView, new RecyclerItemClickListener.OnItemClickListener() {
+        dataListView.addOnItemTouchListener(new RecyclerItemClickListener(HospitalDetailServiceGuideActivity.this, dataListView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                startActivity(new Intent(BeautyDetailServiceGuideActivity.this, BeautyDetailServiceGuideItemActivity.class));
+                startActivity(new Intent(HospitalDetailServiceGuideActivity.this, HospitalDetailServiceGuideItemActivity.class));
             }
 
             @Override
@@ -54,11 +54,11 @@ public class BeautyDetailServiceGuideActivity extends AppCompatActivity{
             }
         }));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyDetailServiceGuideActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(HospitalDetailServiceGuideActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
-            dataListView.setAdapter(new BaseRecyclerAdapter(dataList, BeautyDetailServiceGuideActivity.this, R.layout.items_base_service_guide));
+            dataListView.setAdapter(new BaseRecyclerAdapter(dataList, HospitalDetailServiceGuideActivity.this, R.layout.items_base_service_guide));
         }
         dataListView.setLayoutManager(layoutManager);
 

@@ -11,7 +11,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BeautyDefaultItemAdapter;
+import com.rootup.wojjujju.wojjujju.adapter.BaseLikeDefaultItemAdapter;
 
 import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -47,7 +47,7 @@ public class BeautyActivity extends BaseDrawerActivity{
         placeSpinner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(BeautyActivity.this, BeautyPlaceFilterActivity.class));
+                startActivity(new Intent(BeautyActivity.this, BasePlaceFilterActivity.class));
             }
         });
 
@@ -56,7 +56,7 @@ public class BeautyActivity extends BaseDrawerActivity{
 
     void initBeautyDefaultItemList(){
 
-        ArrayList<Item> beautyItemArrayList = new ArrayList<Item>();
+        ArrayList<Item> dataList = new ArrayList<Item>();
 
         for(int i=0; i<10; i++) {
             Item item = new Item();
@@ -69,7 +69,7 @@ public class BeautyActivity extends BaseDrawerActivity{
             item.setDescription("예약취소 연기 가능");
             item.setLabel("예약 특가");
             item.setLike(i % 2);
-            beautyItemArrayList.add(item);
+            dataList.add(item);
         }
 
 //        beautyItemArrayList.add(new BeautyItem("http://13.125.46.183/woojjujju/beauty.jpeg", "댕댕이 미용", "0", "서울시 서초구 서초동", 4, 785, "예약취소 연기 가능","예약특가", 0));
@@ -91,12 +91,12 @@ public class BeautyActivity extends BaseDrawerActivity{
 
 
 
-        RecyclerView beautyDefaultListView = (RecyclerView) findViewById(R.id.beauty_default_item);
-        beautyDefaultListView.setHasFixedSize(true);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.data_list);
+        recyclerView.setHasFixedSize(true);
 
 
-        beautyDefaultListView.addOnItemTouchListener(
-                new RecyclerItemClickListener(BeautyActivity.this, beautyDefaultListView ,new RecyclerItemClickListener.OnItemClickListener() {
+        recyclerView.addOnItemTouchListener(
+                new RecyclerItemClickListener(BeautyActivity.this, recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
                         // do whatever
                         startActivity(new Intent(BeautyActivity.this, BeautyDetailActivity.class));
@@ -110,10 +110,10 @@ public class BeautyActivity extends BaseDrawerActivity{
         LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
-        if (beautyItemArrayList.size() > 0) {
-            beautyDefaultListView.setAdapter(new BeautyDefaultItemAdapter(beautyItemArrayList, BeautyActivity.this));
+        if (dataList.size() > 0) {
+            recyclerView.setAdapter(new BaseLikeDefaultItemAdapter(dataList, BeautyActivity.this, R.layout.items_beauty_default_item));
         }
-        beautyDefaultListView.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(layoutManager);
 
     }
 

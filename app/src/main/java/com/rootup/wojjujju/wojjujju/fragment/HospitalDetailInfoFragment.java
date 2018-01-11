@@ -19,6 +19,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.BeautyDetailServiceGuideActivity;
+import com.rootup.wojjujju.wojjujju.activity.HospitalDetailServiceGuideActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.custom.MyMapView;
 import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
@@ -26,7 +27,7 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchListener {
+public class HospitalDetailInfoFragment extends Fragment implements View.OnTouchListener {
 
     MyMapView mapView;
     private GoogleMap googleMap;
@@ -36,10 +37,10 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final View view = inflater.inflate(R.layout.fragment_beauty_detail_info, container, false);
+        final View view = inflater.inflate(R.layout.fragment_hospital_detail_info, container, false);
 
         initServiceGuideItemList(view);
-        initHairDresserItemList(view);
+        initEmployerItemList(view);
         initMapView(view, savedInstanceState);
 
 
@@ -82,37 +83,37 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
 
     void initServiceGuideItemList(View v){
 
-        ArrayList<Item> beautyServiceGuideItemArrayList = new ArrayList<>();
+        ArrayList<Item> dataList = new ArrayList<>();
 
         Item item = new Item();
         item.setImg("http://13.125.46.183/woojjujju/beautyshop.jpg");
         item.setTitle("행동교정치료");
-        item.setPrice("6,7000원");
-        beautyServiceGuideItemArrayList.add(item);
+//        item.setPrice("6,7000원");
+        dataList.add(item);
 
         item = new Item();
         item.setImg("http://13.125.46.183/woojjujju/beautyshop2.jpg");
-        item.setTitle("행동교정치료");
-        item.setPrice("6,7000원");
-        beautyServiceGuideItemArrayList.add(item);
+        item.setTitle("중성화 수술");
+//        item.setPrice("6,7000원");
+        dataList.add(item);
 
         item = new Item();
         item.setImg("http://13.125.46.183/woojjujju/beautyshop3.jpg");
         item.setTitle("행동교정치료");
-        item.setPrice("6,7000원");
-        beautyServiceGuideItemArrayList.add(item);
+//        item.setPrice("6,7000원");
+        dataList.add(item);
 
         item = new Item();
         item.setImg("http://13.125.46.183/woojjujju/beautyshop4.jpg");
         item.setTitle("행동교정치료");
-        item.setPrice("6,7000원");
-        beautyServiceGuideItemArrayList.add(item);
+//        item.setPrice("6,7000원");
+        dataList.add(item);
 
         item = new Item();
         item.setImg("http://13.125.46.183/woojjujju/beautyshop5.jpg");
         item.setTitle("행동교정치료");
         item.setPrice("6,7000원");
-        beautyServiceGuideItemArrayList.add(item);
+        dataList.add(item);
 
 
 
@@ -122,7 +123,7 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
                 new RecyclerItemClickListener(getActivity(), itemListView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
                         // do whatever
-                        startActivity(new Intent(getActivity(), BeautyDetailServiceGuideActivity.class));
+                        startActivity(new Intent(getActivity(), HospitalDetailServiceGuideActivity.class));
                     }
 
                     @Override public void onLongItemClick(View view, int position) {
@@ -134,15 +135,15 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
-        if (beautyServiceGuideItemArrayList.size() > 0) {
-            itemListView.setAdapter(new BaseRecyclerAdapter(beautyServiceGuideItemArrayList, getContext(), R.layout.items_default_item));
+        if (dataList.size() > 0) {
+            itemListView.setAdapter(new BaseRecyclerAdapter(dataList, getContext(), R.layout.items_default_item));
         }
         itemListView.setLayoutManager(layoutManager);
     }
 
 
 
-    void initHairDresserItemList(View v){
+    void initEmployerItemList(View v){
 
         ArrayList<Item> hairDresserItemArrayList = new ArrayList<>();
         for(int i=0; i<10; i++){

@@ -3,6 +3,7 @@ package com.rootup.wojjujju.wojjujju.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.GravityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import com.rootup.wojjujju.wojjujju.R;
 
 import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
+import com.rootup.wojjujju.wojjujju.activity.HospitalActivity;
 import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShoppingActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
@@ -24,6 +26,8 @@ import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
+
+import static com.rootup.wojjujju.wojjujju.activity.BaseDrawerActivity.drawer;
 
 public class HomeFragment extends Fragment {
 
@@ -39,6 +43,38 @@ public class HomeFragment extends Fragment {
         initHotPlaceItemList(view);
 
 
+        view.findViewById(R.id.walk).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                startActivity(new Intent(getContext(), BeautyActivity.class));
+            }
+        });
+        view.findViewById(R.id.education).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                startActivity(new Intent(getContext(), BeautyActivity.class));
+            }
+        });
+        view.findViewById(R.id.sell).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                startActivity(new Intent(getContext(), BeautyActivity.class));
+            }
+        });
+        view.findViewById(R.id.hospital).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), HospitalActivity.class));
+            }
+        });
+        view.findViewById(R.id.adopt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                startActivity(new Intent(getContext(), BeautyActivity.class));
+            }
+        });
+
         view.findViewById(R.id.beauty).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,6 +85,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), ShoppingActivity.class));
+            }
+        });
+        view.findViewById(R.id.category).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawer.openDrawer(GravityCompat.START);
+
             }
         });
 

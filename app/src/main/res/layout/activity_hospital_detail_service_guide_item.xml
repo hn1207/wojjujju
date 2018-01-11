@@ -14,17 +14,18 @@
         android:orientation="horizontal"
         android:paddingLeft="16dp">
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/left_arrow"
-            android:scaleType="centerCrop"/>
+            android:text="←"
+            android:textColor="@color/color_primary"
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
-            android:text="샤기 컷"
+            android:text="슬개골 탈구 수술"
             android:textColor="@color/color_primary"
             android:textSize="14sp" />
 
@@ -38,7 +39,7 @@
         android:textSize="14sp"
         android:textColor="@color/soft_black"
         android:lineSpacingExtra="9sp"
-        android:text="서비스에 대한 설명이 들어갑니다. 서비스에 대한 설명이 들어갑니다.서비스에 대한 설명이 들어갑니다.서비스에 대한 설명이 들어갑니다.서비스에 대한 설명이 들어갑니다.서비스에 대한 설명이 들어갑니다."
+        android:text="진료 서비스에 대한 후기나 설명이 들어갑니다. 진료 서비스에 대한 후기나 설명이 들어갑니다. 진료 서비스에 대한 후기나 설명이 들어갑니다. 진료 서비스에 대한 후기나 설명이 들어갑니다. "
         />
 
     <ImageView

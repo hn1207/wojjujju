@@ -65,7 +65,7 @@ public class ShoppingActivity extends BaseDrawerActivity{
         ShopCatFragment shopCatFragment = new ShopCatFragment();
 
 
-        SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.beauty_detail_tab_viewpager);
+        SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
         adapter.addFragment(shopDogFragment, "강아지");
         adapter.addFragment(shopCatFragment, "고양이");
@@ -74,7 +74,7 @@ public class ShoppingActivity extends BaseDrawerActivity{
         viewPager.setPagingEnabled(false);
         viewPager.setAdapter(adapter);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.beauty_detail_tab_layout);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
 //        tabLayout.setTabTextColors(ColorStateList.valueOf(getResources().getColor(R.color.color_primary)));
 
         tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.color_primary));
