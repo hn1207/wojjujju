@@ -28,9 +28,6 @@ import java.util.ArrayList;
 public class BeautyDetailActivity extends AppCompatActivity{
 
 
-    BeautyDetailInfoFragment beautyDetailInfoFragment;
-    BaseQnAFragment baseQnAFragment;
-    BaseReviewFragment baseReviewFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,12 +41,12 @@ public class BeautyDetailActivity extends AppCompatActivity{
     }
 
     void initTabView(){
-        beautyDetailInfoFragment = new BeautyDetailInfoFragment();
-        baseQnAFragment = new BaseQnAFragment();
-        baseReviewFragment = new BaseReviewFragment();
+        BeautyDetailInfoFragment beautyDetailInfoFragment = new BeautyDetailInfoFragment();
+        BaseQnAFragment baseQnAFragment = new BaseQnAFragment();
+        BaseReviewFragment baseReviewFragment = new BaseReviewFragment();
 
 
-        SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.beauty_detail_tab_viewpager);
+        SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
         adapter.addFragment(beautyDetailInfoFragment, "상세정보");
         adapter.addFragment(baseQnAFragment, "Q&A");
@@ -59,7 +56,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
         viewPager.setPagingEnabled(false);
         viewPager.setAdapter(adapter);
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.beauty_detail_tab_layout);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
 //        tabLayout.setTabTextColors(ColorStateList.valueOf(getResources().getColor(R.color.color_primary)));
 
         tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.color_primary));

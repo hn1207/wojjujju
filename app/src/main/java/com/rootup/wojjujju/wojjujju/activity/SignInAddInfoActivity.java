@@ -6,11 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.BeautyDefaultItemAdapter;
 import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 

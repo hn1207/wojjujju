@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.rootup.wojjujju.wojjujju.R;
 
-public class BeautyPlaceFilterActivity extends AppCompatActivity{
+public class BasePlaceFilterActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

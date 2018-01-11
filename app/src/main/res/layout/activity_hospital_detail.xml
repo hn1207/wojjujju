@@ -84,7 +84,7 @@
                 android:lineSpacingExtra="7sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="댕댕이 미용"
+                android:text="따롱이 동물병원"
                 android:textColor="@color/soft_black"
                 android:textSize="16sp" />
 
@@ -154,7 +154,7 @@
                 android:lineSpacingExtra="16sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="예약취소 연기 가능"
+                android:text="애완동물, 중성화, 반려동물, 강아지, 고양이"
                 android:textColor="@color/warm_grey"
                 android:textSize="12sp" />
 
@@ -174,144 +174,29 @@
                 android:id="@+id/tab_viewpager"
                 android:layout_width="match_parent"
                 android:layout_height="1200dp" />
+
         </LinearLayout>
 
 
     </android.support.v4.widget.NestedScrollView>
-
     <LinearLayout
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/select_list_top"
-            android:scaleType="fitXY" />
-        <LinearLayout
-            android:id="@+id/selected_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:orientation="vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+        android:layout_height="56dp">
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/review"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:paddingLeft="10dp"
-                    android:text="서비스 선택"></TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end|center_horizontal"
-                    android:layout_weight="0.1"
-                    android:paddingTop="10dp"
-                    android:text="▼"></TextView>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/review"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/date_pick"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:paddingLeft="10dp"
-                    android:text="날짜 선택"></TextView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end|center_horizontal"
-                    android:layout_weight="0.1"
-                    android:paddingTop="10dp"
-                    android:text="▼" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:orientation="vertical">
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/select_goods_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="end"
-                    android:lineSpacingExtra="3sp"
-                    android:text="총 9,900원"
-                    android:textColor="@color/soft_black"
-                    android:textSize="14sp" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="56dp">
-
-
-            <TextView
-                android:id="@+id/contact_us"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:gravity="center"
-                android:text="문의하기"
-                android:textColor="@color/color_primary"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/payment"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/color_primary"
-                android:gravity="center"
-                android:text="결제하기"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/contact_us"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_primary"
+            android:gravity="center"
+            android:text="문의하기"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
 
 
     </LinearLayout>
-
 </FrameLayout>
