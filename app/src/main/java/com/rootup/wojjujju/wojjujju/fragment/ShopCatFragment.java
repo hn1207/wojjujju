@@ -1,91 +1,36 @@
 package com.rootup.wojjujju.wojjujju.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.rootup.wojjujju.wojjujju.R;
-
-import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
-import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
-import com.rootup.wojjujju.wojjujju.activity.ShoppingActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment {
+public class ShopCatFragment extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final View view = inflater.inflate(R.layout.fragment_home, container, false);
+        final View view = inflater.inflate(R.layout.fragment_shop_cat, container, false);
 
         initHotItemList(view);
         initSaleItemList(view);
         initRecommendItemList(view);
-        initHotPlaceItemList(view);
 
-
-        view.findViewById(R.id.beauty).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getContext(), BeautyActivity.class));
-            }
-        });
-        view.findViewById(R.id.shop).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getContext(), ShoppingActivity.class));
-            }
-        });
 
         return view;
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        setHasOptionsMenu(true);
-//        initToolbar();
-    }
-
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.toolbar_main, menu);
-        super.onCreateOptionsMenu(menu, inflater);
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
-            case R.id.action_search:
-                Toast.makeText(getContext(), R.string.search , Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.action_alarm:
-                Toast.makeText(getContext(), R.string.alarm , Toast.LENGTH_SHORT).show();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    void initToolbar(){
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("우쭈쭈");
-
-    }
 
 
     void initHotItemList(View view){
@@ -199,40 +144,6 @@ public class HomeFragment extends Fragment {
             recommendItemListView.setAdapter(new BaseRecyclerAdapter(homeRecommendItemArrayList, getContext(), R.layout.items_recommend_item));
         }
         recommendItemListView.setLayoutManager(layoutManager);
-    }
-
-    void initHotPlaceItemList(View view){
-
-        ArrayList<Item> homeHotPlaceItemArrayList = new ArrayList<>();
-        for(int i=0; i<10; i++) {
-            Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/park.jpg");
-            item.setTitle("반려견들과 산책가능한 공원");
-            item.setPrice("6,700원");
-            homeHotPlaceItemArrayList.add(item);
-        }
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-//        homeHotPlaceItemArrayList.add(new HomeHotPlaceItem("http://13.125.46.183/woojjujju/park.jpg", "반려견들과 산책가능한 공원에서 놀아보아…" , "6,7000원"));
-
-
-        RecyclerView hotPlaceItemListView = (RecyclerView) view.findViewById(R.id.hot_place_item_list);
-        hotPlaceItemListView.setHasFixedSize(true);
-
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-
-        if (homeHotPlaceItemArrayList.size() > 0) {
-            hotPlaceItemListView.setAdapter(new BaseRecyclerAdapter(homeHotPlaceItemArrayList, getContext(), R.layout.items_default_item));
-        }
-        hotPlaceItemListView.setLayoutManager(layoutManager);
     }
 
 }
