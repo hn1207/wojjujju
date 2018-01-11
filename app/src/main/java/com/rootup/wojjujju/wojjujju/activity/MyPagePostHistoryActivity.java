@@ -33,7 +33,7 @@ public class MyPagePostHistoryActivity extends AppCompatActivity{
             item.setUserName("김땡땡김땡땡떙떙");
             item.setPrice("12,200원 (2개)");
             item.setDate("2017.02.24");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/festival.png");
 
             dataList.add(item);
         }
