@@ -1,5 +1,6 @@
 package com.rootup.wojjujju.wojjujju.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rootup.wojjujju.wojjujju.R;
+import com.rootup.wojjujju.wojjujju.activity.BaseQuestionEditActivity;
 import com.rootup.wojjujju.wojjujju.adapter.QnaItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
@@ -23,6 +25,13 @@ public class BaseQnAFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_beauty_qna, container, false);
 
         initBeautyQnaItemList(view);
+
+        view.findViewById(R.id.question_edit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), BaseQuestionEditActivity.class));
+            }
+        });
         return view;
     }
 

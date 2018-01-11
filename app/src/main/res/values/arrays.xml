@@ -45,5 +45,16 @@
 
     </string-array>
 
+    <string-array name="delivery_memo">
+        <item>배송 전 연락바랍니다.</item>
+        <item>부재시 문 앞에 두고 가주세요.</item>
+        <item>경비실에 맡겨주세요.</item>
+        <item>택배함에 넣어주세요.</item>
+        <item>파손위험이 있으니 조심히 다뤄주세요.</item>
+        <item>선택안함</item>
+
+    </string-array>
+
+
 
 </resources>
