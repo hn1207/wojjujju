@@ -10,7 +10,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp">
+        android:layout_height="48dp"
+        android:background="@color/white">
 
         <TextView
             android:layout_width="0dp"
@@ -19,14 +20,16 @@
             android:gravity="left|center_vertical"
             android:paddingLeft="10dp"
             android:text="게시글 123개"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:gravity="right|center_vertical"
-            android:layout_weight="1">
+            >
 
             <Spinner
                 android:id="@+id/default_filter"
@@ -46,6 +49,23 @@
 
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/soft_grey"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textColor="@color/color_primary"
+            android:text="커뮤니티 공지사항입니다. 확인해주세요!"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            />
+
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/data_list"

@@ -14,19 +14,17 @@
         android:orientation="horizontal"
         android:paddingLeft="16dp">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="←"
-            android:textColor="@color/color_primary"
-            android:textSize="23sp"
-            android:textStyle="bold" />
+            android:src="@drawable/left_arrow"
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
-            android:text="카테고리"
+            android:text="나의 후기"
             android:textColor="@color/color_primary"
             android:textSize="16sp" />
 

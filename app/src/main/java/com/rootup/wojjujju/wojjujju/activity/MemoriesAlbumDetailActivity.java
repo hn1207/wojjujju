@@ -40,7 +40,7 @@ public class MemoriesAlbumDetailActivity extends AppCompatActivity {
     void initSpinner(){
 
         Spinner defaultSpinner = (Spinner)findViewById(R.id.spinner);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(MemoriesAlbumDetailActivity.this, R.array.memories_album, R.layout.spinner);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(MemoriesAlbumDetailActivity.this, R.array.memories_album, R.layout.spinner_insivible);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         defaultSpinner.setAdapter(adapter);
 

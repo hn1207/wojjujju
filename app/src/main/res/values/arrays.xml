@@ -7,34 +7,46 @@
     </string-array>
 
     <string-array name="my_page_opinion_filter">
-
         <item>수정</item>
         <item>삭제</item>
-
-
     </string-array>
+
     <string-array name="memories_album">
         <item>삭제</item>
-
     </string-array>
 
     <string-array name="community_default_filter">
         <item>최신순</item>
         <item>댓글순</item>
     </string-array>
+
     <string-array name="community_category_filter">
-        <item>반려동물</item>
+        <item>생활 속 꿀팁</item>
         <item>자유</item>
         <item>요리/음식</item>
         <item>핫이슈</item>
         <item>취미</item>
-        <item>생활 속 꿀팁</item>
+        <item>반려동물</item>
         <item>유머</item>
         <item>연애/사랑</item>
         <item>취업/진로</item>
         <item>고민</item>
-
     </string-array>
+
+    <string-array name="community_post_category_filter">
+        <item>게시글 종류 선택</item>
+        <item>생활 속 꿀팁</item>
+        <item>자유</item>
+        <item>요리/음식</item>
+        <item>핫이슈</item>
+        <item>취미</item>
+        <item>반려동물</item>
+        <item>유머</item>
+        <item>연애/사랑</item>
+        <item>취업/진로</item>
+        <item>고민</item>
+    </string-array>
+
 
     <string-array name="category_filter">
         <item>건식사료</item>
@@ -42,7 +54,6 @@
         <item>습식사</item>
         <item>건조생식</item>
         <item>분유</item>
-
     </string-array>
 
     <string-array name="delivery_memo">
