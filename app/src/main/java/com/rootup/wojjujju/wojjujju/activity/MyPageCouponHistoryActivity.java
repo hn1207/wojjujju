@@ -4,10 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ListView;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BaseHeaderListViewAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
@@ -31,10 +29,10 @@ public class MyPageCouponHistoryActivity extends AppCompatActivity{ ;
 
         for(int i=0; i<20; i++){
             Item item = new Item();
-            item.setTitle("우쭈쭈 첫가입 10%할인");
+            item.setTitle("우쭈쭈 첫가입");
             item.setDescription("쇼핑/미용/데이트 사용가능");
             item.setDate("2017.09.24 ~ 12.24");
-            item.setLabel("사용가");
+            item.setLabel("사용가능");
 
             dataList.add(item);
         }

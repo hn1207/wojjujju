@@ -2,15 +2,10 @@ package com.rootup.wojjujju.wojjujju.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.widget.ListView;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.MyPageOpinionItemAdapter;
-import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -36,7 +31,7 @@ public class MyPageOpinionHistoryActivity extends AppCompatActivity{
             switch (i%3){
                 case POST:
                     item.setTitle("푹신푹신 허그미  쿠션 제목이 길면 밑으로 내려갑니다. ");
-                    item.setImg(null);
+                    item.setImg("http://13.125.46.183/woojjujju/cushion.jpg");
                     break;
                 case QUESTION:
                     item.setTitle("Q 질문이 들어갑니다");

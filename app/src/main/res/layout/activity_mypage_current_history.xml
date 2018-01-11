@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -40,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:text="총 20건"
+            android:text="총 23건"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
 
@@ -52,12 +53,13 @@
             android:layout_weight="1">
 
             <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
                 android:text="전체 삭제"
-                android:textColor="@color/soft_black"
-                android:textSize="12sp" />
+                android:textAlignment="center"
+                android:textColor="@color/color_primary"
+                android:background="@drawable/round_red_solid_white"
+                android:textSize="11sp" />
         </LinearLayout>
 
     </LinearLayout>

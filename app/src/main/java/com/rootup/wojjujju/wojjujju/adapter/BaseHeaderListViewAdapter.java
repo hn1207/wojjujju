@@ -116,6 +116,7 @@ public class BaseHeaderListViewAdapter extends BaseAdapter {
                 try{grade.setRating(item.getGrade());}catch (Exception e){}
                 try{percent.setText(dataList.get(position).getPercent());}catch (Exception e){}
                 try{description.setText(dataList.get(position).getDescription());}catch (Exception e){}
+                try{label.setText(dataList.get(position).getLabel());}catch (Exception e){}
 
 
 
