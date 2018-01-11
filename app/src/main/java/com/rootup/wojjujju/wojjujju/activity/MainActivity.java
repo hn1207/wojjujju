@@ -21,7 +21,7 @@ import java.util.List;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
-public class MainActivity extends BaseDrawerActivity {
+public class  MainActivity extends BaseDrawerActivity {
 
 
     final int HOME_FRAGMENT = 0;

@@ -45,6 +45,13 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         View headerView = navigationView.getHeaderView(0);
 
+        headerView.findViewById(R.id.btn_community).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BaseDrawerActivity.this, CommunityActivity.class));
+            }
+        });
+
         headerView.findViewById(R.id.btn_beauty).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -99,4 +106,5 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
