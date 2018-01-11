@@ -11,8 +11,7 @@
         android:id="@+id/scrollView"
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/drawer_layout"
@@ -60,15 +59,15 @@
                             android:layout_width="17dp"
                             android:layout_height="18dp"
 
-                            android:src="@drawable/share"
-                            android:gravity="center_vertical" />
+                            android:gravity="center_vertical"
+                            android:src="@drawable/share" />
 
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginLeft="24dp"
-                            android:src="@drawable/favorite"
-                            android:gravity="center_vertical" />
+                            android:gravity="center_vertical"
+                            android:src="@drawable/favorite" />
 
                     </LinearLayout>
 
@@ -84,7 +83,7 @@
                 android:lineSpacingExtra="7sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="댕댕이 미용"
+                android:text="품절대란! 캣만두  라이프 에센셜 치킨 제목이 길면 밑으로 내려갑니다."
                 android:textColor="@color/soft_black"
                 android:textSize="16sp" />
 
@@ -95,73 +94,57 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp">
 
-                <RatingBar
-                    android:id="@+id/grade"
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:isIndicator="true"
-                    android:max="5"
-                    android:maxHeight="10dp"
-                    android:maxWidth="60dp"
-                    android:numStars="5"
-                    android:progressTint="#ffd021"
-                    android:rating="3"
-                    android:stepSize="0.5" />
-
-
                 <TextView
+                    android:id="@+id/price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="20sp"
-                    android:text="("
+                    android:lineSpacingExtra="16sp"
+                    android:text="16,000원"
                     android:textColor="@color/soft_black"
-                    android:textSize="8sp" />
+                    android:textSize="12sp" />
 
-                <TextView
-                    android:id="@+id/comment_cnt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="20sp"
-                    android:text="785"
-                    android:textColor="@color/soft_black"
-                    android:textSize="10sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="20sp"
-                    android:text=")"
-                    android:textColor="@color/soft_black"
-                    android:textSize="8sp" />
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:gravity="center_vertical"
-                android:lineSpacingExtra="16sp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="서울 강남구 역삼동 720-16"
-                android:textColor="@color/soft_black"
-                android:textSize="12sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:gravity="center_vertical"
-                android:lineSpacingExtra="16sp"
+                android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="예약취소 연기 가능"
-                android:textColor="@color/warm_grey"
-                android:textSize="12sp" />
+                android:paddingRight="15dp">
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="12sp"
+                    android:text="14,000원"
+                    android:textColor="@color/color_primary"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_mint"
+                        android:lineSpacingExtra="5sp"
+                        android:text="15%할인"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
 
             <android.support.design.widget.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@color/white">
 
                 <android.support.design.widget.TabLayout
@@ -180,23 +163,24 @@
     </android.support.v4.widget.NestedScrollView>
 
     <LinearLayout
-        android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="15dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/select_list_top"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/select_list_top" />
+
         <LinearLayout
+
             android:id="@+id/selected_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@color/transparent"
             android:orientation="vertical"
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
@@ -216,7 +200,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:text="서비스 선택"></TextView>
+                    android:text="상품 선택"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -244,7 +228,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:text="날짜 선택"></TextView>
+                    android:text="옵션 선택"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -278,9 +262,8 @@
                     android:textSize="14sp" />
 
             </LinearLayout>
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp">
@@ -293,7 +276,7 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text="문의하기"
+                android:text="찜하기"
                 android:textColor="@color/color_primary"
                 android:textSize="16sp" />
 
@@ -309,9 +292,6 @@
                 android:textSize="16sp" />
 
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 </FrameLayout>

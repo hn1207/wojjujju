@@ -22,7 +22,7 @@ import org.joda.time.DateTime;
 
 import java.util.ArrayList;
 
-public class BeautyPickDateActivity extends AppCompatActivity implements DatePickerListener {
+public class BasePickDateActivity extends AppCompatActivity implements DatePickerListener {
 
 
 
@@ -102,11 +102,11 @@ public class BeautyPickDateActivity extends AppCompatActivity implements DatePic
         dateTimeListView.setHasFixedSize(true);
 
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPickDateActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(BasePickDateActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (dateTimeList.size() > 0) {
-            dateTimeListView.setAdapter(new BaseRecyclerAdapter(dateTimeList, BeautyPickDateActivity.this, R.layout.items_date_time_picker_item));
+            dateTimeListView.setAdapter(new BaseRecyclerAdapter(dateTimeList, BasePickDateActivity.this, R.layout.items_date_time_picker_item));
         }
         dateTimeListView.setLayoutManager(layoutManager);
 

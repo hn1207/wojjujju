@@ -14,7 +14,7 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class BeautyQnAFragment extends Fragment {
+public class BaseQnAFragment extends Fragment {
 
 
     @Override

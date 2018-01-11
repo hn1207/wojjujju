@@ -18,11 +18,10 @@ import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
-import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
-import com.rootup.wojjujju.wojjujju.fragment.BeautyQnAFragment;
-import com.rootup.wojjujju.wojjujju.fragment.BeautyReviewFragment;
+import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
+import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
 import com.rootup.wojjujju.wojjujju.fragment.DonatePostPaymentByCashFragment;
 import com.rootup.wojjujju.wojjujju.fragment.DonatePostPaymentByPointFragment;
 
@@ -32,8 +31,8 @@ public class DonatePaymentActivity extends AppCompatActivity{
 
 
     BeautyDetailInfoFragment beautyDetailInfoFragment;
-    BeautyQnAFragment beautyQnAFragment;
-    BeautyReviewFragment beautyReviewFragment;
+    BaseQnAFragment baseQnAFragment;
+    BaseReviewFragment baseReviewFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,7 +131,7 @@ public class DonatePaymentActivity extends AppCompatActivity{
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautySelectedItemArrayList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, DonatePaymentActivity.this, R.layout.items_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, DonatePaymentActivity.this, R.layout.items_beauty_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 
@@ -183,7 +182,7 @@ public class DonatePaymentActivity extends AppCompatActivity{
         findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DonatePaymentActivity.this, BeautyPickDateActivity.class));
+                startActivity(new Intent(DonatePaymentActivity.this, BasePickDateActivity.class));
 
             }
         });
