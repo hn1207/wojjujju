@@ -38,7 +38,7 @@ public class MyPageBookHistoryActivity extends AppCompatActivity{
             item.setDescription("무슨무슨 컷 (+10,000원 발톱정리) ");
             item.setPrice("12,000원");
             item.setDate("예약일시 12.29 (화) 16:00");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/beauty.jpeg");
             item.setType(CONTENTS);
 
             dataList.add(item);
@@ -55,12 +55,10 @@ public class MyPageBookHistoryActivity extends AppCompatActivity{
             item.setDescription("무슨 무슨 룸인지 옵션내용이 들어갑니다.");
             item.setPrice("12,000원");
             item.setDate("입실 12.29 (화) ~ 퇴실 12.31 (목) ");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
             item.setType(CONTENTS);
             dataList.add(item);
         }
-
-
 
 
         ListView dataListView = (ListView) findViewById(R.id.data_list);

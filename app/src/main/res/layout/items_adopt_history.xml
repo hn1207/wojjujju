@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/border_bottom"
     android:orientation="horizontal">
 
 
@@ -44,6 +45,7 @@
             android:lineSpacingExtra="16sp"
             android:text="특대사이즈 100cm red"
             android:textColor="@color/soft_black"
+            android:layout_marginTop="5dp"
             android:textSize="12sp" />
         <TextView
             android:id="@+id/date"
@@ -52,6 +54,7 @@
             android:lineSpacingExtra="16sp"
             android:text="입실 12.29 (화) ~ 퇴실 12.31 (목) "
             android:textColor="@color/soft_black"
+            android:layout_marginTop="5dp"
             android:textSize="12sp" />
 
 
@@ -65,7 +68,7 @@
                 android:id="@+id/price"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-
+                android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:lineSpacingExtra="16sp"
                 android:text="12,200원"
