@@ -1,9 +1,7 @@
 package com.rootup.wojjujju.wojjujju.activity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -11,14 +9,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.ExpandableListView;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.FAQExpandableAdapter;
 import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
@@ -105,8 +99,7 @@ public class CommunityActivity extends BaseDrawerActivity {
             item.setUserName("김땡땡김땡땡떙떙");
             item.setPrice("12,200원 (2개)");
             item.setDate("2017.02.24");
-            item.setImg(null);
-
+            item.setImg("http://13.125.46.183/woojjujju/post.png");
             dataList.add(item);
         }
 

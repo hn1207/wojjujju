@@ -5,6 +5,7 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:paddingTop="20dp">
 
     <LinearLayout
@@ -16,18 +17,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@drawable/border_bottom"
+            android:gravity="center_vertical"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="0dp"
+
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_vertical|start"
-                android:text="←"
-                android:textColor="@color/color_primary"
-                android:textSize="30sp" />
+                android:src="@drawable/left_arrow"
+                android:scaleType="centerCrop"/>
+
 
 
         </LinearLayout>
@@ -37,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:background="@drawable/border_bottom"
             android:paddingLeft="19dp"
             android:paddingRight="19dp">
 
@@ -44,6 +47,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="[자유] 날씨가 너무 추워요! 제목이 길면 밑으로 내려갑니다. 내려갑니다."
+                android:lineSpacingExtra="9sp"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
 
@@ -51,6 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -79,7 +85,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="11dp"
-                        android:src="@color/warm_grey"
+                        android:src="@drawable/user"
 
                         />
                 </LinearLayout>
@@ -112,22 +118,32 @@
             android:paddingLeft="19dp"
             android:paddingRight="19dp">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/comment"
+                android:scaleType="centerCrop"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:text="댓글 3개"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
-
+            </LinearLayout>
         </LinearLayout>
 
 
         <View
             android:layout_width="match_parent"
-
-            android:layout_height="5dp"
+            android:layout_height="3dp"
             android:layout_marginTop="11dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/soft_grey" />
 
 
         <LinearLayout
@@ -155,6 +171,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:hint="댓글을 입력하세요"
+                    android:id="@+id/post_comment"
+                    android:theme="@style/EditTextStyle"
                     android:textSize="14sp" />
 
             </LinearLayout>

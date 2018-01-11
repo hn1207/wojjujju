@@ -1,24 +1,14 @@
 package com.rootup.wojjujju.wojjujju.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
-import android.view.Gravity;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
-import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
-import com.rootup.wojjujju.wojjujju.custom.HorizontalProgressView;
 import com.rootup.wojjujju.wojjujju.entity.Item;
-import com.tmall.ultraviewpager.UltraViewPager;
 
 import java.util.ArrayList;
 
@@ -32,6 +22,9 @@ public class CommunityPostDetailActivity extends AppCompatActivity {
 
 
         initDonatePostReviewList();
+
+
+        TextView textView = findViewById(R.id.post_comment);
 
 
     }
