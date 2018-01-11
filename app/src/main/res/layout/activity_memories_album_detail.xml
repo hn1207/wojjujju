@@ -17,7 +17,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/black">
+                android:background="@drawable/memories_background">
 
 
                 <LinearLayout
@@ -31,8 +31,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="←"
+                        android:textStyle="bold"
                         android:textColor="@color/color_primary"
-                        android:textSize="20sp" />
+                        android:textSize="23sp" />
 
                     <LinearLayout
                         android:layout_weight="1"
@@ -64,7 +65,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@color/strong_white"
+                        android:background="#00000000"
                         android:gravity="center_horizontal"
                         android:orientation="vertical">
 
@@ -74,16 +75,16 @@
                             android:lineSpacingExtra="5sp"
                             android:text="함께한지\n98일 째"
                             android:textAlignment="center"
-
                             android:textColor="@color/soft_black"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <ImageView
                             android:id="@+id/profile"
                             android:layout_marginTop="12dp"
                             android:layout_width="72dp"
                             android:layout_height="72dp"
-                            app:srcCompat="@color/warm_grey" />
+                            android:src="@drawable/round_dog"
+                            android:scaleType="centerCrop"/>
 
                     </LinearLayout>
 
@@ -110,22 +111,25 @@
                                 android:textColor="@color/soft_black"
                                 android:textSize="14sp" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:lineSpacingExtra="10sp"
-                                android:text="남"
-                                android:textColor="@color/soft_black"
-                                android:textSize="14sp" />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/male"
+                                android:scaleType="centerCrop"
+                                />
                         </LinearLayout>
 
                         <TextView
                             android:layout_marginTop="6dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="168dp"
+                            android:layout_height="32dp"
                             android:lineSpacingExtra="10sp"
                             android:text="주인님과 함께해서 좋아요! :) "
+
+                            android:background="@drawable/mint_background"
                             android:textColor="@color/soft_black"
+                            android:textAlignment="center"
+                            android:gravity="center"
                             android:textSize="14sp" />
 
                         <LinearLayout
@@ -152,9 +156,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:lineSpacingExtra="10sp"
+                                    android:layout_marginTop="5dp"
                                     android:text="2017.04.17"
                                     android:textColor="@color/soft_black"
-                                    android:textSize="14sp" />
+                                    android:textSize="12sp" />
 
                             </LinearLayout>
 
@@ -177,9 +182,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:lineSpacingExtra="10sp"
+                                    android:layout_marginTop="5dp"
                                     android:text="2017.07.28"
                                     android:textColor="@color/soft_black"
-                                    android:textSize="14sp" />
+                                    android:textSize="12sp" />
 
                             </LinearLayout>
 
@@ -203,14 +209,11 @@
                                 app:rcProgressColor="@color/colorPrimary"
                                 app:rcSecondaryProgressColor="@color/warm_grey" />
 
-                            <TextView
-                                android:layout_width="15dp"
-                                android:layout_height="15dp"
-                                android:textSize="10sp"
-                                android:textColor="@color/soft_black"
-                                android:gravity="center"
-                                android:text="물"
-                                />
+                           <ImageView
+                               android:layout_width="15dp"
+                               android:layout_height="15dp"
+                               android:src="@drawable/question"
+                               android:scaleType="centerCrop"/>
                         </LinearLayout>
 
 
@@ -267,10 +270,11 @@
 
                     <Spinner
                         android:id="@+id/spinner"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/soft_black"
-                        android:textSize="12sp" />
+                        android:layout_width="4dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/more_copy"
+                        android:popupBackground="@color/white"
+                         />
                 </LinearLayout>
 
             </LinearLayout>

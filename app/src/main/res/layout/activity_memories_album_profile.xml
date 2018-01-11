@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -18,8 +19,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="←"
+            android:textStyle="bold"
             android:textColor="@color/color_primary"
-            android:textSize="20sp" />
+            android:textSize="23sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,7 +29,7 @@
             android:layout_marginLeft="18dp"
             android:text="프로필 관리"
             android:textColor="@color/color_primary"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -40,14 +42,16 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@color/black" />
+            android:src="@drawable/round_dog"
+            android:scaleType="centerCrop"/>
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="end|bottom"
             android:layout_marginBottom="10dp"
-            app:srcCompat="@color/white" />
+            android:src="@drawable/small_camera"
+            android:scaleType="centerCrop"/>
 
 
     </FrameLayout>
@@ -66,22 +70,20 @@
             android:text="뽀롱뽀롱이"
             android:textColor="#dd000000"
             android:textSize="14sp" />
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="10dp"
             android:layout_marginLeft="5dp"
-            android:lineSpacingExtra="10sp"
-            android:text="edit"
-            android:textColor="#dd000000"
-            android:textSize="14sp" />
+            android:src="@drawable/pencil"
+            android:scaleType="centerCrop"
+             />
     </LinearLayout>
 
 
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:layout_marginTop="7dp"
         android:paddingBottom="15dp"
         android:paddingLeft="16dp"
@@ -90,7 +92,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="24dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -100,8 +102,8 @@
                 android:layout_weight="1"
                 android:gravity="start|center_vertical"
                 android:text="성별"
-                android:textColor="@color/warm_grey"
-                android:textSize="20sp" />
+                android:textColor="@color/soft_black"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -109,10 +111,17 @@
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:gravity="end|center_vertical"
-                android:text="여 >"
+                android:text="여"
                 android:textColor="@color/warm_grey"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chevron_right" />
+
         </LinearLayout>
 
 
@@ -121,39 +130,39 @@
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:layout_marginTop="7dp"
         android:paddingBottom="15dp"
         android:paddingLeft="16dp"
         android:paddingRight="17dp"
         android:paddingTop="15dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="태어난 날"
+            android:textColor="@color/soft_black"
+            android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="start|center_vertical"
-                android:text="태어난 날"
-                android:textColor="@color/warm_grey"
-                android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:text="2017.04.17"
+            android:textColor="@color/warm_grey"
+            android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:gravity="end|center_vertical"
-                android:text="2017.04.17 >"
-                android:textColor="@color/warm_grey"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chevron_right" />
 
 
     </LinearLayout>
@@ -161,42 +170,41 @@
     <LinearLayout
         android:id="@+id/update_password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:layout_marginTop="7dp"
         android:paddingBottom="15dp"
         android:paddingLeft="16dp"
         android:paddingRight="17dp"
         android:paddingTop="15dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="함께한 날"
+            android:textColor="@color/soft_black"
+            android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="start|center_vertical"
-                android:text="함께한 날"
-                android:textColor="@color/warm_grey"
-                android:textSize="20sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:text="2017.07.23"
+            android:textColor="@color/warm_grey"
+            android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"
-                android:gravity="end|center_vertical"
-                android:text="2017.07.23 >"
-                android:textColor="@color/warm_grey"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chevron_right" />
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -219,8 +227,8 @@
                 android:layout_weight="1"
                 android:gravity="start|center_vertical"
                 android:text="앨범 지우기"
-                android:textColor="@color/warm_grey"
-                android:textSize="20sp" />
+                android:textColor="@color/soft_black"
+                android:textSize="14sp" />
 
 
         </LinearLayout>

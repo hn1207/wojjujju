@@ -49,8 +49,7 @@ public class MemoriesAlbumDetailActivity extends AppCompatActivity {
         ArrayList<Item> dataList = new ArrayList<>();
         for(int i=0; i<10; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/donate2.png");
-
+            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
             dataList.add(item);
         }
 

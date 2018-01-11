@@ -12,6 +12,7 @@
         android:layout_marginStart="31dp"
         android:gravity="center"
         android:hint="1."
+        android:lineSpacingExtra="8sp"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:layout_marginLeft="31dp" />
@@ -23,6 +24,7 @@
         android:layout_marginStart="10dp"
         android:gravity="center"
         android:hint="공지사항"
+        android:lineSpacingExtra="8sp"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="14sp"
