@@ -34,14 +34,16 @@ public class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseItemViewHolder
     @Override
     public void onBindViewHolder(final BaseItemViewHolder holder, int position) {
 
-        try{holder.title.setText(dataList.get(position).getTitle());}catch (Exception e){}
+        try{if(dataList.get(position).getTitle()==null){holder.title.setVisibility(View.GONE);}else{ holder.title.setText(dataList.get(position).getTitle()); }}catch (Exception e){}
+        try{if(dataList.get(position).getDate()==null){holder.date.setVisibility(View.GONE);}else{ holder.date.setText(dataList.get(position).getDate()); }}catch (Exception e){}
+        try{if(dataList.get(position).getPrice()==null){holder.price.setVisibility(View.GONE);}else{ holder.price.setText(dataList.get(position).getPrice()); }}catch (Exception e){}
+        try{if(dataList.get(position).getContents()==null){holder.contents.setVisibility(View.GONE);}else{ holder.contents.setText(dataList.get(position).getContents()); }}catch (Exception e){}
+        try{if(dataList.get(position).getUserName()==null){holder.userName.setVisibility(View.GONE);}else{ holder.userName.setText(dataList.get(position).getUserName()); }}catch (Exception e){}
+        try{if(dataList.get(position).getPercent()==null){holder.percent.setVisibility(View.GONE);}else{ holder.percent.setText(dataList.get(position).getPercent()); }}catch (Exception e){}
+        try{if(dataList.get(position).getGrade()==-1){holder.grade.setVisibility(View.GONE);}else{ holder.grade.setRating(dataList.get(position).getGrade()); }}catch (Exception e){}
+
         try{Glide.with(con).load(dataList.get(position).getImg()).into(holder.img); }catch(Exception e){}
-        try{holder.date.setText(dataList.get(position).getDate());}catch (Exception e){}
-        try{holder.price.setText(dataList.get(position).getPrice());}catch (Exception e){}
-        try{holder.contents.setText(dataList.get(position).getContents());}catch (Exception e){}
-        try{holder.userName.setText(dataList.get(position).getUserName());}catch (Exception e){}
-        try{holder.percent.setText(dataList.get(position).getPercent());}catch (Exception e){}
-        try{holder.grade.setRating(dataList.get(position).getGrade());}catch (Exception e){}
+
 
 
     }

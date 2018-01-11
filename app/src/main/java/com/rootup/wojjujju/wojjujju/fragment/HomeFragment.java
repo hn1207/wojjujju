@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.rootup.wojjujju.wojjujju.R;
 
 import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
+import com.rootup.wojjujju.wojjujju.activity.EducationActivity;
 import com.rootup.wojjujju.wojjujju.activity.HospitalActivity;
 import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShoppingActivity;
@@ -53,7 +54,7 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.education).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(getContext(), BeautyActivity.class));
+                startActivity(new Intent(getContext(), EducationActivity.class));
             }
         });
         view.findViewById(R.id.sell).setOnClickListener(new View.OnClickListener() {

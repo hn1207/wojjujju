@@ -18,7 +18,7 @@ public class ShopPaymentCompleteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beauty_payment_complete);
+        setContentView(R.layout.activity_base_payment_complete);
 
         initShopCompleteList();
 

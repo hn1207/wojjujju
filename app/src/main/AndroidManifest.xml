@@ -338,6 +338,18 @@
         <activity android:name=".activity.HospitalDetailServiceGuideItemActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
+        <activity android:name=".activity.EducationActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.EducationDetailActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.EducationDetailServiceGuideActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.EducationDetailServiceGuideItemActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.EducationPaymentActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.EducationPaymentCompleteActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
     </application>
 
