@@ -45,7 +45,7 @@ public class EducationDetailServiceGuideActivity extends AppCompatActivity{
         dataListView.addOnItemTouchListener(new RecyclerItemClickListener(EducationDetailServiceGuideActivity.this, dataListView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                startActivity(new Intent(EducationDetailServiceGuideActivity.this, BeautyDetailServiceGuideItemActivity.class));
+                startActivity(new Intent(EducationDetailServiceGuideActivity.this, EducationDetailServiceGuideItemActivity.class));
             }
 
             @Override
