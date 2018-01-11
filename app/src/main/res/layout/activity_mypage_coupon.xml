@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_height"
-        android:background="@color/white"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingLeft="16dp">
@@ -19,8 +18,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="←"
+            android:textStyle="bold"
             android:textColor="@color/color_primary"
-            android:textSize="20sp" />
+            android:textSize="23sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_marginLeft="18dp"
             android:text="할인쿠폰"
             android:textColor="@color/color_primary"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 

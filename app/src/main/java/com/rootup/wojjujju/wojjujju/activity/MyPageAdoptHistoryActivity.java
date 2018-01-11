@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BaseHeaderListViewAdapter;
+import com.rootup.wojjujju.wojjujju.adapter.AdoptHeaderListViewAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class MyPageAdoptHistoryActivity extends AppCompatActivity{
     final int HEADER = 0;
     final int CONTENTS = 1;
+    final int CONTENTS2 = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +38,8 @@ public class MyPageAdoptHistoryActivity extends AppCompatActivity{
             item.setTitle("귀여운 시바견 하쿠");
             item.setDescription("시바견 / 1세 / 남 / 4.7kg");
             item.setDate("면담일시 12.29 (화) 15:00~18:00 ");
-            item.setImg(null);
+            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
             item.setType(CONTENTS);
-
             dataList.add(item);
         }
 
@@ -51,20 +51,17 @@ public class MyPageAdoptHistoryActivity extends AppCompatActivity{
         for(int i=0; i<5; i++){
             item = new Item();
             item.setTitle("귀여운 시바견 하쿠");
-            item.setDescription("무슨 무슨 룸인지 옵션내용이 들어갑니다.");
-            item.setPrice("320,000원 ");
+//            item.setDescription("무슨 무슨 룸인지 옵션내용이 들어갑니다.");
+            item.setPrice("320,000원");
             item.setDate("수령 일시 12.29 (화) 15:00~18:00 ");
-            item.setImg(null);
-            item.setType(CONTENTS);
+            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
+            item.setType(CONTENTS2);
             dataList.add(item);
         }
 
-
-
-
         ListView dataListView = (ListView) findViewById(R.id.data_list);
 
-        dataListView.setAdapter(new BaseHeaderListViewAdapter(dataList, MyPageAdoptHistoryActivity.this, R.layout.items_adopt_history));
+        dataListView.setAdapter(new AdoptHeaderListViewAdapter(dataList, MyPageAdoptHistoryActivity.this, R.layout.items_adopt_history));
 
 
 
