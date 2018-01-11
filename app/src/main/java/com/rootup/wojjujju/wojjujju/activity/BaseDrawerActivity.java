@@ -45,12 +45,15 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         View headerView = navigationView.getHeaderView(0);
 
-        headerView.findViewById(R.id.btn_beauty).setOnClickListener(new View.OnClickListener() {
+
+        headerView.findViewById(R.id.btn_community).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(BaseDrawerActivity.this, BeautyActivity.class));
+                startActivity(new Intent(BaseDrawerActivity.this, CommunityActivity.class));
             }
         });
+
+
 
         headerView.findViewById(R.id.btn_memories_album).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +62,20 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
             }
         });
 
+        headerView.findViewById(R.id.btn_beauty).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BaseDrawerActivity.this, BeautyActivity.class));
+            }
+        });
+
+
+        headerView.findViewById(R.id.btn_shop).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BaseDrawerActivity.this, ShoppingActivity.class));
+            }
+        });
 
     }
 
@@ -99,4 +116,5 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

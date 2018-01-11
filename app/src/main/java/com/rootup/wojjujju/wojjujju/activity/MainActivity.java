@@ -21,7 +21,7 @@ import java.util.List;
 
 import devlight.io.library.ntb.NavigationTabBar;
 
-public class MainActivity extends BaseDrawerActivity {
+public class  MainActivity extends BaseDrawerActivity {
 
 
     final int HOME_FRAGMENT = 0;
@@ -45,7 +45,7 @@ public class MainActivity extends BaseDrawerActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initToolbar("우쭈쭈");
+        initToolbar("쭈쭈쭈");
 
         initBottomBar();
     }

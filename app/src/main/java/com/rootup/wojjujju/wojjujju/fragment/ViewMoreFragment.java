@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rootup.wojjujju.wojjujju.R;
+import com.rootup.wojjujju.wojjujju.activity.CommunityActivity;
 import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
@@ -30,6 +31,15 @@ public class ViewMoreFragment extends Fragment {
         setHasOptionsMenu(true);
         initNewVideoItemList(view);
         initAnimalVideoItemList(view);
+
+        view.findViewById(R.id.community).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), CommunityActivity.class));
+
+            }
+        });
+
 
         view.findViewById(R.id.memories_album).setOnClickListener(new View.OnClickListener() {
             @Override

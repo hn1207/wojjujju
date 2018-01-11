@@ -23,6 +23,13 @@ public class MemoriesAlbumProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memories_album_profile);
 
+        findViewById(R.id.update_nickname).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MemoriesAlbumProfileActivity.this, UpdateNickNameActivity.class));
+            }
+        });
+
 
     }
 

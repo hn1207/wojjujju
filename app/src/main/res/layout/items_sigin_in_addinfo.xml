@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_marginTop="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="76dp"
+        android:layout_height="76dp">
+        <ImageView
+
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:src="@drawable/ic_default_animal"
+            />
+        <ImageView
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="end|bottom"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/small_camera"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="39dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/soft_black"
+        android:text="반려동물의 이름을 써주세요"
+        />
+
+    <EditText
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_grey"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" 한글 최대 8자, 영문 최대 16자"
+        />
+
+    <TextView
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/soft_black"
+        android:text="성별을 선택해주세요"
+        />
+
+
+    <LinearLayout
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/color_primary"
+            android:text="남"
+            android:background="@drawable/round_red"
+            />
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="여"
+            android:background="@drawable/round_red_solid_red"
+            />
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="31dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/soft_grey" />
+
+
+</LinearLayout>

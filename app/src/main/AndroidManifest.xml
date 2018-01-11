@@ -23,10 +23,11 @@
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name=".activity.SplashActivity"
@@ -202,32 +203,31 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
 
 
-        <activity android:name=".activity.MyPageCancelHistoryActivity"
+        <activity
+            android:name=".activity.MyPageCancelHistoryActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
         </activity>
 
 
-        <activity android:name=".activity.MyPageLikeHistoryActivity"
+        <activity
+            android:name=".activity.MyPageLikeHistoryActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
 
         </activity>
-        <activity android:name=".activity.MyPagePointHistoryActivity"
+        <activity
+            android:name=".activity.MyPagePointHistoryActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
-
-        <activity android:name=".activity.MyPageCurrentHistoryActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
             <!--<intent-filter>-->
             <!--<action android:name="android.intent.action.MAIN" />-->
             <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
+
+        <activity
+            android:name=".activity.MyPageCurrentHistoryActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
 
         <activity
             android:name=".activity.MyPageCouponHistoryActivity"
@@ -246,16 +246,39 @@
         <activity
             android:name=".activity.MyPageReviewHistoryActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".activity.FAQActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".activity.MemoriesAlbumActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".activity.MemoriesAlbumDetailActivity"
+        <activity
+            android:name=".activity.FAQActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.MemoriesAlbumActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.MemoriesAlbumDetailActivity"
 
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.MemoriesAlbumProfileActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activity.CommunityActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".activity.CommunityPostEditActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".activity.MemoriesAlbumProfileActivity"
+        <activity android:name=".activity.CommunityPostDetailActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.CommunityPostSearchActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
+        <activity android:name=".activity.ShoppingActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.SignInAddInfoActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
     </application>
 
