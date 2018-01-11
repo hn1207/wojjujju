@@ -20,8 +20,8 @@ import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
 import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
-import com.rootup.wojjujju.wojjujju.fragment.BeautyQnAFragment;
-import com.rootup.wojjujju.wojjujju.fragment.BeautyReviewFragment;
+import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
+import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
 
 import java.util.ArrayList;
 
@@ -29,8 +29,8 @@ public class BeautyDetailActivity extends AppCompatActivity{
 
 
     BeautyDetailInfoFragment beautyDetailInfoFragment;
-    BeautyQnAFragment beautyQnAFragment;
-    BeautyReviewFragment beautyReviewFragment;
+    BaseQnAFragment baseQnAFragment;
+    BaseReviewFragment baseReviewFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,15 +45,15 @@ public class BeautyDetailActivity extends AppCompatActivity{
 
     void initTabView(){
         beautyDetailInfoFragment = new BeautyDetailInfoFragment();
-        beautyQnAFragment = new BeautyQnAFragment();
-        beautyReviewFragment = new BeautyReviewFragment();
+        baseQnAFragment = new BaseQnAFragment();
+        baseReviewFragment = new BaseReviewFragment();
 
 
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.beauty_detail_tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
         adapter.addFragment(beautyDetailInfoFragment, "상세정보");
-        adapter.addFragment(beautyQnAFragment, "Q&A");
-        adapter.addFragment(beautyReviewFragment, "후기");
+        adapter.addFragment(baseQnAFragment, "Q&A");
+        adapter.addFragment(baseReviewFragment, "후기");
 
 
         viewPager.setPagingEnabled(false);
@@ -131,7 +131,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautySelectedItemArrayList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_beauty_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 
@@ -182,7 +182,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
         findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(BeautyDetailActivity.this, BeautyPickDateActivity.class));
+                startActivity(new Intent(BeautyDetailActivity.this, BasePickDateActivity.class));
 
             }
         });

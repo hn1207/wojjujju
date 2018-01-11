@@ -35,4 +35,15 @@
         <item>고민</item>
 
     </string-array>
+
+    <string-array name="category_filter">
+        <item>건식사료</item>
+        <item>소프트사료</item>
+        <item>습식사</item>
+        <item>건조생식</item>
+        <item>분유</item>
+
+    </string-array>
+
+
 </resources>

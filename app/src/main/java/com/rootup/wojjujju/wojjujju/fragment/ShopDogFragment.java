@@ -19,6 +19,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.BeautyDetailServiceGuideActivity;
+import com.rootup.wojjujju.wojjujju.activity.ShoppingSelectCategoryActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.custom.MyMapView;
@@ -38,6 +39,26 @@ public class ShopDogFragment extends Fragment {
         initHotItemList(view);
         initSaleItemList(view);
         initRecommendItemList(view);
+
+        view.findViewById(R.id.feed).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+            }
+        });
+        view.findViewById(R.id.snack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+            }
+        });
+        view.findViewById(R.id.supplies).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+            }
+        });
+
         return view;
     }
 

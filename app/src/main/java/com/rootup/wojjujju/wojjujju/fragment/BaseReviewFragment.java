@@ -14,7 +14,7 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class BeautyReviewFragment extends Fragment {
+public class BaseReviewFragment extends Fragment {
 
 
     @Override

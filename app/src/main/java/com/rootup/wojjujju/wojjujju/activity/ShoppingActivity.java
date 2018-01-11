@@ -118,7 +118,7 @@ public class ShoppingActivity extends BaseDrawerActivity{
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautySelectedItemArrayList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, ShoppingActivity.this, R.layout.items_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, ShoppingActivity.this, R.layout.items_beauty_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 
