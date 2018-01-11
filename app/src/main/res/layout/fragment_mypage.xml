@@ -667,6 +667,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="문의 내역"
+                            android:id="@+id/opinion_history"
                             android:textColor="@color/soft_black"
                             android:textSize="14sp" />
 
@@ -690,6 +691,7 @@
                             android:layout_height="wrap_content"
                             android:text="FAQ 자주묻는 질문"
                             android:textColor="@color/soft_black"
+                            android:id="@+id/faq"
                             android:textSize="14sp" />
 
                     </LinearLayout>
@@ -776,6 +778,7 @@
                             android:layout_height="wrap_content"
                             android:text="나의 게시글"
                             android:textColor="@color/soft_black"
+                            android:id="@+id/post_history"
                             android:textSize="14sp" />
 
                         <ImageView
@@ -804,6 +807,7 @@
                             android:layout_height="wrap_content"
                             android:text="나의 후기"
                             android:textColor="@color/soft_black"
+                            android:id="@+id/review_history"
                             android:textSize="14sp" />
 
                         <ImageView

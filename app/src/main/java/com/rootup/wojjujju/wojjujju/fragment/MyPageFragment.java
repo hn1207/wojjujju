@@ -30,20 +30,16 @@ public class MyPageFragment extends Fragment {
         super.onCreate(savedInstanceState);
         final View view = inflater.inflate(R.layout.fragment_mypage, container, false);
 
-
-
         view.findViewById(R.id.faq).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), FAQActivity.class));
-
             }
         });
         view.findViewById(R.id.review_history).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageReviewHistoryActivity.class));
-
             }
         });
 
@@ -51,7 +47,6 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageOpinionHistoryActivity.class));
-
             }
         });
 
@@ -59,7 +54,6 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPagePostHistoryActivity.class));
-
             }
         });
 
@@ -67,7 +61,6 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageCouponHistoryActivity.class));
-
             }
         });
 
@@ -75,14 +68,12 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageCurrentHistoryActivity.class));
-
             }
         });
         view.findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageProfileActivity.class));
-
             }
         });
 
@@ -90,14 +81,12 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPagePointHistoryActivity.class));
-
             }
         });
         view.findViewById(R.id.like).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageLikeHistoryActivity.class));
-
             }
         });
 
@@ -105,7 +94,6 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageAdoptHistoryActivity.class));
-
             }
         });
 
@@ -113,7 +101,6 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageBookHistoryActivity.class));
-
             }
         });
 
@@ -122,7 +109,6 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPageCancelHistoryActivity.class));
-
             }
         });
 
@@ -131,12 +117,8 @@ public class MyPageFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), MyPagePurchaseHistoryActivity.class));
-
             }
         });
-
-
-
 
         return view;
     }
