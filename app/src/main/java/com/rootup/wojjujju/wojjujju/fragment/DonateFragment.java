@@ -1,5 +1,6 @@
 package com.rootup.wojjujju.wojjujju.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -15,7 +16,9 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.rootup.wojjujju.wojjujju.R;
+import com.rootup.wojjujju.wojjujju.activity.AlarmActivity;
 import com.rootup.wojjujju.wojjujju.activity.BaseDrawerActivity;
+import com.rootup.wojjujju.wojjujju.activity.SearchActivity;
 import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
 import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
 
@@ -42,16 +45,16 @@ public class DonateFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
-
         switch (id) {
             case R.id.action_alarm:
-                Toast.makeText(getContext(), R.string.alarm, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), AlarmActivity.class));
                 return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
+
+
+
 
 
     void initTabView(View v) {

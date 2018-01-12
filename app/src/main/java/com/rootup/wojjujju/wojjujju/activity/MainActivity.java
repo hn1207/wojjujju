@@ -1,5 +1,6 @@
 package com.rootup.wojjujju.wojjujju.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.fragment.CategoryFragment;
@@ -45,10 +49,20 @@ public class  MainActivity extends BaseDrawerActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initToolbar("쭈쭈쭈");
+        initToolbar("프렌쥬");
 
         initBottomBar();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater = BaseDrawerActivity.this.getMenuInflater();
+//        inflater.inflate(R.menu.toolbar_main, menu);
+        return false;
+    }
+
+
+
 
     void initBottomBar() {
 
