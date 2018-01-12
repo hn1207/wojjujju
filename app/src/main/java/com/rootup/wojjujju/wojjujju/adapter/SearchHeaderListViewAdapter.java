@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
@@ -119,9 +121,17 @@ public class SearchHeaderListViewAdapter extends BaseAdapter {
                 try{if(item.getSaledPrice()==null){saledPrice.setVisibility(View.GONE);}else{ saledPrice.setText(item.getSaledPrice()); }}catch (Exception e){}
 
 
+                try{Glide.with(con).load(dataList.get(position).getImg()).into(img); }catch(Exception e){}
 
-                
 
+                try {
+                    if (dataList.get(position).getLike() == 1) {
+                        like.setImageResource(R.drawable.heart_on);
+                    } else {
+                        like.setImageResource(R.drawable.heart_off);
+                    }
+                }catch (Exception e){};
+                try{Glide.with(con).applyDefaultRequestOptions(RequestOptions.centerCropTransform()).load(dataList.get(position).getImg()).into(img);}catch (Exception e){};
 
 
 

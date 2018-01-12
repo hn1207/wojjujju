@@ -22,8 +22,9 @@ public class AlarmActivity extends AppCompatActivity {
         final ArrayList<String> groupList = new ArrayList<>();
         final ArrayList<String> childList = new ArrayList<>();
 
+
         for (int i=0; i<20; i++) {
-            groupList.add("우쭈쭈에서 첫 구매를 하시면 포인트가! 2017.02.24");
+            groupList.add("우쭈쭈에서 첫 구매를 하시면 포인트가!");
             childList.add("알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. \n" +
                     "알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. \n" +
                     "알림에 대한 내용이 들어갑니다. 알림에 대한 내용이 들어갑니다. \n" +

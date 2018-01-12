@@ -53,15 +53,16 @@ public class SearchBeautyFragment extends Fragment {
 
         Item item;
 
-        for(int i=0; i<10; i++){
+        for(int i=0; i<5; i++){
             item = new Item();
-            item.setTitle("[댕댕이 미용]");
+            item.setTitle("도비 밸런스(올스테이지용) 애견사료, 중소형견 5kg");
             item.setDescription("무슨무슨 컷 (+10,000원 발톱정리) ");
             item.setPrice("12,000원");
             item.setDate("예약일시 12.29 (화) 16:00");
-            item.setImg("http://13.125.46.183/woojjujju/beauty.jpeg");
+            item.setImg("http://13.125.46.183/woojjujju/feed.png");
             item.setLabel("15%할인");
             item.setSaledPrice("9970원");
+            item.setLike(i%2);
             item.setType(CONTENTS);
 
             dataList.add(item);
