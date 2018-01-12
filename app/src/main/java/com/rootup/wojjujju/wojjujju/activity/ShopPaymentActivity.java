@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
@@ -41,6 +43,15 @@ public class ShopPaymentActivity extends AppCompatActivity {
 
             }
         });
+
+        String strFront = "<u>결제대행 서비스 표준이용약관</u>";
+        String strChange = "에 동의합니다.";
+        String strBack = " <font color=\"#f62b4c\">(필수)</font>";
+        TextView tv = findViewById(R.id.payment_text);
+        tv.setText(Html.fromHtml(strFront + strChange + strBack));
+
+
+
     }
 
 
@@ -69,7 +80,7 @@ public class ShopPaymentActivity extends AppCompatActivity {
 
         for(int i=0; i<3; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
+            item.setImg("http://13.125.46.183/woojjujju/feed.png");
             item.setTitle("캣만두 라이프 500g ");
             item.setPrice("12,000원");
 //            item.setDate("예약일시 12.29 (화) 16:00 ");

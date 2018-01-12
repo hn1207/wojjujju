@@ -57,9 +57,10 @@ public class ShoppingSelectCategoryActivity extends AppCompatActivity{
 
         for(int i=0; i<10; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/beauty.jpeg");
-            item.setTitle("댕댕이 미용");
+            item.setImg("http://13.125.46.183/woojjujju/feed.png");
+            item.setTitle("도비 밸런스(올스테이지용)애견사료, 중소형견 5kg 1개");
             item.setPrice("14,000원");
+            item.setSaledPrice("9,970원");
             item.setLabel("15%할인");
             item.setLike(i % 2);
             dataList.add(item);

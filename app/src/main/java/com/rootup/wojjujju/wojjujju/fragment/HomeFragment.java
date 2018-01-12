@@ -4,22 +4,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.rootup.wojjujju.wojjujju.R;
-
 import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
 import com.rootup.wojjujju.wojjujju.activity.HospitalActivity;
-import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShoppingActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
@@ -42,6 +41,11 @@ public class HomeFragment extends Fragment {
         initRecommendItemList(view);
         initHotPlaceItemList(view);
 
+        String strFront = "놓칠수 없는 ";
+        String strChange = "<font color=\"#f62b4c\">1 DAY</font>";
+        String strBack = " 특가";
+        TextView tv = view.findViewById(R.id.oneday_text);
+        tv.setText(Html.fromHtml(strFront + strChange + strBack));
 
         view.findViewById(R.id.walk).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -176,6 +180,8 @@ public class HomeFragment extends Fragment {
             item.setImg("http://13.125.46.183/woojjujju/fassion.jpg");
             item.setTitle("미니피니 강아지 모자");
             item.setPrice("7,600원");
+            item.setPercent("10%");
+            item.setSaledPrice("6,900원");
             homeSaleItemList.add(item);
         }
 //        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));

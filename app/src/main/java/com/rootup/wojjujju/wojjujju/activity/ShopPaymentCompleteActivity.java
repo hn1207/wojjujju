@@ -40,7 +40,7 @@ public class ShopPaymentCompleteActivity extends AppCompatActivity {
 
         for(int i=0; i<3; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
+            item.setImg("http://13.125.46.183/woojjujju/feed.png");
             item.setTitle("상품의 전체제목이 들어갑니다.");
             item.setPrice("12,000원");
             item.setContents("옵션내용이 들어갑니다.");

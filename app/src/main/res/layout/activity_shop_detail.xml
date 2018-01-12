@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scrollView"
-
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -38,16 +38,12 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp">
 
-                    <TextView
-                        android:layout_width="0dp"
+                    <ImageView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
-
-                        android:layout_weight="1"
-                        android:gravity="center_vertical|start"
-                        android:text="←"
-                        android:textColor="@color/white"
-                        android:textSize="30sp" />
+                        android:src="@drawable/left_arrow"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"/>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -58,16 +54,15 @@
                         <ImageView
                             android:layout_width="17dp"
                             android:layout_height="18dp"
-
                             android:gravity="center_vertical"
-                            android:src="@drawable/share" />
+                            android:src="@drawable/share_red" />
 
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginLeft="24dp"
                             android:gravity="center_vertical"
-                            android:src="@drawable/favorite" />
+                            android:src="@drawable/heart_red" />
 
                     </LinearLayout>
 
@@ -81,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:lineSpacingExtra="7sp"
+                android:background="@color/white"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="품절대란! 캣만두  라이프 에센셜 치킨 제목이 길면 밑으로 내려갑니다."
@@ -92,6 +88,7 @@
                 android:layout_height="30dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="15dp"
+                android:background="@color/white"
                 android:paddingRight="15dp">
 
                 <TextView
@@ -108,7 +105,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-
+                android:background="@color/white"
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp">
@@ -129,10 +126,11 @@
                     android:gravity="end|center_vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
                         android:background="@drawable/round_mint"
                         android:lineSpacingExtra="5sp"
+                        android:textAlignment="center"
                         android:text="15%할인"
                         android:textColor="@color/white"
                         android:textSize="12sp" />

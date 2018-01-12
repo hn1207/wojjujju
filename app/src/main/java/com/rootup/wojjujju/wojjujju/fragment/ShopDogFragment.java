@@ -5,25 +5,16 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ScrollView;
+import android.widget.TextView;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapsInitializer;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.activity.BeautyDetailServiceGuideActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShoppingSelectCategoryActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
-import com.rootup.wojjujju.wojjujju.custom.MyMapView;
-import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -39,6 +30,13 @@ public class ShopDogFragment extends Fragment {
         initHotItemList(view);
         initSaleItemList(view);
         initRecommendItemList(view);
+
+        String strFront = "놓칠수 없는 ";
+        String strChange = "<font color=\"#f62b4c\">1 DAY</font>";
+        String strBack = " 특가";
+        TextView tv = view.findViewById(R.id.oneday_text);
+        tv.setText(Html.fromHtml(strFront + strChange + strBack));
+
 
         view.findViewById(R.id.feed).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,6 +108,8 @@ public class ShopDogFragment extends Fragment {
             item.setImg("http://13.125.46.183/woojjujju/fassion.jpg");
             item.setTitle("미니피니 강아지 모자");
             item.setPrice("7,600원");
+            item.setPercent("10%");
+            item.setSaledPrice("6,900원");
             homeSaleItemList.add(item);
         }
 //        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));

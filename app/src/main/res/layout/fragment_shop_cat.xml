@@ -16,7 +16,7 @@
         <!-- 카테고리 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:orientation="vertical"
 
             >
@@ -30,6 +30,7 @@
                     android:id="@+id/feed"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
@@ -39,7 +40,7 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/beauty" />
+                        android:src="@drawable/feed" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -55,6 +56,7 @@
                     android:id="@+id/snack"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
@@ -62,13 +64,13 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/shopping"/>
+                        android:src="@drawable/snack_cat" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="쇼핑"
+                        android:text="간식"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
 
@@ -78,6 +80,7 @@
                     android:id="@+id/supplies"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
@@ -85,13 +88,13 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/date"/>
+                        android:src="@drawable/supply_cat" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="데이트"
+                        android:text="용품"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
 
