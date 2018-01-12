@@ -23,6 +23,7 @@ import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
 import com.rootup.wojjujju.wojjujju.fragment.SearchAllFragment;
+import com.rootup.wojjujju.wojjujju.fragment.SearchBeautyFragment;
 
 import java.util.ArrayList;
 
@@ -44,15 +45,27 @@ public class SearchActivity extends AppCompatActivity {
 
     void initTabView(){
         SearchAllFragment searchAllFragment = new SearchAllFragment();
-        SearchAllFragment searchAllFragment2 = new SearchAllFragment();
-        SearchAllFragment searchAllFragment3 = new SearchAllFragment();
+        SearchBeautyFragment searchFragment = new SearchBeautyFragment();
+        SearchBeautyFragment searchFragment2 = new SearchBeautyFragment();
+        SearchBeautyFragment searchFragment3 = new SearchBeautyFragment();
+        SearchBeautyFragment searchFragment4 = new SearchBeautyFragment();
+        SearchBeautyFragment searchFragment5 = new SearchBeautyFragment();
+        SearchBeautyFragment searchFragment6 = new SearchBeautyFragment();
+        SearchBeautyFragment searchFragment7 = new SearchBeautyFragment();
+
 
 
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
         adapter.addFragment(searchAllFragment, "전체");
-        adapter.addFragment(searchAllFragment2, "미용");
-        adapter.addFragment(searchAllFragment3, "쇼핑");
+        adapter.addFragment(searchFragment, "미용");
+        adapter.addFragment(searchFragment2, "쇼핑");
+        adapter.addFragment(searchFragment3, "데이트");
+        adapter.addFragment(searchFragment4, "교육");
+        adapter.addFragment(searchFragment5, "입양");
+        adapter.addFragment(searchFragment6, "분양");
+        adapter.addFragment(searchFragment7, "병원");
+
 
 
         viewPager.setPagingEnabled(true);
@@ -65,6 +78,7 @@ public class SearchActivity extends AppCompatActivity {
         tabLayout.setTabTextColors(getResources().getColor(R.color.warm_grey), getResources().getColor(R.color.color_primary));
 
         tabLayout.setupWithViewPager(viewPager);
+
 
 
 

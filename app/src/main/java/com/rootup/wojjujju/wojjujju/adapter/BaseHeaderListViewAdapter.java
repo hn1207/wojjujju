@@ -23,6 +23,9 @@ public class BaseHeaderListViewAdapter extends BaseAdapter {
     final int CONTENTS = 1;
 
 
+
+
+
     ArrayList<Item> dataList;
     int layout;
     Context con;
@@ -70,9 +73,10 @@ public class BaseHeaderListViewAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
 
-
-
         Item item = dataList.get(position);
+
+
+
         switch (item.getType()){
             case HEADER:
                     convertView = inflater.inflate(R.layout.items_header, viewGroup, false);
