@@ -16,7 +16,7 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class ShoppingSelectCategoryActivity extends AppCompatActivity{
+public class ShopSelectCategoryActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,10 +71,10 @@ public class ShoppingSelectCategoryActivity extends AppCompatActivity{
 
 
         recyclerView.addOnItemTouchListener(
-                new RecyclerItemClickListener(ShoppingSelectCategoryActivity.this, recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
+                new RecyclerItemClickListener(ShopSelectCategoryActivity.this, recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
                         // do whatever
-                        startActivity(new Intent(ShoppingSelectCategoryActivity.this, ShopDetailActivity.class));
+                        startActivity(new Intent(ShopSelectCategoryActivity.this, ShopDetailActivity.class));
                     }
 
                     @Override public void onLongItemClick(View view, int position) {
@@ -82,11 +82,11 @@ public class ShoppingSelectCategoryActivity extends AppCompatActivity{
                     }
                 }));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(ShoppingSelectCategoryActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(ShopSelectCategoryActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
-            recyclerView.setAdapter(new ShopDefaultItemAdapter(dataList, ShoppingSelectCategoryActivity.this));
+            recyclerView.setAdapter(new ShopDefaultItemAdapter(dataList, ShopSelectCategoryActivity.this));
         }
         recyclerView.setLayoutManager(layoutManager);
 

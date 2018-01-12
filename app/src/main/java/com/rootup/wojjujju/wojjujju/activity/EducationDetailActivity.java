@@ -20,7 +20,6 @@ import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
-import com.rootup.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
 import com.rootup.wojjujju.wojjujju.fragment.EducationDetailInfoFragment;
 import com.tmall.ultraviewpager.UltraViewPager;
 
@@ -72,7 +71,7 @@ public class EducationDetailActivity extends AppCompatActivity{
 
     void initViewPager(){
 
-        UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.beauty_viewpager);
+        UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.ultra_viewpager);
         ultraViewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
 //initialize UltraPagerAdapter，and add child view to UltraViewPager
         PagerAdapter adapter = new BeautyDetailPagerAdapter(false);

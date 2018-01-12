@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -21,14 +21,12 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
-
-        android:id="@+id/scrollView"
-
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include layout="@layout/content_shop" />
+        <include layout="@layout/content_sell" />
     </android.support.v4.widget.NestedScrollView>
+
     <!--<android.support.design.widget.FloatingActionButton-->
     <!--android:id="@+id/fab"-->
     <!--android:layout_width="wrap_content"-->

@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
@@ -15,50 +13,34 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class ShopPaymentActivity extends AppCompatActivity {
+public class SellPaymentActivityByPickUp extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shop_payment);
+        setContentView(R.layout.activity_sell_payment_by_pickup);
 
         initPaymentList();
-        initSpinner();
+//        initSpinner();
 
         findViewById(R.id.complete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ShopPaymentActivity.this, BasePaymentCompleteActivity.class));
+                startActivity(new Intent(SellPaymentActivityByPickUp.this, SellPaymentCompleteActivity.class));
                 finish();
             }
         });
         findViewById(R.id.coupon).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ShopPaymentActivity.this, MyPageCouponHistoryActivity.class));
+                startActivity(new Intent(SellPaymentActivityByPickUp.this, MyPageCouponHistoryActivity.class));
 
             }
         });
     }
 
-
-
-    void initSpinner(){
-        // Spinner
-        Spinner defaultSpinner = (Spinner)findViewById(R.id.delivery_memo);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this,
-                R.array.delivery_memo, R.layout.spinner);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        defaultSpinner.setAdapter(adapter);
-
-
-
-
-
-
-    }
 
 
     void initPaymentList(){
@@ -67,14 +49,14 @@ public class ShopPaymentActivity extends AppCompatActivity {
 
         ArrayList<Item> paymentItemArrayList = new ArrayList<>();
 
-        for(int i=0; i<3; i++) {
+        for(int i=0; i<1; i++) {
             Item item = new Item();
             item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
-            item.setTitle("캣만두 라이프 500g ");
-            item.setPrice("12,000원");
-//            item.setDate("예약일시 12.29 (화) 16:00 ");
-            item.setContents("옵션내용이 들어갑니다. 옵션내용이 들어갑니다.");
-            item.setCnt(i%7);
+            item.setTitle("귀여운 시바견 하쿠");
+            item.setPrice("320,000원 ");
+            item.setDate("방문일시 12.29 (화) 15:00~18:00 ");
+//            item.setContents("옵션내용이 들어갑니다. 옵션내용이 들어갑니다.");
+//            item.setCnt(i%7);
             paymentItemArrayList.add(item);
         }
 
@@ -92,7 +74,7 @@ public class ShopPaymentActivity extends AppCompatActivity {
 
 
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(ShopPaymentActivity.this){
+        LinearLayoutManager layoutManager = new LinearLayoutManager(SellPaymentActivityByPickUp.this){
             @Override
             public boolean canScrollVertically() {
                 return false;
@@ -101,7 +83,7 @@ public class ShopPaymentActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, ShopPaymentActivity.this, R.layout.items_base_payment_item));
+            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, SellPaymentActivityByPickUp.this, R.layout.items_sell_payment));
         }
         paymentListView.setLayoutManager(layoutManager);
 

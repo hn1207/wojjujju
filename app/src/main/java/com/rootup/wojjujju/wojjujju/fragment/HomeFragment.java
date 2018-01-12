@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -20,8 +19,7 @@ import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
 import com.rootup.wojjujju.wojjujju.activity.EducationActivity;
 import com.rootup.wojjujju.wojjujju.activity.HospitalActivity;
-import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
-import com.rootup.wojjujju.wojjujju.activity.ShoppingActivity;
+import com.rootup.wojjujju.wojjujju.activity.ShopActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -85,7 +83,7 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.shop).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), ShoppingActivity.class));
+                startActivity(new Intent(getContext(), ShopActivity.class));
             }
         });
         view.findViewById(R.id.category).setOnClickListener(new View.OnClickListener() {

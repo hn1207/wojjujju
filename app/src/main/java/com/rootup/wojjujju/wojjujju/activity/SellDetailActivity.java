@@ -1,7 +1,6 @@
 package com.rootup.wojjujju.wojjujju.activity;
 
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
@@ -12,7 +11,6 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
@@ -22,43 +20,43 @@ import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
-import com.rootup.wojjujju.wojjujju.fragment.ShopDetailInfoFragment;
+import com.rootup.wojjujju.wojjujju.fragment.SellCompanyInfoFragment;
+import com.rootup.wojjujju.wojjujju.fragment.SellDetailInfoFragment;
 import com.tmall.ultraviewpager.UltraViewPager;
 
 import java.util.ArrayList;
 
-public class ShopDetailActivity extends AppCompatActivity{
+public class SellDetailActivity extends AppCompatActivity{
 
 
-    ShopDetailInfoFragment shopDetailInfoFragment;
+
     BaseQnAFragment baseQnAFragment;
     BaseReviewFragment baseReviewFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shop_detail);
+        setContentView(R.layout.activity_sell_detail);
 
         initViewPager();
         initTabView();
         initSelectedItemList();
 
-        TextView price = findViewById(R.id.price);
-
-        price.setPaintFlags(price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
 
     }
 
     void initTabView(){
-        shopDetailInfoFragment = new ShopDetailInfoFragment();
+        SellDetailInfoFragment sellDetailInfoFragment = new SellDetailInfoFragment();
+        SellCompanyInfoFragment sellCompanyInfoFragment = new SellCompanyInfoFragment();
         baseQnAFragment = new BaseQnAFragment();
         baseReviewFragment = new BaseReviewFragment();
 
 
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
-        adapter.addFragment(shopDetailInfoFragment, "상세정보");
+        adapter.addFragment(sellDetailInfoFragment, "상세정보");
+        adapter.addFragment(sellCompanyInfoFragment, "업체소개");
         adapter.addFragment(baseQnAFragment, "Q&A");
         adapter.addFragment(baseReviewFragment, "후기");
 
@@ -113,10 +111,10 @@ public class ShopDetailActivity extends AppCompatActivity{
 
         ArrayList<Item> dataList = new ArrayList<Item>();
 
-        for(int i=0; i<3; i++) {
+        for(int i=0; i<2; i++) {
             Item item = new Item();
-            item.setTitle("캣만두 라이프 500g (+2,000원)길면 밑으로 내려갑니다");
-            item.setPrice("9,900원");
+            item.setTitle("[귀여운 시바견 하쿠] 방문 수령 2017-05-24 15:00~18:00");
+            item.setPrice("370,000원");
             dataList.add(item);
         }
 
@@ -133,11 +131,11 @@ public class ShopDetailActivity extends AppCompatActivity{
         beautySelectedItemListView.setHasFixedSize(true);
 
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(ShopDetailActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(SellDetailActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(dataList, ShopDetailActivity.this, R.layout.items_shop_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(dataList, SellDetailActivity.this, R.layout.items_beauty_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 
@@ -181,19 +179,36 @@ public class ShopDetailActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(ShopDetailActivity.this, ShopPaymentActivity.class));
+                startActivity(new Intent(SellDetailActivity.this, SellPaymentActivityByNotPickUp.class));
             }
+        });
+        findViewById(R.id.payment).setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                startActivity(new Intent(SellDetailActivity.this, SellPaymentActivityByPickUp.class));
+                return true;
+            }
+
+
         });
 
         findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ShopDetailActivity.this, BasePickDateActivity.class));
+                startActivity(new Intent(SellDetailActivity.this, SellPickDateActivityByNotPickUp.class));
 
             }
         });
 
+        findViewById(R.id.date_pick).setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                startActivity(new Intent(SellDetailActivity.this, SellPickDateActivityByPickUp.class));
+                return true;
+            }
 
+
+        });
 
     }
 

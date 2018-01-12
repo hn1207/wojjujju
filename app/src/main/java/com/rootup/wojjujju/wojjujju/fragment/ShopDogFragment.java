@@ -6,24 +6,13 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ScrollView;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapsInitializer;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.activity.BeautyDetailServiceGuideActivity;
-import com.rootup.wojjujju.wojjujju.activity.ShoppingSelectCategoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.ShopSelectCategoryActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
-import com.rootup.wojjujju.wojjujju.custom.MyMapView;
-import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -43,19 +32,19 @@ public class ShopDogFragment extends Fragment {
         view.findViewById(R.id.feed).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+                startActivity(new Intent(getActivity(), ShopSelectCategoryActivity.class));
             }
         });
         view.findViewById(R.id.snack).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+                startActivity(new Intent(getActivity(), ShopSelectCategoryActivity.class));
             }
         });
         view.findViewById(R.id.supplies).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+                startActivity(new Intent(getActivity(), ShopSelectCategoryActivity.class));
             }
         });
 

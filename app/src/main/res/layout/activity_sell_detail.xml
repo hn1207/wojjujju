@@ -11,8 +11,7 @@
         android:id="@+id/scrollView"
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/drawer_layout"
@@ -60,15 +59,15 @@
                             android:layout_width="17dp"
                             android:layout_height="18dp"
 
-                            android:src="@drawable/share"
-                            android:gravity="center_vertical" />
+                            android:gravity="center_vertical"
+                            android:src="@drawable/share" />
 
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginLeft="24dp"
-                            android:src="@drawable/favorite"
-                            android:gravity="center_vertical" />
+                            android:gravity="center_vertical"
+                            android:src="@drawable/favorite" />
 
                     </LinearLayout>
 
@@ -84,7 +83,7 @@
                 android:lineSpacingExtra="7sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="[보듬] 행동치료 전문 김지용 훈련사 "
+                android:text="귀여운 시바견 하쿠"
                 android:textColor="@color/soft_black"
                 android:textSize="16sp" />
 
@@ -95,62 +94,104 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp">
 
-                <RatingBar
-                    android:id="@+id/grade"
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:isIndicator="true"
-                    android:max="5"
-                    android:maxHeight="10dp"
-                    android:maxWidth="60dp"
-                    android:numStars="5"
-                    android:progressTint="#ffd021"
-                    android:rating="3"
-                    android:stepSize="0.5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:id="@+id/grade"
+                        android:maxWidth="60dp"
+                        android:maxHeight="10dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:progressTint="#ffd021"
+                        android:stepSize="0.5"
+                        android:max="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="@color/soft_black"
+                        android:lineSpacingExtra="20sp"
+                        android:text="("
+                        />
+                    <TextView
+                        android:id="@+id/comment_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="@color/soft_black"
+                        android:lineSpacingExtra="20sp"
+                        android:text="785"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="@color/soft_black"
+                        android:lineSpacingExtra="20sp"
+                        android:text=")"
+                        />
+                </LinearLayout>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="20sp"
-                    android:text="("
-                    android:textColor="@color/soft_black"
-                    android:textSize="8sp" />
-
-                <TextView
-                    android:id="@+id/comment_cnt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="20sp"
-                    android:text="785"
-                    android:textColor="@color/soft_black"
-                    android:textSize="10sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="20sp"
-                    android:text=")"
-                    android:textColor="@color/soft_black"
-                    android:textSize="8sp" />
             </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:gravity="center_vertical"
-                android:lineSpacingExtra="16sp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="오프라인 워크숍 수강권 증정"
-                android:textColor="@color/warm_grey"
-                android:textSize="12sp" />
 
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/warm_grey"
+                android:lineSpacingExtra="16sp"
+                android:text="서울 강남구 역삼동 720-16"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/soft_black"
+                    android:lineSpacingExtra="16sp"
+                    android:text="행복을 전하는 강아지 세상"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_mint"
+                        android:lineSpacingExtra="5sp"
+                        android:text="등급"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
 
             <android.support.design.widget.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@color/white">
 
                 <android.support.design.widget.TabLayout
@@ -162,30 +203,31 @@
             <com.rootup.wojjujju.wojjujju.custom.SwipeViewPager
                 android:id="@+id/tab_viewpager"
                 android:layout_width="match_parent"
-                android:layout_height="1200dp" />
+                android:layout_height="1500dp" />
         </LinearLayout>
 
 
     </android.support.v4.widget.NestedScrollView>
 
     <LinearLayout
-        android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="15dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/select_list_top"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/select_list_top" />
+
         <LinearLayout
+            android:visibility="gone"
             android:id="@+id/selected_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@color/transparent"
             android:orientation="vertical"
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
@@ -205,7 +247,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:text="서비스 선택"></TextView>
+                    android:text="분양방식 선택"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -233,7 +275,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:text="날짜 선택"></TextView>
+                    android:text="날짜선택"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -262,14 +304,13 @@
                     android:layout_marginBottom="5dp"
                     android:gravity="end"
                     android:lineSpacingExtra="3sp"
-                    android:text="총 9,900원"
+                    android:text="총 370,000원"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
 
             </LinearLayout>
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="56dp">
@@ -293,14 +334,11 @@
                 android:layout_weight="1"
                 android:background="@color/color_primary"
                 android:gravity="center"
-                android:text="결제하기"
+                android:text="분양하기"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 </FrameLayout>

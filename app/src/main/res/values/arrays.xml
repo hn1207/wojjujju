@@ -66,6 +66,11 @@
 
     </string-array>
 
+    <string-array name="sell_default_filter">
+        <item>분양 등급순</item>
+        <item>분양 평점순</item>
+    </string-array>
+
 
 
 </resources>
