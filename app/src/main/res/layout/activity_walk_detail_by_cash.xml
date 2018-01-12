@@ -38,16 +38,14 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp">
 
-                    <TextView
+                    <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-
-
-                        android:layout_weight="1"
+                        android:layout_weight="0.2"
                         android:gravity="center_vertical|start"
-                        android:text="←"
-                        android:textColor="@color/white"
-                        android:textSize="30sp" />
+                        android:src="@drawable/left_arrow_white"
+                        android:layout_gravity="center"
+                        />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -117,7 +115,8 @@
                         android:id="@+id/comment_cnt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="8sp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
                         android:textColor="@color/soft_black"
                         android:lineSpacingExtra="20sp"
                         android:text="(785)"
@@ -255,7 +254,7 @@
                     android:layout_marginBottom="5dp"
                     android:gravity="end"
                     android:lineSpacingExtra="3sp"
-                    android:text="총 370,000원"
+                    android:text="총 120,000원"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
 
@@ -274,7 +273,7 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text="찜하기"
+                android:text="문의하기"
                 android:textColor="@color/color_primary"
                 android:textSize="16sp" />
 

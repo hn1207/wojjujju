@@ -581,7 +581,6 @@
                 android:background="@drawable/round_reservation"
                 android:gravity="center"
                 android:text="신용카드"
-
                 android:textColor="@color/white"
                 android:textSize="12sp" />
 
@@ -697,6 +696,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:id="@+id/payment_text"
+            android:textSize="12sp"
             android:buttonTint="@color/color_primary"
             android:text="결제대행 서비스 표준이용약관에 동의합니다. (필수)" />
 

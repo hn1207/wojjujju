@@ -5,15 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.View;
-
+import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
-
-
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
-
 
 import java.util.ArrayList;
 
@@ -35,6 +33,21 @@ public class BeautyPaymentActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        String strFront = "<font color=\"#f62b4c\"><u>공정거래 위약금</u></font>에 따라 결제취소 및 노쇼( No-show : 사전연<br>락없이 예약된 숙소를 이용하지 않음)의 경우 요금이 100%정<br>상 청구됩니다.";
+        TextView tv = findViewById(R.id.noshow_text);
+        tv.setText(Html.fromHtml(strFront));
+
+
+        String strFront2 = "<b><u>결제대행 서비스 표준이용약관</u></b>에 동의합니다. <font color=\"#f62b4c\">(필수)</font>";
+        TextView tv2 = findViewById(R.id.service_text);
+        tv2.setText(Html.fromHtml(strFront2));
+
+
+        String strFront3 = "약관을 읽고 이해하였으며, 이에 동의합니다. <font color=\"#f62b4c\">(필수)</font>";
+        TextView tv3 = findViewById(R.id.agree_text);
+        tv3.setText(Html.fromHtml(strFront3));
+
     }
 
 

@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
                     android:gravity="start"
-                    android:text="주소"
+                    android:text="예약자명"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
 
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
                     android:gravity="start"
-                    android:text="서울시 용산구 청파 2가 60-14 104호"
+                    android:text="김진경 / 010 2345 1234"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
 
@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
                     android:gravity="start"
-                    android:text="수령인"
+                    android:text="입실"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
 
@@ -110,7 +110,34 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
                     android:gravity="start"
-                    android:text="김진경 / 010 2345 1234"
+                    android:text="12.29 (화) 10:00"
+                    android:textColor="@color/soft_black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:text="퇴실"
+                    android:textColor="@color/soft_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="start"
+                    android:text="12.31 (목) 13:00"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
 

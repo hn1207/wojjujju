@@ -43,6 +43,7 @@
             android:textSize="12sp"
             android:textColor="@color/warm_grey"
             android:lineSpacingExtra="5sp"
+            android:layout_marginTop="5dp"
             android:text="무슨무슨 컷 서비스 내용이 들어갑니다."
             />
 
@@ -53,6 +54,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/warm_grey"
+            android:layout_marginTop="5dp"
             android:lineSpacingExtra="16sp"
             android:text="예약일시 12.29 (화) 16:00"
             />
@@ -62,6 +64,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/color_primary"
+            android:layout_marginTop="5dp"
             android:lineSpacingExtra="16sp"
             android:text="12,000원 "
             />
