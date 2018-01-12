@@ -7,7 +7,7 @@ public class Item {
     String price;
     String address;
     float grade=-1;
-    int commentCnt;
+    int commentCnt=-1;
     String description;
     String label;
     int like=-1;

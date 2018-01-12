@@ -83,7 +83,7 @@
                 android:lineSpacingExtra="7sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="귀여운 시바견 하쿠"
+                android:text="인천 강아지 호텔 픽업가능한 애견 놀이터 !펫앤펫으로 초대합니다 "
                 android:textColor="@color/soft_black"
                 android:textSize="16sp" />
 
@@ -138,41 +138,6 @@
                 android:lineSpacingExtra="16sp"
                 android:text="서울 강남구 역삼동 720-16"
                 />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_marginTop="5dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12sp"
-                    android:textColor="@color/soft_black"
-                    android:lineSpacingExtra="16sp"
-                    android:text="행복을 전하는 강아지 세상"
-                    />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="end|center_vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/round_mint"
-                        android:lineSpacingExtra="5sp"
-                        android:text="등급"
-                        android:textColor="@color/white"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-
-            </LinearLayout>
 
             <android.support.design.widget.AppBarLayout
                 android:layout_width="match_parent"
@@ -233,7 +198,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:text="분양방식 선택"></TextView>
+                    android:text="상품선택"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -309,7 +274,7 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text="문의하기"
+                android:text="찜하기"
                 android:textColor="@color/color_primary"
                 android:textSize="16sp" />
 
@@ -320,7 +285,7 @@
                 android:layout_weight="1"
                 android:background="@color/color_primary"
                 android:gravity="center"
-                android:text="분양하기"
+                android:text="결제하기"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 

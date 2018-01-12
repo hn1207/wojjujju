@@ -128,7 +128,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautySelectedItemArrayList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_beauty_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_base_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 

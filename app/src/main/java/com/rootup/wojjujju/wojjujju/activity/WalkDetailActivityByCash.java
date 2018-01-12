@@ -20,35 +20,37 @@ import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
-import com.rootup.wojjujju.wojjujju.fragment.EducationDetailInfoFragment;
+import com.rootup.wojjujju.wojjujju.fragment.WalkDetailInfoFragment;
 import com.tmall.ultraviewpager.UltraViewPager;
 
 import java.util.ArrayList;
 
-public class EducationDetailActivity extends AppCompatActivity{
+public class WalkDetailActivityByCash extends AppCompatActivity {
 
-
+    BaseQnAFragment baseQnAFragment;
+    BaseReviewFragment baseReviewFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_education_detail);
+        setContentView(R.layout.activity_walk_detail_by_cash);
 
         initViewPager();
         initTabView();
         initSelectedItemList();
 
+
     }
 
-    void initTabView(){
-        EducationDetailInfoFragment beautyDetailInfoFragment = new EducationDetailInfoFragment();
-        BaseQnAFragment baseQnAFragment = new BaseQnAFragment();
-        BaseReviewFragment baseReviewFragment = new BaseReviewFragment();
+    void initTabView() {
+        WalkDetailInfoFragment walkDetailInfoFragment = new WalkDetailInfoFragment();
+        baseQnAFragment = new BaseQnAFragment();
+        baseReviewFragment = new BaseReviewFragment();
 
 
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
-        adapter.addFragment(beautyDetailInfoFragment, "상세정보");
+        adapter.addFragment(walkDetailInfoFragment, "상세정보");
         adapter.addFragment(baseQnAFragment, "Q&A");
         adapter.addFragment(baseReviewFragment, "후기");
 
@@ -65,13 +67,11 @@ public class EducationDetailActivity extends AppCompatActivity{
         tabLayout.setupWithViewPager(viewPager);
 
 
-
-
     }
 
-    void initViewPager(){
+    void initViewPager() {
 
-        UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.ultra_viewpager);
+        UltraViewPager ultraViewPager = (UltraViewPager) findViewById(R.id.ultra_viewpager);
         ultraViewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
 //initialize UltraPagerAdapter，and add child view to UltraViewPager
         PagerAdapter adapter = new BaseUltraPagerAdapter(false);
@@ -87,7 +87,7 @@ public class EducationDetailActivity extends AppCompatActivity{
                 .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics()));
 
         ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
-        ultraViewPager.getIndicator().setMargin(0,0,0,20);
+        ultraViewPager.getIndicator().setMargin(0, 0, 0, 20);
 
         ultraViewPager.getIndicator().build();
 
@@ -99,36 +99,29 @@ public class EducationDetailActivity extends AppCompatActivity{
     }
 
 
-    void initSelectedItemList(){
+    void initSelectedItemList() {
 
         ArrayList<Item> dataList = new ArrayList<Item>();
 
-        for(int i=0; i<3; i++) {
+        for (int i = 0; i < 2; i++) {
             Item item = new Item();
-            item.setImg("행동교정치료 365패키지 서비스이름이 길면 밑으로 내려갑니다. ");
-            item.setTitle("예약일시 12.29 (화) 16:00");
+            item.setTitle("[디럭스 스위트 룸 1 상품이름이 길면 밑으로 내려갑니다. 내려갑니다.");
+            item.setDate("입실 12.29 (화) ~ 퇴실 12.31 (목)");
             item.setPrice("9,900원");
             dataList.add(item);
         }
 
-//        dataList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-//        dataList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-//        dataList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-//        dataList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-//        dataList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-//
-//
 
 
         RecyclerView beautySelectedItemListView = (RecyclerView) findViewById(R.id.select_goods_list);
         beautySelectedItemListView.setHasFixedSize(true);
 
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(EducationDetailActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(WalkDetailActivityByCash.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(dataList, EducationDetailActivity.this, R.layout.items_base_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(dataList, WalkDetailActivityByCash.this, R.layout.items_base_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 
@@ -138,7 +131,7 @@ public class EducationDetailActivity extends AppCompatActivity{
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switch (linearLayout.getVisibility()){
+                switch (linearLayout.getVisibility()) {
                     case View.GONE:
                         linearLayout.setVisibility(View.VISIBLE);
                         break;
@@ -155,7 +148,7 @@ public class EducationDetailActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
 
-                switch (linearLayout.getVisibility()){
+                switch (linearLayout.getVisibility()) {
                     case View.GONE:
                         linearLayout.setVisibility(View.VISIBLE);
                         break;
@@ -172,14 +165,14 @@ public class EducationDetailActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(EducationDetailActivity.this, EducationPaymentActivity.class));
+                startActivity(new Intent(WalkDetailActivityByCash.this, WalkPaymentActivity.class));
             }
         });
 
         findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(EducationDetailActivity.this, BasePickDateActivity.class));
+                startActivity(new Intent(WalkDetailActivityByCash.this, WalkPickDateActivity.class));
 
             }
         });
@@ -187,7 +180,4 @@ public class EducationDetailActivity extends AppCompatActivity{
 
 
     }
-
-
-
 }

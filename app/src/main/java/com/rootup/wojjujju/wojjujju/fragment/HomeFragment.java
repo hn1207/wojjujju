@@ -24,6 +24,7 @@ import com.rootup.wojjujju.wojjujju.activity.EducationActivity;
 import com.rootup.wojjujju.wojjujju.activity.HospitalActivity;
 import com.rootup.wojjujju.wojjujju.activity.SellActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShopActivity;
+import com.rootup.wojjujju.wojjujju.activity.WalkActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -55,7 +56,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-//                startActivity(new Intent(getContext(), BeautyActivity.class));
+                startActivity(new Intent(getContext(), WalkActivity.class));
             }
         });
         view.findViewById(R.id.education).setOnClickListener(new View.OnClickListener() {
