@@ -42,7 +42,7 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="5dp"
             android:gravity="left|bottom"
-            android:text=" 이번 주말\n 반려견과 함께 나들이 어때요?"
+            android:text=" 폭신폭신 잠이 솔솔~\n 반려견을 위한 마약쿠션"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
@@ -53,7 +53,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="함께 수영하기 좋은 펜션"
+            android:text="인피닛코리아 강아지마약방석 모음전!"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="14sp" />

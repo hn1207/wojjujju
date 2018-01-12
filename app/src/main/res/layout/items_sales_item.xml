@@ -34,9 +34,10 @@
 
 
         <LinearLayout
-            android:layout_marginTop="13dp"
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
 
             <TextView
                 android:id="@+id/price"
@@ -52,18 +53,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
+                android:layout_marginLeft="5dp"
                 android:textColor="@color/white"
                 android:lineSpacingExtra="15sp"
                 android:text=" 7,900원"
                 />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="↓"
+                android:textColor="@color/mint"
+                android:layout_marginLeft="25dp"
+                />
+
+            <TextView
                 android:id="@+id/percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25sp"
+                android:layout_marginLeft="3sp"
                 android:lineSpacingExtra="11sp"
-                android:text="↓10%"
+                android:text="10%"
                 android:textColor="@color/mint"
                 android:textSize="12sp" />
 
