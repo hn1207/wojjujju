@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-
+    android:background="@color/white"
     tools:openDrawer="start">
 
     <LinearLayout
@@ -16,6 +16,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:background="@drawable/border_bottom"
+        android:paddingLeft="16dp"
         >
 
         <ImageView
@@ -59,6 +60,8 @@
         android:ems="10"
         android:gravity="start"
         android:background="@drawable/round_grey"
+        android:padding="10dp"
+        android:textSize="14sp"
         android:hint=" 궁금한 사항이나 문의 사항을 적어주세요."
         android:inputType="textEmailAddress" />
 
@@ -75,7 +78,7 @@
         />
 
     <LinearLayout
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_width="wrap_content"
@@ -84,11 +87,10 @@
         <EditText
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:ems="10"
             android:gravity="start"
             android:background="@drawable/round_grey"
-
             android:inputType="textEmailAddress" />
 
         <TextView
@@ -97,13 +99,14 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/warm_grey"
-
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:text="\@"
             />
         <EditText
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:ems="10"
             android:gravity="start"
             android:background="@drawable/round_grey"
@@ -113,7 +116,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_width="match_parent"

@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="18dp"
             android:text="샤기 컷"
+            android:id="@+id/cut_name"
             android:textColor="@color/color_primary"
             android:textSize="14sp" />
 

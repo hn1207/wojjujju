@@ -34,7 +34,7 @@ public class HospitalDetailServiceGuideActivity extends AppCompatActivity{
             Item item = new Item();
             item.setTitle("중성화 수술");
             item.setPrice("50,000원");
-            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
+            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
             dataList.add(item);
         }
 

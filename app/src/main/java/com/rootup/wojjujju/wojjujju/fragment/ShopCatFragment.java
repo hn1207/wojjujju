@@ -101,6 +101,8 @@ public class ShopCatFragment extends Fragment {
             item.setImg("http://13.125.46.183/woojjujju/fassion.jpg");
             item.setTitle("미니피니 강아지 모자");
             item.setPrice("7,600원");
+            item.setPercent("10%");
+            item.setSaledPrice("6,900원");
             homeSaleItemList.add(item);
         }
 //        homeSaleItemList.add(new HomeSaleItem("http://13.125.46.183/woojjujju/fassion.jpg", "미니피니 강아지 모자" , "7,600원", "  6,900원", "↓10%"));

@@ -13,6 +13,7 @@
         android:layout_margin="16dp"
         android:background="@color/white"
         android:orientation="vertical"
+        android:backgroundTint="@color/white"
         android:padding="12dp">
 
         <TextView
@@ -100,6 +101,7 @@
                     android:lineSpacingExtra="13sp"
                     android:text="전체보기 >"
                     android:textColor="@color/mint"
+                    android:layout_marginRight="10dp"
                     android:textSize="10sp" />
 
 

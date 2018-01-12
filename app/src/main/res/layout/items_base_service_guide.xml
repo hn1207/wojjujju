@@ -13,8 +13,9 @@
         android:id="@+id/img"
         android:layout_width="85dp"
         android:layout_height="match_parent"
-        android:src="@drawable/beauty2"
-        android:padding="15dp" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/dog"
+        android:padding="5dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
