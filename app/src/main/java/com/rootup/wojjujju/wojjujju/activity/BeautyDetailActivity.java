@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import com.tmall.ultraviewpager.UltraViewPager;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
+import com.rootup.wojjujju.wojjujju.adapter.BaseUltraPagerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
 import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -74,7 +74,7 @@ public class BeautyDetailActivity extends AppCompatActivity{
         UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.ultra_viewpager);
         ultraViewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
 //initialize UltraPagerAdapter，and add child view to UltraViewPager
-        PagerAdapter adapter = new BeautyDetailPagerAdapter(false);
+        PagerAdapter adapter = new BaseUltraPagerAdapter(false);
         ultraViewPager.setAdapter(adapter);
 
 

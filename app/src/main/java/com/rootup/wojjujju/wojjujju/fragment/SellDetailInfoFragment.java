@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
+import com.rootup.wojjujju.wojjujju.adapter.BaseUltraPagerAdapter;
 import com.tmall.ultraviewpager.UltraViewPager;
 
 public class SellDetailInfoFragment extends Fragment  {
@@ -33,7 +33,7 @@ public class SellDetailInfoFragment extends Fragment  {
         UltraViewPager ultraViewPager = (UltraViewPager)v.findViewById(R.id.ultra_viewpager);
         ultraViewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
 //initialize UltraPagerAdapter，and add child view to UltraViewPager
-        PagerAdapter adapter = new BeautyDetailPagerAdapter(false);
+        PagerAdapter adapter = new BaseUltraPagerAdapter(false);
         ultraViewPager.setAdapter(adapter);
 
 
