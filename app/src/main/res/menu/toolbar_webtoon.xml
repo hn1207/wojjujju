@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 오버플로우 공간 안에 있는 "알람" 액션 아이템 -->
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom" />
+
+    <!-- 오버플로우 공간 안에 있는 "알람" 액션 아이템 -->
+    <item
+        android:id="@+id/action_mypage"
+        android:title="@string/mypage"
+        android:icon="@drawable/toolbar_alarm_icon"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>

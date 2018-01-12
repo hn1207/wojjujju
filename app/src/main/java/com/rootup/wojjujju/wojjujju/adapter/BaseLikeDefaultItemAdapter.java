@@ -34,8 +34,6 @@ public class BaseLikeDefaultItemAdapter extends RecyclerView.Adapter<BaseItemVie
                 .inflate(layout, parent, false);
         BaseItemViewHolder holder = new BaseItemViewHolder(view);
 
-        TextView textview = view.findViewById(R.id.price);
-        textview.setPaintFlags(textview.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
 
         return holder;
@@ -47,7 +45,7 @@ public class BaseLikeDefaultItemAdapter extends RecyclerView.Adapter<BaseItemVie
 
         try{if(dataList.get(position).getTitle()==null){holder.title.setVisibility(View.GONE);}else{ holder.title.setText(dataList.get(position).getTitle()); }}catch (Exception e){}
         try{if(dataList.get(position).getDate()==null){holder.date.setVisibility(View.GONE);}else{ holder.date.setText(dataList.get(position).getDate()); }}catch (Exception e){}
-        try{if(dataList.get(position).getPrice()==null){holder.price.setVisibility(View.GONE);}else{ holder.price.setText(dataList.get(position).getPrice()); }}catch (Exception e){}
+        try{if(dataList.get(position).getPrice()==null){holder.price.setVisibility(View.GONE);}else{ holder.price.setText(dataList.get(position).getPrice());   holder.price.setPaintFlags(holder.price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG); }}catch (Exception e){}
         try{if(dataList.get(position).getContents()==null){holder.contents.setVisibility(View.GONE);}else{ holder.contents.setText(dataList.get(position).getContents()); }}catch (Exception e){}
         try{if(dataList.get(position).getUserName()==null){holder.userName.setVisibility(View.GONE);}else{ holder.userName.setText(dataList.get(position).getUserName()); }}catch (Exception e){}
         try{if(dataList.get(position).getPercent()==null){holder.percent.setVisibility(View.GONE);}else{ holder.percent.setText(dataList.get(position).getPercent()); }}catch (Exception e){}

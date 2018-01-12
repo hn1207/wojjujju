@@ -17,6 +17,7 @@ import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.CommunityActivity;
 import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
 import com.rootup.wojjujju.wojjujju.activity.SettingActivity;
+import com.rootup.wojjujju.wojjujju.activity.WebtoonActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -51,6 +52,13 @@ public class ViewMoreFragment extends Fragment {
             }
         });
 
+        view.findViewById(R.id.webtoon).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), WebtoonActivity.class));
+
+            }
+        });
         return view;
     }
 

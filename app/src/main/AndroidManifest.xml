@@ -459,6 +459,15 @@
         <activity android:name=".activity.SettingActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
+        <activity android:name=".activity.WebtoonActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <activity android:name=".activity.WebtoonSearchActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <activity android:name=".activity.WebtoonMyPageActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
 
     </application>
 </manifest>

@@ -116,6 +116,13 @@ public class BaseDrawerActivity extends AppCompatActivity implements NavigationV
             }
         });
 
+        headerView.findViewById(R.id.btn_webtoon).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BaseDrawerActivity.this, WebtoonActivity.class));
+            }
+        });
+
     }
 
     @Override

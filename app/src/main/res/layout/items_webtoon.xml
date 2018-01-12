@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="85dp">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_red_solid_red"
+            android:gravity="center"
+            android:text="new"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="62dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="11sp"
+            android:text="어린고양이와 늙은…"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/warm_grey"
+            android:lineSpacingExtra="11sp"
+            android:text="25,000원"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>
