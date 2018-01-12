@@ -15,8 +15,12 @@ import android.view.ViewGroup;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.AlarmActivity;
 import com.rootup.wojjujju.wojjujju.activity.SearchActivity;
+import com.rootup.wojjujju.wojjujju.activity.ShopDetailActivity;
+import com.rootup.wojjujju.wojjujju.activity.ShopSelectCategoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.WebtoonDetailActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
+import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -80,16 +84,28 @@ public class WebtoonFragment extends Fragment {
 
 
 
-        RecyclerView hotItemListView = (RecyclerView) view.findViewById(layout);
-        hotItemListView.setHasFixedSize(true);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(layout);
+        recyclerView.setHasFixedSize(true);
+
+        recyclerView.addOnItemTouchListener(
+                new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        // do whatever
+                        startActivity(new Intent(getContext(), WebtoonDetailActivity.class));
+                    }
+
+                    @Override public void onLongItemClick(View view, int position) {
+                        // do whatever
+                    }
+                }));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (dataList.size() > 0) {
-            hotItemListView.setAdapter(new BaseRecyclerAdapter(dataList, getContext(), R.layout.items_webtoon));
+            recyclerView.setAdapter(new BaseRecyclerAdapter(dataList, getContext(), R.layout.items_webtoon));
         }
-        hotItemListView.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(layoutManager);
     }
 
 
