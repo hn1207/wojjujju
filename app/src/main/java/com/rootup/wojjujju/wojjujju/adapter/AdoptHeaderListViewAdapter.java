@@ -87,7 +87,7 @@ public class AdoptHeaderListViewAdapter extends BaseAdapter {
                 convertView = inflater.inflate(layout, viewGroup, false);
 
 
-                try{title = (TextView) convertView.findViewById(R.id.title);} catch(Exception ignored){ Log.e("엥?" , "ㅇ?");}
+                try{title = (TextView) convertView.findViewById(R.id.title);} catch(Exception ignored){ }
                 try{img = (ImageView) convertView.findViewById(R.id.img);}catch(Exception ignored){}
                 try{price = (TextView) convertView.findViewById(R.id.price);}catch (Exception ignored){}
                 try{address = (TextView) convertView.findViewById(R.id.address);}catch (Exception ignored){}
@@ -127,7 +127,7 @@ public class AdoptHeaderListViewAdapter extends BaseAdapter {
                 convertView = inflater.inflate(layout, viewGroup, false);
 
 
-                try{title = (TextView) convertView.findViewById(R.id.title);} catch(Exception ignored){ Log.e("엥?" , "ㅇ?");}
+                try{title = (TextView) convertView.findViewById(R.id.title);} catch(Exception ignored){ }
                 try{img = (ImageView) convertView.findViewById(R.id.img);}catch(Exception ignored){}
                 try{price = (TextView) convertView.findViewById(R.id.price);}catch (Exception ignored){}
                 try{address = (TextView) convertView.findViewById(R.id.address);}catch (Exception ignored){}

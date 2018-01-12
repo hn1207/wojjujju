@@ -1,7 +1,7 @@
 package com.rootup.wojjujju.wojjujju.adapter;
 
 import android.content.Context;
-import android.util.Log;
+import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +11,12 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
-
 import java.util.ArrayList;
 
-public class BaseHeaderListViewAdapter extends BaseAdapter {
+public class SearchHeaderListViewAdapter extends BaseAdapter {
     final int HEADER = 0;
     final int CONTENTS = 1;
 
@@ -44,7 +42,7 @@ public class BaseHeaderListViewAdapter extends BaseAdapter {
     public LinearLayout qnaBackground;
     public TextView userName;
 
-    public BaseHeaderListViewAdapter(ArrayList<Item> dataList, Context con, int layout){
+    public SearchHeaderListViewAdapter(ArrayList<Item> dataList, Context con, int layout){
         this.dataList = dataList;
         this.con = con;
         this.layout = layout;
@@ -107,13 +105,17 @@ public class BaseHeaderListViewAdapter extends BaseAdapter {
 
                 try{if(item.getTitle()==null){title.setVisibility(View.GONE);}else{ title.setText(item.getTitle()); }}catch (Exception e){}
                 try{if(item.getDate()==null){date.setVisibility(View.GONE);}else{ date.setText(item.getDate()); }}catch (Exception e){}
-                try{if(item.getPrice()==null){price.setVisibility(View.GONE);}else{ price.setText(item.getPrice()); }}catch (Exception e){}
+                try{if(item.getPrice()==null){price.setVisibility(View.GONE);}else{ price.setText(item.getPrice()); price.setPaintFlags(price.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);}}catch (Exception e){}
                 try{if(item.getContents()==null){contents.setVisibility(View.GONE);}else{ contents.setText(item.getContents()); }}catch (Exception e){}
                 try{if(item.getUserName()==null){userName.setVisibility(View.GONE);}else{ userName.setText(item.getUserName()); }}catch (Exception e){}
                 try{if(item.getGrade()==-1){grade.setVisibility(View.GONE);}else{ grade.setRating(item.getGrade()); }}catch (Exception e){}
                 try{if(item.getPercent()==null){percent.setVisibility(View.GONE);}else{ percent.setText(item.getPercent()); }}catch (Exception e){}
                 try{if(item.getDescription()==null){description.setVisibility(View.GONE);}else{ description.setText(item.getDescription()); }}catch (Exception e){}
                 try{if(item.getLabel()==null){label.setVisibility(View.GONE);}else{ label.setText(item.getLabel()); }}catch (Exception e){}
+
+                try{if(item.getSaledPrice()==null){saledPrice.setVisibility(View.GONE);}else{ saledPrice.setText(item.getSaledPrice()); }}catch (Exception e){}
+
+
 
                 
 
