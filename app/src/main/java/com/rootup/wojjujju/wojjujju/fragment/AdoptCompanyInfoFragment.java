@@ -22,7 +22,7 @@ import com.rootup.wojjujju.wojjujju.adapter.BaseUltraPagerAdapter;
 import com.rootup.wojjujju.wojjujju.custom.MyMapView;
 import com.tmall.ultraviewpager.UltraViewPager;
 
-public class SellCompanyInfoFragment extends Fragment implements View.OnTouchListener {
+public class AdoptCompanyInfoFragment extends Fragment implements View.OnTouchListener {
 
     MyMapView mapView;
     private GoogleMap googleMap;
@@ -32,11 +32,11 @@ public class SellCompanyInfoFragment extends Fragment implements View.OnTouchLis
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final View view = inflater.inflate(R.layout.fragment_sell_company_detail_info, container, false);
+        final View view = inflater.inflate(R.layout.fragment_adopt_company_detail_info, container, false);
 
 
         initMapView(view, savedInstanceState);
-        initViewPager(view);
+//        initViewPager(view);
 
         return view;
     }

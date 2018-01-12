@@ -1,45 +1,98 @@
 package com.rootup.wojjujju.wojjujju.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.rootup.wojjujju.wojjujju.R;
+import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.BaseUltraPagerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
 import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
+import com.rootup.wojjujju.wojjujju.entity.Item;
+import com.rootup.wojjujju.wojjujju.fragment.AdoptCompanyInfoFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
-import com.rootup.wojjujju.wojjujju.fragment.HospitalDetailInfoFragment;
+import com.rootup.wojjujju.wojjujju.fragment.SellCompanyInfoFragment;
+import com.rootup.wojjujju.wojjujju.fragment.SellDetailInfoFragment;
 import com.tmall.ultraviewpager.UltraViewPager;
 
-public class HospitalDetailActivity extends AppCompatActivity{
+import java.util.ArrayList;
+
+public class AdoptDetailActivity extends AppCompatActivity{
 
 
+
+    BaseQnAFragment baseQnAFragment;
+    BaseReviewFragment baseReviewFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_detail);
+        setContentView(R.layout.activity_adopt_detail);
 
         initViewPager();
         initTabView();
 
 
+
+        findViewById(R.id.payment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(AdoptDetailActivity.this, AdoptPaymentCompleteActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AdoptDetailActivity.this, AdoptPickDateActivity.class));
+
+            }
+        });
+        final LinearLayout linearLayout = findViewById(R.id.selected_list);
+        linearLayout.setVisibility(View.GONE);
+        findViewById(R.id.contact_us).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                switch (linearLayout.getVisibility()){
+                    case View.GONE:
+                        linearLayout.setVisibility(View.VISIBLE);
+                        break;
+                    case View.VISIBLE:
+                        linearLayout.setVisibility(View.GONE);
+                        break;
+
+                }
+
+            }
+        });
+
+
     }
 
     void initTabView(){
-        HospitalDetailInfoFragment hospitalDetailInfoFragment = new HospitalDetailInfoFragment();
-        BaseQnAFragment baseQnAFragment = new BaseQnAFragment();
-        BaseReviewFragment baseReviewFragment = new BaseReviewFragment();
+        SellDetailInfoFragment sellDetailInfoFragment = new SellDetailInfoFragment();
+        AdoptCompanyInfoFragment adoptCompanyInfoFragment = new AdoptCompanyInfoFragment();
+        baseQnAFragment = new BaseQnAFragment();
+        baseReviewFragment = new BaseReviewFragment();
 
 
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
-        adapter.addFragment(hospitalDetailInfoFragment, "상세정보");
+        adapter.addFragment(sellDetailInfoFragment, "상세정보");
+        adapter.addFragment(adoptCompanyInfoFragment, "업체소개");
         adapter.addFragment(baseQnAFragment, "Q&A");
         adapter.addFragment(baseReviewFragment, "후기");
 
@@ -88,6 +141,13 @@ public class HospitalDetailActivity extends AppCompatActivity{
 //        ultraViewPager.setAutoScroll(2000);
 
     }
+
+
+
+
+
+
+
 
 
 

@@ -1,25 +1,45 @@
 package com.rootup.wojjujju.wojjujju.adapter;
 
+import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.rootup.wojjujju.wojjujju.R;
+import com.rootup.wojjujju.wojjujju.entity.Item;
+
+import java.util.ArrayList;
 
 
-public class BeautyDetailPagerAdapter extends PagerAdapter {
+public class BaseUltraPagerAdapter extends PagerAdapter {
     private boolean isMultiScr;
+    private ArrayList<Item> dataList;
+    Context con;
 
-    public BeautyDetailPagerAdapter(boolean isMultiScr) {
+
+    public BaseUltraPagerAdapter(boolean isMultiScr, ArrayList<Item> dataList, Context con) {
         this.isMultiScr = isMultiScr;
+        this.dataList= dataList;
+        this.con=con;
+    }
+
+
+    public BaseUltraPagerAdapter(boolean isMultiScr) {
+        this.isMultiScr = isMultiScr;
+//        this.dataList= dataList;
+//        this.con=con;
     }
 
     @Override
     public int getCount() {
         return 5;
+//        return dataList.size();
     }
 
     @Override
@@ -29,13 +49,25 @@ public class BeautyDetailPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(container.getContext()).inflate(R.layout.activity_beauty_detail_viewpager_child, null);
+        LinearLayout linearLayout = (LinearLayout) LayoutInflater.from(container.getContext()).inflate(R.layout.activity_ultra_viewpager_child, null);
         //new LinearLayout(container.getContext());
-        TextView textView = (TextView) linearLayout.findViewById(R.id.pager_textview);
-        textView.setText(position + "");
+
+//        TextView textView = (TextView) linearLayout.findViewById(R.id.bg_image);
+//        textView.setText(position + "");
+
+//        ImageView bg = linearLayout.findViewById(R.id.bg_image);
 //        linearLayout.setId(R.id.item_id);
+
+//        Glide.with(con)
+//                .applyDefaultRequestOptions(RequestOptions.centerCropTransform())
+//                .load(dataList.get(position).getImg())
+//                .into(bg);
+//
         switch (position) {
             case 0:
+//
+
+
                 linearLayout.setBackgroundResource(R.drawable.beautyshop);
 //                linearLayout.setBackgroundResource(R.drawable.fragment_home_tarco);
                 break;

@@ -16,9 +16,11 @@ import android.widget.Toast;
 
 import com.rootup.wojjujju.wojjujju.R;
 
+import com.rootup.wojjujju.wojjujju.activity.AdoptActivity;
 import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
 import com.rootup.wojjujju.wojjujju.activity.EducationActivity;
 import com.rootup.wojjujju.wojjujju.activity.HospitalActivity;
+import com.rootup.wojjujju.wojjujju.activity.SellActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShopActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
@@ -58,7 +60,7 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.sell).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(getContext(), BeautyActivity.class));
+                startActivity(new Intent(getContext(), SellActivity.class));
             }
         });
         view.findViewById(R.id.hospital).setOnClickListener(new View.OnClickListener() {
@@ -70,7 +72,7 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.adopt).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(getContext(), BeautyActivity.class));
+                startActivity(new Intent(getContext(), AdoptActivity.class));
             }
         });
 

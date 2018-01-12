@@ -20,6 +20,11 @@
         <item>댓글순</item>
     </string-array>
 
+    <string-array name="adopt_default_filter">
+        <item>최신순</item>
+        <item>오래된 순</item>
+    </string-array>
+
     <string-array name="community_category_filter">
         <item>생활 속 꿀팁</item>
         <item>자유</item>
