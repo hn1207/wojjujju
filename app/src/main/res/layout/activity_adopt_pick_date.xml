@@ -105,8 +105,8 @@
             android:layout_marginRight="19dp"
             android:background="@color/strong_white"
             android:textColor="#4b4b4b"
-            android:text="- 기타 안내사항이 들어갑니다. 공지사항이나 중요한 확인사항이 다시 한번 들어갑니다.\n
-- 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다.  "
+            android:text="- 1:1 면담에 대한 안내가 들어갑니다. 면담을 한 후 입양결정이 난다는 내용이 들어갑니다.
+- 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다. "
             />
 
 

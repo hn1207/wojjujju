@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/main_pool" />
+            android:src="@drawable/shopping_background" />
 
         <TextView
             android:layout_width="65dp"
@@ -53,7 +53,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="인피닛코리아 강아지마약방석 모음전!"
+            android:text=" 인피닛코리아 강아지마약방석 모음전!"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="14sp" />

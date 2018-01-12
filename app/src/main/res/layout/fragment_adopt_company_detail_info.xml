@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/soft_grey"
     android:orientation="vertical">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:background="@color/white"
         android:orientation="vertical"
         android:padding="12dp">
@@ -36,7 +39,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:background="@color/white"
         android:orientation="vertical"
         android:padding="12dp">
@@ -53,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:lineSpacingExtra="9sp"
             android:text=" 매일 13:00~14:00 점심시간(CLOSED)\n
 일요일 11:00~18:00\n
 평일 09:00~19:00\n
@@ -65,7 +71,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="252dp"
-        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:background="@color/white"
         android:orientation="vertical"
         android:padding="12dp">
@@ -100,7 +108,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:background="@color/white"
         android:orientation="vertical"
         android:padding="12dp">

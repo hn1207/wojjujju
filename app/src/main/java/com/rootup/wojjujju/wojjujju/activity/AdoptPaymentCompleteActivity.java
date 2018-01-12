@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
@@ -19,6 +21,14 @@ public class AdoptPaymentCompleteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adopt_payment_complete);
+
+        String strFront = "*잠깐! 아직 ";
+        String strFront2 = "<font color=\"#f62b4c\">입양확정이 아닙니다.</font><br>";
+        String strChange = "<b>오프라인으로 면담 진행 후 </b>";
+        String strChange2 = "확정 결과를 알 수 있어요.<br>애정과 책임감으로 반려동물을 키울 사람을<br>찾기 위한 과정이므로 이해부탁드려요. :)";
+
+        TextView tv = findViewById(R.id.adopt_text);
+        tv.setText(Html.fromHtml(strFront + strFront2 + strChange + strChange2));
 
         initCompleteList();
 
