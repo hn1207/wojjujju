@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/main_pool" />
+            android:src="@drawable/walk_background" />
 
         <TextView
             android:layout_width="65dp"
@@ -53,7 +53,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="함께 수영하기 좋은 펜션"
+            android:text=" 강아지 호텔 프렌쥬에서 예약하면 10% 할인"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="14sp" />

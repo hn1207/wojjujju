@@ -1,6 +1,7 @@
 package com.rootup.wojjujju.wojjujju.fragment;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -33,6 +34,8 @@ public class WalkAllFragment extends Fragment {
         initSpinner(view);
 
         initItemList(view);
+
+
         return view;
     }
 
@@ -43,8 +46,8 @@ public class WalkAllFragment extends Fragment {
 
         for(int i=0; i<5; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/beauty.jpeg");
-            item.setTitle("댕댕이 펜션");
+            item.setImg("http://13.125.46.183/woojjujju/walk_item.png");
+            item.setTitle("[남한 산성 애견카페] 강아지 수영장이 있는 코코밸리");
             item.setSaledPrice("9,970원");
             item.setPrice("14,000원");
             item.setAddress("서울시 서초구 서초동");
@@ -89,6 +92,7 @@ public class WalkAllFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
+
             recyclerView.setAdapter(new BaseLikeDefaultItemAdapter(dataList, getContext(), R.layout.items_walk_default_item));
         }
         recyclerView.setLayoutManager(layoutManager);

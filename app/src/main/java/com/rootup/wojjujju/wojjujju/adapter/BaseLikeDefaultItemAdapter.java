@@ -1,14 +1,15 @@
 package com.rootup.wojjujju.wojjujju.adapter;
 
 import android.content.Context;
+import android.graphics.Paint;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.viewholder.BaseItemViewHolder;
@@ -32,6 +33,11 @@ public class BaseLikeDefaultItemAdapter extends RecyclerView.Adapter<BaseItemVie
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(layout, parent, false);
         BaseItemViewHolder holder = new BaseItemViewHolder(view);
+
+        TextView textview = view.findViewById(R.id.price);
+        textview.setPaintFlags(textview.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
+
         return holder;
     }
     @Override
@@ -45,7 +51,7 @@ public class BaseLikeDefaultItemAdapter extends RecyclerView.Adapter<BaseItemVie
         try{if(dataList.get(position).getContents()==null){holder.contents.setVisibility(View.GONE);}else{ holder.contents.setText(dataList.get(position).getContents()); }}catch (Exception e){}
         try{if(dataList.get(position).getUserName()==null){holder.userName.setVisibility(View.GONE);}else{ holder.userName.setText(dataList.get(position).getUserName()); }}catch (Exception e){}
         try{if(dataList.get(position).getPercent()==null){holder.percent.setVisibility(View.GONE);}else{ holder.percent.setText(dataList.get(position).getPercent()); }}catch (Exception e){}
-
+        try{if(dataList.get(position).getSaledPrice()==null){holder.saledPrice.setVisibility(View.GONE);}else{ holder.saledPrice.setText(dataList.get(position).getSaledPrice()); }}catch (Exception e){}
         try{if(dataList.get(position).getGrade()==-1){holder.grade.setVisibility(View.GONE);}else{ holder.grade.setRating(dataList.get(position).getGrade()); }}catch (Exception e){}
 
 
@@ -53,7 +59,6 @@ public class BaseLikeDefaultItemAdapter extends RecyclerView.Adapter<BaseItemVie
         try{if(dataList.get(position).getCommentCnt()==-1){holder.commentCnt.setVisibility(View.GONE);}else{ holder.commentCnt.setText("("+dataList.get(position).getCommentCnt() + ")"); }}catch (Exception e){}
         try{if(dataList.get(position).getDescription()==null){holder.description.setVisibility(View.GONE);}else{ holder.description.setText(dataList.get(position).getDescription()); }}catch (Exception e){}
         try{if(dataList.get(position).getLabel()==null){holder.label.setVisibility(View.GONE);}else{ holder.label.setText(dataList.get(position).getLabel()); }}catch (Exception e){}
-
 
 
 
