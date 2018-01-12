@@ -11,8 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.activity.ShoppingSelectCategoryActivity;
+import com.rootup.wojjujju.wojjujju.activity.ShopSelectCategoryActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -41,19 +42,19 @@ public class ShopDogFragment extends Fragment {
         view.findViewById(R.id.feed).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+                startActivity(new Intent(getActivity(), ShopSelectCategoryActivity.class));
             }
         });
         view.findViewById(R.id.snack).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+                startActivity(new Intent(getActivity(), ShopSelectCategoryActivity.class));
             }
         });
         view.findViewById(R.id.supplies).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), ShoppingSelectCategoryActivity.class));
+                startActivity(new Intent(getActivity(), ShopSelectCategoryActivity.class));
             }
         });
 

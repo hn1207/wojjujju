@@ -18,8 +18,10 @@ import android.widget.Toast;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
+import com.rootup.wojjujju.wojjujju.activity.EducationActivity;
 import com.rootup.wojjujju.wojjujju.activity.HospitalActivity;
-import com.rootup.wojjujju.wojjujju.activity.ShoppingActivity;
+
+import com.rootup.wojjujju.wojjujju.activity.ShopActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -57,7 +59,7 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.education).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(getContext(), BeautyActivity.class));
+                startActivity(new Intent(getContext(), EducationActivity.class));
             }
         });
         view.findViewById(R.id.sell).setOnClickListener(new View.OnClickListener() {
@@ -88,7 +90,7 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.shop).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), ShoppingActivity.class));
+                startActivity(new Intent(getContext(), ShopActivity.class));
             }
         });
         view.findViewById(R.id.category).setOnClickListener(new View.OnClickListener() {

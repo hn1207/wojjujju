@@ -12,24 +12,21 @@ import android.view.View;
 import com.github.jhonnyx2012.horizontalpicker.DatePickerListener;
 import com.github.jhonnyx2012.horizontalpicker.HorizontalPicker;
 import com.rootup.wojjujju.wojjujju.R;
-
-
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
-
 
 import org.joda.time.DateTime;
 
 import java.util.ArrayList;
 
-public class BasePickDateActivity extends AppCompatActivity implements DatePickerListener {
+public class SellPickDateActivityByPickUp extends AppCompatActivity implements DatePickerListener {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_pick_date);
+        setContentView(R.layout.activity_sell_pick_date_by_pickup);
 
         initDatePicker();
 
@@ -102,11 +99,11 @@ public class BasePickDateActivity extends AppCompatActivity implements DatePicke
         dateTimeListView.setHasFixedSize(true);
 
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(BasePickDateActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(SellPickDateActivityByPickUp.this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (dateTimeList.size() > 0) {
-            dateTimeListView.setAdapter(new BaseRecyclerAdapter(dateTimeList, BasePickDateActivity.this, R.layout.items_date_time_picker_item));
+            dateTimeListView.setAdapter(new BaseRecyclerAdapter(dateTimeList, SellPickDateActivityByPickUp.this, R.layout.items_date_time_picker_item));
         }
         dateTimeListView.setLayoutManager(layoutManager);
 

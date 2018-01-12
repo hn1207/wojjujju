@@ -11,16 +11,16 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class BeautyPaymentCompleteActivity extends AppCompatActivity {
+public class SellPaymentCompleteActivity extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_payment_complete);
+        setContentView(R.layout.activity_sell_payment_complete);
 
-        initPaymentCompleteList();
+        initCompleteList();
 
 //        findViewById(R.id.complete).setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -32,7 +32,7 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
 
 
 
-    void initPaymentCompleteList(){
+    void initCompleteList(){
 
 
 
@@ -41,10 +41,9 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
         for(int i=0; i<3; i++) {
             Item item = new Item();
             item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
-            item.setTitle("[댕댕이 미용] ");
-            item.setPrice("12,000원");
-            item.setDate("예약일시 12.29 (화) 16:00 ");
-            item.setContents("무슨무슨 컷 서비스 내용이 들어갑니다.");
+            item.setTitle("귀여운 시바견 하쿠");
+            item.setContents("시바견 / 1세 / 여 / 3.3kg");
+
             paymentItemArrayList.add(item);
         }
 
@@ -62,7 +61,7 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
 
 
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentCompleteActivity.this){
+        LinearLayoutManager layoutManager = new LinearLayoutManager(SellPaymentCompleteActivity.this){
             @Override
             public boolean canScrollVertically() {
                 return false;
@@ -71,7 +70,7 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, BeautyPaymentCompleteActivity.this, R.layout.items_beauty_payment_item));
+            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, SellPaymentCompleteActivity.this, R.layout.items_sell_payment));
         }
         paymentListView.setLayoutManager(layoutManager);
 

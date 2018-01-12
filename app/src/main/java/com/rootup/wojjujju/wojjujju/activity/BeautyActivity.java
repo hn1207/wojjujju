@@ -111,7 +111,7 @@ public class BeautyActivity extends BaseDrawerActivity{
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
-            recyclerView.setAdapter(new BaseLikeDefaultItemAdapter(dataList, BeautyActivity.this, R.layout.items_beauty_default_item));
+            recyclerView.setAdapter(new BaseLikeDefaultItemAdapter(dataList, BeautyActivity.this, R.layout.items_base_default));
         }
         recyclerView.setLayoutManager(layoutManager);
 

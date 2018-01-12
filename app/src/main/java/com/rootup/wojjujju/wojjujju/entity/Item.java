@@ -6,20 +6,20 @@ public class Item {
     String title;
     String price;
     String address;
-    float grade;
+    float grade=-1;
     int commentCnt;
     String description;
     String label;
-    int like;
+    int like=-1;
     String saledPrice;
     String percent;
     String date;
     String contents;
 
-    int type;
+    int type=-1;
     String userName;
 
-    int cnt;
+    int cnt=-1;
 
     public int getCnt() {
         return cnt;

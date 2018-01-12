@@ -74,7 +74,7 @@ public class DonatePaymentActivity extends AppCompatActivity{
 
     void initViewPager(){
 
-        UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.beauty_viewpager);
+        UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.ultra_viewpager);
         ultraViewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
 //initialize UltraPagerAdapter，and add child view to UltraViewPager
         PagerAdapter adapter = new BeautyDetailPagerAdapter(false);

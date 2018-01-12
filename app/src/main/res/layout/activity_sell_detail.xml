@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical">
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/scrollView"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -38,12 +38,16 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/left_arrow"
-                        android:layout_gravity="center_vertical"
-                        android:scaleType="centerCrop"/>
+
+
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|start"
+                        android:text="←"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -54,15 +58,16 @@
                         <ImageView
                             android:layout_width="17dp"
                             android:layout_height="18dp"
+
                             android:gravity="center_vertical"
-                            android:src="@drawable/share_red" />
+                            android:src="@drawable/share" />
 
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginLeft="24dp"
                             android:gravity="center_vertical"
-                            android:src="@drawable/heart_red" />
+                            android:src="@drawable/favorite" />
 
                     </LinearLayout>
 
@@ -76,10 +81,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:lineSpacingExtra="7sp"
-                android:background="@color/white"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="품절대란! 캣만두  라이프 에센셜 치킨 제목이 길면 밑으로 내려갑니다."
+                android:text="귀여운 시바견 하쿠"
                 android:textColor="@color/soft_black"
                 android:textSize="16sp" />
 
@@ -88,36 +92,82 @@
                 android:layout_height="30dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="15dp"
-                android:background="@color/white"
                 android:paddingRight="15dp">
 
-                <TextView
-                    android:id="@+id/price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lineSpacingExtra="16sp"
-                    android:text="16,000원"
-                    android:textColor="@color/soft_black"
-                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:id="@+id/grade"
+                        android:maxWidth="60dp"
+                        android:maxHeight="10dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:progressTint="#ffd021"
+                        android:stepSize="0.5"
+                        android:max="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="@color/soft_black"
+                        android:lineSpacingExtra="20sp"
+                        android:text="("
+                        />
+                    <TextView
+                        android:id="@+id/comment_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="@color/soft_black"
+                        android:lineSpacingExtra="20sp"
+                        android:text="785"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="8sp"
+                        android:textColor="@color/soft_black"
+                        android:lineSpacingExtra="20sp"
+                        android:text=")"
+                        />
+                </LinearLayout>
 
 
             </LinearLayout>
 
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/warm_grey"
+                android:lineSpacingExtra="16sp"
+                android:text="서울 강남구 역삼동 720-16"
+                />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:background="@color/white"
+                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp">
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:lineSpacingExtra="12sp"
-                    android:text="14,000원"
-                    android:textColor="@color/color_primary"
-                    android:textSize="16sp" />
+                    android:textSize="12sp"
+                    android:textColor="@color/soft_black"
+                    android:lineSpacingExtra="16sp"
+                    android:text="행복을 전하는 강아지 세상"
+                    />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -126,12 +176,11 @@
                     android:gravity="end|center_vertical">
 
                     <TextView
-                        android:layout_width="60dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/round_mint"
                         android:lineSpacingExtra="5sp"
-                        android:textAlignment="center"
-                        android:text="15%할인"
+                        android:text="등급"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -154,7 +203,7 @@
             <com.rootup.wojjujju.wojjujju.custom.SwipeViewPager
                 android:id="@+id/tab_viewpager"
                 android:layout_width="match_parent"
-                android:layout_height="1200dp" />
+                android:layout_height="1500dp" />
         </LinearLayout>
 
 
@@ -174,7 +223,7 @@
             android:src="@drawable/select_list_top" />
 
         <LinearLayout
-
+            android:visibility="gone"
             android:id="@+id/selected_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -198,7 +247,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:text="상품 선택"></TextView>
+                    android:text="분양방식 선택"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -226,7 +275,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:paddingLeft="10dp"
-                    android:text="옵션 선택"></TextView>
+                    android:text="날짜선택"></TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -255,7 +304,7 @@
                     android:layout_marginBottom="5dp"
                     android:gravity="end"
                     android:lineSpacingExtra="3sp"
-                    android:text="총 9,900원"
+                    android:text="총 370,000원"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
 
@@ -274,7 +323,7 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text="찜하기"
+                android:text="문의하기"
                 android:textColor="@color/color_primary"
                 android:textSize="16sp" />
 
@@ -285,7 +334,7 @@
                 android:layout_weight="1"
                 android:background="@color/color_primary"
                 android:gravity="center"
-                android:text="결제하기"
+                android:text="분양하기"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 

@@ -11,14 +11,14 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class ShopPaymentCompleteActivity extends AppCompatActivity {
+public class BasePaymentCompleteActivity extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beauty_payment_complete);
+        setContentView(R.layout.activity_base_payment_complete);
 
         initShopCompleteList();
 
@@ -62,7 +62,7 @@ public class ShopPaymentCompleteActivity extends AppCompatActivity {
 
 
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(ShopPaymentCompleteActivity.this){
+        LinearLayoutManager layoutManager = new LinearLayoutManager(BasePaymentCompleteActivity.this){
             @Override
             public boolean canScrollVertically() {
                 return false;
@@ -71,7 +71,7 @@ public class ShopPaymentCompleteActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, ShopPaymentCompleteActivity.this, R.layout.items_shop_payment_item));
+            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, BasePaymentCompleteActivity.this, R.layout.items_base_payment_item));
         }
         paymentListView.setLayoutManager(layoutManager);
 

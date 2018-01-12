@@ -1,30 +1,20 @@
 package com.rootup.wojjujju.wojjujju.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.Gravity;
-import android.view.View;
-import android.widget.LinearLayout;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.BeautyDetailPagerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
 import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
-import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
-import com.rootup.wojjujju.wojjujju.fragment.BeautyDetailInfoFragment;
 import com.rootup.wojjujju.wojjujju.fragment.HospitalDetailInfoFragment;
 import com.tmall.ultraviewpager.UltraViewPager;
-
-import java.util.ArrayList;
 
 public class HospitalDetailActivity extends AppCompatActivity{
 
@@ -72,7 +62,7 @@ public class HospitalDetailActivity extends AppCompatActivity{
 
     void initViewPager(){
 
-        UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.beauty_viewpager);
+        UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.ultra_viewpager);
         ultraViewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
 //initialize UltraPagerAdapter，and add child view to UltraViewPager
         PagerAdapter adapter = new BeautyDetailPagerAdapter(false);

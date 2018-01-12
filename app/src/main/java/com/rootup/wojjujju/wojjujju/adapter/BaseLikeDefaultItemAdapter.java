@@ -37,14 +37,25 @@ public class BaseLikeDefaultItemAdapter extends RecyclerView.Adapter<BaseItemVie
     @Override
     public void onBindViewHolder(final BaseItemViewHolder holder, int position) {
 
-        try{holder.title.setText(dataList.get(position).getTitle());}catch (Exception e){};
-//        holder.price.setText(dataList.get(position).getPrice());
 
-        try{holder.address.setText(dataList.get(position).getAddress());}catch (Exception e){};
-        try{holder.grade.setRating(dataList.get(position).getGrade());}catch (Exception e){};
-        try{holder.commentCnt.setText(String.valueOf(dataList.get(position).getCommentCnt()));}catch (Exception e){};
-        try{holder.description.setText(dataList.get(position).getDescription());}catch (Exception e){}
-        try{holder.label.setText(dataList.get(position).getLabel());}catch(Exception e){};
+
+        try{if(dataList.get(position).getTitle()==null){holder.title.setVisibility(View.GONE);}else{ holder.title.setText(dataList.get(position).getTitle()); }}catch (Exception e){}
+        try{if(dataList.get(position).getDate()==null){holder.date.setVisibility(View.GONE);}else{ holder.date.setText(dataList.get(position).getDate()); }}catch (Exception e){}
+        try{if(dataList.get(position).getPrice()==null){holder.price.setVisibility(View.GONE);}else{ holder.price.setText(dataList.get(position).getPrice()); }}catch (Exception e){}
+        try{if(dataList.get(position).getContents()==null){holder.contents.setVisibility(View.GONE);}else{ holder.contents.setText(dataList.get(position).getContents()); }}catch (Exception e){}
+        try{if(dataList.get(position).getUserName()==null){holder.userName.setVisibility(View.GONE);}else{ holder.userName.setText(dataList.get(position).getUserName()); }}catch (Exception e){}
+        try{if(dataList.get(position).getPercent()==null){holder.percent.setVisibility(View.GONE);}else{ holder.percent.setText(dataList.get(position).getPercent()); }}catch (Exception e){}
+
+        try{if(dataList.get(position).getGrade()==-1){holder.grade.setVisibility(View.GONE);}else{ holder.grade.setRating(dataList.get(position).getGrade()); }}catch (Exception e){}
+
+
+        try{if(dataList.get(position).getAddress()==null){holder.address.setVisibility(View.GONE);}else{ holder.commentCnt.setText(dataList.get(position).getAddress()); }}catch (Exception e){}
+        try{if(dataList.get(position).getCommentCnt()==-1){holder.commentCnt.setVisibility(View.GONE);}else{ holder.commentCnt.setText(dataList.get(position).getCommentCnt()); }}catch (Exception e){}
+        try{if(dataList.get(position).getDescription()==null){holder.description.setVisibility(View.GONE);}else{ holder.description.setText(dataList.get(position).getDescription()); }}catch (Exception e){}
+        try{if(dataList.get(position).getLabel()==null){holder.label.setVisibility(View.GONE);}else{ holder.label.setText(dataList.get(position).getLabel()); }}catch (Exception e){}
+
+
+
         String heartcolor = "#eb5036";
         try {
             if (dataList.get(position).getLike() == 1) {

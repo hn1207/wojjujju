@@ -11,7 +11,7 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class BeautyPaymentCompleteActivity extends AppCompatActivity {
+public class EducationPaymentCompleteActivity extends AppCompatActivity {
 
 
 
@@ -41,10 +41,10 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
         for(int i=0; i<3; i++) {
             Item item = new Item();
             item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
-            item.setTitle("[댕댕이 미용] ");
-            item.setPrice("12,000원");
-            item.setDate("예약일시 12.29 (화) 16:00 ");
-            item.setContents("무슨무슨 컷 서비스 내용이 들어갑니다.");
+            item.setTitle("상품의 전체제목이 들어갑니다.");
+//            item.setPrice("12,000원");
+//            item.setDate("예약일시 12.29 (화) 16:00 ");
+            item.setContents("행동교정치료 365패키지 옵션내용이 들어감.");
             paymentItemArrayList.add(item);
         }
 
@@ -62,7 +62,7 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
 
 
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentCompleteActivity.this){
+        LinearLayoutManager layoutManager = new LinearLayoutManager(EducationPaymentCompleteActivity.this){
             @Override
             public boolean canScrollVertically() {
                 return false;
@@ -71,7 +71,7 @@ public class BeautyPaymentCompleteActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, BeautyPaymentCompleteActivity.this, R.layout.items_beauty_payment_item));
+            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, EducationPaymentCompleteActivity.this, R.layout.items_beauty_payment_item));
         }
         paymentListView.setLayoutManager(layoutManager);
 

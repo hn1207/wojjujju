@@ -32,7 +32,7 @@ public class ShopPaymentActivity extends AppCompatActivity {
         findViewById(R.id.complete).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ShopPaymentActivity.this, ShopPaymentCompleteActivity.class));
+                startActivity(new Intent(ShopPaymentActivity.this, BasePaymentCompleteActivity.class));
                 finish();
             }
         });
@@ -112,7 +112,7 @@ public class ShopPaymentActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, ShopPaymentActivity.this, R.layout.items_shop_payment_item));
+            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, ShopPaymentActivity.this, R.layout.items_base_payment_item));
         }
         paymentListView.setLayoutManager(layoutManager);
 
