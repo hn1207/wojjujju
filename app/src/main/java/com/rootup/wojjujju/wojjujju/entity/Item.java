@@ -2,6 +2,8 @@ package com.rootup.wojjujju.wojjujju.entity;
 
 public class Item {
 
+
+
     String img;
     String title;
     String price;

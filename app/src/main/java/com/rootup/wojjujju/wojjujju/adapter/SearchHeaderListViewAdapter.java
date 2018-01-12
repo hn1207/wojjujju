@@ -71,7 +71,11 @@ public class SearchHeaderListViewAdapter extends BaseAdapter {
 
 
         Item item = dataList.get(position);
+
+
+
         switch (item.getType()){
+
             case HEADER:
                     convertView = inflater.inflate(R.layout.items_header, viewGroup, false);
 
@@ -112,7 +116,6 @@ public class SearchHeaderListViewAdapter extends BaseAdapter {
                 try{if(item.getPercent()==null){percent.setVisibility(View.GONE);}else{ percent.setText(item.getPercent()); }}catch (Exception e){}
                 try{if(item.getDescription()==null){description.setVisibility(View.GONE);}else{ description.setText(item.getDescription()); }}catch (Exception e){}
                 try{if(item.getLabel()==null){label.setVisibility(View.GONE);}else{ label.setText(item.getLabel()); }}catch (Exception e){}
-
                 try{if(item.getSaledPrice()==null){saledPrice.setVisibility(View.GONE);}else{ saledPrice.setText(item.getSaledPrice()); }}catch (Exception e){}
 
 
