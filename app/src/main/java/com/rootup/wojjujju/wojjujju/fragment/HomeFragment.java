@@ -19,9 +19,13 @@ import android.widget.Toast;
 import com.rootup.wojjujju.wojjujju.R;
 
 import com.rootup.wojjujju.wojjujju.activity.AdoptActivity;
+import com.rootup.wojjujju.wojjujju.activity.AlarmActivity;
+import com.rootup.wojjujju.wojjujju.activity.BaseDrawerActivity;
 import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
+import com.rootup.wojjujju.wojjujju.activity.CommunityActivity;
 import com.rootup.wojjujju.wojjujju.activity.EducationActivity;
 import com.rootup.wojjujju.wojjujju.activity.HospitalActivity;
+import com.rootup.wojjujju.wojjujju.activity.SearchActivity;
 import com.rootup.wojjujju.wojjujju.activity.SellActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShopActivity;
 import com.rootup.wojjujju.wojjujju.activity.WalkActivity;
@@ -125,10 +129,11 @@ public class HomeFragment extends Fragment {
         int id = item.getItemId();
         switch (id) {
             case R.id.action_search:
-                Toast.makeText(getContext(), R.string.search , Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), SearchActivity.class));
+
                 return true;
             case R.id.action_alarm:
-                Toast.makeText(getContext(), R.string.alarm , Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), AlarmActivity.class));
                 return true;
         }
         return super.onOptionsItemSelected(item);

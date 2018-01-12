@@ -32,6 +32,8 @@ public class AdoptActivity extends BaseDrawerActivity {
     }
 
 
+
+
     void initSpinner() {
 
         Spinner defaultSpinner = (Spinner) findViewById(R.id.adopt_default_filter);

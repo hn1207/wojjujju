@@ -11,10 +11,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.CommunityActivity;
 import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
+import com.rootup.wojjujju.wojjujju.activity.SettingActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -136,11 +138,12 @@ public class ViewMoreFragment extends Fragment {
         int id = item.getItemId();
 
 
-//        switch (id) {
-//            case R.id.action_alarm:
-//                Toast.makeText(getContext(), R.string.alarm , Toast.LENGTH_SHORT).show();
-//                return true;
-//        }
+        switch (id) {
+            case R.id.action_settings:
+                startActivity(new Intent(getContext(), SettingActivity.class));
+//                Toast.makeText(getContext(), R.string.action_settings , Toast.LENGTH_SHORT).show();
+                return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
