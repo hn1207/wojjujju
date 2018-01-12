@@ -36,7 +36,7 @@ public class WalkDetailServiceGuideActivity extends AppCompatActivity{
             item.setDescription("기준 2명 (최대 2명) 대형견 가능");
             item.setPrice("139,800원");
             item.setSaledPrice("40,000원");
-            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
+            item.setImg("http://13.125.46.183/woojjujju/sweetroom.png");
             dataList.add(item);
         }
 

@@ -38,9 +38,9 @@ public class WalkPaymentCompleteActivity extends AppCompatActivity {
 
         ArrayList<Item> paymentItemArrayList = new ArrayList<>();
 
-        for(int i=0; i<3; i++) {
+        for(int i=0; i<1; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
+            item.setImg("http://13.125.46.183/woojjujju/sweetroom2.png");
             item.setTitle("상품의 전체제목이 들어갑니다.");
 //            item.setPrice("12,000원");
 //            item.setDate("예약일시 12.29 (화) 16:00 ");

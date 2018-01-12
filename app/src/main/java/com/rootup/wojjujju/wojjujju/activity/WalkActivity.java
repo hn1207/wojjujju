@@ -1,25 +1,15 @@
 package com.rootup.wojjujju.wojjujju.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BaseLikeDefaultItemAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
-import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
-import com.rootup.wojjujju.wojjujju.entity.Item;
-import com.rootup.wojjujju.wojjujju.fragment.SellAllFragment;
 import com.rootup.wojjujju.wojjujju.fragment.WalkAllFragment;
-
-import java.util.ArrayList;
 
 public class WalkActivity extends BaseDrawerActivity {
 
@@ -47,7 +37,7 @@ public class WalkActivity extends BaseDrawerActivity {
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
         adapter.addFragment(walkAllFragment, "전체");
-        adapter.addFragment(walkAllFragment2, "강이지");
+        adapter.addFragment(walkAllFragment2, "강아지");
         adapter.addFragment(walkAllFragment3, "고양이");
 
 

@@ -12,6 +12,7 @@
         android:layout_height="@dimen/toolbar_height"
         android:gravity="center_vertical"
         android:orientation="horizontal"
+        android:background="@color/white"
         android:paddingLeft="16dp">
 
         <ImageView

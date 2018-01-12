@@ -43,7 +43,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="고객센터 전화연결"
+            android:text="PUSH 알림 설정"
             android:textColor="@color/soft_black"
             android:textSize="14sp" />
 
@@ -54,12 +54,10 @@
             android:gravity="end|center_vertical">
 
             <Switch
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:scaleType="centerCrop"
-                android:src="@drawable/chevron_right" />
+                android:buttonTint="@color/color_primary"
+                android:checked="true" />
         </LinearLayout>
 
     </LinearLayout>

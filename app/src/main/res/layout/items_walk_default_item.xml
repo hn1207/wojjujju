@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="81dp"
+        android:layout_width="120dp"
         android:layout_height="match_parent"
         android:padding="10dp" />
 

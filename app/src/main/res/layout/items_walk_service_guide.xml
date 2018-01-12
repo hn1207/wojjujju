@@ -40,12 +40,13 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/soft_black"
+            android:layout_marginTop="10dp"
             android:lineSpacingExtra="16sp"
             tools:text="기준 2명 (최대 2명) 대형견 가능"
             />
 
         <View
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/warm_grey" />
