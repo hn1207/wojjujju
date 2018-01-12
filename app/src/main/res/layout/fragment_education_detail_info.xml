@@ -65,7 +65,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@color/warm_grey"
+                    android:src="@drawable/teacher"
                     />
                 <TextView
 
@@ -96,17 +96,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/white"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
+                android:background="@drawable/border_bottom"
                 android:layout_marginTop="6dp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp">
@@ -140,6 +141,7 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="6dp"
                 android:paddingLeft="15dp"
+                android:background="@drawable/border_bottom"
                 android:paddingRight="15dp">
 
                 <TextView
@@ -168,6 +170,7 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="6dp"
                 android:paddingLeft="15dp"
+                android:background="@drawable/border_bottom"
                 android:paddingRight="15dp">
 
                 <TextView
@@ -197,6 +200,7 @@
                 android:layout_height="35dp"
                 android:layout_marginTop="6dp"
                 android:paddingLeft="15dp"
+                android:background="@drawable/border_bottom"
                 android:paddingRight="15dp">
 
                 <TextView
@@ -226,7 +230,7 @@
 
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@color/white"
@@ -261,7 +265,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@color/white"

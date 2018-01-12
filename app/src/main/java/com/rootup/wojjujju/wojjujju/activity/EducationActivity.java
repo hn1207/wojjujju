@@ -58,7 +58,7 @@ public class EducationActivity extends BaseDrawerActivity{
 
         for(int i=0; i<10; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/beauty.jpeg");
+            item.setImg("http://13.125.46.183/woojjujju/education.png");
             item.setTitle("[보듬]김지용 강사");
 //            item.setPrice("0");
 //            item.setAddress("서울시 서초구 서초동");

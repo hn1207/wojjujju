@@ -53,7 +53,7 @@ public class EducationPaymentActivity extends AppCompatActivity {
 
         for(int i=0; i<3; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
+            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
             item.setTitle("상품의 전체제목이 들어갑니다.");
             item.setPrice("12,000원");
             item.setDate("예약일시 12.29 (화) 13:00 ");

@@ -20,12 +20,11 @@
             android:orientation="horizontal"
             android:paddingLeft="16dp">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="←"
-                android:textColor="@color/color_primary"
-                android:textSize="20sp" />
+                android:src="@drawable/left_arrow"
+                android:scaleType="centerCrop"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -42,17 +41,20 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="14dp"
-            android:text="배송지 정보"
+            android:text="교육받을 장소 정보"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
 
         <LinearLayout
             android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="true"
+                android:buttonTint="@color/color_primary"
                 android:text="기본 장소" />
 
             <RadioButton
@@ -90,14 +92,14 @@
                     android:layout_width="match_parent"
 
                     android:layout_height="wrap_content">
-                    <EditText
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/round"
 
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
                         android:layout_marginRight="19dp"
-                        />
+                        android:layout_weight="1"
+
+                        android:background="@drawable/round" />
 
                     <TextView
 
@@ -115,13 +117,12 @@
                 </LinearLayout>
 
                 <EditText
-                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round"
-
+                    android:layout_height="30dp"
                     android:layout_marginRight="19dp"
-                    />
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/round" />
             </LinearLayout>
 
 
@@ -155,13 +156,12 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round"
-
+                    android:layout_height="30dp"
                     android:layout_marginRight="19dp"
-                    />
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/round" />
             </LinearLayout>
 
 
@@ -244,7 +244,7 @@
                         android:text=" 번호인증 "
                         android:background="@drawable/round_red"
                         android:textColor="@color/color_primary"
-                        android:textSize="14sp" />
+                        android:textSize="11sp" />
 
                 </LinearLayout>
 
