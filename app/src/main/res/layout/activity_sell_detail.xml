@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <android.support.v4.widget.NestedScrollView
@@ -38,16 +39,14 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp">
 
-                    <TextView
+                    <ImageView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-
-
-                        android:layout_weight="1"
+                        android:layout_weight="0.2"
                         android:gravity="center_vertical|start"
-                        android:text="←"
-                        android:textColor="@color/white"
-                        android:textSize="30sp" />
+                        android:src="@drawable/left_arrow_white"
+                        android:layout_gravity="center"
+                        />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -134,7 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:textColor="@color/warm_grey"
+                android:textColor="@color/soft_black"
                 android:lineSpacingExtra="16sp"
                 android:text="서울 강남구 역삼동 720-16"
                 />
@@ -150,7 +149,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:textColor="@color/soft_black"
+                    android:textColor="@color/warm_grey"
                     android:lineSpacingExtra="16sp"
                     android:text="행복을 전하는 강아지 세상"
                     />
@@ -161,13 +160,19 @@
                     android:layout_weight="1"
                     android:gravity="end|center_vertical">
 
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gold"
+                        android:layout_marginRight="10dp"
+                        />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/round_mint"
                         android:lineSpacingExtra="5sp"
-                        android:text="등급"
-                        android:textColor="@color/white"
+                        android:text="안심분양 1등급"
+                        android:textColor="@color/color_primary"
                         android:textSize="12sp" />
                 </LinearLayout>
 

@@ -11,9 +11,10 @@
     android:paddingTop="9dp">
 
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="상품정보"
+        android:text="반려동물 상세정보"
         android:textColor="@color/soft_black"
         android:textSize="12sp" />
 
@@ -30,9 +31,9 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="급여연령"
+                android:text="생일"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -41,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="전연령"
+                android:text="2017-03-24"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -54,16 +55,16 @@
             android:background="@color/soft_grey" />
 
         <LinearLayout
-
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="26dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="원산지"
+                android:text="종류"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -72,7 +73,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="미국"
+                android:text="시츄"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -85,16 +86,16 @@
             android:background="@color/soft_grey" />
 
         <LinearLayout
-
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="26dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="수입사"
+                android:text="성별"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -103,7 +104,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="(주) 팻앤미"
+                android:text="여"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -116,16 +117,16 @@
             android:background="@color/soft_grey" />
 
         <LinearLayout
-
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="26dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="중량 및 용량"
+                android:text="무게"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -134,7 +135,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="56g/142g"
+                android:text="3.0kg"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -147,16 +148,16 @@
             android:background="@color/soft_grey" />
 
         <LinearLayout
-
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="26dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="성분구성"
+                android:text="성격"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -165,7 +166,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="조단백질 77%이상, 조지방 14%이상, 조회분 \n수분 2.5%이하"
+                android:text="귀엽고 사람을 좋아해요. 장난끼도 많고 활발해서 같이 있으면 긍정 에너지가 생겨요!"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -178,16 +179,16 @@
             android:background="@color/soft_grey" />
 
         <LinearLayout
-
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="26dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="일일 급여량"
+                android:text="접종 및 수술이력"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -196,10 +197,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="하루 2 ~3조각"
+                android:text="중성화수술 / 접종완료 / 접종완료"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
-
 
         </LinearLayout>
 
@@ -207,6 +207,38 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/soft_grey" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="26dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="left|center_vertical"
+                android:text="분양 비용"
+                android:textColor="@color/soft_black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="350,000원"
+                android:textColor="@color/soft_black"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/soft_grey"
+            android:layout_marginBottom="10dp"/>
 
         <com.tmall.ultraviewpager.UltraViewPager
             android:id="@+id/ultra_viewpager"
@@ -216,12 +248,13 @@
             android:background="@android:color/darker_gray" />
 
         <TextView
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="@color/soft_black"
+            android:background="@color/white"
             android:lineSpacingExtra="9sp"
             android:text="키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. "
             />

@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/main_pool" />
+            android:src="@drawable/sell_background" />
 
         <TextView
             android:layout_width="65dp"
@@ -42,7 +42,7 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="5dp"
             android:gravity="left|bottom"
-            android:text=" 이번 주말\n 반려견과 함께 나들이 어때요?"
+            android:text=" 우쭈쭈에서 엄선한 업체들만\n 소개해드려요"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
@@ -53,7 +53,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="함께 수영하기 좋은 펜션"
+            android:text=" 이번달 안심분양업체 1위"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="14sp" />

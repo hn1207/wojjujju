@@ -51,6 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="방문가능한 날짜"
+                android:textStyle="bold"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
 
@@ -115,8 +116,7 @@
             android:layout_marginRight="19dp"
             android:background="@color/strong_white"
             android:textColor="#4b4b4b"
-            android:text="- 기타 안내사항이 들어갑니다. 공지사항이나 중요한 확인사항이 다시 한번 들어갑니다.\n
-- 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다.  "
+            android:text="- 픽업서비스에 대한 안내가 들어갑니다.  픽업서비스에 대한 안내가 들어갑니다. - 기타 안내사항이 들어갑니다.  기타 안내사항이 들어갑니다.  기타 안내사항이 들어갑니다.  기타 안내사항이 들어갑니다.  "
             />
 
 

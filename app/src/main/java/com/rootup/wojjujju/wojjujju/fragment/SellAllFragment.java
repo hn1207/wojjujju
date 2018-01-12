@@ -3,8 +3,6 @@ package com.rootup.wojjujju.wojjujju.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,13 +14,8 @@ import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.BasePlaceFilterActivity;
-import com.rootup.wojjujju.wojjujju.activity.BeautyActivity;
-import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumDetailActivity;
 import com.rootup.wojjujju.wojjujju.activity.SellDetailActivity;
-import com.rootup.wojjujju.wojjujju.activity.ShopSelectCategoryActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseGridAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -63,6 +56,7 @@ public class SellAllFragment extends Fragment {
         ArrayList<Item> dataList = new ArrayList<>();
         for (int i = 0; i < 9; i++) {
             Item item = new Item();
+            item.setTitle("귀여운 포메라니안 흰색");
             item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
             item.setGrade(3.5f);
             item.setAddress("서울시 역삼동");

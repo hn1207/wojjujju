@@ -57,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:background="@color/warm_grey_background"
             android:gravity="center"
@@ -73,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
                     android:gravity="start"
-                    android:text="예약자명"
+                    android:text="보호자"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
 
@@ -101,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.3"
                     android:gravity="start"
-                    android:text="예약일시"
+                    android:text="방문장소"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
 
@@ -110,7 +111,34 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
                     android:gravity="start"
-                    android:text="12.29 (화) 10:00"
+                    android:text="서울시 강남구 테헤란로 721-3\n 강아지세상 3층"
+                    android:textColor="@color/soft_black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="start"
+                    android:text="방문일시"
+                    android:textColor="@color/soft_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="start"
+                    android:text="12.29 "
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
 
