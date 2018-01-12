@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.CommunityActivity;
 import com.rootup.wojjujju.wojjujju.activity.MemoriesAlbumActivity;
+import com.rootup.wojjujju.wojjujju.activity.SettingActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.entity.Item;
@@ -139,7 +140,8 @@ public class ViewMoreFragment extends Fragment {
 
         switch (id) {
             case R.id.action_settings:
-                Toast.makeText(getContext(), R.string.action_settings , Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getContext(), SettingActivity.class));
+//                Toast.makeText(getContext(), R.string.action_settings , Toast.LENGTH_SHORT).show();
                 return true;
         }
 
