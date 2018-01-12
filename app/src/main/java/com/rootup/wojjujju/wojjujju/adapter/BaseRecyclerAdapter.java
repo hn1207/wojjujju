@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
-import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.viewholder.BaseItemViewHolder;
 

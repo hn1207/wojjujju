@@ -2,7 +2,6 @@ package com.rootup.wojjujju.wojjujju.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,10 +14,7 @@ import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseGridAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
-import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
 import com.rootup.wojjujju.wojjujju.entity.Item;
-import com.rootup.wojjujju.wojjujju.fragment.SellAllFragment;
 
 import java.util.ArrayList;
 
@@ -33,14 +29,12 @@ public class AdoptActivity extends BaseDrawerActivity {
         initGridView();
         initSpinner();
 
-
-
     }
 
 
     void initSpinner() {
 
-        Spinner defaultSpinner = (Spinner) findViewById(R.id.spinner);
+        Spinner defaultSpinner = (Spinner) findViewById(R.id.adopt_default_filter);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(AdoptActivity.this, R.array.adopt_default_filter, R.layout.spinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         defaultSpinner.setAdapter(adapter);

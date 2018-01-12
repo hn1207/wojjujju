@@ -5,27 +5,20 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.rootup.wojjujju.wojjujju.R;
-import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.BaseUltraPagerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.TabViewAdapter;
 import com.rootup.wojjujju.wojjujju.custom.SwipeViewPager;
-import com.rootup.wojjujju.wojjujju.entity.Item;
 import com.rootup.wojjujju.wojjujju.fragment.AdoptCompanyInfoFragment;
+import com.rootup.wojjujju.wojjujju.fragment.AdoptDetailInfoFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseQnAFragment;
 import com.rootup.wojjujju.wojjujju.fragment.BaseReviewFragment;
-import com.rootup.wojjujju.wojjujju.fragment.SellCompanyInfoFragment;
-import com.rootup.wojjujju.wojjujju.fragment.SellDetailInfoFragment;
 import com.tmall.ultraviewpager.UltraViewPager;
-
-import java.util.ArrayList;
 
 public class AdoptDetailActivity extends AppCompatActivity{
 
@@ -83,7 +76,9 @@ public class AdoptDetailActivity extends AppCompatActivity{
     }
 
     void initTabView(){
-        SellDetailInfoFragment sellDetailInfoFragment = new SellDetailInfoFragment();
+
+        AdoptDetailInfoFragment adoptDetailInfoFragment = new AdoptDetailInfoFragment();
+
         AdoptCompanyInfoFragment adoptCompanyInfoFragment = new AdoptCompanyInfoFragment();
         baseQnAFragment = new BaseQnAFragment();
         baseReviewFragment = new BaseReviewFragment();
@@ -91,7 +86,7 @@ public class AdoptDetailActivity extends AppCompatActivity{
 
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
-        adapter.addFragment(sellDetailInfoFragment, "상세정보");
+        adapter.addFragment(adoptDetailInfoFragment, "상세정보");
         adapter.addFragment(adoptCompanyInfoFragment, "업체소개");
         adapter.addFragment(baseQnAFragment, "Q&A");
         adapter.addFragment(baseReviewFragment, "후기");

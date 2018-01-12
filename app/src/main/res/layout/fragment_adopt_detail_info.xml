@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="상품정보"
+        android:text="반려동물 상세정보"
         android:textColor="@color/soft_black"
         android:textSize="12sp" />
 
@@ -32,7 +32,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="급여연령"
+                android:text="생일"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="전연령"
+                android:text="2017-03-24(예상)"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -63,7 +63,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="원산지"
+                android:text="종류"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -72,7 +72,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="미국"
+                android:text="스피츠"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -94,7 +94,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="수입사"
+                android:text="성별"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -103,7 +103,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="(주) 팻앤미"
+                android:text="여"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -125,7 +125,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="중량 및 용량"
+                android:text="무게"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -134,7 +134,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="56g/142g"
+                android:text="3.0kg"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -156,7 +156,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="성분구성"
+                android:text="특징"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -165,7 +165,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="조단백질 77%이상, 조지방 14%이상, 조회분 \n수분 2.5%이하"
+                android:text="쓰레기더미에서 발견되어 보호소로 왔어요.\n2개월정도 지났고 꼬리가 짧아요."
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -187,7 +187,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.7"
                 android:gravity="left|center_vertical"
-                android:text="일일 급여량"
+                android:text="접종 및 수술이력"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -196,7 +196,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="left|center_vertical"
-                android:text="하루 2 ~3조각"
+                android:text="무슨수술 / 접종완료 / 접종완료"
                 android:textColor="@color/soft_black"
                 android:textSize="10sp" />
 
@@ -206,19 +206,34 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/soft_grey" />
+            android:background="@color/soft_grey"
+            android:layout_marginBottom="10dp"/>
+
+        <com.tmall.ultraviewpager.UltraViewPager
+            android:id="@+id/ultra_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/darker_gray" />
 
         <TextView
-            android:layout_width="170dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/round_red"
-            android:gravity="center"
-            android:text="수입사 상품정보 보기"
-            android:textColor="@color/color_primary"
-            android:textSize="14sp" />
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유의사항"
+            android:textColor="@color/soft_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/soft_black"
+            android:lineSpacingExtra="9sp"
+            android:text="키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. 키울 때 주의할 점이 들어갑니다. "
+            />
 
 
     </LinearLayout>
