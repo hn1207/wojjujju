@@ -47,7 +47,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-
+                android:textStyle="bold"
                 android:text="픽업할 장소 정보"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
@@ -67,15 +67,17 @@
 
         <LinearLayout
             android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:buttonTint="@color/color_primary"
+                android:checked="true"
                 android:text="기본 장소" />
 
             <RadioButton
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="신규 장소" />
@@ -109,14 +111,14 @@
                     android:layout_width="match_parent"
 
                     android:layout_height="wrap_content">
-                    <EditText
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/round"
 
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
                         android:layout_marginRight="19dp"
-                        />
+                        android:layout_weight="1"
+
+                        android:background="@drawable/round" />
 
                     <TextView
 
@@ -134,13 +136,12 @@
                 </LinearLayout>
 
                 <EditText
-                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round"
-
+                    android:layout_height="30dp"
                     android:layout_marginRight="19dp"
-                    />
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/round" />
             </LinearLayout>
 
 
@@ -174,13 +175,12 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round"
-
+                    android:layout_height="30dp"
                     android:layout_marginRight="19dp"
-                    />
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/round" />
             </LinearLayout>
 
 
@@ -214,7 +214,7 @@
 
                 <EditText
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
 
                     android:layout_weight="1.3"
                     android:background="@drawable/round" />
@@ -229,11 +229,11 @@
 
                 <EditText
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:background="@drawable/round"
-                    android:layout_weight="1.3" />
+                    android:layout_weight="1.3"
+                    android:background="@drawable/round" />
 
                 <TextView
                     android:layout_width="5dp"
@@ -245,20 +245,20 @@
 
                 <EditText
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:background="@drawable/round"
-                    android:layout_weight="1.3" />
+                    android:layout_weight="1.3"
+                    android:background="@drawable/round" />
 
                 <TextView
                     android:layout_width="55dp"
-                    android:layout_height="20dp"
+                    android:layout_height="25dp"
                     android:layout_marginRight="19dp"
+                    android:background="@drawable/round_red"
                     android:gravity="center"
                     android:lineSpacingExtra="10sp"
                     android:text="번호인증"
-                    android:background="@drawable/round_red"
                     android:textColor="@color/color_primary"
                     android:textSize="11sp" />
             </LinearLayout>
@@ -329,7 +329,7 @@
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="15dp"
                     android:lineSpacingExtra="10sp"
                     android:text="1장"
                     android:textColor="@color/soft_black"
@@ -384,8 +384,8 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="32dp"
-                    android:layout_weight="0.3"
-                    android:gravity="center_horizontal"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
                     android:lineSpacingExtra="10sp"
                     android:layout_marginLeft="20dp"
                     android:text="0p"
@@ -534,6 +534,7 @@
             android:gravity="center"
             android:lineSpacingExtra="10sp"
             android:text="결제수단"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/soft_black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -553,8 +554,9 @@
                 android:background="@drawable/round_reservation"
                 android:gravity="center"
                 android:text="신용카드"
+
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -565,7 +567,7 @@
                 android:gravity="center"
                 android:text="휴대폰결제"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -585,7 +587,7 @@
                 android:gravity="center"
                 android:text="카카오페이"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
             <TextView
@@ -597,7 +599,7 @@
                 android:gravity="center"
                 android:text="무통장 입금"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -622,13 +624,13 @@
                     android:text="PAYCO"
                     android:textStyle="bold"
                     android:textColor="@color/color_primary"
-                    android:textSize="16sp"/>
+                    android:textSize="12sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="  신용카드 결제"
                     android:textColor="@color/soft_black"
-                    android:textSize="16sp"/>
+                    android:textSize="12sp"/>
 
 
             </LinearLayout>
@@ -644,7 +646,7 @@
                 android:gravity="center"
                 android:text="네이버페이"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -667,6 +669,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:id="@+id/payment_text"
             android:buttonTint="@color/color_primary"
             android:text="결제대행 서비스 표준이용약관에 동의합니다. (필수)" />
 
@@ -676,7 +679,7 @@
             android:layout_height="@dimen/toolbar_height"
             android:background="@color/color_primary"
             android:gravity="center"
-            android:text="분양하기"
+            android:text="결제하기"
             android:textColor="@color/white"
             android:textSize="20sp" />
 

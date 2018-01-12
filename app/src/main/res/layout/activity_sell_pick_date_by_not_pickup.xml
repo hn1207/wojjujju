@@ -51,6 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="픽업가능한 날짜"
+                android:textStyle="bold"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
 
@@ -60,7 +61,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textSize="10sp"
-                android:textColor="@color/color_accent"
+                android:textColor="@color/mint"
                 android:lineSpacingExtra="13sp"
                 android:text="안심픽업 서비스 안내 "
                 />
@@ -125,8 +126,8 @@
             android:layout_marginRight="19dp"
             android:background="@color/strong_white"
             android:textColor="#4b4b4b"
-            android:text="- 기타 안내사항이 들어갑니다. 공지사항이나 중요한 확인사항이 다시 한번 들어갑니다.\n
-- 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다. 기타 안내사항이 들어갑니다.  "
+            android:text="- 업체 방문에 대한 안내가 들어갑니다. 업체 방문에 대한 안내가 들어갑니다. 업체 방문에 대한 안내가 들어갑니다.
+- 진행과정에 대한 안내가 들업갑니다. 진행과정에 대한 안내가 들업갑니다.진행과정에 대한 안내가 들업갑니다."
             />
 
 
