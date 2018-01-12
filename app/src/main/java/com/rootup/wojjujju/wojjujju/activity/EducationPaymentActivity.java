@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.View;
+import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
@@ -39,6 +41,13 @@ public class EducationPaymentActivity extends AppCompatActivity {
 
             }
         });
+
+        String strFront = "<u>결제대행 서비스 표준이용약관</u>";
+        String strChange = "에 동의합니다.";
+        String strBack = " <font color=\"#f62b4c\">(필수)</font>";
+        TextView tv = findViewById(R.id.payment_text);
+        tv.setText(Html.fromHtml(strFront + strChange + strBack));
+
     }
 
 
@@ -58,7 +67,6 @@ public class EducationPaymentActivity extends AppCompatActivity {
             item.setPrice("12,000원");
             item.setDate("예약일시 12.29 (화) 13:00 ");
             item.setContents("행동교정치료 365패키지 옵션내용이 들어감.");
-            item.setCnt(i%7);
             paymentItemArrayList.add(item);
         }
 

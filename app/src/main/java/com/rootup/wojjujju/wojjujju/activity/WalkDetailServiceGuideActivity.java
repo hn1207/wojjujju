@@ -14,14 +14,14 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class EducationDetailServiceGuideActivity extends AppCompatActivity{
+public class WalkDetailServiceGuideActivity extends AppCompatActivity{
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base_detail_service_guide);
+        setContentView(R.layout.activity_walk_detail_service_guide);
 
         initServiceGuideItem();
     }
@@ -32,9 +32,11 @@ public class EducationDetailServiceGuideActivity extends AppCompatActivity{
         ArrayList<Item> dataList = new ArrayList<>();
         for(int i=0; i<20; i++){
             Item item = new Item();
-            item.setTitle("행동교정치료 365");
-            item.setPrice("50,000원 / 2h");
-            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
+            item.setTitle("디럭스 스위트 룸 1");
+            item.setDescription("기준 2명 (최대 2명) 대형견 가능");
+            item.setPrice("139,800원");
+            item.setSaledPrice("40,000원");
+            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
             dataList.add(item);
         }
 
@@ -42,23 +44,24 @@ public class EducationDetailServiceGuideActivity extends AppCompatActivity{
         RecyclerView dataListView = (RecyclerView) findViewById(R.id.data_list);
         dataListView.setHasFixedSize(true);
 
-        dataListView.addOnItemTouchListener(new RecyclerItemClickListener(EducationDetailServiceGuideActivity.this, dataListView, new RecyclerItemClickListener.OnItemClickListener() {
+        dataListView.addOnItemTouchListener(new RecyclerItemClickListener(WalkDetailServiceGuideActivity.this, dataListView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                startActivity(new Intent(EducationDetailServiceGuideActivity.this, EducationDetailServiceGuideItemActivity.class));
+                startActivity(new Intent(WalkDetailServiceGuideActivity.this, WalkDetailServiceGuideItemActivity.class));
             }
 
             @Override
             public void onLongItemClick(View view, int position) {
 
+
             }
         }));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(EducationDetailServiceGuideActivity.this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(WalkDetailServiceGuideActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
-            dataListView.setAdapter(new BaseRecyclerAdapter(dataList, EducationDetailServiceGuideActivity.this, R.layout.items_base_service_guide));
+            dataListView.setAdapter(new BaseRecyclerAdapter(dataList, WalkDetailServiceGuideActivity.this, R.layout.items_walk_service_guide));
         }
         dataListView.setLayoutManager(layoutManager);
 

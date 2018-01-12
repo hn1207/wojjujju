@@ -11,14 +11,14 @@ import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
 
-public class EducationPaymentCompleteActivity extends AppCompatActivity {
+public class WalkPaymentCompleteActivity extends AppCompatActivity {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_education_payment_complete);
+        setContentView(R.layout.activity_walk_payment_complete);
 
         initPaymentCompleteList();
 
@@ -40,11 +40,11 @@ public class EducationPaymentCompleteActivity extends AppCompatActivity {
 
         for(int i=0; i<3; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
+            item.setImg("http://13.125.46.183/woojjujju/beauty2.png");
             item.setTitle("상품의 전체제목이 들어갑니다.");
 //            item.setPrice("12,000원");
 //            item.setDate("예약일시 12.29 (화) 16:00 ");
-            item.setContents("행동교정치료 365패키지 옵션내용이 들어감.");
+            item.setContents("디럭스 스위트 룸 1 옵션내용이 들어갑니다.");
             paymentItemArrayList.add(item);
         }
 
@@ -62,7 +62,7 @@ public class EducationPaymentCompleteActivity extends AppCompatActivity {
 
 
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyPaymentActivity.this);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(EducationPaymentCompleteActivity.this){
+        LinearLayoutManager layoutManager = new LinearLayoutManager(WalkPaymentCompleteActivity.this){
             @Override
             public boolean canScrollVertically() {
                 return false;
@@ -71,7 +71,7 @@ public class EducationPaymentCompleteActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (paymentItemArrayList.size() > 0) {
-            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, EducationPaymentCompleteActivity.this, R.layout.items_beauty_payment_item));
+            paymentListView.setAdapter(new BaseRecyclerAdapter(paymentItemArrayList, WalkPaymentCompleteActivity.this, R.layout.items_beauty_payment_item));
         }
         paymentListView.setLayoutManager(layoutManager);
 

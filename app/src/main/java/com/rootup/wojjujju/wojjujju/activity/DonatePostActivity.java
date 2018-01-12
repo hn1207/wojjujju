@@ -163,7 +163,7 @@ public class DonatePostActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (beautySelectedItemArrayList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, DonatePostActivity.this, R.layout.items_beauty_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, DonatePostActivity.this, R.layout.items_base_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 

@@ -18,6 +18,7 @@
             android:layout_height="@dimen/toolbar_height"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:background="@drawable/border_bottom"
             android:paddingLeft="16dp">
 
             <ImageView
@@ -42,6 +43,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="14dp"
             android:text="교육받을 장소 정보"
+            android:textStyle="bold"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
 
@@ -54,11 +56,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
+                android:textSize="14sp"
                 android:buttonTint="@color/color_primary"
                 android:text="기본 장소" />
 
             <RadioButton
-
+                android:textSize="14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="신규 장소" />
@@ -78,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:lineSpacingExtra="10sp"
-                android:text="주"
+                android:text="주소"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
 
@@ -145,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:lineSpacingExtra="10sp"
-                android:text="보호"
+                android:text="보호자"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
 
@@ -160,7 +163,6 @@
                     android:layout_height="30dp"
                     android:layout_marginRight="19dp"
                     android:layout_marginTop="8dp"
-
                     android:background="@drawable/round" />
             </LinearLayout>
 
@@ -283,7 +285,6 @@
             android:id="@+id/payment_item_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:orientation="vertical" />
 
         <View
@@ -319,7 +320,7 @@
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="15dp"
                     android:lineSpacingExtra="10sp"
                     android:text="1장"
                     android:textColor="@color/soft_black"
@@ -374,13 +375,13 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="32dp"
-                    android:layout_weight="0.3"
-                    android:gravity="center_horizontal"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
                     android:lineSpacingExtra="10sp"
                     android:layout_marginLeft="20dp"
                     android:text="0p"
                     android:background="@drawable/round_grey"
-                    android:textColor="@color/soft_grey"
+                    android:textColor="@color/warm_grey"
                     android:textSize="14sp" />
 
                 <TextView
@@ -524,6 +525,7 @@
             android:gravity="center"
             android:lineSpacingExtra="10sp"
             android:text="결제수단"
+            android:layout_marginBottom="10dp"
             android:textColor="@color/soft_black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -543,8 +545,9 @@
                 android:background="@drawable/round_reservation"
                 android:gravity="center"
                 android:text="신용카드"
+
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -555,7 +558,7 @@
                 android:gravity="center"
                 android:text="휴대폰결제"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -575,7 +578,7 @@
                 android:gravity="center"
                 android:text="카카오페이"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
             <TextView
@@ -587,7 +590,7 @@
                 android:gravity="center"
                 android:text="무통장 입금"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -612,13 +615,13 @@
                     android:text="PAYCO"
                     android:textStyle="bold"
                     android:textColor="@color/color_primary"
-                    android:textSize="16sp"/>
+                    android:textSize="12sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="  신용카드 결제"
                     android:textColor="@color/soft_black"
-                    android:textSize="16sp"/>
+                    android:textSize="12sp"/>
 
 
             </LinearLayout>
@@ -634,7 +637,7 @@
                 android:gravity="center"
                 android:text="네이버페이"
                 android:textColor="@color/soft_black"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>
@@ -657,6 +660,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:id="@+id/payment_text"
             android:buttonTint="@color/color_primary"
             android:text="결제대행 서비스 표준이용약관에 동의합니다. (필수)" />
 

@@ -49,10 +49,12 @@ public class BaseLikeDefaultItemAdapter extends RecyclerView.Adapter<BaseItemVie
         try{if(dataList.get(position).getGrade()==-1){holder.grade.setVisibility(View.GONE);}else{ holder.grade.setRating(dataList.get(position).getGrade()); }}catch (Exception e){}
 
 
-        try{if(dataList.get(position).getAddress()==null){holder.address.setVisibility(View.GONE);}else{ holder.commentCnt.setText(dataList.get(position).getAddress()); }}catch (Exception e){}
-        try{if(dataList.get(position).getCommentCnt()==-1){holder.commentCnt.setVisibility(View.GONE);}else{ holder.commentCnt.setText(dataList.get(position).getCommentCnt()); }}catch (Exception e){}
+        try{if(dataList.get(position).getAddress()==null){holder.address.setVisibility(View.GONE);}else{ holder.address.setText(dataList.get(position).getAddress()); }}catch (Exception e){}
+        try{if(dataList.get(position).getCommentCnt()==-1){holder.commentCnt.setVisibility(View.GONE);}else{ holder.commentCnt.setText("("+dataList.get(position).getCommentCnt() + ")"); }}catch (Exception e){}
         try{if(dataList.get(position).getDescription()==null){holder.description.setVisibility(View.GONE);}else{ holder.description.setText(dataList.get(position).getDescription()); }}catch (Exception e){}
         try{if(dataList.get(position).getLabel()==null){holder.label.setVisibility(View.GONE);}else{ holder.label.setText(dataList.get(position).getLabel()); }}catch (Exception e){}
+
+
 
 
 

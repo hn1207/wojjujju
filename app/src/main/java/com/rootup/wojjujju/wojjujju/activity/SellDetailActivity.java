@@ -135,7 +135,7 @@ public class SellDetailActivity extends AppCompatActivity{
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(dataList, SellDetailActivity.this, R.layout.items_beauty_select_goods_item));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(dataList, SellDetailActivity.this, R.layout.items_base_select_goods_item));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 
