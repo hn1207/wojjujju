@@ -42,15 +42,14 @@ public class SplashActivity extends AppCompatActivity {
         videoView = (VideoView) findViewById(R.id.video);
         videoView.requestFocus();
 
-        int type = URL;
-        switch (type) {
-            case URL:
-                //동영상 경로가 URL일 경우
-                videoView.setVideoURI(Uri.parse(VIDEO_URL));
-                break;
+
+        int videoName = R.raw.friend_zoo_bg;
+
+        final String path = "android.resource://" + getPackageName() + "/" + videoName;
+
+        videoView.setVideoURI(Uri.parse(path));
 
 
-        }
 
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
@@ -72,6 +71,7 @@ public class SplashActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(SplashActivity.this, SignInActivity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                finish();
             }
         });
 

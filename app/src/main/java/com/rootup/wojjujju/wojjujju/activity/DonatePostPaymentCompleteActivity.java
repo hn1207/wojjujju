@@ -22,7 +22,7 @@ public class DonatePostPaymentCompleteActivity extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DonatePostPaymentCompleteActivity.this, MainActivity.class));
+                startActivity(new Intent(DonatePostPaymentCompleteActivity.this, TutorialActivity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 finish();
             }

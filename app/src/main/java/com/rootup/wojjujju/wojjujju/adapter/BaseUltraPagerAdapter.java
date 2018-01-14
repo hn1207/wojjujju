@@ -19,11 +19,11 @@ import java.util.ArrayList;
 
 public class BaseUltraPagerAdapter extends PagerAdapter {
     private boolean isMultiScr;
-    private ArrayList<Item> dataList;
+    private ArrayList<Integer> dataList;
     Context con;
 
 
-    public BaseUltraPagerAdapter(boolean isMultiScr, ArrayList<Item> dataList, Context con) {
+    public BaseUltraPagerAdapter(boolean isMultiScr, ArrayList<Integer> dataList, Context con) {
         this.isMultiScr = isMultiScr;
         this.dataList= dataList;
         this.con=con;
@@ -38,8 +38,13 @@ public class BaseUltraPagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
+        if(dataList != null){
+            return dataList.size();
+        }
+
+
         return 5;
-//        return dataList.size();
+
     }
 
     @Override
@@ -54,43 +59,49 @@ public class BaseUltraPagerAdapter extends PagerAdapter {
 
 //        TextView textView = (TextView) linearLayout.findViewById(R.id.bg_image);
 //        textView.setText(position + "");
-
-//        ImageView bg = linearLayout.findViewById(R.id.bg_image);
 //        linearLayout.setId(R.id.item_id);
 
-//        Glide.with(con)
-//                .applyDefaultRequestOptions(RequestOptions.centerCropTransform())
-//                .load(dataList.get(position).getImg())
-//                .into(bg);
-//
-        switch (position) {
-            case 0:
+        if(dataList!=null) {
+            linearLayout.setBackgroundResource(dataList.get(position));
+//            ImageView bg = linearLayout.findViewById(R.id.bg_image);
+//            Glide.with(con)
+//                    .applyDefaultRequestOptions(RequestOptions.centerCropTransform())
+//                    .load(dataList.get(position))
+//                    .into(bg);
+            container.addView(linearLayout);
+
+        }else {
+
+
+            switch (position) {
+                case 0:
 //
 
 
-                linearLayout.setBackgroundResource(R.drawable.beautyshop);
+                    linearLayout.setBackgroundResource(R.drawable.beautyshop);
 //                linearLayout.setBackgroundResource(R.drawable.fragment_home_tarco);
-                break;
-            case 1:
-                linearLayout.setBackgroundResource(R.drawable.beautyshop2);
+                    break;
+                case 1:
+                    linearLayout.setBackgroundResource(R.drawable.beautyshop2);
 //                linearLayout.setBackgroundResource(R.drawable.fragment_home_chicken);
-                break;
-            case 2:
-                linearLayout.setBackgroundResource(R.drawable.beautyshop3);
+                    break;
+                case 2:
+                    linearLayout.setBackgroundResource(R.drawable.beautyshop3);
 //                linearLayout.setBackgroundResource(R.drawable.fragment_home_tarco);
-                break;
-            case 3:
-                linearLayout.setBackgroundResource(R.drawable.beautyshop4);
+                    break;
+                case 3:
+                    linearLayout.setBackgroundResource(R.drawable.beautyshop4);
 //                linearLayout.setBackgroundResource(R.drawable.fragment_home_chicken);
-                break;
-            case 4:
-                linearLayout.setBackgroundResource(R.drawable.beautyshop5);
+                    break;
+                case 4:
+                    linearLayout.setBackgroundResource(R.drawable.beautyshop5);
 //                linearLayout.setBackgroundResource(R.drawable.fragment_home_chicken);
-                break;
-        }
-        container.addView(linearLayout);
+                    break;
+            }
+            container.addView(linearLayout);
 //        linearLayout.getLayoutParams().width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 180, container.getContext().getResources().getDisplayMetrics());
 //        linearLayout.getLayoutParams().height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 400, container.getContext().getResources().getDisplayMetrics());
+        }
         return linearLayout;
     }
 
