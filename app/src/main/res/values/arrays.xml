@@ -26,8 +26,8 @@
     </string-array>
 
     <string-array name="community_category_filter">
-        <item>생활 속 꿀팁</item>
         <item>자유</item>
+        <item>생활 속 꿀팁</item>
         <item>요리/음식</item>
         <item>핫이슈</item>
         <item>취미</item>

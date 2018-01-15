@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@color/warm_grey" />
+            android:src="@drawable/webtoon_background" />
 
 
         <LinearLayout
@@ -75,7 +75,7 @@
                 android:gravity="left|bottom"
                 android:text="작가이름"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -93,7 +93,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:gravity="start|center_vertical">
+            android:gravity="start|center_vertical"
+            android:background="@drawable/border_bottom">
 
             <TextView
                 android:layout_width="wrap_content"
