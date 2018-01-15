@@ -1,6 +1,5 @@
 package com.rootup.wojjujju.wojjujju.activity;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,8 +8,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.fragment.CategoryFragment;
@@ -142,7 +139,7 @@ public class  MainActivity extends BaseDrawerActivity {
 
                 switch (position) {
                     case HOME_FRAGMENT:
-                        initToolbar("우쭈쭈");
+                        initToolbar("프렌쥬");
                         break;
                     case CATEGORY_FRAGMENT:
                         viewPager.setCurrentItem(currentPosition, true);

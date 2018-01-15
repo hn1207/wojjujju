@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">쭈쭈쭈</string>
+    <string name="app_name">프렌쥬</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -25,7 +25,6 @@
     <string name="adopt">입양</string>
     <string name="sell">분양</string>
     <string name="hospital">병원</string>
-
     <string name="view_more">더보기</string>
     <string name="web_toon">웹툰</string>
     <string name="community">커뮤니티</string>

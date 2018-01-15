@@ -13,7 +13,7 @@
     <item
         android:id="@+id/action_mypage"
         android:title="@string/mypage"
-        android:icon="@drawable/toolbar_alarm_icon"
+        android:icon="@drawable/my"
         app:showAsAction="ifRoom" />
 
 

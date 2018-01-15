@@ -83,5 +83,14 @@
         <item>낮은 가격순</item>
     </string-array>
 
+    <string-array name="webtoon_default_filter">
+        <item>미스터리</item>
+        <item>코믹</item>
+        <item>스릴러</item>
+        <item>로맨스</item>
+        <item>공포</item>
+    </string-array>
+
+
 
 </resources>

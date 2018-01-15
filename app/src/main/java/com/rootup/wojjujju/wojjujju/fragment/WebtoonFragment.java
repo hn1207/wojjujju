@@ -15,11 +15,8 @@ import android.view.ViewGroup;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.activity.AlarmActivity;
 import com.rootup.wojjujju.wojjujju.activity.SearchActivity;
-import com.rootup.wojjujju.wojjujju.activity.ShopDetailActivity;
-import com.rootup.wojjujju.wojjujju.activity.ShopSelectCategoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.WebtoonDetailActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
-import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
@@ -74,7 +71,10 @@ public class WebtoonFragment extends Fragment {
 
         for(int i=0; i<10; i++) {
             Item item = new Item();
-            item.setImg("http://13.125.46.183/woojjujju/cushion.jpg");
+            if(i%2==0){
+                item.setImg("http://13.125.46.183/woojjujju/webtoon_second.png");
+            }
+            else{item.setImg("http://13.125.46.183/woojjujju/webtoon_first.png");}
             item.setTitle("내 어린 고양이와 늙은 개");
             item.setDescription(i + " 화");
             item.setLabel("new");

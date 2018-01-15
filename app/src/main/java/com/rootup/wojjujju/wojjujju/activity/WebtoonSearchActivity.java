@@ -40,7 +40,7 @@ public class WebtoonSearchActivity extends AppCompatActivity {
 
         Spinner categorySpinner = (Spinner)findViewById(R.id.category_filter);
         adapter = ArrayAdapter.createFromResource(this,
-                R.array.community_category_filter, R.layout.spinner);
+                R.array.webtoon_default_filter, R.layout.spinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorySpinner.setAdapter(adapter);
 
@@ -54,11 +54,15 @@ public class WebtoonSearchActivity extends AppCompatActivity {
 
         ArrayList<Item> dataList = new ArrayList<Item>();
 
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 15; i++) {
             Item item = new Item();
-            item.setTitle("[자유] 날씨가 정말 추워요!!! ㅠㅠ");
-            item.setUserName("장지후");
-            item.setDate("2017.10.03");
+            if(i%2==0){
+                item.setImg("http://13.125.46.183/woojjujju/webtoon_second.png");
+            }
+            else{item.setImg("http://13.125.46.183/woojjujju/webtoon_first.png");}
+            item.setTitle("내 어린 고양이와 늙은 개");
+            item.setDescription(i + " 화");
+            item.setLabel("new");
             dataList.add(item);
         }
 
@@ -88,7 +92,7 @@ public class WebtoonSearchActivity extends AppCompatActivity {
 
 
         if (dataList.size() > 0) {
-            recyclerView.setAdapter(new BaseRecyclerAdapter(dataList, WebtoonSearchActivity.this, R.layout.items_community_search_post));
+            recyclerView.setAdapter(new BaseRecyclerAdapter(dataList, WebtoonSearchActivity.this, R.layout.items_webtoon_mypage));
         }
         recyclerView.setLayoutManager(layoutManager);
 

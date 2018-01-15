@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
@@ -22,8 +24,14 @@ public class WebtoonDetailActivity extends AppCompatActivity {
 
         initReviewList();
 
-        
+        TextView next = findViewById(R.id.next);
+        TextView previous = findViewById(R.id.previous);
 
+        String strPrevious = "&lt; 이전화";
+        String strNext = "다음화 &gt;";
+
+        previous.setText(Html.fromHtml(strPrevious));
+        next.setText(Html.fromHtml(strNext));
 
     }
 

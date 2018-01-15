@@ -70,7 +70,7 @@ public class CommunityActivity extends BaseDrawerActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = CommunityActivity.this.getMenuInflater();
-        inflater.inflate(R.menu.toolbar_community, menu);
+//        inflater.inflate(R.menu.toolbar_community, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
