@@ -83,12 +83,12 @@
         <activity
             android:name=".activity.BeautyDetailActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
 
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity.BasePickDateActivity"
@@ -481,13 +481,13 @@
         <activity android:name=".activity.WebtoonListActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
-        <activity android:name=".test.ViewPagerTabScrollViewWithFabActivity"
+        <activity android:name=".lib.ViewPagerTabScrollViewWithFabActivity"
             android:theme="@style/AppTheme.Toolbar"
             >
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
 
         </activity>
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.rootup.friendzoo.friendzoo.test;
+package com.rootup.friendzoo.friendzoo.lib;
 
 import android.app.Activity;
 import android.content.res.TypedArray;
@@ -26,7 +26,6 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ListView;
 
-import com.github.ksoichiro.android.observablescrollview.ObservableGridView;
 import com.rootup.friendzoo.friendzoo.R;
 
 import java.util.ArrayList;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.rootup.friendzoo.friendzoo.test;
+package com.rootup.friendzoo.friendzoo.lib;
 
 import android.app.Activity;
 import android.os.Build;

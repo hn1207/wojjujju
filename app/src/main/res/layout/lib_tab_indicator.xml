@@ -21,5 +21,6 @@
     android:gravity="center"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:textColor="@color/white"
+    android:textColor="@color/warm_grey"
+    android:background="@color/color_primary"
     android:textSize="14sp" />
