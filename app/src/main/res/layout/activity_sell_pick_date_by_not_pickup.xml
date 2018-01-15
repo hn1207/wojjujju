@@ -63,7 +63,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="10sp"
                 android:textColor="@color/mint"
-                android:lineSpacingExtra="13sp"
                 android:text="안심픽업 서비스 안내 "
                 />
         </LinearLayout>
@@ -120,7 +119,7 @@
             android:padding="14dp"
             android:layout_width="match_parent"
             android:layout_height="105dp"
-            android:lineSpacingExtra="2dp"
+            android:lineSpacingExtra="3sp"
             android:textSize="12sp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="19dp"

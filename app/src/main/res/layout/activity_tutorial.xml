@@ -21,19 +21,17 @@
 
     <com.andexert.library.RippleView
         android:id="@+id/ripple_view"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         rv_centered="true">
-        <TextView
-            android:visibility="invisible"
-            android:id="@+id/next"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_height"
-            android:textSize="18sp"
-            android:text="다음"
-            android:textColor="@color/white"
+        <ImageView
             android:background="@color/color_primary"
+            android:id="@+id/next"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_next"
             />
     </com.andexert.library.RippleView>
 

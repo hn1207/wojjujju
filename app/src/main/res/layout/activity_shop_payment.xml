@@ -314,7 +314,7 @@
             android:layout_marginTop="4dp"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/strong_white" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/payment_item_list"
@@ -326,7 +326,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/strong_white"
+            />
 
 
         <LinearLayout
@@ -382,7 +383,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/strong_white" />
 
 
         <LinearLayout

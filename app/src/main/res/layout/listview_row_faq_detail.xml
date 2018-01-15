@@ -14,7 +14,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
         android:gravity="start"
-        android:lineSpacingExtra="8sp"
+        android:lineSpacingExtra="3sp"
         android:textColor="@color/black"
         android:textSize="14sp" />
 </LinearLayout>

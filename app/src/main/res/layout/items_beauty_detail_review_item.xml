@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/soft_black"
-            android:lineSpacingExtra="5dip"
+            android:lineSpacingExtra="3sp"
             android:text="후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다."
             />
 

@@ -43,7 +43,7 @@
                 android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="8,700원"
                 android:textColor="@color/white"
                 android:textSize="10sp"
@@ -55,7 +55,7 @@
                 android:textSize="13sp"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/white"
-                android:lineSpacingExtra="15sp"
+                android:lineSpacingExtra="3sp"
                 android:text=" 7,900원"
                 />
 
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="3sp"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="10%"
                 android:textColor="@color/mint"
                 android:textSize="12sp" />

@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:lineSpacingExtra="7sp"
+                android:lineSpacingExtra="3sp"
                 android:background="@color/white"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -95,7 +95,7 @@
                     android:id="@+id/price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="16sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="16,000원"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -114,7 +114,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:lineSpacingExtra="12sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="14,000원"
                     android:textColor="@color/color_primary"
                     android:textSize="16sp" />
@@ -129,7 +129,7 @@
                         android:layout_width="60dp"
                         android:layout_height="20dp"
                         android:background="@drawable/round_mint"
-                        android:lineSpacingExtra="5sp"
+                        android:lineSpacingExtra="3sp"
                         android:textAlignment="center"
                         android:text="15%할인"
                         android:textColor="@color/white"
@@ -166,13 +166,15 @@
         android:layout_gravity="bottom"
         android:orientation="vertical">
 
+
         <ImageView
+            android:visibility="gone"
+            android:id="@+id/select_arrow"
             android:layout_width="match_parent"
             android:layout_height="15dp"
             android:layout_marginTop="5dp"
             android:scaleType="fitXY"
             android:src="@drawable/select_list_top" />
-
         <LinearLayout
 
             android:id="@+id/selected_list"

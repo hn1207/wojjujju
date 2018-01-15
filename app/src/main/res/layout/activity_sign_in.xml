@@ -86,7 +86,7 @@
         <View
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="3dp"
+            android:layout_height="1dp"
             android:background="@color/soft_grey" />
 
         <TextView
@@ -102,7 +102,7 @@
         <View
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="3dp"
+            android:layout_height="1dp"
             android:background="@color/soft_grey" />
 
     </LinearLayout>

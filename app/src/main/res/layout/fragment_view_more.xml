@@ -156,7 +156,7 @@
 
         <View
         android:layout_width="match_parent"
-        android:layout_height="3dp"
+        android:layout_height="6dp"
         android:background="@color/soft_grey"/>
 
         <!-- 최근 뜨는 동영상 -->
@@ -178,7 +178,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="최근 뜨는 동영상"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -188,7 +188,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
@@ -206,7 +206,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="6dp"
             android:background="@color/soft_grey"/>
 
         <!-- 우쭈쭈의 새로운 포스팅 -->
@@ -228,7 +228,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
                     android:text="우쭈쭈의 새로운 포스팅"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -238,7 +237,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
@@ -293,7 +291,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="6dp"
             android:background="@color/soft_grey"/>
 
         <!-- 반려 동물 행사 -->
@@ -316,7 +314,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="반려동물 행사"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -326,7 +324,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />

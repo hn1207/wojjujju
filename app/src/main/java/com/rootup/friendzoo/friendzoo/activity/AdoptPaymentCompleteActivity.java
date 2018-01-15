@@ -38,6 +38,7 @@ public class AdoptPaymentCompleteActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        });
+
     }
 
 

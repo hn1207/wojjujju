@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textColor="@color/soft_black"
-        android:lineSpacingExtra="5dip"
+        android:lineSpacingExtra="3sp"
         android:text="질문내용이 들어갑니다. 질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다.질문내용이 들어갑니다."
         />
 

@@ -91,7 +91,7 @@ public class AdoptCompanyInfoFragment extends Fragment implements View.OnTouchLi
                 .setOrientation(UltraViewPager.Orientation.HORIZONTAL)
                 .setFocusColor(getResources().getColor(R.color.white))
                 .setNormalColor(getResources().getColor(R.color.transparent_white))
-                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics()));
+                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics()));
 
         ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
         ultraViewPager.getIndicator().setMargin(0,0,0,20);

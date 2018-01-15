@@ -27,7 +27,7 @@
             android:id="@+id/contents"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="6sp"
+            android:lineSpacingExtra="3sp"
             android:textColor="#303030"
             android:textSize="14sp"
             tools:text="댓글 내용이 들어갑니다. 댓글 내용이 들어갑니다.댓글 내용이 들어갑니다." />
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="start|center_vertical"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="장지후"
                 android:textColor="#000000"
                 android:textSize="12sp" />
@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="17dp"
-                android:lineSpacingExtra="4sp"
+                android:lineSpacingExtra="3sp"
                 android:text="2017.10.03"
                 android:textColor="@color/warm_grey"
                 android:textSize="12sp" />
