@@ -13,6 +13,7 @@ import com.github.jhonnyx2012.horizontalpicker.DatePickerListener;
 import com.github.jhonnyx2012.horizontalpicker.HorizontalPicker;
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
+import com.rootup.wojjujju.wojjujju.dialog.BaseInnerHTMLDialog;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import org.joda.time.DateTime;
@@ -38,6 +39,13 @@ public class SellPickDateActivityByPickUp extends AppCompatActivity implements D
             }
         });
 
+        findViewById(R.id.pickup_guide).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BaseInnerHTMLDialog baseInnerHTMLDialog = new BaseInnerHTMLDialog(SellPickDateActivityByPickUp.this, R.layout.dialog_relief_pickup, R.string.relief_pickup_guide);
+                baseInnerHTMLDialog.show();
+            }
+        });
     }
 
     @Override

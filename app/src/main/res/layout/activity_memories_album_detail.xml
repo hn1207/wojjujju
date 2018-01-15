@@ -34,6 +34,7 @@
                         android:scaleType="centerCrop"/>
 
                     <LinearLayout
+                        android:id="@+id/setting"
                         android:layout_weight="1"
                         android:layout_width="0dp"
                         android:paddingRight="16dp"
@@ -208,6 +209,7 @@
                                 app:rcSecondaryProgressColor="@color/warm_grey" />
 
                            <ImageView
+                               android:id="@+id/memories_level_guide"
                                android:layout_width="15dp"
                                android:layout_height="15dp"
                                android:src="@drawable/question"

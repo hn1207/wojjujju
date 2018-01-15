@@ -144,7 +144,7 @@
         android:layout_height="8dp"
         android:background="@color/strong_white"/>
     <LinearLayout
-
+        android:id="@+id/leave_account"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:gravity="start|center_vertical"

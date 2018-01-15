@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/guide_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:lineSpacingExtra="8sp"
+        android:text="앨범을 지우면 반려동물 정보와 사진이\n모두 삭제됩니다. 그래도 지우시겠어요?"
+        android:textColor="@color/soft_black"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_marginTop="13.3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/color_primary"
+            android:letterSpacing="0.04"
+            android:gravity="center_horizontal"
+            android:text="지우기"
+            />
+
+        <TextView
+            android:layout_marginLeft="34.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/color_primary"
+            android:letterSpacing="0.04"
+            android:gravity="center_horizontal"
+            android:text="취소"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

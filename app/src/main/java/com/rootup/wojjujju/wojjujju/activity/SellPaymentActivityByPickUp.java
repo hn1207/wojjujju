@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
+import com.rootup.wojjujju.wojjujju.dialog.BaseInnerHTMLDialog;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -39,6 +40,14 @@ public class SellPaymentActivityByPickUp extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(SellPaymentActivityByPickUp.this, MyPageCouponHistoryActivity.class));
 
+            }
+        });
+
+        findViewById(R.id.pickup_guide).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BaseInnerHTMLDialog baseInnerHTMLDialog = new BaseInnerHTMLDialog(SellPaymentActivityByPickUp.this, R.layout.dialog_relief_pickup, R.string.relief_pickup_guide);
+                baseInnerHTMLDialog.show();
             }
         });
         String strFront = "<u>결제대행 서비스 표준이용약관</u>";

@@ -11,6 +11,8 @@ import android.widget.Spinner;
 
 import com.rootup.wojjujju.wojjujju.R;
 import com.rootup.wojjujju.wojjujju.adapter.BaseGridAdapter;
+import com.rootup.wojjujju.wojjujju.dialog.BaseGuideDialog;
+import com.rootup.wojjujju.wojjujju.dialog.BaseInnerHTMLDialog;
 import com.rootup.wojjujju.wojjujju.entity.Item;
 
 import java.util.ArrayList;
@@ -30,8 +32,33 @@ public class MemoriesAlbumDetailActivity extends AppCompatActivity {
         findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                BaseInnerHTMLDialog baseGuideDialog = new BaseInnerHTMLDialog(MemoriesAlbumDetailActivity.this, R.layout.dialog_memories_level_up,R.string.memories_level_up);
+                baseGuideDialog.show();
+
+            }
+        });
+
+        findViewById(R.id.setting).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 startActivity(new Intent(MemoriesAlbumDetailActivity.this, MemoriesAlbumProfileActivity.class));
 
+            }
+        });
+
+        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BaseGuideDialog baseGuideDialog = new BaseGuideDialog(MemoriesAlbumDetailActivity.this, R.layout.dialog_memories_up);
+                baseGuideDialog.show();
+            }
+        });
+
+        findViewById(R.id.memories_level_guide).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BaseGuideDialog baseGuideDialog = new BaseGuideDialog(MemoriesAlbumDetailActivity.this, R.layout.dialog_memories_level);
+                baseGuideDialog.show();
             }
         });
     }

@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -40,7 +41,7 @@ public class TutorialActivity extends AppCompatActivity {
         findViewById(R.id.next).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TutorialActivity.this, MainActivity.class);
+                Intent intent = new Intent(TutorialActivity.this, SignInActivity.class);
 
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -75,13 +76,32 @@ public class TutorialActivity extends AppCompatActivity {
                 .setNormalColor(getResources().getColor(R.color.soft_grey))
                 .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics()));
 
-        ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
-        ultraViewPager.getIndicator().setMargin(0,0,0,50);
+        ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.TOP);
+        ultraViewPager.getIndicator().setMargin(0,50,0,0);
 
         ultraViewPager.getIndicator().build();
 
 
         ultraViewPager.setInfiniteLoop(false);
+
+        ultraViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if(position==3)
+                    findViewById(R.id.next).setVisibility(View.VISIBLE);
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
 
 //        ultraViewPager.setAutoScroll(2000);
 

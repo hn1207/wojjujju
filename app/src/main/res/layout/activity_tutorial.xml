@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:background="@color/white"
     tools:openDrawer="start">
 
 
@@ -19,12 +20,13 @@
         android:background="@android:color/darker_gray" />
 
     <TextView
+        android:visibility="invisible"
         android:id="@+id/next"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_height"
         android:textSize="18sp"
-        android:text="시작히기"
+        android:text="다음"
         android:textColor="@color/white"
         android:background="@color/color_primary"
         />

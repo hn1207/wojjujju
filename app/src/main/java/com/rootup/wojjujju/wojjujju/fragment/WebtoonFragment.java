@@ -18,6 +18,7 @@ import com.rootup.wojjujju.wojjujju.activity.SearchActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShopDetailActivity;
 import com.rootup.wojjujju.wojjujju.activity.ShopSelectCategoryActivity;
 import com.rootup.wojjujju.wojjujju.activity.WebtoonDetailActivity;
+import com.rootup.wojjujju.wojjujju.activity.WebtoonListActivity;
 import com.rootup.wojjujju.wojjujju.adapter.BaseRecyclerAdapter;
 import com.rootup.wojjujju.wojjujju.adapter.HomeSaleItemAdapter;
 import com.rootup.wojjujju.wojjujju.custom.RecyclerItemClickListener;
@@ -91,7 +92,7 @@ public class WebtoonFragment extends Fragment {
                 new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
                         // do whatever
-                        startActivity(new Intent(getContext(), WebtoonDetailActivity.class));
+                        startActivity(new Intent(getContext(), WebtoonListActivity.class));
                     }
 
                     @Override public void onLongItemClick(View view, int position) {

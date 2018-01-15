@@ -39,6 +39,17 @@
     <string name="mypage">MY</string>
 
 
+    <string name="relief_number_guide">우쭈쭈를 이용하실 때 혹시 모를 전화번호 노출이 걱정되시는 고객님들을 위해 개인정보인 휴대폰 번호와 연락처 대신 &lt;font color=&quot;
+&#35;f62b4c&quot;&gt;1회성 임시번호를 부여해드리는 무료 서비스입니다.&lt;/font&gt;</string>
+
+    <string name="relief_pickup_guide">우쭈쭈의 모든 업체는 택배 배송분양이 아닌 업체의 기사 혹은 직원이 정성스런 마음으로 반려동물을 데리고 &lt;font color=&quot;
+&#35;f62b4c&quot;&gt;고객님께 직접 안전하게 전해드립니다.&lt;/font&gt;</string>
+
+    <string name="memories_level_up">    추억지수가 &lt;font color=&quot;
+&#35;f62b4c&quot;&gt;10포인트 쌓였어요!&lt;/font&gt;\n앞으로 더 많은 추억을 만들어가요!</string>
+
+
+
 
 
 

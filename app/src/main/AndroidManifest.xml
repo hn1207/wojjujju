@@ -473,6 +473,9 @@
         <activity android:name=".activity.TutorialActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
+        <activity android:name=".activity.WebtoonListActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
 
     </application>
 </manifest>
