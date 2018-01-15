@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.rootup.wojjujju.wojjujju"
+        applicationId "com.rootup.friendzoo.friendzoo"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -68,6 +68,8 @@ dependencies {
      * RoundCornerProgressBar
      */
     compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
+    compile 'com.github.traex.rippleeffect:library:1.3'
 
 
 
