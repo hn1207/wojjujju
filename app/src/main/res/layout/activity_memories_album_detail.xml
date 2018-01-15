@@ -197,7 +197,7 @@
                             android:layout_height="wrap_content">
 
 
-                            <com.rootup.wojjujju.wojjujju.custom.HorizontalProgressView
+                            <com.rootup.friendzoo.friendzoo.custom.HorizontalProgressView
                                 android:id="@+id/progress"
                                 android:layout_weight="1"
                                 android:layout_width="0dp"

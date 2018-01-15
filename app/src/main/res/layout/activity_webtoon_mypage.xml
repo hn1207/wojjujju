@@ -40,7 +40,7 @@
             android:layout_height="56dp" />
     </android.support.design.widget.AppBarLayout>
 
-    <com.rootup.wojjujju.wojjujju.custom.SwipeViewPager
+    <com.rootup.friendzoo.friendzoo.custom.SwipeViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="600dp" />

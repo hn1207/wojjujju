@@ -39,15 +39,23 @@
         android:layout_marginTop="108dp"
         android:src="@drawable/text_bg" />
 
-    <Button
-        android:id="@+id/next"
+    <com.andexert.library.RippleView
+        android:id="@+id/ripple_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
+        rv_centered="true">
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
         android:background="@drawable/start_bg"
         android:textColor="@color/white" />
+    </com.andexert.library.RippleView>
 
 
 

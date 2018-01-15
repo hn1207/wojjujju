@@ -169,7 +169,7 @@
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
 
-        <com.rootup.wojjujju.wojjujju.custom.MyMapView
+        <com.rootup.friendzoo.friendzoo.custom.MyMapView
             android:id="@+id/map"
             android:layout_width="match_parent"
             android:layout_height="172dp"
