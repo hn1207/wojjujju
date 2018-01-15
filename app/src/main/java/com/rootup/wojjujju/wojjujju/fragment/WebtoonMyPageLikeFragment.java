@@ -33,8 +33,10 @@ public class WebtoonMyPageLikeFragment extends Fragment {
 
         for(int i=0; i<10; i++){
             Item item = new Item();
-
-            item.setImg(null);
+            if(i%2==0){
+                item.setImg("http://13.125.46.183/woojjujju/webtoon_second.png");
+            }
+            else{item.setImg("http://13.125.46.183/woojjujju/webtoon_first.png");}
             item.setTitle("웹툰의 제목이 들어갑니다.길면\n밑으로 내려갑니다.");
             item.setUserName("작가이름");
             item.setLike(i%2);
@@ -46,11 +48,6 @@ public class WebtoonMyPageLikeFragment extends Fragment {
 
 
         RecyclerView recyclerView = v.findViewById(R.id.data_list);
-
-
-        if (dataList.size() > 0) {
-            recyclerView.setAdapter(new BaseLikeDefaultItemAdapter(dataList, getActivity(), R.layout.items_webtoon_mypage));
-        }
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());

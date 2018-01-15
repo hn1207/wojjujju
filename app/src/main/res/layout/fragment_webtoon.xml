@@ -43,7 +43,7 @@
                     android:lineSpacingExtra="11sp"
                     android:text="내 어린 고양이와 늙은 개"
                     android:textColor="@color/soft_black"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:textColor="@color/soft_black"
-                tools:text="작가이름"
+                android:text="작가이름"
                 />
 
             <android.support.v7.widget.RecyclerView
@@ -96,7 +96,7 @@
                     android:lineSpacingExtra="11sp"
                     android:text="우리 사장님은 개"
                     android:textColor="@color/soft_black"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -117,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:textColor="@color/soft_black"
-                tools:text="작가이름"
+                android:text="작가이름"
                 />
 
             <android.support.v7.widget.RecyclerView
@@ -148,7 +148,7 @@
                     android:lineSpacingExtra="11sp"
                     android:text="크리스마스는 쨈과 함께"
                     android:textColor="@color/soft_black"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -169,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:textColor="@color/soft_black"
-                tools:text="작가이름"
+                android:text="작가이름"
                 />
 
             <android.support.v7.widget.RecyclerView

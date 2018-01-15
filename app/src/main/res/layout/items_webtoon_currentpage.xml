@@ -37,12 +37,13 @@
                 android:textSize="12sp" />
 
             <ImageView
-                android:id="@+id/like"
-                android:layout_width="20dp"
-                android:layout_marginLeft="10dp"
-                android:gravity="center_vertical"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/close"
+                android:scaleType="centerCrop"
                 />
 
         </LinearLayout>
