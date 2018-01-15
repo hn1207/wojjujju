@@ -42,7 +42,6 @@ public class BaseRecyclerAdapter extends RecyclerView.Adapter<BaseItemViewHolder
         try{if(dataList.get(position).getGrade()==-1){holder.grade.setVisibility(View.GONE);}else{ holder.grade.setRating(dataList.get(position).getGrade()); }}catch (Exception e){}
         try{if(dataList.get(position).getDescription()==null){holder.description.setVisibility(View.GONE);}else{ holder.description.setText(dataList.get(position).getDescription()); }}catch (Exception e){}
         try{if(dataList.get(position).getCnt()==-1){holder.cnt.setVisibility(View.GONE);}else{ holder.cnt.setText("("+dataList.get(position).getCnt()+"개)"); }}catch (Exception e){}
-
         try{Glide.with(con).load(dataList.get(position).getImg()).into(holder.img); }catch(Exception e){}
 
 

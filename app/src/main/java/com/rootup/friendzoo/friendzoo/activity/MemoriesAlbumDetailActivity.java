@@ -83,6 +83,8 @@ public class MemoriesAlbumDetailActivity extends AppCompatActivity {
 
         GridView gridView = findViewById(R.id.data_list);
 
+
+
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

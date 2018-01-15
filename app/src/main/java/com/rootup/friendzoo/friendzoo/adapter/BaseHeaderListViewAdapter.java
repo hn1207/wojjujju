@@ -1,7 +1,6 @@
 package com.rootup.friendzoo.friendzoo.adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.entity.Item;
-
 
 import java.util.ArrayList;
 
@@ -118,7 +116,7 @@ public class BaseHeaderListViewAdapter extends BaseAdapter {
                 try{if(item.getPercent()==null){percent.setVisibility(View.GONE);}else{ percent.setText(item.getPercent()); }}catch (Exception e){}
                 try{if(item.getDescription()==null){description.setVisibility(View.GONE);}else{ description.setText(item.getDescription()); }}catch (Exception e){}
                 try{if(item.getLabel()==null){label.setVisibility(View.GONE);}else{ label.setText(item.getLabel()); }}catch (Exception e){}
-
+                try{Glide.with(con).load(dataList.get(position).getImg()).into(img); }catch(Exception e){}
                 
 
 

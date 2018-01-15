@@ -59,9 +59,10 @@
             </LinearLayout>
 
             <TextView
-                android:layout_marginLeft="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
                 android:textSize="12sp"
                 android:textColor="@color/soft_black"
                 android:text="작가이름"
@@ -112,9 +113,10 @@
             </LinearLayout>
 
             <TextView
-                android:layout_marginLeft="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
                 android:textSize="12sp"
                 android:textColor="@color/soft_black"
                 android:text="작가이름"
@@ -164,12 +166,14 @@
             </LinearLayout>
 
             <TextView
-                android:layout_marginLeft="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
                 android:textSize="12sp"
                 android:textColor="@color/soft_black"
                 android:text="작가이름"
+
                 />
 
             <android.support.v7.widget.RecyclerView

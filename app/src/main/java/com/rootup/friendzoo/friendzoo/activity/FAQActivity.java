@@ -1,15 +1,8 @@
 package com.rootup.friendzoo.friendzoo.activity;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.adapter.FAQExpandableAdapter;
