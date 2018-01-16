@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="@color/soft_black"
-        android:lineSpacingExtra="14sp"
+        android:lineSpacingExtra="3sp"
         android:gravity="center_horizontal"
         android:text="프로필 사진"
         />
@@ -26,7 +26,6 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="#303030"
-        android:lineSpacingExtra="10sp"
         android:text="사진 변경"
         />
 
@@ -36,7 +35,7 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="#303030"
-        android:lineSpacingExtra="10sp"
+        android:lineSpacingExtra="3sp"
         android:text="사진 삭제"
         />
 

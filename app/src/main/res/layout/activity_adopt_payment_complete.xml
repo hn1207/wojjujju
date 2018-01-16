@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:gravity="center"
-            android:lineSpacingExtra="7sp"
+            android:lineSpacingExtra="3sp"
             android:text="입양지원이 완료되었습니다!"
             android:textColor="@color/color_primary"
             android:textSize="16sp" />
@@ -37,7 +37,7 @@
             android:layout_width="260dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:lineSpacingExtra="5sp"
+            android:lineSpacingExtra="3sp"
             android:layout_marginTop="10dp"
             android:textAlignment="center"
             android:text="*잠깐! 아직 입양확정이 아닙니다.\n

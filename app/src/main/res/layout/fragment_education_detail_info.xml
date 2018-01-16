@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="11sp"
+            android:lineSpacingExtra="3sp"
             android:text="소개"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:lineSpacingExtra="9sp"
+            android:lineSpacingExtra="3sp"
             android:text="내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. "
             android:textColor="@color/soft_black"
             android:textSize="14sp" />
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="11sp"
+            android:lineSpacingExtra="3sp"
             android:text="훈련사 소개"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
@@ -72,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:lineSpacingExtra="9sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="강지용"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -84,7 +84,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:lineSpacingExtra="5sp"
+                android:lineSpacingExtra="3sp"
                 android:text="- 2001 무슨무슨전공\n- 무슨무슨 자격증\n- 2014년 경력\n- 2014년 7월 경력들어감\n- 2016년 경력"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -117,7 +117,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="서비스 안내"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -128,7 +128,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="전체보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
@@ -149,7 +149,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="분리불안"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@color/color_primary"
-                    android:lineSpacingExtra="9sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="50,000원 / 2h"
                     />
 
@@ -178,7 +178,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="행동교정치료 365"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -188,7 +188,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="50,000원 / 2h"
                     android:textColor="@color/color_primary"
                     android:textSize="14sp" />
@@ -208,7 +208,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="행동교정치료 365"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -218,7 +218,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="50,000원 / 2h"
                     android:textColor="@color/color_primary"
                     android:textSize="14sp" />
@@ -240,7 +240,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="영업 안내"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
@@ -256,7 +256,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:lineSpacingExtra="5sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="고객의 집으로 직접 방문\n1시간 ~ 1시간 30분 / 주 2회 ~ 3회\n*필요에 따라 조절"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -275,7 +275,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="혜택 안내"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
@@ -291,7 +291,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:lineSpacingExtra="5sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="오프라인 워크숍 수강권 증정"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />

@@ -71,7 +71,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:lineSpacingExtra="5sp"
+                            android:lineSpacingExtra="3sp"
                             android:text="함께한지\n98일 째"
                             android:textAlignment="center"
                             android:textColor="@color/soft_black"
@@ -105,7 +105,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:lineSpacingExtra="10sp"
+                                android:lineSpacingExtra="3sp"
                                 android:text="뽀롱이뽀롱 "
                                 android:textColor="@color/soft_black"
                                 android:textSize="14sp" />
@@ -124,7 +124,7 @@
                             android:layout_marginTop="6dp"
                             android:background="@drawable/mint_background"
                             android:gravity="center"
-                            android:lineSpacingExtra="10sp"
+                            android:lineSpacingExtra="3sp"
                             android:paddingLeft="10dp"
                             android:text="주인님과 함께해서 좋아요! :) "
                             android:textAlignment="center"
@@ -146,7 +146,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:lineSpacingExtra="10sp"
+                                    android:lineSpacingExtra="3sp"
                                     android:text="태어난 날"
                                     android:textColor="@color/soft_black"
                                     android:textSize="14sp" />
@@ -154,7 +154,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:lineSpacingExtra="10sp"
+                                    android:lineSpacingExtra="3sp"
                                     android:layout_marginTop="5dp"
                                     android:text="2017.04.17"
                                     android:textColor="@color/soft_black"
@@ -172,7 +172,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:lineSpacingExtra="10sp"
+                                    android:lineSpacingExtra="3sp"
                                     android:text="함께한 날"
                                     android:textColor="@color/soft_black"
                                     android:textSize="14sp" />
@@ -180,7 +180,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:lineSpacingExtra="10sp"
+                                    android:lineSpacingExtra="3sp"
                                     android:layout_marginTop="5dp"
                                     android:text="2017.07.28"
                                     android:textColor="@color/soft_black"

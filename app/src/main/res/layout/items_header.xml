@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textColor="@color/soft_black"
-        android:lineSpacingExtra="5sp"
+        android:lineSpacingExtra="3sp"
         android:text="미용"
         />
 

@@ -64,7 +64,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="10sp"
             android:text="뽀롱뽀롱이"
             android:textColor="#dd000000"
             android:textSize="14sp" />

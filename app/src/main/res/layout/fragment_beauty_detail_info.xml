@@ -29,7 +29,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
                 android:text="소개"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
@@ -38,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:lineSpacingExtra="9sp"
+                android:lineSpacingExtra="3sp"
                 android:text="내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. "
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -56,7 +55,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="영업시간"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
@@ -65,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:lineSpacingExtra="9sp"
+                android:lineSpacingExtra="3sp"
                 android:text=" 매일 13:00~14:00 점심시간(CLOSED)\n
 일요일 11:00~18:00\n
 평일 09:00~19:00\n
@@ -98,7 +97,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="left|center_vertical"
-                        android:lineSpacingExtra="11sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="서비스 안내"
                         android:textColor="@color/soft_black"
                         android:textSize="12sp" />
@@ -108,7 +107,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="right|center_vertical"
-                        android:lineSpacingExtra="13sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="전체보기 >"
                         android:textColor="@color/mint"
                         android:textSize="10sp" />
@@ -164,7 +163,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="위치"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
@@ -180,7 +179,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="서울 강남구 역삼동 720-16"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />

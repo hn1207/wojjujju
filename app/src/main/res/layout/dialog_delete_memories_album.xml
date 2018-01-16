@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
-        android:lineSpacingExtra="8sp"
+        android:lineSpacingExtra="3sp"
         android:text="앨범을 지우면 반려동물 정보와 사진이\n모두 삭제됩니다. 그래도 지우시겠어요?"
         android:textColor="@color/soft_black"
         android:textSize="12sp" />

@@ -29,7 +29,7 @@
                 android:layout_weight="1"
                 android:gravity="start|center_vertical"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="댕댕이 미용"
                 android:textColor="#000000"
                 android:textSize="12sp" />
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="8sp"
                 android:textColor="@color/soft_black"
-                android:lineSpacingExtra="20sp"
+                android:lineSpacingExtra="3sp"
                 android:text="(785)"
                 />
 
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/soft_black"
-            android:lineSpacingExtra="16sp"
+            android:lineSpacingExtra="3sp"
             android:text="서울시 서초구 서초동"
             />
         <TextView
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/warm_grey"
-            android:lineSpacingExtra="16sp"
+            android:lineSpacingExtra="3sp"
             android:text="예약취소 연기 가능"
             />
 
@@ -110,7 +110,7 @@
                 android:background="@drawable/round_mint"
                 android:textColor="@color/white"
                 android:textAlignment="center"
-                android:lineSpacingExtra="5sp"
+                android:lineSpacingExtra="3sp"
                 tools:text="예약특가"
                 />
         </LinearLayout>

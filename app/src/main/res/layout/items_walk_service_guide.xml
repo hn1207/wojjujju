@@ -28,7 +28,7 @@
             android:id="@+id/title"
             android:layout_height="wrap_content"
             android:gravity="start|center_vertical"
-            android:lineSpacingExtra="11sp"
+            android:lineSpacingExtra="3sp"
             android:text="댕댕이 미용"
             android:textColor="#000000"
             android:textSize="12sp"
@@ -41,7 +41,7 @@
             android:textSize="12sp"
             android:textColor="@color/soft_black"
             android:layout_marginTop="10dp"
-            android:lineSpacingExtra="16sp"
+            android:lineSpacingExtra="3sp"
             tools:text="기준 2명 (최대 2명) 대형견 가능"
             />
 
@@ -62,7 +62,7 @@
 
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="16sp"
+                android:lineSpacingExtra="3sp"
                 android:text="대실 최대 4시간"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
@@ -91,7 +91,7 @@
 
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="16sp"
+                android:lineSpacingExtra="3sp"
                 android:text="숙박 13:00 입실"
                 android:textColor="@color/black"
                 android:textSize="12sp" />

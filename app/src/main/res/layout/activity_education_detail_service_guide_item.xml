@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="@color/soft_black"
-        android:lineSpacingExtra="9sp"
+        android:lineSpacingExtra="3sp"
         android:text="서비스안내가 들어갑니다. 어떤 훈련인지 내용이 들어갑니다. 서비스안내가 들어갑니다. 어떤 훈련인지 내용이 들어갑니다. 서비스안내가 들어갑니다. 어떤 훈련인지 내용이 들어갑니다. 서비스안내가 들어갑니다. 어떤 훈련인지 "
         />
 

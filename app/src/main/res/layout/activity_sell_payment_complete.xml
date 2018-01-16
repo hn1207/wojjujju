@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:gravity="center"
-            android:lineSpacingExtra="7sp"
+            android:lineSpacingExtra="3sp"
             android:text="분양신청이 완료되었습니다!"
             android:textColor="@color/color_primary"
             android:textSize="16sp" />
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:gravity="center"
-            android:lineSpacingExtra="7sp"
+            android:lineSpacingExtra="3sp"
             android:text="정보를 다시 확인해주세요."
             android:textColor="@color/warm_grey"
             android:textSize="11sp" />

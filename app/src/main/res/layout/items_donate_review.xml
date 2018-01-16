@@ -33,7 +33,6 @@
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="@color/mint"
-            android:lineSpacingExtra="5sp"
             android:text="기부후기"
             />
 

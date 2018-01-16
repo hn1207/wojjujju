@@ -143,7 +143,7 @@
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:layout_marginTop="11dp"
-            android:background="@color/soft_grey" />
+            android:background="@color/strong_white" />
 
 
         <LinearLayout

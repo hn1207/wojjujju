@@ -82,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:lineSpacingExtra="7sp"
+                android:lineSpacingExtra="3sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="[남한 산성 애견카페] 강아지 수영장이 있는 코코밸리 "
@@ -94,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:lineSpacingExtra="16sp"
+                android:lineSpacingExtra="3sp"
                 android:layout_marginTop="10dp"
                 android:text="서울 강남구 역삼동 720-16"
                 android:textColor="@color/warm_grey"
@@ -120,7 +120,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="11sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="소개"
                         android:textColor="@color/soft_black"
                         android:textSize="12sp" />
@@ -129,7 +129,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:lineSpacingExtra="9sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. "
                         android:textColor="@color/soft_black"
                         android:textSize="14sp" />
@@ -158,7 +158,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="11sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="위치"
                         android:textColor="@color/soft_black"
                         android:textSize="12sp" />
@@ -174,7 +174,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:lineSpacingExtra="11sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="서울 강남구 역삼동 720-16"
                         android:textColor="@color/soft_black"
                         android:textSize="12sp" />
@@ -193,7 +193,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="11sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="안내사항"
                         android:textColor="@color/soft_black"
                         android:textSize="12sp" />
@@ -202,7 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:lineSpacingExtra="9sp"
+                        android:lineSpacingExtra="3sp"
                         android:text=" - 내용이 들어갑니다. 내용이 들어갑니다.\n
 - 내용이 들어갑니다. 내용이 들어갑니다.\n
 - 내용이 들어갑니다\n

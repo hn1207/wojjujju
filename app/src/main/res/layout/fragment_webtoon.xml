@@ -20,7 +20,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@color/soft_grey"
+            android:background="@color/strong_white"
             />
 
         <LinearLayout
@@ -40,7 +40,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="내 어린 고양이와 늙은 개"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -50,7 +50,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
@@ -94,7 +94,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="우리 사장님은 개"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -104,7 +104,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
@@ -147,7 +147,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="크리스마스는 쨈과 함께"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -157,7 +157,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />

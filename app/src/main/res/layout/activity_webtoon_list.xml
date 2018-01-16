@@ -116,7 +116,7 @@
                     android:textSize="10sp"
                     android:layout_marginRight="16dp"
                     android:textColor="@color/mint"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="첫화보기 >"
                     />
             </LinearLayout>

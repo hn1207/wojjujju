@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:gravity="center"
-            android:lineSpacingExtra="7sp"
+            android:lineSpacingExtra="3sp"
             android:text="우쭈쭈 포인트로 기부를 해보세요!"
             android:textColor="@color/color_primary"
             android:textSize="16sp" />

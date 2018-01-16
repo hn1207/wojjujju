@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
-        android:lineSpacingExtra="14sp"
+        android:lineSpacingExtra="3sp"
         android:text="안심번호 서비스"
         android:textColor="@color/soft_black"
         android:textSize="14sp" />
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
-        android:lineSpacingExtra="8sp"
+        android:lineSpacingExtra="3sp"
         android:text="@string/relief_number_guide"
         android:textColor="@color/soft_black"
         android:textSize="12sp" />
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textColor="@color/warm_grey"
-        android:lineSpacingExtra="6sp"
+        android:lineSpacingExtra="3sp"
         android:text="안심번호 서비스 경우 체크하지 않아도
 상관없습니다."
         />

@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textColor="@color/warm_grey"
-        android:lineSpacingExtra="11sp"
+        android:lineSpacingExtra="3sp"
         android:text="아래 이메일로도 답변을 받으실 수 있습니다."
         />
 
@@ -127,7 +127,7 @@
             android:layout_height="match_parent"
             android:textSize="12sp"
             android:textColor="@color/white"
-            android:lineSpacingExtra="4sp"
+            android:lineSpacingExtra="3sp"
             android:background="@drawable/round_red_solid_red"
             android:gravity="center"
             android:text="고객센터 전화걸기\n1544 -1234"
@@ -140,7 +140,7 @@
             android:layout_height="match_parent"
             android:textSize="12sp"
             android:textColor="@color/black"
-            android:lineSpacingExtra="4sp"
+            android:lineSpacingExtra="3sp"
             android:gravity="center"
             android:text="FAQ 자주 묻는 질문"
             />

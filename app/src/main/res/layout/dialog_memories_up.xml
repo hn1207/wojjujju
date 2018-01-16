@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="@color/soft_black"
-        android:lineSpacingExtra="14sp"
+        android:lineSpacingExtra="3sp"
         android:gravity="center_horizontal"
         android:text="추억 올리기"
         />
@@ -26,7 +26,6 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="#303030"
-        android:lineSpacingExtra="10sp"
         android:text="사진 찍기"
         />
 
@@ -36,7 +35,7 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="#303030"
-        android:lineSpacingExtra="10sp"
+        android:lineSpacingExtra="3sp"
         android:text="앨범에서 가져오기"
         />
 

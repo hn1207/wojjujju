@@ -31,7 +31,6 @@
                 android:layout_weight="1"
                 android:gravity="start|center_vertical"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="11sp"
                 android:text="캣만두 라이프 500g "
                 android:textColor="#000000"
                 android:textSize="12sp" />
@@ -44,7 +43,7 @@
             android:layout_marginTop="5dp"
             android:textSize="12sp"
             android:textColor="@color/warm_grey"
-            android:lineSpacingExtra="5sp"
+            android:lineSpacingExtra="3sp"
             android:text="옵션내용이 들어갑니다. 옵션내용이 들어갑니다."
             />
 
@@ -59,7 +58,6 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textColor="@color/color_primary"
-        android:lineSpacingExtra="16sp"
         android:text="12,000원 "
         />
 
@@ -69,7 +67,6 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textColor="@color/warm_grey"
-        android:lineSpacingExtra="16sp"
         android:text="(2개)"
         />
 

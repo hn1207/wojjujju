@@ -75,7 +75,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="4sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="제목이 들어갑니다. 제목이 들어갑니다. 제목이 들어갑니다."
                         android:textColor="@color/white"
                         android:textSize="16sp"
@@ -100,7 +100,6 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:lineSpacingExtra="11sp"
                             android:text="10,200,000원"
                             android:textColor="@color/white"
                             android:textSize="12sp" />
@@ -110,7 +109,6 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="end"
-                            android:lineSpacingExtra="11sp"
                             android:text="달성률 56%"
                             android:textColor="@color/white"
                             android:textSize="12sp" />
@@ -146,7 +144,6 @@
                        <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="11sp"
                         android:text="참여인원"
                         android:textColor="@color/soft_black"
                         android:textSize="12sp" />
@@ -161,14 +158,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:lineSpacingExtra="7sp"
                             android:text="569"
                             android:textColor="@color/soft_black"
                             android:textSize="16sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:lineSpacingExtra="7sp"
                             android:text=" 명"
                             android:textColor="@color/soft_black"
                             android:textSize="12sp" />
@@ -196,7 +191,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:lineSpacingExtra="11sp"
                             android:text="목표금액"
                             android:textColor="@color/soft_black"
                             android:textSize="12sp" />
@@ -213,14 +207,12 @@
                         <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="7sp"
                         android:text="1,000"
                         android:textColor="@color/soft_black"
                         android:textSize="16sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:lineSpacingExtra="7sp"
                             android:text=" 만원"
                             android:textColor="@color/soft_black"
                             android:textSize="12sp" />
@@ -255,7 +247,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:lineSpacingExtra="11sp"
                             android:text="현재금액"
                             android:textColor="@color/soft_black"
                             android:textSize="12sp" />
@@ -270,14 +261,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:lineSpacingExtra="7sp"
                             android:text="920"
                             android:textColor="@color/soft_black"
                             android:textSize="16sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:lineSpacingExtra="7sp"
                             android:text=" 만원"
                             android:textColor="@color/soft_black"
                             android:textSize="12sp" />
@@ -291,7 +280,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="9sp"
+                android:lineSpacingExtra="3sp"
                 android:paddingLeft="19dp"
                 android:paddingRight="19dp"
                 android:text="자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. 자세한 후원내용이 들어갑니다. "

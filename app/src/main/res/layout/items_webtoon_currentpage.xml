@@ -52,7 +52,7 @@
             android:id="@+id/user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="5sp"
+            android:lineSpacingExtra="3sp"
             android:text="작가이름"
             android:textColor="@color/warm_grey"
             android:textSize="12sp" />

@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="#303030"
-        android:lineSpacingExtra="10sp"
+        android:lineSpacingExtra="3sp"
         android:text="@string/memories_level_up"
         />
 

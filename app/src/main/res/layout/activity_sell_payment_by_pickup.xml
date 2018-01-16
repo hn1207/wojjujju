@@ -14,6 +14,8 @@
 
 
         <LinearLayout
+            android:background="@drawable/border_bottom"
+
             android:layout_width="match_parent"
             android:layout_height="@dimen/toolbar_height"
             android:gravity="center_vertical"
@@ -60,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:textSize="10sp"
                 android:textColor="@color/mint"
-                android:lineSpacingExtra="13sp"
+                android:lineSpacingExtra="3sp"
                 android:text="안심픽업 서비스 안내"
                 />
         </LinearLayout>
@@ -97,7 +99,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="주소"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -128,7 +130,7 @@
                         android:layout_marginRight="19dp"
                         android:layout_gravity="center_vertical"
                         android:gravity="center|center_vertical"
-                        android:lineSpacingExtra="10sp"
+                        android:lineSpacingExtra="3sp"
                         android:text="우편번호 검색"
                         android:background="@drawable/round_red"
                         android:textColor="@color/color_primary"
@@ -164,7 +166,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="수령인"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -202,7 +204,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="연락처 "
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -223,7 +225,7 @@
                 <TextView
                     android:layout_width="5dp"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="10sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="-"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -239,7 +241,7 @@
                 <TextView
                     android:layout_width="5dp"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="10sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="-"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -258,7 +260,7 @@
                     android:layout_marginRight="19dp"
                     android:background="@drawable/round_red"
                     android:gravity="center"
-                    android:lineSpacingExtra="10sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="번호인증"
                     android:textColor="@color/color_primary"
                     android:textSize="11sp" />
@@ -273,14 +275,14 @@
             android:layout_marginTop="37dp"
             android:layout_width="match_parent"
             android:layout_height="8dp"
-            android:background="@color/soft_grey"/>
+            android:background="@color/strong_white"/>
         <TextView
             android:layout_marginTop="8dp"
             android:layout_marginLeft="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:lineSpacingExtra="10sp"
+            android:lineSpacingExtra="3sp"
             android:text="반려동물 정보"
             android:textColor="@color/soft_black"
             android:textSize="14sp" />
@@ -288,7 +290,7 @@
             android:layout_marginTop="4dp"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/strong_white" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/payment_item_list"
@@ -300,7 +302,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/strong_white"/>
 
 
         <LinearLayout
@@ -314,7 +316,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="쿠폰"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp"
@@ -331,7 +333,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:layout_marginRight="15dp"
-                    android:lineSpacingExtra="10sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="1장"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -341,7 +343,7 @@
                     android:layout_width="52dp"
                     android:layout_height="20dp"
                     android:gravity="end"
-                    android:lineSpacingExtra="10sp"
+                    android:lineSpacingExtra="3sp"
                     android:background="@drawable/round_red"
                     android:textAlignment="center"
                     android:text="조회"
@@ -356,7 +358,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/strong_white" />
 
 
         <LinearLayout
@@ -370,7 +372,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="포인트"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp"
@@ -387,7 +389,7 @@
                     android:layout_height="32dp"
                     android:layout_weight="0.5"
                     android:gravity="center"
-                    android:lineSpacingExtra="10sp"
+                    android:lineSpacingExtra="3sp"
                     android:layout_marginLeft="20dp"
                     android:text="0p"
                     android:background="@drawable/round_grey"
@@ -399,7 +401,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:lineSpacingExtra="10sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="사용가능 2,300p"
                     android:textColor="@color/warm_grey"
                     android:textSize="14sp" />
@@ -409,7 +411,7 @@
                     android:layout_height="20dp"
                     android:layout_weight="0.3"
                     android:gravity="end"
-                    android:lineSpacingExtra="10sp"
+                    android:lineSpacingExtra="3sp"
                     android:background="@drawable/round_red"
                     android:text="적용"
                     android:textAlignment="center"
@@ -424,7 +426,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/strong_white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -437,7 +439,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="결제금액"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -447,7 +449,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="end|center_vertical"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="12,000원"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -466,7 +468,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="쿠폰적용"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -476,7 +478,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="end|center_vertical"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="  -3,000원"
                 android:textColor="@color/soft_black"
                 android:textSize="14sp" />
@@ -487,7 +489,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/warm_grey" />
+            android:background="@color/strong_white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -500,7 +502,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="총 결제금액"
                 android:textColor="@color/soft_black"
                 android:textSize="16sp"
@@ -511,7 +513,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="end|center_vertical"
-                android:lineSpacingExtra="10sp"
+                android:lineSpacingExtra="3sp"
                 android:text="9,000원"
                 android:textColor="@color/color_primary"
                 android:textSize="16sp"
@@ -524,7 +526,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
-            android:background="@color/soft_grey" />
+            android:background="@color/strong_white" />
 
 
         <TextView
@@ -533,7 +535,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:lineSpacingExtra="10sp"
+            android:lineSpacingExtra="3sp"
             android:text="결제수단"
             android:layout_marginBottom="10dp"
             android:textColor="@color/soft_black"
@@ -550,7 +552,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="30dp"
+android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_reservation"
                 android:gravity="center"
@@ -561,7 +563,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="30dp"
+ android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_full_grey"
@@ -582,7 +584,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="30dp"
+android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_full_grey"
                 android:gravity="center"
@@ -593,7 +595,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="30dp"
+ android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_full_grey"
@@ -615,7 +617,7 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="30dp"
+        android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_full_grey"
                 android:gravity="center">
@@ -640,7 +642,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_height="30dp"
+ android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_full_grey"
@@ -662,7 +664,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="8dp"
-            android:background="@color/soft_grey" />
+            android:background="@color/strong_white" />
 
         <CheckBox
             android:layout_marginTop="10dp"
@@ -674,15 +676,7 @@
             android:buttonTint="@color/color_primary"
             android:text="결제대행 서비스 표준이용약관에 동의합니다. (필수)" />
 
-        <TextView
-            android:id="@+id/complete"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_height"
-            android:background="@color/color_primary"
-            android:gravity="center"
-            android:text="결제하기"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+<TextView            android:layout_marginTop="10dp"            android:id="@+id/complete"            android:layout_width="match_parent"            android:layout_height="@dimen/toolbar_height"            android:background="@color/color_primary"            android:gravity="center"            android:text="결제하기"            android:textColor="@color/white"            android:textSize="20sp" />
 
 
     </LinearLayout>

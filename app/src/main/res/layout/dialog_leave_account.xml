@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
-        android:lineSpacingExtra="8sp"
+        android:lineSpacingExtra="3sp"
         android:text="계정을 탈퇴하면 모든 정보가 지워집니다.\n그래도 탈퇴하시겠어요?"
         android:textColor="@color/soft_black"
         android:textSize="12sp" />

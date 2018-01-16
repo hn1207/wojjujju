@@ -126,7 +126,7 @@
                     android:layout_height="20dp"
                     android:layout_marginLeft="7dp"
                     android:background="@drawable/round_mint"
-                    android:lineSpacingExtra="5sp"
+                    android:lineSpacingExtra="3sp"
                     android:padding="3dp"
                     android:text="15%할인"
                     android:textAlignment="center"

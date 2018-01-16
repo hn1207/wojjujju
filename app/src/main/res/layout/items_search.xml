@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:textColor="@color/color_primary"
-                android:lineSpacingExtra="16sp"
+                android:lineSpacingExtra="3sp"
                 android:text="5,920원 "
                 />
 
@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:textColor="@color/warm_grey"
-                android:lineSpacingExtra="16sp"
+                android:lineSpacingExtra="3sp"
                 android:text="14,000원 "
                 />
 
@@ -89,7 +89,7 @@
                 android:textAlignment="center"
                 android:background="@drawable/round_mint"
                 android:textColor="@color/white"
-                android:lineSpacingExtra="5sp"
+                android:lineSpacingExtra="3sp"
                 android:text="15%할인"
                 />
         </LinearLayout>

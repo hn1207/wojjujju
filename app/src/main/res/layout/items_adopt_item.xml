@@ -37,14 +37,14 @@
             android:textSize="10sp"
             android:textColor="@color/color_primary"
             android:layout_marginTop="5dp"
-            android:lineSpacingExtra="5sp"
+            android:lineSpacingExtra="3sp"
             android:text="포메라니안"
             />
         <TextView
             android:id="@+id/address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="5sp"
+            android:lineSpacingExtra="3sp"
             android:text="서울시 역삼동"
             android:textColor="@color/warm_grey"
             android:textSize="10sp" />

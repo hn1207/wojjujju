@@ -121,7 +121,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:lineSpacingExtra="7sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="댕댕이 미용"
@@ -155,7 +154,6 @@
                     android:id="@+id/comment_cnt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="20sp"
                     android:text="(785)"
                     android:textColor="@color/soft_black"
                     android:textSize="10sp" />
@@ -167,7 +165,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:gravity="center_vertical"
-                android:lineSpacingExtra="16sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="서울 강남구 역삼동 720-16"
@@ -178,7 +175,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:gravity="center_vertical"
-                android:lineSpacingExtra="16sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
                 android:text="예약취소 연기 가능"
@@ -233,21 +229,21 @@
     <!--</FrameLayout>-->
 
 
-    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="10dp"--><!--android:lineSpacingExtra="7sp"--><!--android:paddingLeft="15dp"--><!--android:paddingRight="15dp"--><!--android:text="댕댕이 미용"--><!--android:textColor="@color/soft_black"--><!--android:textSize="16sp" />-->
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="10dp"--><!--android:lineSpacingExtra="3sp"--><!--android:paddingLeft="15dp"--><!--android:paddingRight="15dp"--><!--android:text="댕댕이 미용"--><!--android:textColor="@color/soft_black"--><!--android:textSize="16sp" />-->
 
     <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="30dp"--><!--android:gravity="center_vertical"--><!--android:paddingLeft="15dp"--><!--android:paddingRight="15dp">-->
 
     <!--<RatingBar--><!--android:id="@+id/grade"--><!--style="?android:attr/ratingBarStyleSmall"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:isIndicator="true"--><!--android:max="5"--><!--android:maxHeight="10dp"--><!--android:maxWidth="60dp"--><!--android:numStars="5"--><!--android:progressTint="#ffd021"--><!--android:rating="3"--><!--android:stepSize="0.5" />-->
 
 
-    <!--<TextView--><!--android:id="@+id/comment_cnt"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:lineSpacingExtra="20sp"--><!--android:text="(785)"--><!--android:textColor="@color/soft_black"--><!--android:textSize="10sp" />-->
+    <!--<TextView--><!--android:id="@+id/comment_cnt"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:lineSpacingExtra="3sp"--><!--android:text="(785)"--><!--android:textColor="@color/soft_black"--><!--android:textSize="10sp" />-->
 
 
     <!--</LinearLayout>-->
 
-    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="30dp"--><!--android:gravity="center_vertical"--><!--android:lineSpacingExtra="16sp"--><!--android:paddingLeft="15dp"--><!--android:paddingRight="15dp"--><!--android:text="서울 강남구 역삼동 720-16"--><!--android:textColor="@color/soft_black"--><!--android:textSize="12sp" />-->
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="30dp"--><!--android:gravity="center_vertical"--><!--android:lineSpacingExtra="3sp"--><!--android:paddingLeft="15dp"--><!--android:paddingRight="15dp"--><!--android:text="서울 강남구 역삼동 720-16"--><!--android:textColor="@color/soft_black"--><!--android:textSize="12sp" />-->
 
-    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="30dp"--><!--android:gravity="center_vertical"--><!--android:lineSpacingExtra="16sp"--><!--android:paddingLeft="15dp"--><!--android:paddingRight="15dp"--><!--android:text="예약취소 연기 가능"--><!--android:textColor="@color/warm_grey"--><!--android:textSize="12sp" />-->
+    <!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="30dp"--><!--android:gravity="center_vertical"--><!--android:lineSpacingExtra="3sp"--><!--android:paddingLeft="15dp"--><!--android:paddingRight="15dp"--><!--android:text="예약취소 연기 가능"--><!--android:textColor="@color/warm_grey"--><!--android:textSize="12sp" />-->
 
 
     <!--<android.support.design.widget.AppBarLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@color/white">-->

@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center_horizontal"
-        android:lineSpacingExtra="14sp"
+        android:lineSpacingExtra="3sp"
         android:text="비밀번호 찾기"
         android:textColor="@color/soft_black"
         android:textSize="14sp" />

@@ -43,7 +43,7 @@
 
         <ScrollView
             android:layout_width="100dp"
-            android:background="@color/soft_grey"
+            android:background="@color/strong_white"
             android:layout_height="match_parent">
 
             <LinearLayout
@@ -57,7 +57,6 @@
                     android:layout_marginTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="10sp"
                     android:text="전체"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -66,7 +65,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="서울강남"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -75,7 +73,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="서울강북"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -84,7 +81,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="경기남부"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -93,7 +89,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="경기북부"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -102,7 +97,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="인천"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -111,7 +105,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="부산"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -120,7 +113,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="충청/대전"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -129,7 +121,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="경북/대구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -138,7 +129,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="경남/울산"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -147,7 +137,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="전라/광주"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -156,7 +145,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="강원/춘천"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -165,7 +153,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="제주"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -191,7 +178,6 @@
                     android:layout_marginTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="10sp"
                     android:text="강남구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -200,7 +186,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="송파구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -209,7 +194,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="서초/방배"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -218,7 +202,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="강동구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -227,7 +210,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="영등포구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -236,7 +218,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="강서구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -245,7 +226,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="동작구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -254,7 +234,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="양천구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -263,7 +242,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="경북/대구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -272,7 +250,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="관악구"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />
@@ -281,7 +258,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="10sp"
                     android:text="구로/금천"
                     android:textColor="@color/soft_black"
                     android:textSize="14sp" />

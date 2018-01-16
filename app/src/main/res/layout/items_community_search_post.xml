@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start|center_vertical"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="[자유] 날씨가 정말 추워요!!! ㅠㅠ"
                 android:textColor="#000000"
                 android:textSize="14sp" />
@@ -57,7 +57,7 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="16sp"
+            android:lineSpacingExtra="3sp"
             android:text="2017.02.24"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />

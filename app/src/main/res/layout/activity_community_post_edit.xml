@@ -110,14 +110,14 @@
                 android:layout_width="1dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
-                android:background="@color/warm_grey" />
+                android:background="@color/strong_white" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_marginLeft="24dp"
-                android:lineSpacingExtra="9sp"
+                android:lineSpacingExtra="3sp"
                 android:src="@drawable/post_camera" />
         </LinearLayout>
 
@@ -129,14 +129,14 @@
                 android:layout_width="1dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
-                android:background="@color/warm_grey" />
+                android:background="@color/strong_white"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_marginLeft="24dp"
-                android:lineSpacingExtra="9sp"
+                android:lineSpacingExtra="3sp"
                 android:src="@drawable/post_gallery" />
         </LinearLayout>
 
@@ -148,14 +148,14 @@
                 android:layout_width="1dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center_vertical"
-                android:background="@color/warm_grey" />
+                android:background="@color/strong_white" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_marginLeft="24dp"
-                android:lineSpacingExtra="9sp"
+                android:lineSpacingExtra="3sp"
                 android:src="@drawable/post_movie" />
         </LinearLayout>
 
@@ -164,7 +164,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:lineSpacingExtra="9sp"
+            android:lineSpacingExtra="3sp"
             android:text=""
             android:textColor="@color/warm_grey"
             android:textSize="14sp" />
@@ -176,7 +176,7 @@
             android:layout_height="match_parent"
             android:textSize="14sp"
             android:textColor="@color/warm_grey"
-            android:lineSpacingExtra="9sp"
+            android:lineSpacingExtra="3sp"
             android:text=""
             />
 
