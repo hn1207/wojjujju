@@ -44,6 +44,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@drawable/checkbox"
+            android:clickable="true"
             android:gravity="start"
             android:text="   자동로그인"
             android:textColor="@color/warm_grey"

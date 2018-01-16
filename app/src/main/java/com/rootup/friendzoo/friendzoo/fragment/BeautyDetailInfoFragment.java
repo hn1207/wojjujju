@@ -153,10 +153,6 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
             hairDresserItemArrayList.add(item);
         }
 
-
-
-
-
         RecyclerView itemListView = (RecyclerView) v.findViewById(R.id.employer_item_list);
 //        itemListView.setHasFixedSize(true);
 

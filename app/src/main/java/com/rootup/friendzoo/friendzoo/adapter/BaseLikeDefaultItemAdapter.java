@@ -33,8 +33,6 @@ public class BaseLikeDefaultItemAdapter extends RecyclerView.Adapter<BaseItemVie
                 .inflate(layout, parent, false);
         BaseItemViewHolder holder = new BaseItemViewHolder(view);
 
-
-
         return holder;
     }
     @Override

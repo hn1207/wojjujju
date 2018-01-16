@@ -2,29 +2,18 @@ package com.rootup.friendzoo.friendzoo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 import com.andexert.library.RippleView;
 import com.rootup.friendzoo.friendzoo.R;
-import com.rootup.friendzoo.friendzoo.adapter.BaseUltraPagerAdapter;
-import com.rootup.friendzoo.friendzoo.entity.Item;
+import com.rootup.friendzoo.friendzoo.adapter.TutorialUltraPagerAdapter;
 import com.tmall.ultraviewpager.UltraViewPager;
 
 import java.util.ArrayList;
@@ -81,7 +70,7 @@ public class TutorialActivity extends AppCompatActivity {
         UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.ultra_viewpager);
         ultraViewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
 //initialize UltraPagerAdapter，and add child view to UltraViewPager
-        PagerAdapter adapter = new BaseUltraPagerAdapter(false, dataList, TutorialActivity.this);
+        PagerAdapter adapter = new TutorialUltraPagerAdapter(false, dataList, TutorialActivity.this);
         ultraViewPager.setAdapter(adapter);
 
 
