@@ -16,14 +16,16 @@
 
         <LinearLayout
             android:background="@color/strong_white"
-            android:layout_height="56dp"
+            android:layout_height="72dp"
             android:layout_width="match_parent"
             android:layout_marginTop="10dp">
 
             <LinearLayout
-                android:gravity="center_horizontal"
+
+                android:background="@color/white"
+                android:gravity="center"
                 android:id="@+id/feed"
-                android:layout_height="wrap_content"
+                android:layout_height="59dp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:orientation="vertical"
@@ -53,9 +55,10 @@
 
 
             <LinearLayout
-                android:gravity="center_horizontal"
+                android:background="@color/white"
+                android:gravity="center"
                 android:id="@+id/supplies"
-                android:layout_height="wrap_content"
+                android:layout_height="59dp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:orientation="vertical">

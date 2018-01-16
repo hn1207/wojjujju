@@ -284,6 +284,9 @@
 
 
             <GridView
+                android:paddingRight="-0.75dp"
+                android:paddingLeft="-0.75dp"
+
                 android:id="@+id/data_list"
                 android:layout_width="match_parent"
                 android:layout_height="500dp"

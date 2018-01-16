@@ -38,7 +38,7 @@ public class SellActivity extends BaseDrawerActivity {
         adapter.addFragment(sellAllFragment3, "고양이");
 
 
-        viewPager.setPagingEnabled(false);
+
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);

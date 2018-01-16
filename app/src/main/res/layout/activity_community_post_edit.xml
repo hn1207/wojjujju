@@ -62,7 +62,7 @@
             <Spinner
                 android:id="@+id/category_filter"
                 android:layout_width="match_parent"
-                android:layout_marginRight="20dp"
+
                 android:layout_height="30dp"
                 android:background="@drawable/round_grey"
                 android:paddingLeft="10dp"
@@ -70,7 +70,7 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_marginRight="20dp"
+
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/round_grey"
@@ -80,7 +80,7 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_marginRight="20dp"
+
                 android:layout_height="match_parent"
                 android:gravity="start|top"
                 android:hint="내용을 입력해주세요"

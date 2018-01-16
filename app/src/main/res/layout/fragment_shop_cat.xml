@@ -16,30 +16,31 @@
         <!-- 카테고리 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="72dp"
             android:orientation="vertical"
 
             >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="59dp"
+                android:gravity="center_vertical"
+                android:background="@color/white"
                 android:layout_marginTop="10dp">
 
                 <LinearLayout
                     android:id="@+id/feed"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical"
 
                     >
 
                     <ImageView
                         android:layout_width="30dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:src="@drawable/feed" />
 
                     <TextView
@@ -52,13 +53,16 @@
 
                 </LinearLayout>
 
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"/>
                 <LinearLayout
                     android:id="@+id/snack"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
@@ -76,13 +80,17 @@
 
                 </LinearLayout>
 
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"/>
+
                 <LinearLayout
                     android:id="@+id/supplies"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
@@ -100,6 +108,7 @@
 
                 </LinearLayout>
 
+
             </LinearLayout>
 
         </LinearLayout>
@@ -107,11 +116,12 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="6dp"
+            android:layout_height="3dp"
             android:background="@color/strong_white"
             />
 
         <LinearLayout
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -157,10 +167,11 @@
         <!-- 놓칠 수 없는 1 DAY 특가 -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="6dp"
+            android:layout_height="3dp"
             android:background="@color/strong_white"
             />
         <LinearLayout
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -180,8 +191,9 @@
                     android:lineSpacingExtra="3sp"
                     android:text="놓칠 수 없는 1 DAY 특가"
                     android:textColor="@color/soft_black"
+                    android:textSize="12sp"
                     android:id="@+id/oneday_text"
-                    android:textSize="12sp" />
+                    />
 
                 <TextView
                     android:layout_width="0dp"
@@ -207,11 +219,12 @@
         <!-- 이걸 추천해요 -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="6dp"
+            android:layout_height="3dp"
             android:background="@color/strong_white"
             />
         <LinearLayout
             android:layout_width="match_parent"
+            android:background="@color/white"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -252,6 +265,7 @@
                 android:orientation="horizontal" />
 
         </LinearLayout>
+
 
 
     </LinearLayout>

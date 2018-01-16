@@ -3,9 +3,11 @@ package com.rootup.friendzoo.friendzoo.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.MotionEventCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -16,6 +18,7 @@ import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.activity.BasePlaceFilterActivity;
 import com.rootup.friendzoo.friendzoo.activity.WalkDetailActivityByCash;
 import com.rootup.friendzoo.friendzoo.activity.WalkDetailActivityByNotCash;
+import com.rootup.friendzoo.friendzoo.activity.WalkPaymentActivity;
 import com.rootup.friendzoo.friendzoo.adapter.BaseLikeDefaultItemAdapter;
 import com.rootup.friendzoo.friendzoo.custom.RecyclerItemClickListener;
 import com.rootup.friendzoo.friendzoo.entity.Item;
@@ -90,7 +93,15 @@ public class WalkAllFragment extends Fragment {
                     }
                 }));
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+
+
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity()){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        };
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         if (dataList.size() > 0) {
@@ -119,6 +130,7 @@ public class WalkAllFragment extends Fragment {
         });
 
     }
+
 
 
 }

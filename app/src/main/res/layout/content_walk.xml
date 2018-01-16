@@ -73,7 +73,7 @@
     <com.rootup.friendzoo.friendzoo.custom.SwipeViewPager
         android:id="@+id/tab_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="800dp" />
+        android:layout_height="1300dp" />
 </LinearLayout>
 
 
