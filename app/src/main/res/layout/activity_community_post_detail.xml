@@ -1,195 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:paddingTop="20dp">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/border_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
 
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/left_arrow" />
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        android:orientation="vertical">
-
+        android:background="@color/white">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_height"
-            android:background="@drawable/border_bottom"
-            android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:orientation="horizontal">
-
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/left_arrow"
-                android:scaleType="centerCrop"/>
-
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@drawable/border_bottom"
-            android:paddingLeft="19dp"
-            android:paddingRight="19dp">
+            >
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="[자유] 날씨가 너무 추워요! 제목이 길면 밑으로 내려갑니다. 내려갑니다."
-                android:lineSpacingExtra="3sp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/soft_black"
-                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:gravity="center_vertical">
+                android:background="@drawable/border_bottom"
+                android:orientation="vertical"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2017.09.23"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3sp"
+                    android:text="[자유] 날씨가 너무 추워요! 제목이 길면 밑으로 내려갑니다. 내려갑니다."
                     android:textColor="@color/soft_black"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <LinearLayout
-
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:layout_weight="1"
-                    android:gravity="end|center_vertical">
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="장지후"
+                        android:text="2017.09.23"
                         android:textColor="@color/soft_black"
                         android:textSize="12sp" />
 
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="11dp"
-                        android:src="@drawable/user"
+                    <LinearLayout
 
-                        />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="장지후"
+                            android:textColor="@color/soft_black"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="11dp"
+                            android:src="@drawable/user"
+
+                            />
+                    </LinearLayout>
+
+
                 </LinearLayout>
 
 
             </LinearLayout>
 
 
-        </LinearLayout>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="21dp"
-            android:lineSpacingExtra="3sp"
-            android:paddingLeft="19dp"
-            android:paddingRight="19dp"
-            android:text="내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.  "
-            android:textColor="@color/soft_black"
-            android:textSize="14sp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="17dp"
-            android:orientation="vertical"
-            android:paddingLeft="19dp"
-            android:paddingRight="19dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/comment"
-                android:scaleType="centerCrop"/>
-
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="댓글 3개"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="21dp"
+                android:lineSpacingExtra="3sp"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp"
+                android:text="내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다.  "
                 android:textColor="@color/soft_black"
-                android:textSize="12sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_marginTop="11dp"
-            android:background="@color/strong_white" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="17dp"
-            android:orientation="vertical">
+                android:textSize="14sp" />
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="17dp">
+                android:layout_marginTop="17dp"
+                android:orientation="vertical"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/user" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                <EditText
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/comment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="댓글 3개"
+                        android:textColor="@color/soft_black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/strong_white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="17dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="댓글을 입력하세요"
-                    android:id="@+id/post_comment"
-                    android:theme="@style/EditTextStyle"
-                    android:textSize="14sp" />
+                    android:layout_marginTop="17dp">
 
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/user" />
+
+                    <EditText
+                        android:id="@+id/post_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:hint="댓글을 입력하세요"
+                        android:textSize="14sp"
+                        android:theme="@style/EditTextStyle" />
+
+                </LinearLayout>
             </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/donate_post_review_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
         </LinearLayout>
 
 
-        <android.support.v7.widget.RecyclerView
-
-            android:id="@+id/donate_post_review_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="10dp" />
-
-
-    </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
 
 

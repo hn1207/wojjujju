@@ -29,7 +29,7 @@
         android:letterSpacing="-0.04"
         android:lineSpacingExtra="3sp"
         android:gravity="center"
-        android:text="감사합니다!\n후원하는 당신이 너무 아름다워요"
+        tools:text="감사합니다!\n후원하는 당신이 너무 아름다워요"
         />
     <TextView
         android:layout_marginTop="21dp"

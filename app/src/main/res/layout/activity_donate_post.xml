@@ -29,6 +29,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/donate_detail"/>
 
                 <LinearLayout
@@ -37,14 +38,12 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp">
 
-                    <TextView
-                        android:layout_width="0dp"
+                    <ImageView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical|start"
-                        android:text="←"
-                        android:textColor="@color/white"
-                        android:textSize="30sp" />
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/left_arrow_white" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -52,11 +51,12 @@
                         android:layout_weight="1"
                         android:gravity="right|center_vertical">
 
-<ImageView
+                        <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
-                            android:src="@drawable/share"
-                            android:gravity="center_vertical" />
+
+                            android:gravity="center_vertical"
+                            android:src="@drawable/share" />
 
                     </LinearLayout>
 
@@ -89,7 +89,7 @@
                         app:rcBackgroundColor="#f0f0f0"
                         app:rcBackgroundPadding="0dp"
                         app:rcProgressColor="@color/colorPrimary"
-                        app:rcSecondaryProgressColor="@color/warm_grey" />
+                        app:rcSecondaryProgressColor="@color/transparent_white" />
 
                     <LinearLayout
                         android:layout_width="match_parent"

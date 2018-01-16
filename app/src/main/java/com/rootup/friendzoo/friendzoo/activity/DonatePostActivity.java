@@ -96,7 +96,7 @@ public class DonatePostActivity extends AppCompatActivity {
     void initProgressBar() {
         HorizontalProgressView progress = (HorizontalProgressView) findViewById(R.id.progress);
         progress.setProgressColor(getResources().getColor(R.color.color_primary));
-        progress.setProgressBackgroundColor(getResources().getColor(R.color.warm_grey));
+        progress.setProgressBackgroundColor(getResources().getColor(R.color.transparent_white));
         progress.setMax(100);
         progress.setProgress(60);
         progress.animateView(0, 60);
