@@ -34,7 +34,7 @@ public class MyPageCurrentHistoryActivity extends AppCompatActivity{
 
         for(int i=0; i<5; i++){
             item = new Item();
-            item.setTitle("푹신푹신 허그미 쿠션 ");
+            item.setTitle("푹신푹신 쿠션 ");
             item.setPrice("12,000원");
             item.setDescription("특대사이즈 100cm red");
             item.setDate("12,000원");

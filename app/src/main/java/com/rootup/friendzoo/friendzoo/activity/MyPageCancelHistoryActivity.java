@@ -34,7 +34,7 @@ public class MyPageCancelHistoryActivity extends AppCompatActivity{
 
         for(int i=0; i<5; i++){
             item = new Item();
-            item.setTitle("푹신푹신 허그미 쿠션 ");
+            item.setTitle("푹신푹신 쿠션 ");
             item.setDescription("특대사이즈 100cm red");
             item.setPrice("12,000원");
             item.setDate("2017.12.03 취소");

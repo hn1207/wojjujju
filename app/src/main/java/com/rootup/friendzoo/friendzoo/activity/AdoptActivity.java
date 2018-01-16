@@ -77,29 +77,5 @@ public class AdoptActivity extends BaseDrawerActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = AdoptActivity.this.getMenuInflater();
-        inflater.inflate(R.menu.toolbar_main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-
-        switch (id) {
-            case R.id.action_search:
-//                startActivity(new Intent(CommunityActivity.this, CommunityPostSearchActivity.class));
-//                Toast.makeText(getApplicationContext(), R.string.search, Toast.LENGTH_SHORT).show();
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-
-
 
 }
