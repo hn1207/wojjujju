@@ -123,8 +123,7 @@ public class DonatePostActivity extends AppCompatActivity {
                 .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics()));
 
         ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
-        ultraViewPager.getIndicator().setMargin(0, 0, 0, 20);
-
+        ultraViewPager.getIndicator().setMargin(0,0,0,20);
         ultraViewPager.getIndicator().build();
 
 

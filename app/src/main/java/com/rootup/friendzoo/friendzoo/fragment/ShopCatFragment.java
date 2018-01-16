@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.activity.ShopSelectCategoryActivity;
@@ -28,6 +30,15 @@ public class ShopCatFragment extends Fragment {
         initHotItemList(view);
         initSaleItemList(view);
         initRecommendItemList(view);
+
+        String strFront = "놓칠수 없는 ";
+        String strChange = "<font color=\"#f62b4c\">1 DAY</font>";
+        String strBack = " 특가";
+        TextView tv = view.findViewById(R.id.oneday_text);
+        tv.setText(Html.fromHtml(strFront + strChange + strBack));
+
+
+
 
         view.findViewById(R.id.feed).setOnClickListener(new View.OnClickListener() {
             @Override

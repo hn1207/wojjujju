@@ -1,23 +1,14 @@
 package com.rootup.friendzoo.friendzoo.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.LinearLayout;
 
-import com.github.ksoichiro.android.observablescrollview.CacheFragmentStatePagerAdapter;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
@@ -25,21 +16,15 @@ import com.github.ksoichiro.android.observablescrollview.ScrollUtils;
 import com.google.samples.apps.iosched.ui.widget.SlidingTabLayout;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
-import com.rootup.friendzoo.friendzoo.lib.BaseActivity;
-import com.rootup.friendzoo.friendzoo.lib.ViewPagerTabScrollViewWithFabActivity;
-import com.rootup.friendzoo.friendzoo.lib.ViewPagerTabScrollViewWithFabFragment;
-import com.tmall.ultraviewpager.UltraViewPager;
 import com.rootup.friendzoo.friendzoo.R;
-import com.rootup.friendzoo.friendzoo.adapter.BaseRecyclerAdapter;
 import com.rootup.friendzoo.friendzoo.adapter.BaseUltraPagerAdapter;
 import com.rootup.friendzoo.friendzoo.adapter.TabViewAdapter;
 import com.rootup.friendzoo.friendzoo.custom.SwipeViewPager;
-import com.rootup.friendzoo.friendzoo.entity.Item;
-import com.rootup.friendzoo.friendzoo.fragment.BeautyDetailInfoFragment;
 import com.rootup.friendzoo.friendzoo.fragment.BaseQnAFragment;
 import com.rootup.friendzoo.friendzoo.fragment.BaseReviewFragment;
-
-import java.util.ArrayList;
+import com.rootup.friendzoo.friendzoo.fragment.BeautyDetailInfoFragment;
+import com.rootup.friendzoo.friendzoo.lib.BaseActivity;
+import com.tmall.ultraviewpager.UltraViewPager;
 
 public class BeautyDetailActivity extends BaseActivity implements ObservableScrollViewCallbacks {
 
@@ -290,7 +275,6 @@ public class BeautyDetailActivity extends BaseActivity implements ObservableScro
 
         ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
         ultraViewPager.getIndicator().setMargin(0,0,0,20);
-
         ultraViewPager.getIndicator().build();
 
 

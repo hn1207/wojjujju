@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -72,10 +73,17 @@ public class EducationDetailActivity extends AppCompatActivity{
 
     void initViewPager(){
 
+        ArrayList<String> dataList = new ArrayList<>();
+        dataList.add("http://13.125.46.183/woojjujju/viewpager_edu.jpg");
+        dataList.add("http://13.125.46.183/woojjujju/viewpager_edu2.jpg");
+        dataList.add("http://13.125.46.183/woojjujju/viewpager_edu3.jpg");
+        dataList.add("http://13.125.46.183/woojjujju/viewpager_edu4.jpg");
+        dataList.add("http://13.125.46.183/woojjujju/viewpager_edu5.jpg");
+
         UltraViewPager ultraViewPager = (UltraViewPager)findViewById(R.id.ultra_viewpager);
         ultraViewPager.setScrollMode(UltraViewPager.ScrollMode.HORIZONTAL);
 //initialize UltraPagerAdapter，and add child view to UltraViewPager
-        PagerAdapter adapter = new BaseUltraPagerAdapter(false);
+        PagerAdapter adapter = new BaseUltraPagerAdapter(false, dataList, EducationDetailActivity.this);
         ultraViewPager.setAdapter(adapter);
 
 
@@ -84,16 +92,40 @@ public class EducationDetailActivity extends AppCompatActivity{
         ultraViewPager.getIndicator()
                 .setOrientation(UltraViewPager.Orientation.HORIZONTAL)
                 .setFocusColor(getResources().getColor(R.color.white))
+
                 .setNormalColor(getResources().getColor(R.color.transparent_white))
                 .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics()));
 
+
         ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
         ultraViewPager.getIndicator().setMargin(0,0,0,20);
-
         ultraViewPager.getIndicator().build();
 
 
-        ultraViewPager.setInfiniteLoop(true);
+        ultraViewPager.setInfiniteLoop(false);
+
+        ultraViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+//                if(position==3) {
+//                    findViewById(R.id.next).startAnimation(AnimationUtils.loadAnimation(ShopDetailActivity.this, android.R.anim.fade_in));
+//
+//                    findViewById(R.id.next).setVisibility(View.VISIBLE);
+//
+//                }
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
 
 //        ultraViewPager.setAutoScroll(2000);
 

@@ -59,9 +59,9 @@ public class HospitalActivity extends BaseDrawerActivity{
         for(int i=0; i<10; i++) {
             Item item = new Item();
             item.setImg("http://13.125.46.183/woojjujju/hospital.jpg");
-            item.setTitle("병원이름");
+            item.setTitle("미래 동물 의료센터");
 //            item.setPrice("0");
-            item.setAddress("785");
+            item.setAddress("마포구 서교동");
             item.setGrade(4);
             item.setCommentCnt(785);
             item.setDescription("예약취소 연기 가능");

@@ -18,7 +18,6 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.rootup.friendzoo.friendzoo.R;
-import com.rootup.friendzoo.friendzoo.activity.BeautyDetailServiceGuideActivity;
 import com.rootup.friendzoo.friendzoo.activity.HospitalDetailServiceGuideActivity;
 import com.rootup.friendzoo.friendzoo.adapter.BaseRecyclerAdapter;
 import com.rootup.friendzoo.friendzoo.custom.MyMapView;
@@ -40,7 +39,7 @@ public class HospitalDetailInfoFragment extends Fragment implements View.OnTouch
         final View view = inflater.inflate(R.layout.fragment_hospital_detail_info, container, false);
 
         initServiceGuideItemList(view);
-        initEmployerItemList(view);
+        initHairDresserItemList(view);
         initMapView(view, savedInstanceState);
 
 
@@ -73,11 +72,6 @@ public class HospitalDetailInfoFragment extends Fragment implements View.OnTouch
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
             }
         });
-
-
-
-
-
 
     }
 
@@ -143,7 +137,7 @@ public class HospitalDetailInfoFragment extends Fragment implements View.OnTouch
 
 
 
-    void initEmployerItemList(View v){
+    void initHairDresserItemList(View v){
 
         ArrayList<Item> hairDresserItemArrayList = new ArrayList<>();
         for(int i=0; i<10; i++){
@@ -153,9 +147,6 @@ public class HospitalDetailInfoFragment extends Fragment implements View.OnTouch
             item.setPrice("6,7000원");
             hairDresserItemArrayList.add(item);
         }
-
-
-
 
 
         RecyclerView itemListView = (RecyclerView) v.findViewById(R.id.employer_item_list);

@@ -180,6 +180,7 @@
                     android:lineSpacingExtra="3sp"
                     android:text="놓칠 수 없는 1 DAY 특가"
                     android:textColor="@color/soft_black"
+                    android:id="@+id/oneday_text"
                     android:textSize="12sp" />
 
                 <TextView

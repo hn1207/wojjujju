@@ -22,7 +22,6 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.nineoldandroids.view.ViewPropertyAnimator;
 import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.activity.BeautyDetailServiceGuideActivity;
 import com.rootup.friendzoo.friendzoo.adapter.BaseRecyclerAdapter;
@@ -187,10 +186,6 @@ public class BeautyDetailInfoFragment extends Fragment implements View.OnTouchLi
             item.setPrice("6,7000원");
             hairDresserItemArrayList.add(item);
         }
-
-
-
-
 
         RecyclerView itemListView = (RecyclerView) v.findViewById(R.id.employer_item_list);
 //        itemListView.setHasFixedSize(true);
