@@ -122,6 +122,8 @@
                 android:layout_height="wrap_content"
                 android:text="지역 필터"
                 android:layout_marginRight="10dp"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp"
                 />
 
         </LinearLayout>
