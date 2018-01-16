@@ -109,7 +109,10 @@
                         android:textSize="10sp" />
 
                 </LinearLayout>
-
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"/>
                 <LinearLayout
                     android:id="@+id/community"
                     android:layout_width="0dp"
@@ -132,7 +135,10 @@
                         android:textSize="10sp" />
 
                 </LinearLayout>
-
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"/>
                 <LinearLayout
                     android:id="@+id/memories_album"
                     android:layout_width="0dp"
