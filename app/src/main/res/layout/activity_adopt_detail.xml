@@ -52,9 +52,9 @@
                         android:layout_weight="1"
                         android:gravity="right|center_vertical">
 
-                        <ImageView
-                            android:layout_width="17dp"
-                            android:layout_height="18dp"
+<ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
 
                             android:gravity="center_vertical"
                             android:src="@drawable/share" />

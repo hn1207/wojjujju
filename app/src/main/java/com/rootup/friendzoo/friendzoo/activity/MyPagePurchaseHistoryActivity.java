@@ -30,7 +30,7 @@ public class MyPagePurchaseHistoryActivity extends AppCompatActivity{
         ArrayList<Item> dataList = new ArrayList<>();
         for(int i=0; i<20; i++){
             Item item = new Item();
-            item.setTitle("푹신푹신 허그미 쿠션");
+            item.setTitle("푹신푹신 쿠션");
             item.setDescription("특대사이즈 100cm red");
             item.setPrice("12,200원");
             item.setDate("06/23\n도착예정");
