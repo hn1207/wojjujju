@@ -2,9 +2,6 @@ package com.rootup.friendzoo.friendzoo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,6 +25,9 @@ public class AdoptActivity extends BaseDrawerActivity {
         initToolbar("입양");
         initGridView();
         initSpinner();
+
+        GridView gridView = findViewById(R.id.data_list);
+        gridView.setFocusable(false);
 
     }
 

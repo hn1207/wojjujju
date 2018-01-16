@@ -2,9 +2,6 @@ package com.rootup.friendzoo.friendzoo.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 
 import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.adapter.TabViewAdapter;
@@ -23,7 +20,8 @@ public class WalkActivity extends BaseDrawerActivity {
         initTabView();
 //        initItemList();
 //        initBeautySelectedItemList();
-
+//        RecyclerView recyclerView = findViewById(R.id.data_list);
+//        recyclerView.setFocusable(false);
 
     }
 

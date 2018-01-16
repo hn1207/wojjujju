@@ -31,6 +31,9 @@ public class SellAllFragment extends Fragment {
         initSpinner(view);
         initGridView(view);
 
+        GridView gridView = view.findViewById(R.id.data_list);
+        gridView.setFocusable(false);
+
         return view;
     }
 
