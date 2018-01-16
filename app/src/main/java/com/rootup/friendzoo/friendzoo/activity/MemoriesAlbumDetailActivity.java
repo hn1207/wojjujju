@@ -14,7 +14,6 @@ import com.rootup.friendzoo.friendzoo.adapter.BaseGridAdapter;
 import com.rootup.friendzoo.friendzoo.dialog.BaseGuideDialog;
 import com.rootup.friendzoo.friendzoo.dialog.BaseInnerHTMLDialog;
 import com.rootup.friendzoo.friendzoo.entity.Item;
-import com.rootup.friendzoo.friendzoo.lib.BaseActivity;
 
 import java.util.ArrayList;
 
@@ -29,6 +28,9 @@ public class MemoriesAlbumDetailActivity extends AppCompatActivity {
 
         initGridView();
         initSpinner();
+
+        GridView gridView = findViewById(R.id.data_list);
+        gridView.setFocusable(false);
 
         findViewById(R.id.profile).setOnClickListener(new View.OnClickListener() {
             @Override

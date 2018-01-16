@@ -1,7 +1,6 @@
 package com.rootup.friendzoo.friendzoo.fragment;
 
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -34,6 +33,9 @@ public class WalkAllFragment extends Fragment {
         initSpinner(view);
 
         initItemList(view);
+
+        RecyclerView recyclerView = view.findViewById(R.id.data_list);
+        recyclerView.setFocusable(false);
 
 
         return view;
