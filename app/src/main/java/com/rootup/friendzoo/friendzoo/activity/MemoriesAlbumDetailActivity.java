@@ -14,6 +14,7 @@ import com.rootup.friendzoo.friendzoo.adapter.BaseGridAdapter;
 import com.rootup.friendzoo.friendzoo.dialog.BaseGuideDialog;
 import com.rootup.friendzoo.friendzoo.dialog.BaseInnerHTMLDialog;
 import com.rootup.friendzoo.friendzoo.entity.Item;
+import com.rootup.friendzoo.friendzoo.lib.BaseActivity;
 
 import java.util.ArrayList;
 

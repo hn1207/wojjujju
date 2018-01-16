@@ -84,8 +84,10 @@ public class WebtoonActivity extends BaseDrawerActivity {
         ultraViewPager.getIndicator()
                 .setOrientation(UltraViewPager.Orientation.HORIZONTAL)
                 .setFocusColor(getResources().getColor(R.color.white))
-                .setNormalColor(getResources().getColor(R.color.soft_grey))
-                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics()));
+
+                .setNormalColor(getResources().getColor(R.color.transparent_white))
+                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics()));
+
 
         ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
         ultraViewPager.getIndicator().setMargin(0,50,0,0);

@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="start|center_vertical"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="우쭈쭈 첫가입"
                 android:textColor="#000000"
                 android:textSize="12sp" />
@@ -38,7 +38,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:gravity="start|center_vertical"
-                android:lineSpacingExtra="11sp"
+                android:lineSpacingExtra="3sp"
                 android:text="10%할인"
                 android:textColor="@color/color_primary"
                 android:textSize="12sp" />
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:lineSpacingExtra="16sp"
+            android:lineSpacingExtra="3sp"
             android:text="쇼핑/미용/데이트 사용가능"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />
@@ -74,7 +74,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:lineSpacingExtra="16sp"
+                android:lineSpacingExtra="3sp"
                 android:text="2017.09.24 ~ 12.24"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />

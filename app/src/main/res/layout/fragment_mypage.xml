@@ -478,7 +478,7 @@
                     <View
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/warm_grey" />
+                        android:background="@color/strong_white" />
 
                     <LinearLayout
                         android:id="@+id/book_history"
@@ -508,7 +508,7 @@
                     <View
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/warm_grey" />
+                        android:background="@color/strong_white" />
 
                     <LinearLayout
                         android:id="@+id/adopt_history"
@@ -537,7 +537,7 @@
                     <View
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/warm_grey" />
+                        android:background="@color/strong_white" />
 
                     <LinearLayout
                         android:id="@+id/cancel_history"
@@ -610,7 +610,7 @@
                     <View
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/warm_grey" />
+                        android:background="@color/strong_white" />
 
                     <LinearLayout
                         android:id="@+id/current"
@@ -676,7 +676,7 @@
                     <View
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/warm_grey" />
+                        android:background="@color/strong_white" />
 
                     <LinearLayout
                         android:id="@+id/faq"
@@ -792,7 +792,7 @@
                     <View
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/warm_grey" />
+                        android:background="@color/strong_white" />
 
                     <LinearLayout
                         android:id="@+id/review_history"

@@ -481,6 +481,17 @@
         <activity android:name=".activity.WebtoonListActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
+        <activity android:name=".lib.ViewPagerTabScrollViewWithFabActivity"
+            android:theme="@style/AppTheme.Toolbar"
+            >
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+
+
 
     </application>
 </manifest>

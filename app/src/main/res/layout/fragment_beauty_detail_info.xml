@@ -1,184 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<com.github.ksoichiro.android.observablescrollview.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="12dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="11sp"
-            android:text="소개"
-            android:textColor="@color/soft_black"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:lineSpacingExtra="9sp"
-            android:text="내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. "
-            android:textColor="@color/soft_black"
-            android:textSize="14sp" />
-    </LinearLayout>
-
+    android:background="@color/strong_white"
+    android:fillViewport="true"
+    android:overScrollMode="never">
 
     <LinearLayout
+        android:paddingTop="359dp"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="12dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="11sp"
-            android:text="영업시간"
-            android:textColor="@color/soft_black"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:lineSpacingExtra="9sp"
-            android:text=" 매일 13:00~14:00 점심시간(CLOSED)\n
-일요일 11:00~18:00\n
-평일 09:00~19:00\n
-토요일 09:00~18:00 (공휴일도 동일 적용)"
-            android:textColor="@color/soft_black"
-            android:textSize="14sp" />
-    </LinearLayout>
-
-    <!-- 서비스 안내 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:layout_height="match_parent"
         android:orientation="vertical">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="11sp"
+                android:text="소개"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="9sp"
+                android:text="내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. "
+                android:textColor="@color/soft_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="11sp"
+                android:text="영업시간"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="9sp"
+                android:text=" 매일 13:00~14:00 점심시간(CLOSED)\n
+일요일 11:00~18:00\n
+평일 09:00~19:00\n
+토요일 09:00~18:00 (공휴일도 동일 적용)"
+                android:textColor="@color/soft_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- 서비스 안내 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="6dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
-                    android:text="서비스 안내"
-                    android:textColor="@color/soft_black"
-                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
-                    android:text="전체보기 >"
-                    android:textColor="@color/mint"
-                    android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:lineSpacingExtra="11sp"
+                        android:text="서비스 안내"
+                        android:textColor="@color/soft_black"
+                        android:textSize="12sp" />
 
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:lineSpacingExtra="13sp"
+                        android:text="전체보기 >"
+                        android:textColor="@color/mint"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/service_guide_item_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
 
             </LinearLayout>
 
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미용사 소개"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
+
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/service_guide_item_list"
+                android:id="@+id/employer_item_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal" />
 
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="11sp"
+                android:text="위치"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
+
+            <com.rootup.friendzoo.friendzoo.custom.MyMapView
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="172dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="11sp"
+                android:text="서울 강남구 역삼동 720-16"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
+
+
         </LinearLayout>
 
 
-
-
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="12dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="11sp"
-            android:text="미용사 소개"
-            android:textColor="@color/soft_black"
-            android:textSize="12sp" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/employer_item_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="252dp"
-        android:layout_margin="16dp"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="12dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="11sp"
-            android:text="위치"
-            android:textColor="@color/soft_black"
-            android:textSize="12sp" />
-
-        <com.rootup.friendzoo.friendzoo.custom.MyMapView
-            android:id="@+id/map"
-            android:layout_width="match_parent"
-            android:layout_height="172dp"
-            android:name="com.google.android.gms.maps.MapFragment"
-            />
-
-
-
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="11sp"
-            android:text="서울 강남구 역삼동 720-16"
-            android:textColor="@color/soft_black"
-            android:textSize="12sp" />
-
-
-    </LinearLayout>
-
-
-</LinearLayout>
+</com.github.ksoichiro.android.observablescrollview.ObservableScrollView>

@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:letterSpacing="-0.04"
-                    android:lineSpacingExtra="8sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="여러분의 사랑을 보여주세요!\n작은 사랑이 놀라운 결과를 가져와요"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:letterSpacing="-0.04"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="우쭈쭈는 투명하게 기부내역을 공개합니다."
                     android:textColor="@color/white"
                     android:textSize="12sp"

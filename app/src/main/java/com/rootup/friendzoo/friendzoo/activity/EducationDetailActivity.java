@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.rootup.friendzoo.friendzoo.R;
@@ -91,12 +92,13 @@ public class EducationDetailActivity extends AppCompatActivity{
         ultraViewPager.getIndicator()
                 .setOrientation(UltraViewPager.Orientation.HORIZONTAL)
                 .setFocusColor(getResources().getColor(R.color.white))
-                .setNormalColor(getResources().getColor(R.color.soft_grey))
-                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics()));
+
+                .setNormalColor(getResources().getColor(R.color.transparent_white))
+                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics()));
+
 
         ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
-        ultraViewPager.getIndicator().setMargin(0,50,0,0);
-
+        ultraViewPager.getIndicator().setMargin(0,0,0,20);
         ultraViewPager.getIndicator().build();
 
 
@@ -164,6 +166,8 @@ public class EducationDetailActivity extends AppCompatActivity{
         beautySelectedItemListView.setLayoutManager(layoutManager);
 
 
+
+        final ImageView selectArrow = findViewById(R.id.select_arrow);
         final LinearLayout linearLayout = findViewById(R.id.selected_list);
         linearLayout.setVisibility(View.GONE);
         linearLayout.setOnClickListener(new View.OnClickListener() {
@@ -172,9 +176,11 @@ public class EducationDetailActivity extends AppCompatActivity{
                 switch (linearLayout.getVisibility()){
                     case View.GONE:
                         linearLayout.setVisibility(View.VISIBLE);
+                        selectArrow.setVisibility(View.VISIBLE);
                         break;
                     case View.VISIBLE:
                         linearLayout.setVisibility(View.GONE);
+                        selectArrow.setVisibility(View.GONE);
                         break;
 
                 }
@@ -186,12 +192,16 @@ public class EducationDetailActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
 
-                switch (linearLayout.getVisibility()){
+                switch (linearLayout.getVisibility()) {
                     case View.GONE:
                         linearLayout.setVisibility(View.VISIBLE);
+                        selectArrow.setVisibility(View.VISIBLE);
+
                         break;
                     case View.VISIBLE:
                         linearLayout.setVisibility(View.GONE);
+                        selectArrow.setVisibility(View.GONE);
+
                         break;
 
                 }

@@ -126,7 +126,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="이게 인기있어요"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -136,7 +136,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
@@ -175,7 +175,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="놓칠 수 없는 1 DAY 특가"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp"
@@ -187,7 +187,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
@@ -226,7 +226,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="left|center_vertical"
-                    android:lineSpacingExtra="11sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="이걸 추천해요"
                     android:textColor="@color/soft_black"
                     android:textSize="12sp" />
@@ -236,7 +236,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right|center_vertical"
-                    android:lineSpacingExtra="13sp"
+                    android:lineSpacingExtra="3sp"
                     android:text="더보기 >"
                     android:textColor="@color/mint"
                     android:textSize="10sp" />
