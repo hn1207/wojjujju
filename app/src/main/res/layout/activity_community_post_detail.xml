@@ -178,6 +178,7 @@
                         android:layout_marginLeft="10dp"
                         android:hint="댓글을 입력하세요"
                         android:textSize="14sp"
+                        android:focusable="false"
                         android:theme="@style/EditTextStyle" />
 
                 </LinearLayout>
