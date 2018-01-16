@@ -17,23 +17,32 @@
         android:scaleType="centerCrop"
         android:src="@drawable/dog"
         android:padding="5dp" />
-    <TextView
-        android:id="@+id/title"
-        android:layout_height="wrap_content"
-        android:gravity="start|center_vertical"
-        android:text="디럭스 스위트 룸1"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        android:layout_width="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:text="디럭스 스위트 룸1"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_width="wrap_content" />
 
 
-    <TextView
-        android:layout_marginTop="5dp"
-        android:id="@+id/price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="34,000원 / 1d"
-        android:textColor="@color/color_primary"
-        android:textSize="12sp" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34,000원 / 1d"
+            android:textColor="@color/color_primary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
 
 </LinearLayout>

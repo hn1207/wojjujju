@@ -88,12 +88,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:background="@drawable/border_gray"
         android:layout_height="48dp">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+
+
             android:gravity="left|center_vertical"
             android:paddingLeft="10dp"
             android:text="전체 890건"

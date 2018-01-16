@@ -52,7 +52,8 @@
             android:layout_marginTop="14dp"
             android:text="예약자 정보"
             android:textColor="@color/soft_black"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -308,7 +309,8 @@
                 android:lineSpacingExtra="3sp"
                 android:text="결제금액"
                 android:textColor="@color/soft_black"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="0dp"
@@ -404,8 +406,10 @@
             android:lineSpacingExtra="3sp"
             android:text="결제수단"
             android:textColor="@color/soft_black"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
+
+
 
 
         <LinearLayout

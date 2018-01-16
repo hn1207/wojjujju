@@ -14,7 +14,7 @@
     <LinearLayout
         android:gravity="start|center_vertical"
         android:layout_height="50dp"
-        android:background="@color/white"
+        android:background="@drawable/border_gray"
         android:layout_width="match_parent">
 
         <TextView

@@ -17,6 +17,7 @@
             android:layout_weight="1"
             android:gravity="left|center_vertical"
             android:paddingLeft="10dp"
+            android:background="@drawable/border_gray"
             android:text="전체 890건"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />

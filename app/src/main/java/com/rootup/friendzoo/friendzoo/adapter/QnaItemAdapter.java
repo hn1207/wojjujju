@@ -41,7 +41,7 @@ public class QnaItemAdapter extends RecyclerView.Adapter<BaseItemViewHolder> {
                 holder.qnaBackground.setBackgroundColor(con.getResources().getColor(R.color.white));
                 break;
             case ANSWER:
-                holder.qnaBackground.setBackgroundColor(con.getResources().getColor(R.color.soft_grey));
+                holder.qnaBackground.setBackgroundColor(con.getResources().getColor(R.color.strong_white));
                 holder.qnaBackground.setPadding(100,16,16,16);
                 break;
         }

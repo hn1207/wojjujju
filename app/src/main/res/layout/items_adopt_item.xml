@@ -26,6 +26,8 @@
 
 
         <LinearLayout
+            android:background="@color/white"
+
             android:paddingRight="13dp"
             android:paddingLeft="13dp"
             android:layout_width="match_parent"

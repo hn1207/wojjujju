@@ -13,12 +13,17 @@
         android:layout_weight="1"
         android:orientation="vertical"
         >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:background="@color/white"
+            >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/toolbar_height"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:background="@drawable/border_bottom"
             android:paddingLeft="16dp">
 
             <ImageView
@@ -36,7 +41,7 @@
                 android:textSize="14sp" />
 
         </LinearLayout>
-
+        </android.support.design.widget.AppBarLayout>
 
         <TextView
             android:layout_marginTop="16dp"

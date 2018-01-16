@@ -7,7 +7,12 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/white"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_height"
@@ -30,7 +35,7 @@
             android:textSize="16sp" />
 
     </LinearLayout>
-
+    </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,6 +47,7 @@
             android:layout_weight="1"
             android:gravity="left|center_vertical"
             android:paddingLeft="10dp"
+            android:background="@drawable/border_gray"
             android:text="전체 890건"
             android:textColor="@color/soft_black"
             android:textSize="12sp" />

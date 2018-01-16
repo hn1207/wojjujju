@@ -35,6 +35,7 @@
 
 
     <LinearLayout
+        android:background="@color/white"
         android:layout_width="110dp"
         android:layout_height="62dp"
         android:orientation="vertical"

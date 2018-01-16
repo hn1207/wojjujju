@@ -7,7 +7,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/border_bottom"
     android:orientation="vertical">
-
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/white"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_height"
@@ -30,7 +35,7 @@
             android:textSize="16sp" />
 
     </LinearLayout>
-
+    </android.support.design.widget.AppBarLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"

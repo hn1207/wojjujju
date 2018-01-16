@@ -71,7 +71,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
+                android:buttonTint="@color/color_primary"
+                android:checked="true"
                 android:text="신규 배송지" />
+
+
 
         </LinearLayout>
 
@@ -316,7 +320,8 @@
             android:layout_gravity="start"
             android:text="상품정보"
             android:textColor="@color/soft_black"
-            android:textSize="14sp" />
+            android:textStyle="bold"
+            android:textSize="12sp" />
         <View
             android:layout_marginTop="4dp"
             android:layout_width="match_parent"
@@ -562,10 +567,10 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:lineSpacingExtra="3sp"
-            android:text="결제수단"
+          android:text="결제수단"
             android:layout_marginBottom="10dp"
             android:textColor="@color/soft_black"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
 
