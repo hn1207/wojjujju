@@ -9,6 +9,7 @@
 
     <ImageView
         android:id="@+id/img"
+        android:scaleType="centerCrop"
         android:layout_width="110dp"
         android:layout_height="112dp"/>
 

@@ -45,7 +45,7 @@
             android:layout_weight="1"
             android:buttonTint="@color/color_primary"
             android:gravity="start|center_vertical"
-            android:text="   자동로그인"
+            android:text="자동로그인"
             android:textColor="@color/warm_grey"
             android:textSize="12sp" />
 

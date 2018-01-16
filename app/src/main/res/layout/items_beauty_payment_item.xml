@@ -12,6 +12,7 @@
         android:padding="15dp"
         android:layout_width="120dp"
         android:src="@drawable/beauty2"
+        android:scaleType="centerCrop"
         android:layout_height="match_parent" />
 
     <LinearLayout

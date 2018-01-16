@@ -12,35 +12,24 @@
         android:layout_marginRight="21dp"
         android:layout_width="14dp"
         android:layout_height="14dp"
-        android:src="@drawable/close"
+        android:src="@drawable/ignore_icon"
         android:letterSpacing="-0.04"
         android:lineSpacingExtra="3sp"
         android:layout_gravity="end"
         android:id="@+id/close"
         />
 
+
     <TextView
-        android:layout_marginTop="55dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:letterSpacing="-0.04"
-        android:lineSpacingExtra="3sp"
+        android:layout_marginBottom="50dp"
         android:gravity="center"
-        tools:text="감사합니다!\n후원하는 당신이 너무 아름다워요"
-        />
-    <TextView
-        android:layout_marginTop="21dp"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:textSize="12sp"
         android:textColor="@color/white"
         android:letterSpacing="-0.04"
         android:lineSpacingExtra="3sp"
-        android:gravity="center"
         android:text="여러분이 후원해주신 소중한 기부금은\n동물 보호 및 위험한 상황에 처한 동물들을 구하는 데에 쓰입니다.\n 동물과 사람, 모두 행복한 그날을 위해 우쭈쭈가 노력할게요!"
         />
 

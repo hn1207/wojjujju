@@ -12,6 +12,7 @@
         android:id="@+id/img"
         android:layout_width="120dp"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         android:padding="10dp" />
 
     <LinearLayout
