@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -30,7 +29,17 @@
         android:layout_height="41dp"
         android:background="@drawable/round_grey"
         android:hint="가입한 이메일을 입력해주세요."
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="end"
+        android:text="확인"
+        android:textColor="@color/color_primary"/>
 
 
 </LinearLayout>

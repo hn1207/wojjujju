@@ -44,12 +44,12 @@
             android:scaleType="centerCrop"/>
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end|bottom"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/small_camera"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/small_camera" />
 
 
     </FrameLayout>
@@ -67,13 +67,14 @@
             android:text="뽀롱뽀롱이"
             android:textColor="#dd000000"
             android:textSize="14sp" />
+
         <ImageView
-            android:layout_width="11dp"
-            android:layout_height="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/pencil"
             android:scaleType="centerCrop"
-             />
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/pencil" />
     </LinearLayout>
 
 

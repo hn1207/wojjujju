@@ -25,28 +25,22 @@
     -->
 
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/tab_height">
 
-        <FrameLayout
+        <com.rootup.friendzoo.friendzoo.custom.SwipeViewPager
+            android:id="@+id/tab_viewpager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="@dimen/tab_height">
-
-            <com.rootup.friendzoo.friendzoo.custom.SwipeViewPager
-                android:id="@+id/tab_viewpager"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+            android:layout_height="match_parent" />
 
 
-            <!--<android.support.v4.view.ViewPager-->
-            <!--android:id="@+id/pager"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent" />-->
-        </FrameLayout>
-
-
-
-
-
+        <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+    </FrameLayout>
 
 
     <LinearLayout
@@ -59,12 +53,13 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:background="@color/strong_white"
-            >
+            android:orientation="vertical">
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="238dp">
+
                 <com.tmall.ultraviewpager.UltraViewPager
                     android:id="@+id/ultra_viewpager"
                     android:layout_width="match_parent"
@@ -91,10 +86,9 @@
                         android:layout_weight="1"
                         android:gravity="right|center_vertical">
 
-<ImageView
+                        <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
-
                             android:gravity="center_vertical"
                             android:src="@drawable/share" />
 
@@ -108,11 +102,6 @@
                     </LinearLayout>
 
                 </LinearLayout>
-
-
-
-
-
 
 
             </FrameLayout>
@@ -149,7 +138,6 @@
                     android:stepSize="0.5" />
 
 
-
                 <TextView
                     android:id="@+id/comment_cnt"
                     android:layout_width="wrap_content"
@@ -180,7 +168,6 @@
                 android:text="예약취소 연기 가능"
                 android:textColor="@color/warm_grey"
                 android:textSize="12sp" />
-
 
 
         </LinearLayout>

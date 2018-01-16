@@ -90,14 +90,13 @@
                         android:text="몽실이엄마"
                         android:textColor="#dd000000"
                         android:textSize="14sp" />
-                    <TextView
-
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:text="edit"
-                        android:textColor="#dd000000"
-                        android:textSize="14sp" />
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/pencil" />
                 </LinearLayout>
 
 

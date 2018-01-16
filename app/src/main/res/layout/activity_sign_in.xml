@@ -41,11 +41,10 @@
 
         <CheckBox
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:button="@drawable/checkbox"
-            android:clickable="true"
-            android:gravity="start"
+            android:buttonTint="@color/color_primary"
+            android:gravity="start|center_vertical"
             android:text="   자동로그인"
             android:textColor="@color/warm_grey"
             android:textSize="12sp" />
@@ -55,7 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="end"
+            android:gravity="end|center_vertical"
             android:text="@string/find_pw"
             android:textSize="12sp" />
 
