@@ -240,12 +240,29 @@
             android:background="@color/strong_white"
             android:layout_marginBottom="10dp"/>
 
-        <com.tmall.ultraviewpager.UltraViewPager
-            android:id="@+id/ultra_viewpager"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="216dp"
-            android:layout_centerInParent="true"
-            android:background="@android:color/darker_gray" />
+            android:layout_height="216dp">
+
+
+            <com.tmall.ultraviewpager.UltraViewPager
+                android:id="@+id/ultra_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/darker_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/background_gradation_bottom"
+                />
+
+        </FrameLayout>
 
         <TextView
             android:layout_marginTop="15dp"

@@ -6,7 +6,7 @@
     <color name="mint">#0ceacf</color>
     <color name="smallmint">#400ceacf</color>
     <color name="soft_grey">#e1e1e1</color>
-
+    <color name="full_gradation">#33000000</color>
     <color name="soft_grey_background">#40e1e1e1</color>
     <color name="soft_black">#4a4a4a</color>
     <color name="white">#FFFFFF</color>

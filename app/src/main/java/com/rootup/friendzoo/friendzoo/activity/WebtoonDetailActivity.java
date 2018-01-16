@@ -33,6 +33,10 @@ public class WebtoonDetailActivity extends AppCompatActivity {
         previous.setText(Html.fromHtml(strPrevious));
         next.setText(Html.fromHtml(strNext));
 
+        RecyclerView recyclerView = findViewById(R.id.donate_post_review_list);
+        recyclerView.setFocusable(false);
+
+
     }
 
 

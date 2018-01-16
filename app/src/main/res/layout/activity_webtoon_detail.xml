@@ -221,6 +221,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:hint="댓글을 입력하세요"
+                    android:focusable="false"
                     android:textSize="14sp"
                     android:theme="@style/EditTextStyle" />
 
@@ -229,7 +230,6 @@
 
 
         <android.support.v7.widget.RecyclerView
-
             android:id="@+id/donate_post_review_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

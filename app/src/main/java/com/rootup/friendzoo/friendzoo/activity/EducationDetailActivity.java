@@ -94,7 +94,7 @@ public class EducationDetailActivity extends AppCompatActivity{
                 .setFocusColor(getResources().getColor(R.color.white))
 
                 .setNormalColor(getResources().getColor(R.color.transparent_white))
-                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics()));
+                .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 3, getResources().getDisplayMetrics()));
 
 
         ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
