@@ -15,6 +15,7 @@
         >
 
         <LinearLayout
+            android:background="@color/strong_white"
             android:layout_height="56dp"
             android:layout_width="match_parent"
             android:layout_marginTop="10dp">
@@ -43,6 +44,12 @@
                     android:textSize="10sp" />
 
             </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/strong_white"
+                />
 
 
             <LinearLayout
@@ -76,7 +83,7 @@
     <LinearLayout
         android:gravity="start|center_vertical"
         android:layout_height="50dp"
-        android:background="@color/white"
+        android:background="@drawable/border_gray"
         android:layout_width="match_parent">
 
         <TextView
@@ -114,6 +121,9 @@
 
 
     <GridView
+        android:paddingLeft="-3.5dp"
+        android:paddingRight="-3.5dp"
+
         android:gravity="center"
         android:id="@+id/data_list"
         android:layout_height="wrap_content"

@@ -9,7 +9,7 @@
 
 
     <FrameLayout
-        android:layout_width="120dp"
+        android:layout_width="match_parent"
         android:layout_height="90dp">
         <ImageView
             android:id="@+id/img"
