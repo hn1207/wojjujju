@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activity.BeautyActivity"
-    tools:showIn="@layout/app_bar_beauty">
+    android:background="@color/strong_white"
+    >
 
     <GridView
+
         android:id="@+id/data_list"
         android:gravity="center"
         android:layout_width="match_parent"

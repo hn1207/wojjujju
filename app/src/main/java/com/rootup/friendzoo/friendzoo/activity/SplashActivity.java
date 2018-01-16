@@ -68,7 +68,7 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void onComplete(RippleView rippleView) {
-                startActivity(new Intent(SplashActivity.this, TutorialActivity.class));
+                startActivity(new Intent(SplashActivity.this, NormalSplashActivity.class));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 finish();
             }

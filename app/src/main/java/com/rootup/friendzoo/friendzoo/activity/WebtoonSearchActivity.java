@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.rootup.friendzoo.friendzoo.R;
+import com.rootup.friendzoo.friendzoo.adapter.BaseLikeDefaultItemAdapter;
 import com.rootup.friendzoo.friendzoo.adapter.BaseRecyclerAdapter;
 import com.rootup.friendzoo.friendzoo.custom.RecyclerItemClickListener;
 import com.rootup.friendzoo.friendzoo.entity.Item;
@@ -25,7 +26,7 @@ public class WebtoonSearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_webtoon_search);
 
         initSpinner();
-        initItemList();
+        initListView();
 
 
     }
@@ -49,35 +50,34 @@ public class WebtoonSearchActivity extends AppCompatActivity {
 
     }
 
-
-    void initItemList() {
+    void initListView(){
 
         ArrayList<Item> dataList = new ArrayList<Item>();
 
-        for (int i = 0; i < 15; i++) {
+        for(int i=0; i<10; i++){
             Item item = new Item();
             if(i%2==0){
                 item.setImg("http://13.125.46.183/woojjujju/webtoon_second.png");
             }
             else{item.setImg("http://13.125.46.183/woojjujju/webtoon_first.png");}
-            item.setTitle("내 어린 고양이와 늙은 개");
-            item.setDescription(i + " 화");
-            item.setLabel("new");
+            item.setTitle("웹툰의 제목이 들어갑니다.길면\n밑으로 내려갑니다.");
+            item.setUserName("작가이름");
+            item.setLike(i%2);
+
             dataList.add(item);
+
+
         }
 
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.data_list);
-        recyclerView.setHasFixedSize(true);
+        RecyclerView recyclerView = findViewById(R.id.data_list);
 
-//
-        recyclerView.addOnItemTouchListener(
+                recyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(WebtoonSearchActivity.this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
                         // do whatever
-                        startActivity(new Intent(WebtoonSearchActivity.this, CommunityPostDetailActivity.class));
-
+                        startActivity(new Intent(WebtoonSearchActivity.this, WebtoonDetailActivity.class));
                     }
 
                     @Override
@@ -87,14 +87,18 @@ public class WebtoonSearchActivity extends AppCompatActivity {
                 }));
 
 
+
         LinearLayoutManager layoutManager = new LinearLayoutManager(WebtoonSearchActivity.this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
 
         if (dataList.size() > 0) {
-            recyclerView.setAdapter(new BaseRecyclerAdapter(dataList, WebtoonSearchActivity.this, R.layout.items_webtoon_mypage));
+            recyclerView.setAdapter(new BaseLikeDefaultItemAdapter(dataList, WebtoonSearchActivity.this, R.layout.items_webtoon_mypage));
         }
         recyclerView.setLayoutManager(layoutManager);
 
     }
+
+
+
 }

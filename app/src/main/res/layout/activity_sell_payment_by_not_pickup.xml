@@ -12,31 +12,39 @@
         android:orientation="vertical">
 
 
-
-        <LinearLayout
-            android:background="@drawable/border_bottom"
-
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/toolbar_height"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingLeft="16dp">
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:background="@drawable/border_bottom"
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/left_arrow"
-                android:scaleType="centerCrop"/>
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
-                android:text="결제하기"
-                android:textColor="@color/color_primary"
-                android:textSize="16sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left_arrow"
+                    android:scaleType="centerCrop"/>
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:text="결제하기"
+                    android:textColor="@color/color_primary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
 
         <TextView
             android:layout_width="wrap_content"

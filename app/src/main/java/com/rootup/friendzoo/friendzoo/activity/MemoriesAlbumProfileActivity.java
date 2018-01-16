@@ -11,6 +11,8 @@ import android.widget.Spinner;
 
 import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.adapter.BaseGridAdapter;
+import com.rootup.friendzoo.friendzoo.dialog.BaseGuideDialog;
+import com.rootup.friendzoo.friendzoo.dialog.BaseInnerHTMLDialog;
 import com.rootup.friendzoo.friendzoo.entity.Item;
 
 import java.util.ArrayList;
@@ -29,6 +31,16 @@ public class MemoriesAlbumProfileActivity extends AppCompatActivity {
                 startActivity(new Intent(MemoriesAlbumProfileActivity.this, UpdateNickNameActivity.class));
             }
         });
+
+        findViewById(R.id.delete_memories_album).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BaseGuideDialog baseGuideDialog = new BaseGuideDialog(MemoriesAlbumProfileActivity.this, R.layout.dialog_delete_memories_album);
+                baseGuideDialog.show();
+            }
+        });
+
+
 
 
     }
