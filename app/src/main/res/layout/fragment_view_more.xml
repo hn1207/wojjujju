@@ -259,12 +259,14 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="182dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/view_more_content1"
                     />
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="182dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/view_more_content2"
                     />
 
@@ -280,11 +282,13 @@
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="182dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/view_more_content2"
                     />
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="0dp"
+                    android:scaleType="centerCrop"
                     android:layout_height="182dp"
                     android:src="@drawable/view_more_content1"
                     />

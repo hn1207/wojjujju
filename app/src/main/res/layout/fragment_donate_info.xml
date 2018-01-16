@@ -8,6 +8,8 @@
 
 
     <GridView
+        android:paddingLeft="-2dp"
+        android:paddingRight="-2dp"
         android:id="@+id/donate_info_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

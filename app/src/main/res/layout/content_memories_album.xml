@@ -10,7 +10,8 @@
     >
 
     <GridView
-
+        android:paddingRight="-4dp"
+        android:paddingLeft="-4dp"
         android:id="@+id/data_list"
         android:gravity="center"
         android:layout_width="match_parent"
