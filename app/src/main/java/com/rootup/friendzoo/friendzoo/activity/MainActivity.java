@@ -49,6 +49,10 @@ public class  MainActivity extends BaseDrawerActivity {
         initToolbar("프렌쥬");
 
         initBottomBar();
+
+
+
+
     }
 
     @Override

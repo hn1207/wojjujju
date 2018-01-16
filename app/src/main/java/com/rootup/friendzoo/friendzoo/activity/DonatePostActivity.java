@@ -51,7 +51,7 @@ public class DonatePostActivity extends AppCompatActivity {
         for (int i = 0; i < 10; i++) {
             Item item = new Item();
             item.setImg("http://13.125.46.183/woojjujju/user.png");
-            item.setContents("댓글 내용이 들어갑니다. 댓글 내용이 들어갑니다.댓글 내용이 들어갑니다.");
+            item.setContents("댓글 내용이 들어갑니다. 댓글 내용이 들어갑니다. 댓글 내용이 들어갑니다.");
             item.setUserName("장지후");
             item.setDate("2017.10.03");
             dataList.add(item);

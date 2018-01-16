@@ -304,7 +304,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:clickable="true"
-            android:src="@drawable/ic_menu_camera"
+            android:src="@drawable/floating_button_camera"
+            app:backgroundTint="#0CEACF"
+            android:scaleType="centerCrop"
             android:layout_gravity="bottom|right|end"/>
     </FrameLayout>
 

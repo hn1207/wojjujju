@@ -26,8 +26,8 @@
     </string-array>
 
     <string-array name="community_category_filter">
-        <item>자유</item>
         <item>생활 속 꿀팁</item>
+        <item>자유</item>
         <item>요리/음식</item>
         <item>핫이슈</item>
         <item>취미</item>
@@ -77,10 +77,10 @@
     </string-array>
 
     <string-array name="walk_default_filter">
-        <item>인기순</item>
-        <item>평점순</item>
         <item>높은 가격순</item>
         <item>낮은 가격순</item>
+        <item>인기순</item>
+        <item>평점순</item>
     </string-array>
 
     <string-array name="webtoon_default_filter">

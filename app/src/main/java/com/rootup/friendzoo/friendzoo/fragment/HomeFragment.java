@@ -14,15 +14,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.rootup.friendzoo.friendzoo.R;
-
 import com.rootup.friendzoo.friendzoo.activity.AdoptActivity;
 import com.rootup.friendzoo.friendzoo.activity.AlarmActivity;
-import com.rootup.friendzoo.friendzoo.activity.BaseDrawerActivity;
 import com.rootup.friendzoo.friendzoo.activity.BeautyActivity;
-import com.rootup.friendzoo.friendzoo.activity.CommunityActivity;
 import com.rootup.friendzoo.friendzoo.activity.EducationActivity;
 import com.rootup.friendzoo.friendzoo.activity.HospitalActivity;
 import com.rootup.friendzoo.friendzoo.activity.SearchActivity;
@@ -107,6 +103,22 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+
+        RecyclerView recyclerView = view.findViewById(R.id.hot_item_list);
+        RecyclerView recyclerView2 = view.findViewById(R.id.sale_item_list);
+        RecyclerView recyclerView3 = view.findViewById(R.id.recommend_item_list);
+        RecyclerView recyclerView4 = view.findViewById(R.id.hot_place_item_list);
+
+
+        recyclerView.setFocusable(false);
+        recyclerView2.setFocusable(false);
+        recyclerView3.setFocusable(false);
+        recyclerView4.setFocusable(false);
+
+
+
+
 
         return view;
     }
