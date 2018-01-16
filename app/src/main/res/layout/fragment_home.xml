@@ -82,16 +82,17 @@
             >
 
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_height="0dp"
+                >
 
                 <LinearLayout
                     android:id="@+id/beauty"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical"
 
                     >
@@ -110,13 +111,18 @@
                         android:textSize="10sp" />
 
                 </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"
+                    />
 
                 <LinearLayout
                     android:id="@+id/shop"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
@@ -127,19 +133,24 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:text="쇼핑"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
 
                 </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"
+                    />
 
                 <LinearLayout
                     android:id="@+id/walk"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
@@ -150,19 +161,24 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:text="데이트"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
 
                 </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"
+                    />
 
                 <LinearLayout
                     android:id="@+id/education"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical"
 
                     >
@@ -175,7 +191,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:text="교육"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
@@ -183,18 +199,25 @@
                 </LinearLayout>
 
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/strong_white"
+                />
 
             <LinearLayout
-                android:id="@+id/adopt"
+                android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_height="0dp"
+                >
 
                 <LinearLayout
+                    android:id="@+id/adopt"
+
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
@@ -205,19 +228,24 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:text="입양"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
 
                 </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"
+                    />
 
                 <LinearLayout
                     android:id="@+id/sell"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
@@ -228,20 +256,25 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:text="분양"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
 
                 </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"
+                    />
 
 
                 <LinearLayout
                     android:id="@+id/hospital"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical"
 
                     >
@@ -254,20 +287,25 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:text="병원"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
 
                 </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/strong_white"
+                    />
 
 
                 <LinearLayout
                     android:id="@+id/category"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:orientation="vertical"
 
                     >
@@ -280,7 +318,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:text="전체보기"
                         android:textColor="@color/warm_grey"
                         android:textSize="10sp" />
@@ -296,7 +334,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="6dp"
             android:background="@color/strong_white"
             />
 
@@ -346,7 +384,7 @@
         <!-- 놓칠 수 없는 1 DAY 특가 -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="6dp"
             android:background="@color/strong_white"
             />
         <LinearLayout
@@ -396,7 +434,7 @@
         <!-- 이걸 추천해요 -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="6dp"
             android:background="@color/strong_white"
             />
         <LinearLayout
@@ -445,7 +483,7 @@
         <!-- 요즘 핫한 장소 -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="6dp"
             android:background="@color/strong_white"
             />
         <LinearLayout
@@ -493,7 +531,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="6dp"
             android:background="@color/strong_white"
             />
 

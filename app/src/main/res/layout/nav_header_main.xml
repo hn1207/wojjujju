@@ -28,6 +28,7 @@
             android:paddingTop="22dp">
 
             <View
+                android:id="@+id/main"
                 android:layout_width="0dp"
                 android:layout_height="18dp"
                 android:layout_weight="0.25"

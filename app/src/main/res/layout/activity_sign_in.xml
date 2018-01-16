@@ -59,14 +59,22 @@
             android:textSize="12sp" />
 
     </LinearLayout>
+    <com.andexert.library.RippleView
+        android:id="@+id/ripple_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        rv_centered="true">
 
     <Button
-        android:layout_marginTop="9dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/login"
-        android:onClick="clickSignInBtn"
+
         />
+    </com.andexert.library.RippleView>
+
 
     <Button
         android:layout_marginTop="17dp"
