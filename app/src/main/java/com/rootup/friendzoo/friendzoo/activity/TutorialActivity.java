@@ -89,8 +89,10 @@ public class TutorialActivity extends AppCompatActivity {
                 .setNormalColor(getResources().getColor(R.color.soft_grey))
                 .setRadius((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 3, getResources().getDisplayMetrics()));
 
-        ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.TOP);
-        ultraViewPager.getIndicator().setMargin(0,50,0,0);
+//        ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.TOP);
+//        ultraViewPager.getIndicator().setMargin(0,50,0,0);
+        ultraViewPager.getIndicator().setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
+        ultraViewPager.getIndicator().setMargin(0,0,0,50);
 
         ultraViewPager.getIndicator().build();
 
