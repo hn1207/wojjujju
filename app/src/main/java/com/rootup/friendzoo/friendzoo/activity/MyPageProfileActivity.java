@@ -74,7 +74,7 @@ public class MyPageProfileActivity extends AppCompatActivity{
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         if (dateList.size() > 0) {
-            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(dateList, MyPageProfileActivity.this, R.layout.items_memories_album));
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(dateList, MyPageProfileActivity.this, R.layout.items_mypage_memories_album));
         }
         beautySelectedItemListView.setLayoutManager(layoutManager);
 
