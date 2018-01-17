@@ -22,7 +22,6 @@ public class MemoriesAlbumActivity extends BaseDrawerActivity {
 
         initToolbar("추억앨범");
         initGridView();
-
     }
 
 
@@ -38,6 +37,8 @@ public class MemoriesAlbumActivity extends BaseDrawerActivity {
         }
 
 
+
+
         GridView gridView = findViewById(R.id.data_list);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -50,4 +51,8 @@ public class MemoriesAlbumActivity extends BaseDrawerActivity {
         gridView.setAdapter(new BaseGridAdapter(dataList, MemoriesAlbumActivity.this, R.layout.items_memories_album));
 
     }
+
+
+
+
 }

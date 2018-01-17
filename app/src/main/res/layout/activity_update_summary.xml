@@ -6,8 +6,16 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
+    android:background="@color/strong_white"
     tools:openDrawer="start">
 
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/white"
+        >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_height"
@@ -45,7 +53,7 @@
 
 
     </LinearLayout>
-
+    </android.support.design.widget.AppBarLayout>
 
     <EditText
         android:layout_width="match_parent"
