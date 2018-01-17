@@ -69,7 +69,7 @@
                 android:textSize="12sp" />
 
             <TextView
-                android:layout_width="91dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="사용가능 23,900p"
