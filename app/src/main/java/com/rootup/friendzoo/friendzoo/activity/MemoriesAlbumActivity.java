@@ -15,6 +15,9 @@ import java.util.ArrayList;
 
 public class MemoriesAlbumActivity extends BaseDrawerActivity {
 
+    final int CONTENTS = 0;
+    final int ADD = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,9 +36,12 @@ public class MemoriesAlbumActivity extends BaseDrawerActivity {
             Item item = new Item();
             item.setImg("http://13.125.46.183/woojjujju/dog.jpg");
             item.setTitle("다롱이");
-//            item.setLabel("F");
+            item.setType(CONTENTS);
             dataList.add(item);
         }
+        Item item = new Item();
+        item.setType(ADD);
+        dataList.add(item);
 
 
         GridView gridView = findViewById(R.id.data_list);
