@@ -35,7 +35,6 @@ public class MyPagePointHistoryActivity extends AppCompatActivity{
             item.setTitle("맛있고 건강한 강아지사료 1 kg ");
             item.setPrice("200원 적립");
             item.setDate("적립일 : 2017.09.24");
-
             dataList.add(item);
         }
 

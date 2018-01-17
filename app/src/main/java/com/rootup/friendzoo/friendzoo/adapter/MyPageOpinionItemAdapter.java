@@ -1,7 +1,6 @@
 package com.rootup.friendzoo.friendzoo.adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.entity.Item;
-
 
 import java.util.ArrayList;
 
@@ -118,7 +116,7 @@ public class MyPageOpinionItemAdapter extends BaseAdapter {
                 try{qnaBackground = (LinearLayout) convertView.findViewById(R.id.qna_bg);}catch (Exception ignored){}
 
 
-                qnaBackground.setBackgroundColor(con.getResources().getColor(R.color.soft_grey));
+                qnaBackground.setBackgroundColor(con.getResources().getColor(R.color.strong_white));
                 qnaBackground.setPadding(100,16,16,16);
                 title.setText(dataList.get(position).getTitle());
                 contents.setText(dataList.get(position).getContents());
