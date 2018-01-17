@@ -8,6 +8,7 @@ import android.widget.GridView;
 
 import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.adapter.BaseGridAdapter;
+import com.rootup.friendzoo.friendzoo.adapter.MemoriesAlbumGridAdapter;
 import com.rootup.friendzoo.friendzoo.entity.Item;
 
 import java.util.ArrayList;
@@ -54,7 +55,7 @@ public class MemoriesAlbumActivity extends BaseDrawerActivity {
             }
         });
 
-        gridView.setAdapter(new BaseGridAdapter(dataList, MemoriesAlbumActivity.this, R.layout.items_memories_album));
+        gridView.setAdapter(new MemoriesAlbumGridAdapter(dataList, MemoriesAlbumActivity.this, R.layout.items_memories_album));
 
     }
 

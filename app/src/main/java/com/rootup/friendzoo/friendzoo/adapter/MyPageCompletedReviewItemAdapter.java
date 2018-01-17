@@ -99,6 +99,7 @@ public class MyPageCompletedReviewItemAdapter extends BaseAdapter {
                 try{date = (TextView) convertView.findViewById(R.id.date);}catch (Exception ignored){}
                 try{contents = (TextView) convertView.findViewById(R.id.contents);}catch (Exception ignored){}
                 try{grade = (RatingBar) convertView.findViewById(R.id.grade);}catch (Exception ignored){}
+                try{img = (ImageView) convertView.findViewById(R.id.img);}catch(Exception ignored){}
 
                 userName.setText(dataList.get(position).getUserName());
                 contents.setText(dataList.get(position).getContents());

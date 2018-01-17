@@ -5,8 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
+import com.rootup.friendzoo.friendzoo.R;
 import com.rootup.friendzoo.friendzoo.entity.Item;
 import com.rootup.friendzoo.friendzoo.viewholder.BaseItemViewHolder;
 
@@ -75,6 +77,9 @@ public class MemoriesAlbumGridAdapter extends BaseAdapter {
                 try{holder.label.setText(dataList.get(position).getLabel());}catch (Exception e){}
                 break;
             case ADD:
+                convertView = inflater.inflate(layout, viewGroup, false);
+                LinearLayout addLayout = convertView.findViewById(R.id.add);
+                addLayout.setVisibility(View.VISIBLE);
                 break;
         }
 

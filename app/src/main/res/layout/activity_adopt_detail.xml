@@ -170,6 +170,7 @@
             android:layout_marginTop="5dp"
             android:scaleType="fitXY"
             android:src="@drawable/select_list_top" />
+
         <LinearLayout
             android:visibility="gone"
             android:id="@+id/selected_list"

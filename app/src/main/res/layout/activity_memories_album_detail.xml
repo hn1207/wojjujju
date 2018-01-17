@@ -1,317 +1,317 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:fillViewport="true"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent">
 
-    >
-
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+
+        >
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-            <FrameLayout
+            android:layout_height="wrap_content">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/memories_background">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/toolbar_height"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingLeft="16dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/left_arrow"
-                        android:scaleType="centerCrop"/>
-
-                    <LinearLayout
-                        android:id="@+id/setting"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:paddingRight="16dp"
-                        android:gravity="end|center_vertical"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/setting"
-                            />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginBottom="28dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="60dp">
+                    android:background="@drawable/memories_background">
 
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="#00000000"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:lineSpacingExtra="3sp"
-                            android:text="함께한지\n98일 째"
-                            android:textAlignment="center"
-                            android:textColor="@color/soft_black"
-                            android:textSize="14sp" />
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/toolbar_height"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp">
 
                         <ImageView
-                            android:id="@+id/profile"
-                            android:layout_marginTop="12dp"
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:src="@drawable/round_dog"
-                            android:scaleType="centerCrop"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/left_arrow" />
+
+                        <LinearLayout
+                            android:id="@+id/setting"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="end|center_vertical"
+                            android:paddingRight="16dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/setting" />
+                        </LinearLayout>
+
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:paddingBottom="18dp"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@color/white"
-                        android:orientation="vertical"
-                        android:paddingLeft="24dp"
-                        android:paddingRight="24dp"
-                        android:paddingTop="13dp">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="60dp">
+
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#00000000"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:lineSpacingExtra="3sp"
-                                android:text="뽀롱이뽀롱 "
+                                android:text="함께한지\n98일 째"
+                                android:textAlignment="center"
                                 android:textColor="@color/soft_black"
                                 android:textSize="14sp" />
 
                             <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:src="@drawable/male"
+                                android:id="@+id/profile"
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_marginTop="12dp"
                                 android:scaleType="centerCrop"
-                                />
+                                android:src="@drawable/round_dog" />
+
                         </LinearLayout>
 
-                        <TextView
-                            android:layout_width="190dp"
-                            android:layout_height="38dp"
-                            android:layout_marginTop="6dp"
-                            android:background="@drawable/mint_background"
-                            android:gravity="center"
-                            android:lineSpacingExtra="3sp"
-                            android:paddingLeft="10dp"
-                            android:text="주인님과 함께해서 좋아요! :) "
-                            android:textAlignment="center"
-                            android:textColor="@color/soft_black"
-                            android:textSize="14sp" />
-
                         <LinearLayout
-                            android:layout_marginTop="14dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingBottom="18dp"
+                            android:paddingLeft="24dp"
+                            android:paddingRight="24dp"
+                            android:paddingTop="13dp">
 
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                android:gravity="center">
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:lineSpacingExtra="3sp"
-                                    android:text="태어난 날"
+                                    android:text="뽀롱이뽀롱 "
                                     android:textColor="@color/soft_black"
                                     android:textSize="14sp" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/male" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="190dp"
+                                android:layout_height="38dp"
+                                android:layout_marginTop="6dp"
+                                android:background="@drawable/mint_background"
+                                android:gravity="center"
+                                android:lineSpacingExtra="3sp"
+                                android:paddingLeft="10dp"
+                                android:text="주인님과 함께해서 좋아요! :) "
+                                android:textAlignment="center"
+                                android:textColor="@color/soft_black"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
                                     android:layout_height="wrap_content"
-                                    android:lineSpacingExtra="3sp"
-                                    android:layout_marginTop="5dp"
-                                    android:text="2017.04.17"
-                                    android:textColor="@color/soft_black"
-                                    android:textSize="12sp" />
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:lineSpacingExtra="3sp"
+                                        android:text="태어난 날"
+                                        android:textColor="@color/soft_black"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:lineSpacingExtra="3sp"
+                                        android:text="2017.04.17"
+                                        android:textColor="@color/soft_black"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:lineSpacingExtra="3sp"
+                                        android:text="함께한 날"
+                                        android:textColor="@color/soft_black"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:lineSpacingExtra="3sp"
+                                        android:text="2017.07.28"
+                                        android:textColor="@color/soft_black"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:orientation="vertical"
-                                android:layout_width="0dp"
+                                android:layout_width="match_parent"
+
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center">
+                                android:layout_marginTop="9dp">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:lineSpacingExtra="3sp"
-                                    android:text="함께한 날"
-                                    android:textColor="@color/soft_black"
-                                    android:textSize="14sp" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:lineSpacingExtra="3sp"
+                                <com.rootup.friendzoo.friendzoo.custom.HorizontalProgressView
+                                    android:id="@+id/progress"
+                                    android:layout_width="0dp"
+                                    android:layout_height="8dp"
                                     android:layout_marginTop="5dp"
-                                    android:text="2017.07.28"
-                                    android:textColor="@color/soft_black"
-                                    android:textSize="12sp" />
+                                    android:layout_weight="1"
+                                    app:rcBackgroundColor="#f0f0f0"
+                                    app:rcBackgroundPadding="0dp"
+                                    app:rcProgressColor="@color/colorPrimary"
+                                    app:rcSecondaryProgressColor="@color/warm_grey" />
 
+                                <ImageView
+                                    android:id="@+id/memories_level_guide"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/question" />
                             </LinearLayout>
 
-                        </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-
-                            android:layout_marginTop="9dp"
-                            android:layout_height="wrap_content">
-
-
-                            <com.rootup.friendzoo.friendzoo.custom.HorizontalProgressView
-                                android:id="@+id/progress"
-                                android:layout_weight="1"
-                                android:layout_width="0dp"
-                                android:layout_height="8dp"
-                                android:layout_marginTop="5dp"
-                                app:rcBackgroundColor="#f0f0f0"
-                                app:rcBackgroundPadding="0dp"
-                                app:rcProgressColor="@color/colorPrimary"
-                                app:rcSecondaryProgressColor="@color/warm_grey" />
-
-                           <ImageView
-                               android:id="@+id/memories_level_guide"
-                               android:layout_width="15dp"
-                               android:layout_height="15dp"
-                               android:src="@drawable/question"
-                               android:scaleType="centerCrop"/>
-                        </LinearLayout>
-
-
-
-                        <LinearLayout
-                            android:layout_marginTop="2dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:layout_weight="1"
-                                android:layout_width="0dp"
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="10sp"
-                                android:textColor="@color/soft_black"
-                                android:text="추억 lv.1"
-                                />
-                            <TextView
-                                android:gravity="end|center_vertical"
-                                android:layout_weight="1"
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:textSize="10sp"
-                                android:textColor="@color/soft_black"
-                                android:text="0%"
-                                />
+                                android:layout_marginTop="2dp">
 
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="추억 lv.1"
+                                    android:textColor="@color/soft_black"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end|center_vertical"
+                                    android:text="0%"
+                                    android:textColor="@color/soft_black"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
                         </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="start|center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="우리의 추억 0개"
+                        android:textColor="@color/soft_black"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="17dp"
+                        android:gravity="end|center_vertical">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="6dp"
+                            android:layout_height="16dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/more_copy" />
                     </LinearLayout>
 
                 </LinearLayout>
 
 
-
-            </FrameLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="start|center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:text="우리의 추억 0개"
-                    android:textColor="@color/soft_black"
-                    android:textSize="12sp" />
-
-                <LinearLayout
+                <GridView
+                    android:id="@+id/data_list"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
-                    android:gravity="end|center_vertical"
-                    android:layout_marginRight="17dp"
-                    >
 
-                    <Spinner
-                        android:id="@+id/spinner"
-                        android:background="@drawable/more_copy"
-                        android:layout_width="6dp"
-                        android:layout_height="16dp"
-                        android:layout_marginRight="20dp"
-                        />
-                </LinearLayout>
+                    android:layout_height="500dp"
+                    android:gravity="center"
+                    android:listSelector="@drawable/gridview_selector"
+                    android:numColumns="3"
+                    android:orientation="vertical"
+                    android:paddingLeft="-0.75dp"
+                    android:paddingRight="-0.75dp" />
+
 
             </LinearLayout>
 
 
-            <GridView
-                android:paddingRight="-0.75dp"
-                android:paddingLeft="-0.75dp"
-
-                android:id="@+id/data_list"
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:numColumns="3"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:listSelector="@drawable/gridview_selector"/>
+        </FrameLayout>
 
 
-        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|end"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/floating_button_camera"
+        app:backgroundTint="#0CEACF" />
+</FrameLayout>
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:clickable="true"
-            android:src="@drawable/floating_button_camera"
-            app:backgroundTint="#0CEACF"
-            android:scaleType="centerCrop"
-            android:layout_gravity="bottom|right|end"/>
-    </FrameLayout>
-
-
-
-
-
-</ScrollView>

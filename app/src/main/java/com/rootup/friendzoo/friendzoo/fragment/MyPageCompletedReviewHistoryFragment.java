@@ -41,7 +41,7 @@ public class MyPageCompletedReviewHistoryFragment extends Fragment {
             item.setContents("후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다. 후기내용이 들어갑니다.후기내용이 들어갑니다.");
             item.setDate("2017.09.23");
             item.setGrade(4);
-            item.setImg("http://13.125.46.183/woojjujju/cushion.jpg");
+            item.setImg("http://13.125.46.183/woojjujju/user.png");
             item.setType(REVIEW);
 
             dataList.add(item);

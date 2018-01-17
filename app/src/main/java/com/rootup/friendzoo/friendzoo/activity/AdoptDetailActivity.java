@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.rootup.friendzoo.friendzoo.R;
@@ -56,18 +57,41 @@ public class AdoptDetailActivity extends AppCompatActivity{
 
             }
         });
+        final ImageView selectArrow = findViewById(R.id.select_arrow);
         final LinearLayout linearLayout = findViewById(R.id.selected_list);
         linearLayout.setVisibility(View.GONE);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (linearLayout.getVisibility()){
+                    case View.GONE:
+                        linearLayout.setVisibility(View.VISIBLE);
+                        selectArrow.setVisibility(View.VISIBLE);
+                        break;
+                    case View.VISIBLE:
+                        linearLayout.setVisibility(View.GONE);
+                        selectArrow.setVisibility(View.GONE);
+                        break;
+
+                }
+
+            }
+        });
+
         findViewById(R.id.contact_us).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                switch (linearLayout.getVisibility()){
+                switch (linearLayout.getVisibility()) {
                     case View.GONE:
                         linearLayout.setVisibility(View.VISIBLE);
+                        selectArrow.setVisibility(View.VISIBLE);
+
                         break;
                     case View.VISIBLE:
                         linearLayout.setVisibility(View.GONE);
+                        selectArrow.setVisibility(View.GONE);
+
                         break;
 
                 }

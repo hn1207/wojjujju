@@ -1,13 +1,19 @@
 package com.rootup.friendzoo.friendzoo.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
@@ -17,39 +23,32 @@ import com.google.samples.apps.iosched.ui.widget.SlidingTabLayout;
 import com.nineoldandroids.view.ViewHelper;
 import com.nineoldandroids.view.ViewPropertyAnimator;
 import com.rootup.friendzoo.friendzoo.R;
+import com.rootup.friendzoo.friendzoo.adapter.BaseRecyclerAdapter;
 import com.rootup.friendzoo.friendzoo.adapter.BaseUltraPagerAdapter;
 import com.rootup.friendzoo.friendzoo.adapter.TabViewAdapter;
 import com.rootup.friendzoo.friendzoo.custom.SwipeViewPager;
+import com.rootup.friendzoo.friendzoo.entity.Item;
 import com.rootup.friendzoo.friendzoo.fragment.BaseQnAFragment;
 import com.rootup.friendzoo.friendzoo.fragment.BaseReviewFragment;
 import com.rootup.friendzoo.friendzoo.fragment.BeautyDetailInfoFragment;
 import com.rootup.friendzoo.friendzoo.lib.BaseActivity;
 import com.tmall.ultraviewpager.UltraViewPager;
 
+import java.util.ArrayList;
+
 public class BeautyDetailActivity extends BaseActivity {
 
 
-
-    private View mHeaderView;
-    private View mToolbarView;
-    private int mBaseTranslationY;
-    private ViewPager mPager;
-    private TabViewAdapter mPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beauty_detail);
 
-//        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
-
-
 
         initViewPager();
         initTabView();
-//        initBeautySelectedItemList();
-
-
+        initBeautySelectedItemList();
 
 
     }
@@ -66,8 +65,7 @@ public class BeautyDetailActivity extends BaseActivity {
         SwipeViewPager viewPager = (SwipeViewPager) findViewById(R.id.tab_viewpager);
         TabViewAdapter adapter = new TabViewAdapter(getSupportFragmentManager());
 
-        mPager = viewPager;
-        mPagerAdapter = adapter;
+
 
         adapter.addFragment(beautyDetailInfoFragment, "상세정보");
         adapter.addFragment(baseQnAFragment, "Q&A");
@@ -77,13 +75,13 @@ public class BeautyDetailActivity extends BaseActivity {
         viewPager.setPagingEnabled(false);
         viewPager.setAdapter(adapter);
 
-//        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-////        tabLayout.setTabTextColors(ColorStateList.valueOf(getResources().getColor(R.color.color_primary)));
-//
-//        tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.color_primary));
-//        tabLayout.setTabTextColors(getResources().getColor(R.color.warm_grey), getResources().getColor(R.color.color_primary));
-//
-//        tabLayout.setupWithViewPager(viewPager);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+//        tabLayout.setTabTextColors(ColorStateList.valueOf(getResources().getColor(R.color.color_primary)));
+
+        tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.color_primary));
+        tabLayout.setTabTextColors(getResources().getColor(R.color.warm_grey), getResources().getColor(R.color.color_primary));
+
+        tabLayout.setupWithViewPager(viewPager);
 
 
 
@@ -119,94 +117,100 @@ public class BeautyDetailActivity extends BaseActivity {
     }
 //
 //
-//    void initBeautySelectedItemList(){
-//
-//        ArrayList<Item> beautySelectedItemArrayList = new ArrayList<Item>();
-//
-//        for(int i=0; i<3; i++) {
-//            Item item = new Item();
-//            item.setImg("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ");
-//            item.setTitle("예약일시 12.29 (화) 16:00");
-//            item.setPrice("9,900원");
-//            beautySelectedItemArrayList.add(item);
-//        }
-//
-////        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-////        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-////        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-////        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-////        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
-////
-////
+    void initBeautySelectedItemList(){
+
+        ArrayList<Item> beautySelectedItemArrayList = new ArrayList<Item>();
+
+        for(int i=0; i<3; i++) {
+            Item item = new Item();
+            item.setImg("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ");
+            item.setTitle("예약일시 12.29 (화) 16:00");
+            item.setPrice("9,900원");
+            beautySelectedItemArrayList.add(item);
+        }
+
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
+//        beautySelectedItemArrayList.add(new SelectedItem("무슨 무슨 컷 이름이 길면 밑으로 내려갑니다. 내려갑니다. ", "예약일시 12.29 (화) 16:00", "9,900원"));
 //
 //
-//        RecyclerView beautySelectedItemListView = (RecyclerView) findViewById(R.id.select_goods_list);
-//        beautySelectedItemListView.setHasFixedSize(true);
-//
-//
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyDetailActivity.this);
-//        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-//
-//        if (beautySelectedItemArrayList.size() > 0) {
-//            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_base_select_goods_item));
-//        }
-//        beautySelectedItemListView.setLayoutManager(layoutManager);
-//
-//
-//        final LinearLayout linearLayout = findViewById(R.id.selected_list);
-//        linearLayout.setVisibility(View.GONE);
-//        linearLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                switch (linearLayout.getVisibility()){
-//                    case View.GONE:
-//                        linearLayout.setVisibility(View.VISIBLE);
-//                        break;
-//                    case View.VISIBLE:
-//                        linearLayout.setVisibility(View.GONE);
-//                        break;
-//
-//                }
-//
-//            }
-//        });
-//
-//        findViewById(R.id.contact_us).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                switch (linearLayout.getVisibility()){
-//                    case View.GONE:
-//                        linearLayout.setVisibility(View.VISIBLE);
-//                        break;
-//                    case View.VISIBLE:
-//                        linearLayout.setVisibility(View.GONE);
-//                        break;
-//
-//                }
-//
-//            }
-//        });
-//
-//        findViewById(R.id.payment).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                startActivity(new Intent(BeautyDetailActivity.this, BeautyPaymentActivity.class));
-//            }
-//        });
-//
-//        findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(BeautyDetailActivity.this, BasePickDateActivity.class));
-//
-//            }
-//        });
-//
-//
-//
-//    }
+
+
+        RecyclerView beautySelectedItemListView = (RecyclerView) findViewById(R.id.select_goods_list);
+        beautySelectedItemListView.setHasFixedSize(true);
+
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(BeautyDetailActivity.this);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+
+        if (beautySelectedItemArrayList.size() > 0) {
+            beautySelectedItemListView.setAdapter(new BaseRecyclerAdapter(beautySelectedItemArrayList, BeautyDetailActivity.this, R.layout.items_base_select_goods_item));
+        }
+        beautySelectedItemListView.setLayoutManager(layoutManager);
+
+
+        final ImageView selectArrow = findViewById(R.id.select_arrow);
+        final LinearLayout linearLayout = findViewById(R.id.selected_list);
+        linearLayout.setVisibility(View.GONE);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (linearLayout.getVisibility()){
+                    case View.GONE:
+                        linearLayout.setVisibility(View.VISIBLE);
+                        selectArrow.setVisibility(View.VISIBLE);
+                        break;
+                    case View.VISIBLE:
+                        linearLayout.setVisibility(View.GONE);
+                        selectArrow.setVisibility(View.GONE);
+                        break;
+
+                }
+
+            }
+        });
+
+        findViewById(R.id.contact_us).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                switch (linearLayout.getVisibility()) {
+                    case View.GONE:
+                        linearLayout.setVisibility(View.VISIBLE);
+                        selectArrow.setVisibility(View.VISIBLE);
+
+                        break;
+                    case View.VISIBLE:
+                        linearLayout.setVisibility(View.GONE);
+                        selectArrow.setVisibility(View.GONE);
+
+                        break;
+
+                }
+
+            }
+        });
+        findViewById(R.id.payment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(BeautyDetailActivity.this, BeautyPaymentActivity.class));
+            }
+        });
+
+        findViewById(R.id.date_pick).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BeautyDetailActivity.this, BasePickDateActivity.class));
+
+            }
+        });
+
+
+
+    }
 
 
 
