@@ -60,6 +60,12 @@ public class AdoptActivity extends BaseDrawerActivity {
             item.setContents("포메라니안");
             item.setAddress("서울시 역삼동");
             item.setUserName("우쭈쭈보호소");
+
+            if(i%3 == 2)
+            {
+                item.setType(1);
+            }
+
             dataList.add(item);
         }
 

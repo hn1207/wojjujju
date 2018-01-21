@@ -1,14 +1,11 @@
 package com.rootup.friendzoo.friendzoo.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.rootup.friendzoo.friendzoo.R;
@@ -46,6 +43,7 @@ public class BaseGridAdapter extends BaseAdapter {
         return i;
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
 
@@ -72,6 +70,16 @@ public class BaseGridAdapter extends BaseAdapter {
         try{holder.grade.setRating(item.getGrade());}catch (Exception e){}
         try{holder.percent.setText(dataList.get(position).getPercent());}catch (Exception e){}
         try{holder.label.setText(dataList.get(position).getLabel());}catch (Exception e){}
+
+        if(dataList.get(position).getType() == 1)
+        {
+            Glide.with(con).load(R.drawable.adopt_finish).into(holder.img);
+            holder.title.setTextColor(con.getResources().getColor(R.color.warm_grey));
+            holder.contents.setTextColor(con.getResources().getColor(R.color.warm_grey));
+            holder.address.setTextColor(con.getResources().getColor(R.color.warm_grey));
+            holder.userName.setTextColor(con.getResources().getColor(R.color.warm_grey));
+
+        }
 
 
         return convertView;

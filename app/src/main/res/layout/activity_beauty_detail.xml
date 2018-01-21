@@ -79,8 +79,7 @@
                 android:lineSpacingExtra="3sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="댕댕이
-            미용"
+                android:text="댕댕이미용"
                 android:textColor="@color/soft_black"
                 android:textSize="16sp" />
 
@@ -125,8 +124,7 @@
                 android:lineSpacingExtra="3sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="서울
-        강남구 역삼동 720-16"
+                android:text="서울 강남구 역삼동 720-16"
                 android:textColor="@color/soft_black"
                 android:textSize="12sp" />
 
@@ -137,8 +135,7 @@
                 android:lineSpacingExtra="3sp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="예약취소
-        연기 가능"
+                android:text="예약취소 연기 가능"
                 android:textColor="@color/warm_grey"
                 android:textSize="12sp" />
 
