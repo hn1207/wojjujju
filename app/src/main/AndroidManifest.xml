@@ -492,6 +492,8 @@
         </activity>
         <activity android:name=".activity.NormalSplashActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.AcceptTermsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
 
 
     </application>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            />
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/accept_terms_text"
+            android:layout_marginTop="13dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="53dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            >
+
+            <CheckBox
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_primary"
+                android:gravity="start|center_vertical"
+                android:layoutDirection="rtl"
+                android:text="전체동의"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/strong_white"
+                />
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:layout_marginTop="33dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_primary"
+                android:gravity="start|center_vertical"
+                android:layoutDirection="rtl"
+                android:text="*위치 기반 서비스 약관에 동의를 해주세요 (필수)"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
+
+            <TextView
+
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/warm_grey"
+                android:text="자세히 보기"
+                />
+
+
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:layout_marginTop="29dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_primary"
+                android:layoutDirection="rtl"
+                android:gravity="start|center_vertical"
+                android:text="*마케팅 정보 앱 푸시 알림 수신 동의 (선택)"
+                android:textColor="@color/soft_black"
+                android:textSize="12sp" />
+
+            <TextView
+
+                android:id="@+id/guide_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3sp"
+                android:textSize="10sp"
+                android:textColor="@color/warm_grey"
+                android:text="프렌쥬의 할인 이벤트, 설문조사, 유용한 정보 등의\n프로모션 소식을 받아 보실 수 있어요."
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/color_primary"
+        android:layout_gravity="end|bottom"
+        android:text="다음"
+        />
+
+</LinearLayout>

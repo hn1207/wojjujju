@@ -37,7 +37,7 @@ public class TutorialActivity extends AppCompatActivity {
         rippleView.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
             @Override
             public void onComplete(RippleView rippleView) {
-                Intent intent = new Intent(TutorialActivity.this, SignInActivity.class);
+                Intent intent = new Intent(TutorialActivity.this, AcceptTermsActivity.class);
 
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

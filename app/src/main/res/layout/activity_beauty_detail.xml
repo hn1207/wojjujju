@@ -201,13 +201,12 @@
                     android:paddingLeft="10dp"
                     android:text="서비스 선택"></TextView>
 
-                <TextView
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end|center_horizontal"
+                    android:layout_gravity="end|center"
                     android:layout_weight="0.1"
-                    android:paddingTop="10dp"
-                    android:text="▼"></TextView>
+                    android:src="@drawable/arrow_bottom_gray" />
 
             </LinearLayout>
 
@@ -229,13 +228,12 @@
                     android:paddingLeft="10dp"
                     android:text="날짜 선택"></TextView>
 
-                <TextView
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end|center_horizontal"
+                    android:layout_gravity="end|center"
                     android:layout_weight="0.1"
-                    android:paddingTop="10dp"
-                    android:text="▼" />
+                    android:src="@drawable/arrow_bottom_gray" />
             </LinearLayout>
 
             <LinearLayout
